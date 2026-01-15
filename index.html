@@ -4,42 +4,57 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- <nav class="bg-[#012819] border-b border-green4">
-        <div class=" mx-auto ">
+   
+    <nav class="bg-[#012819] border-b border-green4 font-farro">
+        <div class="mx-auto">
             <div class="flex items-center justify-between h-12">
-
                 <div class="flex items-center gap-4">
-
+                    <!-- Desktop Sidebar Button (hidden on mobile) -->
                     <button id="desktop-sidebar"
-                        class="lg:block md:hidden text-green1 hover:text-green2 px-19 py-5 bg-green4 hover:bg-green3 cursor-pointer transition-colors"
+                        class="hidden lg:block text-green1 hover:text-green2 px-19 py-5 bg-green4 hover:bg-green3 cursor-pointer transition-colors"
                         aria-label="Toggle menu">
                         <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="42" height="2" fill="white" />
                             <rect y="6" width="42" height="2" fill="white" />
                         </svg>
                     </button>
-                    
+
+                    <!-- Mobile Hamburger Button (visible only on mobile, LEFT of logo) -->
+                    <button id="mobile-menu-toggle" class="lg:hidden text-white hover:text-green1 p-2 transition-colors"
+                        aria-label="Toggle mobile menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="4" width="24" height="2" fill="currentColor" />
+                            <rect y="11" width="24" height="2" fill="currentColor" />
+                            <rect y="18" width="24" height="2" fill="currentColor" />
+                        </svg>
+                    </button>
+
                     <a href="/" class="flex items-center">
                         <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid">
                     </a>
                 </div>
-            
-                <div class="hidden lg:flex items-center space-x-8">
-                    <a href="#services" class="text-white hover:text-green1 transition-colors text-base font-medium">
-                        SERVICES <span>+</span>
 
-                        <ul>
-                            <li><a href="#">item1</a></li>
-                            <li><a href="#">item1</a></li>
-                            <li><a href="#">item1</a></li>
-                            <li><a href="#">item1</a></li>
-                            <li><a href="#">item1</a></li>
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="desktop-dropdown">
+                        <a href="#services"
+                            class="text-white hover:text-green1 transition-colors text-base font-medium desktop-dropdown-toggle">
+                            SERVICES <span class="desktop-dropdown-icon">+</span>
+                        </a>
+                        <ul class="desktop-dropdown-menu">
+                            <li><a href="#">Service Item 1</a></li>
+                            <li><a href="#">Service Item 2</a></li>
+                            <li><a href="#">Service Item 3</a></li>
+                            <li><a href="#">Service Item 4</a></li>
+                            <li><a href="#">Service Item 5</a></li>
                         </ul>
-                    </a>
+                    </div>
                     <a href="#works" class="text-white hover:text-green1 transition-colors text-base font-medium">
                         WORKS
                     </a>
@@ -54,9 +69,10 @@
                     </a>
                 </div>
 
-                <div class="flex items-center">
+                <!-- Desktop Buttons -->
+                <div class="hidden lg:flex items-center">
                     <a href="#contact"
-                        class="hidden sm:block px-12 py-3 text-white border border-green3 hover:border-green2 hover:bg-green4 transition-all font-medium ">
+                        class="hidden sm:block px-12 py-3 text-white border-1 border-green4 hover:border-green2 hover:bg-green4 transition-all font-medium">
                         CONTACT
                     </a>
                     <a href="#connect"
@@ -64,176 +80,562 @@
                         LET'S CONNECT
                     </a>
                 </div>
-            </div>
-        </div>
 
-    
-    </nav> -->
-
-
-
-
-    <nav class="bg-[#012819] border-b border-green4 font-farro">
-    <div class="mx-auto">
-        <div class="flex items-center justify-between h-12">
-            <div class="flex items-center gap-4">
-                <!-- Desktop Sidebar Button (hidden on mobile) -->
-                <button id="desktop-sidebar"
-                    class="hidden lg:block text-green1 hover:text-green2 px-19 py-5 bg-green4 hover:bg-green3 cursor-pointer transition-colors"
-                    aria-label="Toggle menu">
-                    <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="42" height="2" fill="white" />
-                        <rect y="6" width="42" height="2" fill="white" />
-                    </svg>
-                </button>
-
-                <!-- Mobile Hamburger Button (visible only on mobile, LEFT of logo) -->
-                <button id="mobile-menu-toggle"
-                    class="lg:hidden text-white hover:text-green1 p-2 transition-colors"
-                    aria-label="Toggle mobile menu">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="4" width="24" height="2" fill="currentColor" />
-                        <rect y="11" width="24" height="2" fill="currentColor" />
-                        <rect y="18" width="24" height="2" fill="currentColor" />
-                    </svg>
-                </button>
-                
-                <a href="/" class="flex items-center">
-                    <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid">
-                </a>
-            </div>
-        
-           <!-- Desktop Menu -->
-<div class="hidden lg:flex items-center space-x-8">
-    <div class="desktop-dropdown">
-        <a href="#services" class="text-white hover:text-green1 transition-colors text-base font-medium desktop-dropdown-toggle">
-            SERVICES <span class="desktop-dropdown-icon">+</span>
-        </a>
-        <ul class="desktop-dropdown-menu">
-            <li><a href="#">Service Item 1</a></li>
-            <li><a href="#">Service Item 2</a></li>
-            <li><a href="#">Service Item 3</a></li>
-            <li><a href="#">Service Item 4</a></li>
-            <li><a href="#">Service Item 5</a></li>
-        </ul>
-    </div>
-    <a href="#works" class="text-white hover:text-green1 transition-colors text-base font-medium">
-        WORKS
-    </a>
-    <a href="#pricing" class="text-white hover:text-green1 transition-colors text-base font-medium">
-        PRICING
-    </a>
-    <a href="#about" class="text-white hover:text-green1 transition-colors text-base font-medium">
-        ABOUT
-    </a>
-    <a href="#blog" class="text-white hover:text-green1 transition-colors text-base font-medium">
-        BLOG
-    </a>
-</div>
-
-            <!-- Desktop Buttons -->
-            <div class="hidden lg:flex items-center">
-                <a href="#contact"
-                    class="hidden sm:block px-12 py-3 text-white border-1 border-green4 hover:border-green2 hover:bg-green4 transition-all font-medium">
-                    CONTACT
-                </a>
+                <!-- Mobile "LET'S CONNECT" button (visible on mobile) -->
                 <a href="#connect"
-                    class="px-12 py-3 bg-green1 text-green5 hover:bg-green2 transition-colors font-bold">
-                    LET'S CONNECT
+                    class="lg:hidden px-10 py-4 text-xs bg-green1 text-green4 hover:bg-green2 transition-colors font-bold">
+                    CONNECT
                 </a>
             </div>
-
-            <!-- Mobile "LET'S CONNECT" button (visible on mobile) -->
-            <a href="#connect"
-                class="lg:hidden px-10 py-4 text-xs bg-green1 text-green4 hover:bg-green2 transition-colors font-bold">
-                CONNECT
-            </a>
         </div>
-    </div>
 
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu" class="mobile-menu">
-        <div class="mobile-menu-content">
-            <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close menu">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </button>
-            
-            <ul class="mobile-menu-list">
-                <li class="mobile-menu-item">
-                    <a href="#services" class="mobile-menu-link">
-                        SERVICES
-                        <span class="dropdown-icon">+</span>
-                    </a>
-                    <ul class="mobile-submenu">
-                        <li><a href="#">Service Item 1</a></li>
-                        <li><a href="#">Service Item 2</a></li>
-                        <li><a href="#">Service Item 3</a></li>
-                        <li><a href="#">Service Item 4</a></li>
-                        <li><a href="#">Service Item 5</a></li>
-                    </ul>
-                </li>
-                <li class="mobile-menu-item">
-                    <a href="#works" class="mobile-menu-link">WORKS</a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a href="#pricing" class="mobile-menu-link">PRICING</a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a href="#about" class="mobile-menu-link">ABOUT</a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a href="#blog" class="mobile-menu-link">BLOG</a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a href="#contact" class="mobile-menu-link mobile-contact-btn">CONTACT</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
 
-
-
-
-
-   <!-- banner section start -->
-    <section class="banner bg-black min-h-screen font-farro">
-        <div class="container">
-            <div class="banner-wrapper pt-24">
-
-
-                <div class="banner-content max-w-295 w-full mx-auto ">
-                    <div class="flex items-center justify-center gap-2 pb-6 border-b border-[#2D5040]">
-                        <span class="w-2.5 h-2.5 rounded-[3px] bg-green2"></span>
-                        <p class="text-green2 text-base font-medium">Creative Design Agency</p>
-                    </div>
-                    <h1 class="text-center text-white text-8xl font-medium py-3 ">Shape your <span>next pixel</span></h1>
-                    <div class="max-w-182.5 w-full border-b border-[#2D5040] mx-auto"></div>
-                    <p class="text-center text-white text-[18px] leading-[140%] max-w-150 w-full mx-auto mt-6 font-normal ">Pixxen is built by expert designers, product thinkers, and creative technologists who believe every pixel has a purpose.</p>
-                    <div class=" flex justify-center text-center">
-                      <button class="service-button">
-        <div class="button-content">
-            <div class="icon-wrapper">
-                <svg class="arrow-icon" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-item">
+                        <a href="#services" class="mobile-menu-link">
+                            SERVICES
+                            <span class="dropdown-icon">+</span>
+                        </a>
+                        <ul class="mobile-submenu">
+                            <li><a href="#">Service Item 1</a></li>
+                            <li><a href="#">Service Item 2</a></li>
+                            <li><a href="#">Service Item 3</a></li>
+                            <li><a href="#">Service Item 4</a></li>
+                            <li><a href="#">Service Item 5</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="#works" class="mobile-menu-link">WORKS</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="#pricing" class="mobile-menu-link">PRICING</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="#about" class="mobile-menu-link">ABOUT</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="#blog" class="mobile-menu-link">BLOG</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="#contact" class="mobile-menu-link mobile-contact-btn">CONTACT</a>
+                    </li>
+                </ul>
             </div>
-            <span class="button-text">Our Services</span>
         </div>
-    </button>
+    </nav>
+
+
+
+
+
+    <!-- banner section start --><!-- banner section start -->
+    <section class="banner-wrapper bg-black min-h-screen font-farro relative">
+        <!-- 3D Shape with mouse effect -->
+        <img src="assets/images/3dshape.png" class="shape-3d img-fluid absolute bottom-0 left-1/2 z-10 -translate-x-1/2"
+            alt="">
+        <div class="banner-line-shape absolute bottom-0 left-0 z-30">
+            <svg width="500" height="484" viewBox="0 0 500 484" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="94" width="232" height="2" fill="white" />
+                <rect y="192" width="330" height="2" fill="white" />
+                <rect y="290" width="406" height="2" fill="white" />
+                <rect y="388" width="500" height="2" fill="white" />
+                <rect x="110" y="484" width="484" height="2" transform="rotate(-90 110 484)" fill="white" />
+                <rect x="208" y="484" width="412" height="2" transform="rotate(-90 208 484)" fill="white" />
+                <rect x="306" y="484" width="314" height="2" transform="rotate(-90 306 484)" fill="white" />
+                <rect x="404" y="484" width="194" height="2" transform="rotate(-90 404 484)" fill="white" />
+            </svg>
+        </div>
+
+        <!-- Background layer (sudhu eta move korbe) -->
+        <div class="banner"></div>
+
+        <!-- Content layer (eta fixed thakbe) -->
+        <div class="banner-content-wrapper">
+            <div class="container relative z-10">
+                <div class="pt-24">
+                    <div class="banner-content max-w-295 w-full mx-auto ">
+                        <div class="flex items-center justify-center gap-2 pb-6 border-b border-[#2D5040]">
+                            <span class="sm:w-2.5 w-[6px] sm:h-2.5 w-[6px] rounded-[3px] bg-green2"></span>
+                            <p class="text-green2 sm:text-base text-[12px] font-medium">Creative Design Agency</p>
+                        </div>
+                        <h1 class="text-center text-white lg:text-8xl md:text-6xl text-5xl font-medium py-3 leading120">Shape your <span
+                                class="text-green2"><br class="sm:hidden block">next pixel</span></h1>
+                        <div class="max-w-182.5 w-full border-b border-[#2D5040] mx-auto"></div>
+                        <p
+                            class="text-center text-white text-[18px] leading-[140%] max-w-150 w-full mx-auto mt-6 font-normal ">
+                            Pixxen is built by expert designers, product thinkers, and creative technologists who
+                            believe every pixel has a purpose.</p>
+                        <div class="flex justify-center text-center mt-8">
+                            <button
+                                class="mega-reveal-btn relative overflow-hidden cursor-pointer px-12 py-6 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
+                                <span class="bg-overlay absolute inset-0 z-1"></span>
+                                <div class="btn-inner relative z-2 flex items-center gap-3">
+                                    <div
+                                        class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                        <div class="icon-slider flex flex-row ">
+                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                    fill="var(--color-green1)" />
+                                            </svg>
+                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                    fill="var(--color-green1)" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="text-mask h-7.5 overflow-hidden flex flex-col">
+                                        <span class="t-up text-[24px] font-medium text-green4">OUR SERVICES</span>
+                                        <span class="t-down text-[24px] font-medium text-white">OUR SERVICES</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
-   <!-- banner section end -->
+    <!-- banner section end -->
 
 
-<script src="assets/js/script.js"></script>
+
+    <!-- service section end -->
+    <section class="service-section  bg-green5 py-12 sm:py-15 lg:py-24 relative svglinesection">
+        <div class="common-line-shape-animation absolute bottom-0 right-0 z-30">
+            <svg width="488" height="484" viewBox="0 0 488 484" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_94_1241)">
+                    <rect width="232" height="2" transform="matrix(-1 0 0 1 500 94)" fill="white" />
+                    <rect width="330" height="2" transform="matrix(-1 0 0 1 500 192)" fill="white" />
+                    <rect width="406" height="2" transform="matrix(-1 0 0 1 500 290)" fill="white" />
+                    <rect width="500" height="2" transform="matrix(-1 0 0 1 500 388)" fill="white" />
+                    <rect width="484" height="2" transform="matrix(0 -1 -1 0 390 484)" fill="white" />
+                    <rect width="412" height="2" transform="matrix(0 -1 -1 0 292 484)" fill="white" />
+                    <rect width="314" height="2" transform="matrix(0 -1 -1 0 194 484)" fill="white" />
+                    <rect width="194" height="2" transform="matrix(0 -1 -1 0 96 484)" fill="white" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_94_1241">
+                        <rect width="488" height="484" fill="white" transform="matrix(-1 0 0 1 488 0)" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+        </div>
+        <div class="container">
+            <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-12 mb-8">Pixxen Services
+            </h2>
+            <div class="flex flex-wrap service-wrap gap-8 items-center justify-center">
+                <a href="#" class="service-item p-8 flex flex-col justify-between gap-14 overflow-hidden">
+                    <div>
+                        <img src="assets/images/dashboarddesign.svg" class="img-fluid" alt="dashboard">
+
+
+                        <h3 class="text-white text-[32px] font-medium pt-8 pb-6">Dashboard design</h3>
+                        <p class="text-base text-white">Crafting brands that connect emotionally.</p>
+
+                    </div>
+                    <div class="flex items-center gap-2 details-wrap">
+                        <img src="assets/images/service-arrow.svg" class="img-fluid" alt="View details">
+                        <span class="text-[#7A8D86]">View details</span>
+                    </div>
+
+                </a>
+                <a href="#" class="service-item p-8 flex flex-col justify-between gap-14 overflow-hidden">
+                    <div>
+                        <img src="assets/images/dashboarddesign.svg" class="img-fluid" alt="dashboard">
+
+
+                        <h3 class="text-white text-[32px] font-medium pt-8 pb-6">Dashboard design</h3>
+                        <p class="text-base text-white">Crafting brands that connect emotionally.</p>
+
+                    </div>
+                    <div class="flex items-center gap-2 details-wrap">
+                        <img src="assets/images/service-arrow.svg" class="img-fluid" alt="View details">
+                        <span class="text-[#7A8D86]">View details</span>
+                    </div>
+
+                </a>
+                <a href="#" class="service-item p-8 flex flex-col justify-between gap-14 overflow-hidden">
+                    <div>
+                        <img src="assets/images/dashboarddesign.svg" class="img-fluid" alt="dashboard">
+
+
+                        <h3 class="text-white text-[32px] font-medium pt-8 pb-6">Dashboard design</h3>
+                        <p class="text-base text-white">Crafting brands that connect emotionally.</p>
+
+                    </div>
+                    <div class="flex items-center gap-2 details-wrap">
+                        <img src="assets/images/service-arrow.svg" class="img-fluid" alt="View details">
+                        <span class="text-[#7A8D86]">View details</span>
+                    </div>
+
+                </a>
+                <a href="#" class="service-item p-8 flex flex-col justify-between gap-14 overflow-hidden">
+                    <div>
+                        <img src="assets/images/dashboarddesign.svg" class="img-fluid" alt="dashboard">
+
+
+                        <h3 class="text-white text-[32px] font-medium pt-8 pb-6">Dashboard design</h3>
+                        <p class="text-base text-white">Crafting brands that connect emotionally.</p>
+
+                    </div>
+                    <div class="flex items-center gap-2 details-wrap">
+                        <img src="assets/images/service-arrow.svg" class="img-fluid" alt="View details">
+                        <span class="text-[#7A8D86]">View details</span>
+                    </div>
+
+                </a>
+                <a href="#" class="service-item p-8 flex flex-col justify-between gap-14 overflow-hidden">
+                    <div>
+                        <img src="assets/images/dashboarddesign.svg" class="img-fluid" alt="dashboard">
+
+
+                        <h3 class="text-white text-[32px] font-medium pt-8 pb-6">Dashboard design</h3>
+                        <p class="text-base text-white">Crafting brands that connect emotionally.</p>
+
+                    </div>
+                    <div class="flex items-center gap-2 details-wrap">
+                        <img src="assets/images/service-arrow.svg" class="img-fluid" alt="View details">
+                        <span class="text-[#7A8D86]">View details</span>
+                    </div>
+
+                </a>
+                <a href="#" class="service-item p-8 flex flex-col justify-between gap-14 overflow-hidden">
+                    <div>
+                        <img src="assets/images/dashboarddesign.svg" class="img-fluid" alt="dashboard">
+
+
+                        <h3 class="text-white text-[32px] font-medium pt-8 pb-6">Dashboard design</h3>
+                        <p class="text-base text-white">Crafting brands that connect emotionally.</p>
+
+                    </div>
+                    <div class="flex items-center gap-2 details-wrap">
+                        <img src="assets/images/service-arrow.svg" class="img-fluid" alt="View details">
+                        <span class="text-[#7A8D86]">View details</span>
+                    </div>
+
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- service section end -->
+
+
+
+
+
+    <!-- video testimonial section start -->
+    <section class="video-testimonails bg-green5 py-12 sm:py-15 lg:py-24 relative">
+        <div class="">
+            <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-12 mb-8">Success stories
+            </h2>
+
+
+
+
+
+
+
+            <div class="video-testimonial-wrapper">
+                <div class="splide" id="video-slider">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <!-- Slide 1 -->
+                            <li class="splide__slide">
+                                <div class="video-card relative rounded-2xl overflow-hidden  cursor-pointer h-100 md:h-142"
+                                    data-video-id="video1">
+                                    <!-- Video Element -->
+                                    <div class="video-wrapper absolute inset-0 z-[1]">
+                                        <video
+                                            class="video-element w-full h-full object-cover opacity-0 transition-opacity duration-400 ease-in-out"
+                                            muted loop playsinline preload="metadata">
+                                            <source src="https://pexnet.com/videos/video-content-1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                    <!-- Thumbnail -->
+                                    <div
+                                        class="thumbnail-wrapper absolute inset-0 z-[2] transition-opacity duration-400 ease-in-out">
+                                        <img src="assets/images/video-thumbnail4.webp" alt="Thumbnail"
+                                            class="thumbnail-image w-full h-full object-cover">
+                                    </div>
+
+                                    <!-- Play Button -->
+                                    <div
+                                        class="play-button absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-16 md:h-16 z-20 ">
+                                        <img src="assets/images/playbtn.svg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <!-- Card Content -->
+                                    <div class="card-footer absolute bottom-0 left-0 right-0 p-6 z-[4] ">
+
+                                        <div class="card-info flex flex-col gap-3">
+                                            <div class="company-logo ">
+                                                <img src="assets/images/pixxen-logo.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <p class="text-white text-[14px]">Pixxen’s design process transformed our
+                                                digital product. We saw user engagement jump by 45%.</p>
+                                            <div class="flex flex-col gap-1">
+                                                <h4 class="text-base font-medium text-white">Mustafizur Rahman</h4>
+                                                <p class="text-[#8D9C96] text-[12px]">Founder & CEO</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Slide 2 -->
+                            <li class="splide__slide">
+                                <div class="video-card relative rounded-2xl overflow-hidden  cursor-pointer h-100 md:h-142"
+                                    data-video-id="video2">
+                                    <!-- Video Element -->
+                                    <div class="video-wrapper absolute inset-0 z-[1]">
+                                        <video
+                                            class="video-element w-full h-full object-cover opacity-0 transition-opacity duration-400 ease-in-out"
+                                            muted loop playsinline preload="metadata">
+                                            <source src="https://pexnet.com/videos/video-content-2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                    <!-- Thumbnail -->
+                                    <div
+                                        class="thumbnail-wrapper absolute inset-0 z-[2] transition-opacity duration-400 ease-in-out">
+                                        <img src="assets/images/video-thumbnail1.webp" alt="Thumbnail"
+                                            class="thumbnail-image w-full h-full object-cover">
+                                    </div>
+
+                                    <!-- Play Button -->
+                                    <div
+                                        class="play-button absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-16 md:h-16 z-20 ">
+                                        <img src="assets/images/playbtn.svg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <!-- Card Content -->
+                                    <div class="card-footer absolute bottom-0 left-0 right-0 p-6 z-[4] ">
+
+                                        <div class="card-info flex flex-col gap-3">
+                                            <div class="company-logo ">
+                                                <img src="assets/images/pixxen-logo.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <p class="text-white text-[14px]">Pixxen’s design process transformed our
+                                                digital product. We saw user engagement jump by 45%.</p>
+                                            <div class="flex flex-col gap-1">
+                                                <h4 class="text-base font-medium text-white">Mustafizur Rahman</h4>
+                                                <p class="text-[#8D9C96] text-[12px]">Founder & CEO</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Slide 3 -->
+                            <li class="splide__slide">
+                                <div class="video-card relative rounded-2xl overflow-hidden  cursor-pointer h-100 md:h-142"
+                                    data-video-id="video3">
+                                    <!-- Video Element -->
+                                    <div class="video-wrapper absolute inset-0 z-[1]">
+                                        <video
+                                            class="video-element w-full h-full object-cover opacity-0 transition-opacity duration-400 ease-in-out"
+                                            muted loop playsinline preload="metadata">
+                                            <source src="https://pexnet.com/videos/video-content-4.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                    <!-- Thumbnail -->
+                                    <div
+                                        class="thumbnail-wrapper absolute inset-0 z-[2] transition-opacity duration-400 ease-in-out">
+                                        <img src="assets/images/video-thumbnail2.webp" alt="Thumbnail"
+                                            class="thumbnail-image w-full h-full object-cover">
+                                    </div>
+
+                                    <!-- Play Button -->
+                                    <div
+                                        class="play-button absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-16 md:h-16 z-20 ">
+                                        <img src="assets/images/playbtn.svg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <!-- Card Content -->
+                                    <div class="card-footer absolute bottom-0 left-0 right-0 p-6 z-[4] ">
+
+                                        <div class="card-info flex flex-col gap-3">
+                                            <div class="company-logo ">
+                                                <img src="assets/images/pixxen-logo.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <p class="text-white text-[14px]">Pixxen’s design process transformed our
+                                                digital product. We saw user engagement jump by 45%.</p>
+                                            <div class="flex flex-col gap-1">
+                                                <h4 class="text-base font-medium text-white">Mustafizur Rahman</h4>
+                                                <p class="text-[#8D9C96] text-[12px]">Founder & CEO</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Slide 4 -->
+                            <li class="splide__slide">
+                                <div class="video-card relative rounded-2xl overflow-hidden  cursor-pointer h-100 md:h-142"
+                                    data-video-id="video4">
+                                    <!-- Video Element -->
+                                    <div class="video-wrapper absolute inset-0 z-[1]">
+                                        <video
+                                            class="video-element w-full h-full object-cover opacity-0 transition-opacity duration-400 ease-in-out"
+                                            muted loop playsinline preload="metadata">
+                                            <source src="https://pexnet.com/videos/video-content-6.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                    <!-- Thumbnail -->
+                                    <div
+                                        class="thumbnail-wrapper absolute inset-0 z-[2] transition-opacity duration-400 ease-in-out">
+                                        <img src="assets/images/video-thumbnail3.webp" alt="Thumbnail"
+                                            class="thumbnail-image w-full h-full object-cover">
+                                    </div>
+
+                                    <!-- Play Button -->
+                                    <div
+                                        class="play-button absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-16 md:h-16 z-20 ">
+                                        <img src="assets/images/playbtn.svg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <!-- Card Content -->
+                                    <div class="card-footer absolute bottom-0 left-0 right-0 p-6 z-[4] ">
+
+                                        <div class="card-info flex flex-col gap-3">
+                                            <div class="company-logo ">
+                                                 <img src="assets/images/pixxen-logo.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <p class="text-white text-[14px]">Pixxen’s design process transformed our
+                                                digital product. We saw user engagement jump by 45%.</p>
+                                            <div class="flex flex-col gap-1">
+                                                <h4 class="text-base font-medium text-white">Mustafizur Rahman</h4>
+                                                <p class="text-[#8D9C96] text-[12px]">Founder & CEO</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Slide 5 -->
+                            <li class="splide__slide">
+                                <div class="video-card relative rounded-2xl overflow-hidden  cursor-pointer h-100 md:h-142"
+                                    data-video-id="video5">
+                                    <!-- Video Element -->
+                                    <div class="video-wrapper absolute inset-0 z-[1]">
+                                        <video
+                                            class="video-element w-full h-full object-cover opacity-0 transition-opacity duration-400 ease-in-out"
+                                            muted loop playsinline preload="metadata">
+                                            <source src="https://pexnet.com/videos/video-content-7.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                    <!-- Thumbnail -->
+                                    <div
+                                        class="thumbnail-wrapper absolute inset-0 z-[2] transition-opacity duration-400 ease-in-out">
+                                        <img src="assets/images/video-thumbnail4.webp" alt="Thumbnail"
+                                            class="thumbnail-image w-full h-full object-cover">
+                                    </div>
+
+                                    <!-- Play Button -->
+                                    <div
+                                        class="play-button absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-16 md:h-16 z-20 ">
+                                        <img src="assets/images/playbtn.svg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <!-- Card Content -->
+                                    <div class="card-footer absolute bottom-0 left-0 right-0 p-6 z-[4] ">
+
+                                        <div class="card-info flex flex-col gap-3">
+                                            <div class="company-logo ">
+                                                <img src="assets/images/pixxen-logo.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <p class="text-white text-[14px]">Pixxen’s design process transformed our
+                                                digital product. We saw user engagement jump by 45%.</p>
+                                            <div class="flex flex-col gap-1">
+                                                <h4 class="text-base font-medium text-white">Mustafizur Rahman</h4>
+                                                <p class="text-[#8D9C96] text-[12px]">Founder & CEO</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Slide 6 -->
+                            <li class="splide__slide">
+                                <div class="video-card relative rounded-2xl overflow-hidden  cursor-pointer h-100 md:h-142"
+                                    data-video-id="video6">
+                                    <!-- Video Element -->
+                                    <div class="video-wrapper absolute inset-0 z-[1]">
+                                        <video
+                                            class="video-element w-full h-full object-cover opacity-0 transition-opacity duration-400 ease-in-out"
+                                            muted loop playsinline preload="metadata">
+                                            <source src="https://pexnet.com/videos/video-content-8.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                    <!-- Thumbnail -->
+                                    <div
+                                        class="thumbnail-wrapper absolute inset-0 z-[2] transition-opacity duration-400 ease-in-out">
+                                        <img src="assets/images/video-thumbnail2.webp" alt="Thumbnail"
+                                            class="thumbnail-image w-full h-full object-cover">
+                                    </div>
+
+                                    <!-- Play Button -->
+                                    <div
+                                        class="play-button absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-16 md:h-16 z-20 ">
+                                        <img src="assets/images/playbtn.svg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <!-- Card Content -->
+                                    <div class="card-footer absolute bottom-0 left-0 right-0 p-6 z-[4] ">
+
+                                        <div class="card-info flex flex-col gap-3">
+                                            <div class="company-logo ">
+                                                <img src="assets/images/pixxen-logo.svg" class="img-fluid" alt="">
+                                            </div>
+                                            <p class="text-white text-[14px]">Pixxen’s design process transformed our
+                                                digital product. We saw user engagement jump by 45%.</p>
+                                            <div class="flex flex-col gap-1">
+                                                <h4 class="text-base font-medium text-white">Mustafizur Rahman</h4>
+                                                <p class="text-[#8D9C96] text-[12px]">Founder & CEO</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+    <!-- video testimonial section end -->
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
