@@ -400,7 +400,7 @@ html {
 
 @media (max-width:767px) {
     .service-item{
-    width: calc(50% - 16px);
+    width: calc(50% - 6px);
     border-radius: 16px;
 }
 }
