@@ -312,7 +312,11 @@ html {
     left: 0;
     z-index: 1;
 }
-
+@media (max-width:1400px) {
+    .banner {
+        background-size: cover;
+    }
+}
 /* Content layer - eta fixed thakbe */
 .banner-content-wrapper {
     position: relative;
@@ -377,9 +381,7 @@ html {
 
 /* service start */
 /* service start */
-.service-wrap{
 
-}
 .service-item{
     border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.16);
@@ -389,6 +391,49 @@ html {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     width: calc(25% - 30px);
 }
+
+@media (max-width:991px) {
+    .service-item{
+    width: calc(33% - 20px);
+}
+}
+
+@media (max-width:767px) {
+    .service-item{
+    width: calc(50% - 16px);
+    border-radius: 16px;
+}
+}
+@media (max-width:1400px) {
+.service-section .common-line-shape-animation svg{
+    max-width: 400px;
+    height: 400px;
+    width: 100%;
+}
+}
+@media (max-width:1000px) {
+.service-section .common-line-shape-animation svg{
+    max-width: 250px;
+    height: 250px;
+    width: 100%;
+    right: 0;
+}
+.service-section{
+    padding-bottom: 250px ;
+}
+}
+@media (max-width:767px) {
+.service-section .common-line-shape-animation svg{
+    max-width: 168px;
+    height: 168px;
+    width: 100%;
+    right: 0;
+}
+.service-section{
+    padding-bottom: 168px ;
+}
+}
+
 
 .service-item::before{
     content: '';
@@ -418,6 +463,12 @@ html {
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     z-index: 2;
     /* opacity: 0.7; */
+}
+
+@media (max-width:767px) {
+.service-item::before{
+    border-radius: 16px;
+}
 }
 
 .service-item:hover::before{
