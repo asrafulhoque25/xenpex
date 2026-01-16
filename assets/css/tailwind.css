@@ -624,3 +624,175 @@ html {
 
 
 /* video testimonial end */
+
+
+
+/* Our work start */
+ .steps-section {
+            height: auto;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            overflow: visible;
+            background-color: var(--color-green5);
+        }
+
+        .steps-cont {
+            justify-content: center;
+            display: flex;
+            overflow: visible;
+            max-width: 1550px;
+            margin: 0 auto;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        .steps-left {
+            flex: 0 auto;
+            align-self: auto;
+            width: 40%;
+            height: auto;
+            min-height: 100%;
+            margin-top: 0;
+            padding-right: 2rem;
+        }
+
+        .left-content {
+            height: auto;
+            position: sticky;
+            top: 100px;
+            min-height: 70vh;
+        }
+
+        .steps-right {
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            height: auto;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .step-content {
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+            min-height: 200px;
+            margin-bottom: 2rem;
+            display: flex;
+            position: static;
+            opacity: 1;
+        }
+
+        @media screen and (max-width: 991px) {
+            .steps-cont {
+                flex-direction: column;
+            }
+
+            .steps-left,
+            .steps-right {
+                width: 100%;
+            }
+
+            .left-content {
+                position: relative;
+                top: auto;
+                transform: none;
+                margin-bottom: 2rem;
+            }
+        }
+
+
+        .portfolio-work-item .work-item-overlay{    
+              background: linear-gradient(180deg, rgba(0, 36, 23, 0.00) 0%, #0024178f 100%);
+            -webkit-backdrop-filter: blur(32px);
+            backdrop-filter: blur(32px);
+            -webkit-mask-image: linear-gradient(to top, black 0%, black 40%, transparent 100%);
+            mask-image: linear-gradient(to top, black 0%, #000000 40%, transparent 100%);
+            transition: .3s all linear;
+            height: 369px;
+            align-items: end;
+            align-content: end;
+        }
+
+
+         @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .portfolio-work-item:hover .work-item-overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .portfolio-work-item:hover .all-portfolio-info {
+            opacity: 1;
+            visibility: visible;
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+
+        .portfolio-work-item:hover .work-box-info:nth-child(1) {
+            animation: slideInLeft 0.6s ease-out 0.2s forwards;
+            opacity: 0;
+        }
+
+        .portfolio-work-item:hover .work-box-info:nth-child(2) {
+            animation: slideInLeft 0.6s ease-out 0.35s forwards;
+            opacity: 0;
+        }
+
+        .portfolio-work-item:hover .work-box-info:nth-child(3) {
+            animation: slideInLeft 0.6s ease-out 0.5s forwards;
+            opacity: 0;
+        }
+
+        .work-item-overlay {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .all-portfolio-info {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .ourwork-wrap{
+            min-height: 416px;
+        }
+/* our work end */
+
+
+
+/* work progress start */
+        .process-item { opacity: 0; transform: translateY(20px); }
+/* work grogress end */
+
+
+
+/* counter start */
+.overview-counter{
+    background-image: url(../images/counter.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+/* counter end */

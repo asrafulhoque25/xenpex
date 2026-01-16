@@ -275,3 +275,77 @@ splide.mount(window.splide.Extensions);
         });
 //video testimonial end
 
+
+
+
+
+//  work progress start
+gsap.registerPlugin(ScrollTrigger);
+
+const path = document.querySelector("#draw-path");
+if (path) {
+    const pathLength = path.getTotalLength();
+
+    // Initial Stroke setup
+    gsap.set(path, { 
+        strokeDasharray: pathLength, 
+        strokeDashoffset: pathLength 
+    });
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".work-progress",
+            start: "top 60%",         
+            end: "bottom 20%",
+            toggleActions: "play none none none"
+        }
+    });
+
+    // 1. Line Drawing Animation
+    tl.to(path, {
+        strokeDashoffset: 0,
+        duration: 4,
+        ease: "power1.inOut"
+    })
+    // 2. Content Stagger Animation
+    .to(".process-item", {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        stagger: 0.7, 
+        ease: "power2.out"
+    }, 0.5); 
+}
+// work progress end
+
+
+
+
+// overview counter start
+if (document.querySelector('.overview-counter')) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const counters = document.querySelectorAll('.counter');
+
+    counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+
+        gsap.to(counter, {
+            innerText: target,
+            duration: 2,
+            ease: "power2.out",
+            snap: { innerText: 1 }, 
+            scrollTrigger: {
+                trigger: counter,
+                start: "top 90%", 
+                toggleActions: "play none none none"
+            },
+            onUpdate: function () {
+                counter.innerHTML = Math.ceil(this.targets()[0].innerText);
+            }
+        });
+    });
+
+}
+
+// overview counter end
