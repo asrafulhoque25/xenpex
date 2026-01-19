@@ -349,3 +349,123 @@ if (document.querySelector('.overview-counter')) {
 }
 
 // overview counter end
+
+
+
+// testimonial start
+    document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Splide
+            const splide = new Splide('#testimonial-slider', {
+                type: 'loop',
+                perPage: 3,
+                perMove: 1,
+                gap: '2rem',
+                padding: '0',
+                arrows: false,
+                pagination: false,
+                autoplay: false,
+                breakpoints: {
+                    1024: {
+                        perPage: 2,
+                        gap: '1.5rem',
+                    },
+                    768: {
+                        perPage: 1,
+                        gap: '1rem',
+                    }
+                }
+            });
+
+            splide.mount();
+
+            // Custom arrow controls
+            const prevArrow = document.getElementById('prev-arrow');
+            const nextArrow = document.getElementById('next-arrow');
+
+            prevArrow.addEventListener('click', function() {
+                splide.go('<');
+            });
+
+            nextArrow.addEventListener('click', function() {
+                splide.go('>');
+            });
+        });
+// testimonial end
+
+
+
+// faq start
+  document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            // Initialize all items as closed first
+            faqItems.forEach((item) => {
+                const answer = item.querySelector('.faq-answer');
+                gsap.set(answer, { height: 0 });
+            });
+
+            // Then open the first item
+            const firstItem = faqItems[0];
+            const firstAnswer = firstItem.querySelector('.faq-answer');
+            const firstBorder = firstItem.querySelector('.green-border');
+            const firstIcon = firstItem.querySelector('.plus-icon');
+            
+            gsap.set(firstAnswer, { height: 'auto' });
+            gsap.set(firstBorder, { opacity: 1 });
+            gsap.set(firstIcon, { rotation: 45 });
+
+            // Click handler
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const border = item.querySelector('.green-border');
+                const icon = item.querySelector('.plus-icon');
+                
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all items
+                    faqItems.forEach(otherItem => {
+                        const otherAnswer = otherItem.querySelector('.faq-answer');
+                        const otherBorder = otherItem.querySelector('.green-border');
+                        const otherIcon = otherItem.querySelector('.plus-icon');
+                        
+                        otherItem.classList.remove('active');
+                        gsap.to(otherAnswer, {
+                            height: 0,
+                            duration: 0.4,
+                            ease: 'power2.inOut'
+                        });
+                        gsap.to(otherBorder, {
+                            opacity: 0,
+                            duration: 0.3
+                        });
+                        gsap.to(otherIcon, {
+                            rotation: 0,
+                            duration: 0.3,
+                            ease: 'power2.inOut'
+                        });
+                    });
+                    
+                    // If clicked item wasn't active, open it
+                    if (!isActive) {
+                        item.classList.add('active');
+                        gsap.to(answer, {
+                            height: 'auto',
+                            duration: 0.4,
+                            ease: 'power2.inOut'
+                        });
+                        gsap.to(border, {
+                            opacity: 1,
+                            duration: 0.3
+                        });
+                        gsap.to(icon, {
+                            rotation: 45,
+                            duration: 0.3,
+                            ease: 'power2.inOut'
+                        });
+                    }
+                });
+            });
+        });
+// faq end

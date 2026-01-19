@@ -41,6 +41,9 @@ html {
 .leading120{
     line-height: 120%;
 }
+.leading150{
+    line-height: 150%;
+}
 
 
 /* navbar start */
@@ -796,3 +799,200 @@ html {
     
 }
 /* counter end */
+
+
+/* marquee start */
+ .marquee-section {
+           
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .marquee-stripe {
+            overflow: hidden;
+            transform: rotate(-2deg);
+            transform-origin: center;
+            overflow: hidden;
+            margin: 0 -20px;
+            padding: 1rem 0;
+        }
+        
+        /* Stripe rotation classes */
+        .marquee-stripe.rotate-2 {
+            transform: rotate(-5deg);
+        }
+        
+        .marquee-stripe.rotate-4 {
+            transform: rotate(-4deg);
+        }
+        
+        .marquee-stripe.rotate-6 {
+            transform: rotate(-6deg);
+        }
+        
+        .marquee-stripe.rotate-10 {
+            transform: rotate(-4deg);
+        }
+        
+        /* Marquee Container */
+        .marquee-container {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 0;
+        }
+        
+        /* Counter-rotate wrapper */
+        .marquee-stripe.rotate-2 .marquee-container {
+            transform: rotate(0deg);
+        }
+        
+        .marquee-stripe.rotate-4 .marquee-container {
+            transform: rotate(8deg);
+        }
+        
+        .marquee-stripe.rotate-6 .marquee-container {
+            transform: rotate(2deg);
+        }
+        
+        .marquee-stripe.rotate-10 .marquee-container {
+            transform: rotate(0deg);
+        }
+        
+        /* Marquee Content */
+        .marquee-content {
+            display: flex;
+            animation: scroll-left 20s linear infinite;
+            gap: 1rem;
+        }
+        
+        /* RTL Animation */
+        .marquee-container.rtl .marquee-content {
+            animation: scroll-right 20s linear infinite;
+        }
+        
+        /* Marquee Item */
+        .marquee-item {
+            white-space: nowrap;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .marquee-dot {
+            width: 10px;
+            height: 10px;
+            background-color: var(--color-green1);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        
+   
+        
+        /* Left to Right Animation */
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Right to Left Animation */
+        @keyframes scroll-right {
+            0% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        
+        /* Pause on hover (optional) */
+        .marquee-container:hover .marquee-content {
+            animation-play-state: paused;
+        }
+/* marquee end */
+
+/* tools start */
+.tools-technology{
+    background-image: url(../images/alltools.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+/* tools end */
+
+
+
+/* testimonial start */
+ /* Custom arrow buttons */
+ 
+
+        .custom-arrow {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .custom-arrow:hover {
+            background: #065136;
+        }
+
+        .custom-arrow:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .custom-arrow svg {
+            transition: fill 0.3s ease;
+        }
+
+        .custom-arrow:hover svg * {
+            fill: var(--color-green1);
+        }
+
+     
+/* testimonial end */
+
+
+
+/* faq start */
+     .faq-answer {
+            overflow: hidden;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #29473C;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .answer-content p {
+            position: relative;
+        }
+
+        .answer-content p::after {
+            content: '';
+            position: absolute;
+            top:0;
+            bottom:0;
+            left:-25px;
+            width:1px;
+            background-color: #19CC61;
+        }
+
+        
+        .plus-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .plus-icon {
+            transform: rotate(45deg);
+        }
+/* faq end */
