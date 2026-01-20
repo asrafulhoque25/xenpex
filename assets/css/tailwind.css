@@ -8,6 +8,7 @@
     --color-green3: #19914A;
     --color-green4: #065136;
     --color-green5: #002417;
+    --color-dark-shade3: #29473C;
     --font-farro: "Farro", sans-serif;
 }
 
@@ -358,6 +359,9 @@ html {
 
 .mega-reveal-btn:hover .icon-slider {
     transform: translateX(20px);
+}
+.mega-reveal-btn:hover .icon-circle {
+    background-color: var(--color-green3);
 }
 
 /* Text animation */
@@ -996,3 +1000,17 @@ html {
             transform: rotate(45deg);
         }
 /* faq end */
+
+
+
+/* blog start */
+.blogitem .readmore p{
+    transition: .3s all linear;
+}
+.blogitem:hover .readmore img {
+ filter: brightness(0) saturate(100%) invert(88%) sepia(39%) saturate(2279%) hue-rotate(26deg) brightness(102%) contrast(98%);
+}
+.blogitem:hover .readmore p {
+  color: #99FE00;
+}
+/* blog end */
