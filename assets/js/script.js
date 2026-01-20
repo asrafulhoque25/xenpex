@@ -295,7 +295,7 @@ if (path) {
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: ".work-progress",
-            start: "top 60%",         
+            start: "top 80%",         
             end: "bottom 20%",
             toggleActions: "play none none none"
         }
@@ -316,6 +316,8 @@ if (path) {
         ease: "power2.out"
     }, 0.5); 
 }
+
+
 // work progress end
 
 
@@ -469,3 +471,160 @@ if (document.querySelector('.overview-counter')) {
             });
         });
 // faq end
+
+
+
+
+
+
+// cta start
+gsap.registerPlugin(ScrollTrigger);
+
+// Function to apply gradient animation to any section
+function applyGradientAnimation(sectionSelector) {
+  const section = document.querySelector(sectionSelector);
+  
+  if (!section) return; // section na thakle return
+  
+  // Multiple gradient layers for depth
+  const gradientOverlay1 = document.createElement('div');
+  gradientOverlay1.style.cssText = `
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background: radial-gradient(50% 27.56% at 50% -10%, rgba(6, 81, 54, 0.8) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(40px);
+  `;
+
+  const gradientOverlay2 = document.createElement('div');
+  gradientOverlay2.style.cssText = `
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background: radial-gradient(50% 27.56% at 50% 0%, #065136 0%, #002417 100%);
+    pointer-events: none;
+    z-index: 0;
+  `;
+
+  section.insertBefore(gradientOverlay1, section.firstChild);
+  section.insertBefore(gradientOverlay2, section.firstChild);
+
+  // Master timeline
+  const masterTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: sectionSelector,
+      start: 'top 75%',
+      end: 'top 25%',
+      scrub: 2,
+      // markers: true
+    }
+  });
+
+  // Layer 1 - Blur glow effect
+  masterTl.to(gradientOverlay1, {
+    opacity: 0.6,
+    scale: 1.1,
+    duration: 1,
+    ease: 'power2.inOut'
+  }, 0);
+
+  // Layer 2 - Main gradient
+  masterTl.to(gradientOverlay2, {
+    opacity: 1,
+    backgroundPosition: '50% 8%',
+    duration: 1,
+    ease: 'power2.inOut'
+  }, 0);
+
+  // Content gentle lift
+  const contentWrapper = section.querySelector('.cta-wrap, .teamwrap, .workprocess-wrap  > div');
+  if (contentWrapper) {
+    masterTl.from(contentWrapper, {
+      y: 25,
+      opacity: 0.85,
+      duration: 1,
+      ease: 'power1.out'
+    }, 0.2);
+  }
+}
+
+// Apply animation to multiple sections
+applyGradientAnimation('.cta-section');
+applyGradientAnimation('.teamsection');
+applyGradientAnimation('.work-progress');
+// applyGradientAnimation('.career-section');
+// cta end
+
+
+
+// tools animaiton bg start
+gsap.registerPlugin(ScrollTrigger);
+
+function applyBackgroundImageTransition(sectionSelector, imageUrl) {
+  const section = document.querySelector(sectionSelector);
+  
+  if (!section) {
+    console.warn(`Section not found: ${sectionSelector}`);
+    return;
+  }
+  
+
+  const imageOverlay = document.createElement('div');
+  imageOverlay.style.cssText = `
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background-image: url(${imageUrl});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(20px);
+    transform: scale(1.1);
+  `;
+  
+  section.insertBefore(imageOverlay, section.firstChild);
+  
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: sectionSelector,
+      start: 'bottom 95%', 
+      end: 'bottom 88%',  
+      scrub: 2,
+      markers: false 
+    }
+  });
+  
+  tl.to(imageOverlay, {
+    opacity: 1,
+    filter: 'blur(0px)',
+    scale: 1,
+    duration: 1,
+    ease: 'power2.inOut'
+  });
+  
+
+  const contentWrapper = section.querySelector('.toolswrap');
+  if (contentWrapper) {
+    gsap.from(contentWrapper, {
+      scrollTrigger: {
+        trigger: sectionSelector,
+        start: 'bottom 75%',
+        end: 'bottom 35%',
+        scrub: 1.5
+      },
+      y: 30,
+      opacity: 0.8,
+      duration: 1,
+      ease: 'power1.out'
+    });
+  }
+}
+
+
+applyBackgroundImageTransition('.tools-technology', 'assets/images/alltools.webp');
+// tools animation bg end
