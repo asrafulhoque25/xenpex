@@ -282,41 +282,43 @@ splide.mount(window.splide.Extensions);
 //  work progress start
 gsap.registerPlugin(ScrollTrigger);
 
-const path = document.querySelector("#draw-path");
-if (path) {
-    const pathLength = path.getTotalLength();
+// Only run on devices 1024px and above
+if (window.innerWidth >= 1024) {
+    const path = document.querySelector("#draw-path");
+    if (path) {
+        const pathLength = path.getTotalLength();
 
-    // Initial Stroke setup
-    gsap.set(path, { 
-        strokeDasharray: pathLength, 
-        strokeDashoffset: pathLength 
-    });
+        // Initial Stroke setup
+        gsap.set(path, { 
+            strokeDasharray: pathLength, 
+            strokeDashoffset: pathLength 
+        });
 
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".work-progress",
-            start: "top 80%",         
-            end: "bottom 20%",
-            toggleActions: "play none none none"
-        }
-    });
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".work-progress",
+                start: "top 80%",         
+                end: "bottom 20%",
+                toggleActions: "play none none none"
+            }
+        });
 
-    // 1. Line Drawing Animation
-    tl.to(path, {
-        strokeDashoffset: 0,
-        duration: 4,
-        ease: "power1.inOut"
-    })
-    // 2. Content Stagger Animation
-    .to(".process-item", {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        stagger: 0.7, 
-        ease: "power2.out"
-    }, 0.5); 
+        // 1. Line Drawing Animation
+        tl.to(path, {
+            strokeDashoffset: 0,
+            duration: 4,
+            ease: "power1.inOut"
+        })
+        // 2. Content Stagger Animation
+        .to(".process-item", {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: 0.7, 
+            ease: "power2.out"
+        }, 0.5); 
+    }
 }
-
 
 // work progress end
 
