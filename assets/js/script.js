@@ -229,50 +229,68 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 splide.mount(window.splide.Extensions);
-        // Video Hover Animation Logic
-        document.addEventListener('DOMContentLoaded', function() {
-            const videoCards = document.querySelectorAll('.video-card');
 
+        // Video Hover Animation Logic
+       // Video Hover Animation Logic
+document.addEventListener('DOMContentLoaded', function() {
+    const videoCards = document.querySelectorAll('.video-card');
+
+    // Preload and prepare videos immediately on page load
+    videoCards.forEach(card => {
+        const video = card.querySelector('.video-element');
+        
+        // Set video properties for better autoplay compatibility
+        video.muted = true; // Important for autoplay policy
+        video.setAttribute('playsinline', '');
+        video.load(); // Preload the video
+        
+        let isPlaying = false;
+
+        // Hover In - Play Video
+        card.addEventListener('mouseenter', function() {
+            if (!isPlaying) {
+                video.currentTime = 0;
+                video.muted = true; // Ensure muted
+                video.play().catch(err => {
+                    console.log('Video play error:', err);
+                    // Fallback: try playing after a brief delay
+                    setTimeout(() => {
+                        video.play().catch(e => console.log('Retry failed:', e));
+                    }, 100);
+                });
+                isPlaying = true;
+            }
+        });
+
+        // Hover Out - Pause Video
+        card.addEventListener('mouseleave', function() {
+            if (isPlaying) {
+                video.pause();
+                video.currentTime = 0;
+                isPlaying = false;
+            }
+        });
+
+        // Handle video end
+        video.addEventListener('ended', function() {
+            if (isPlaying) {
+                video.currentTime = 0;
+                video.play();
+            }
+        });
+    });
+
+    // Stop all videos when slider moves
+    if (typeof splide !== 'undefined') {
+        splide.on('move', function() {
             videoCards.forEach(card => {
                 const video = card.querySelector('.video-element');
-                let isPlaying = false;
-
-                // Hover In - Play Video
-                card.addEventListener('mouseenter', function() {
-                    if (!isPlaying) {
-                        video.currentTime = 0; // Start from beginning
-                        video.play().catch(err => console.log('Video play error:', err));
-                        isPlaying = true;
-                    }
-                });
-
-                // Hover Out - Pause Video
-                card.addEventListener('mouseleave', function() {
-                    if (isPlaying) {
-                        video.pause();
-                        video.currentTime = 0; // Reset to start
-                        isPlaying = false;
-                    }
-                });
-
-                // Handle video end (loop is set, but this is a fallback)
-                video.addEventListener('ended', function() {
-                    if (isPlaying) {
-                        video.currentTime = 0;
-                        video.play();
-                    }
-                });
-            });
-
-            // Stop all videos when slider moves
-            splide.on('move', function() {
-                videoCards.forEach(card => {
-                    const video = card.querySelector('.video-element');
-                    video.pause();
-                    video.currentTime = 0;
-                });
+                video.pause();
+                video.currentTime = 0;
             });
         });
+    }
+});
 //video testimonial end
 
 
