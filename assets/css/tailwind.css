@@ -348,6 +348,26 @@ html {
 }
 
 
+.subbanner-wrapper{
+    overflow: hidden;
+     position: relative;
+     min-height: 85vh;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+}
+.subbanner-wrapper .banner-content-wrapper{
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 85vh;
+}
+
+.subbanner-wrapper {
+    background-image: url(../images/bannerimg.webp);
+    background-size: cover;
+    min-height: 85vh;
+}
 /* Background Reveal */
 .banner-wrapper .bg-overlay {
     background-color: var(--color-green5);
@@ -650,6 +670,38 @@ html {
             overflow: visible;
             background-color: var(--color-green5);
         }
+
+
+
+        @media (max-width:1400px) {
+.steps-section .common-line-shape-animation img{
+    max-width: 400px;
+    height: 400px;
+    width: 100%;
+}
+}
+@media (max-width:1000px) {
+.steps-section .common-line-shape-animation img{
+    max-width: 250px;
+    height: 250px;
+    width: 100%;
+    left: 0;
+}
+.steps-section{
+    padding-bottom: 250px ;
+}
+}
+@media (max-width:767px) {
+.steps-section .common-line-shape-animation img{
+    max-width: 168px;
+    height: 168px;
+    width: 100%;
+    left: 0;
+}
+.steps-section{
+    padding-bottom: 168px ;
+}
+}
 
         .steps-cont {
             justify-content: center;
@@ -963,14 +1015,30 @@ html {
         }
 /* marquee end */
 
-/* tools start */
-/* .tools-technology{
-    background-image: url(../images/alltools.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-} */
-/* tools end */
+
+/* team start */
+
+.teammembers .team-member{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: calc(25% - 30px);
+}
+
+@media (max-width:991px) {
+    .teammembers .team-member{
+    width: calc(33% - 20px);
+}
+}
+
+@media (max-width:767px) {
+   .teammembers .team-member{
+    width: calc(50% - 6px);
+    border-radius: 16px;
+}
+}
+
+/* team end */
 
 
 
@@ -1056,3 +1124,50 @@ html {
   color: #99FE00;
 }
 /* blog end */
+
+
+/* testimonial team */
+.team-leader-testimonial-wrap{
+    background-image: url('../images/testmonialbg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.team-video-section .video-thumbnail {
+    background-image: url('../images/teamvideo-thumbnail.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s ease;
+}
+
+.team-video-section .video-thumbnail.hidden-fade {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.team-video-section .play-button {
+    transition: transform 0.3s ease;
+}
+
+.team-video-section .play-button:hover {
+    transform: scale(1.1);
+}
+
+.team-video-section .play-button.hidden-scale {
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.team-video-section video {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-video-section video.visible {
+    opacity: 1;
+}
+/* testimonial end */

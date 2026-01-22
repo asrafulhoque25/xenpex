@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
     <!-- Splide CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -72,7 +73,7 @@
                 <!-- Desktop Buttons -->
                 <div class="hidden lg:flex items-center">
                     <a href="#contact"
-                        class="hidden sm:block px-12 py-3 text-white border-1 border-green4 hover:border-green2 hover:bg-green4 transition-all font-medium">
+                        class="hidden sm:block px-12 py-3 text-white border border-green4 hover:border-green2 hover:bg-green4 transition-all font-medium">
                         CONTACT
                     </a>
                     <a href="#connect"
@@ -160,7 +161,7 @@
                 <div class="pt-24">
                     <div class="banner-content max-w-295 w-full mx-auto ">
                         <div class="flex items-center justify-center gap-2 pb-6 border-b border-[#2D5040]">
-                            <span class="sm:w-2.5 w-1.5 sm:h-2.5 h-1.5 sm:rounded-[3px] rounded-[2px] bg-green2"></span>
+                            <span class="sm:w-2.5 w-1.5 sm:h-2.5 h-1.5 sm:rounded-[3px] rounded-xs bg-green2"></span>
                             <p class="text-green2 sm:text-base text-[12px] font-medium">Creative Design Agency</p>
                         </div>
                         <h1
@@ -244,7 +245,9 @@
                             alt="dashboard">
 
 
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3"> Mobile app design</h3>
+                        <h3
+                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            Mobile app design</h3>
                         <p class="sm:text-base text-[14px] text-white">Crafting brands that connect emotionally.</p>
 
                     </div>
@@ -373,7 +376,7 @@
                                 <div class="video-card relative rounded-2xl overflow-hidden  cursor-pointer h-100 md:h-142"
                                     data-video-id="video1">
                                     <!-- Video Element -->
-                                    <div class="video-wrapper absolute inset-0 z-[1]">
+                                    <div class="video-wrapper absolute inset-0 z-1">
                                         <video
                                             class="video-element w-full h-full object-cover opacity-0 transition-opacity duration-400 ease-in-out"
                                             loop playsinline preload="metadata">
@@ -384,7 +387,7 @@
 
                                     <!-- Thumbnail -->
                                     <div
-                                        class="thumbnail-wrapper absolute inset-0 z-[2] transition-opacity duration-400 ease-in-out">
+                                        class="thumbnail-wrapper absolute inset-0 z-2 transition-opacity duration-400 ease-in-out">
                                         <img src="assets/images/video-thumbnail4.webp" alt="Thumbnail"
                                             class="thumbnail-image w-full h-full object-cover">
                                     </div>
@@ -396,7 +399,7 @@
                                     </div>
 
                                     <!-- Card Content -->
-                                    <div class="card-footer absolute bottom-0 left-0 right-0 p-6 z-[4] ">
+                                    <div class="card-footer absolute bottom-0 left-0 right-0 p-6 z-4 ">
 
                                         <div class="card-info flex flex-col gap-3">
                                             <div class="company-logo ">
@@ -654,12 +657,15 @@
     <section class="steps-section relative section-padding" id="portfolioSection">
         <img src="assets/images/workshape.svg" class="img-fluid absolute left-0 bottom-0 z-10 hidden lg:block "
             alt="works shape">
+        <div class="common-line-shape-animation absolute bottom-0 left-0 z-30 block lg:hidden">
+            <img src="assets/images/workshape.svg" class="img-fluid " alt="works shape">
+        </div>
         <div class="steps-cont md:bock hidden">
 
             <!-- Left Side - Sticky Content -->
             <div class="steps-left">
                 <div class="left-content">
-                    <h2 class="text-start lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-6 mb-5 leading120">
+                    <h2 class="text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-5 leading120">
                         Our works
                     </h2>
                     <p class="text-base lg:text-lg text-white mb-9 lg:mb-12">
@@ -740,7 +746,7 @@
                                 </div>
                                 <div class="pt-9">
                                     <h4
-                                        class="md:text-2xl text-xl font-medium text-white leading120 text-center pb-[7px]">
+                                        class="md:text-2xl text-xl font-medium text-white leading120 text-center pb-1.75">
                                         Website Design for Mindora</h4>
                                     <p class="text-[15px] text-white text-center">Increased conversions by 32% through
                                         intuitive user flows</p>
@@ -788,7 +794,7 @@
                                 </div>
                                 <div class="pt-9">
                                     <h4
-                                        class="md:text-2xl text-xl font-medium text-white leading120 text-center pb-[7px]">
+                                        class="md:text-2xl text-xl font-medium text-white leading120 text-center pb-1.75">
                                         Website Design for Mindora</h4>
                                     <p class="text-[15px] text-white text-center">Increased conversions by 32% through
                                         intuitive user flows</p>
@@ -837,7 +843,7 @@
                                 </div>
                                 <div class="pt-9">
                                     <h4
-                                        class="md:text-2xl text-xl font-medium text-white leading120 text-center pb-[7px]">
+                                        class="md:text-2xl text-xl font-medium text-white leading120 text-center pb-1.75">
                                         Website Design for Mindora</h4>
                                     <p class="text-[15px] text-white text-center">Increased conversions by 32% through
                                         intuitive user flows</p>
@@ -861,7 +867,7 @@
                     every pixel has a purpose.
                 </p>
             </div>
-           
+
 
             <div class="grid sm:grid-cols-2 grid-cols-1 gap-x-4">
                 <div class="py-6 border-b border-white">
@@ -997,35 +1003,33 @@
                     </div>
                 </div>
             </div>
-             <div class="flex w-full justify-center">
+            <div class="flex w-full justify-center">
                 <button
-                class="mega-reveal-btn relative overflow-hidden cursor-pointer mt-6 md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
-                <span class="bg-overlay absolute inset-0 z-1"></span>
-                <div class="btn-inner relative z-2 flex items-center gap-3">
-                    <div
-                        class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
-                        <div class="icon-slider flex flex-row ">
-                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                <path
-                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                    fill="var(--color-green1)" />
-                            </svg>
-                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                <path
-                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                    fill="var(--color-green1)" />
-                            </svg>
+                    class="mega-reveal-btn relative overflow-hidden cursor-pointer mt-6 md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
+                    <span class="bg-overlay absolute inset-0 z-1"></span>
+                    <div class="btn-inner relative z-2 flex items-center gap-3">
+                        <div
+                            class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                            <div class="icon-slider flex flex-row ">
+                                <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                        fill="var(--color-green1)" />
+                                </svg>
+                                <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                        fill="var(--color-green1)" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text-mask lg:h-7.5 md:h-6.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up text-[18px]  font-medium text-green4 uppercase">View more works</span>
+                            <span class="t-down text-[18px]  font-medium text-white uppercase">View more works</span>
                         </div>
                     </div>
-                    <div class="text-mask lg:h-7.5 md:h-6.5 h-6 overflow-hidden flex flex-col">
-                        <span
-                            class="t-up text-[18px]  font-medium text-green4 uppercase">View more works</span>
-                        <span
-                            class="t-down text-[18px]  font-medium text-white uppercase">View more works</span>
-                    </div>
-                </div>
-            </button>
-             </div>
+                </button>
+            </div>
         </div>
     </section>
     <!-- our work section end -->
@@ -1036,12 +1040,14 @@
     <section class="work-progress relative overflow-hidden section-padding bg-green5">
         <div class="container">
             <div class="workprocess-wrap relative z-10">
-                <h2 class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-6 mb-5 leading120">
+                <h2
+                    class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-5 leading120">
                     Work process
                 </h2>
 
 
-                <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-4 items-center relative ourwork-wrap mb-5">
+                <div
+                    class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-4 items-center relative ourwork-wrap mb-5">
                     <div class="absolute left-0 w-full h-full top-6 pointer-events-none z-30 lg:block hidden">
                         <svg id="process-svg" width="100%" viewBox="0 0 1506 416" fill="none"
                             xmlns="http://www.w3.org/2000/svg" class="overflow-visible">
@@ -1097,48 +1103,61 @@
 
     <!-- counter[64px]ction-mediumt -->
     <section class="overview-counter section-padding min-h-screen flex items-end">
-        <div class="max-w-[1535px] w-full mx-auto mt-auto md:px-5 px-4">
+        <div class="max-w-383.75 w-full mx-auto mt-auto md:px-5 px-4">
             <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-3 gap-1 lg:min-h-[80vh] items-end">
 
-                <div class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                <div
+                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
                     <div class="icon-box rounded-lg text-white">
-                        <img src="assets/images/counter1.svg" class="img-fluid lg:w-[64px] md:w-[50px] w-[32px]" alt="counter">
+                        <img src="assets/images/counter1.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
+                            alt="counter">
                     </div>
                     <div>
-                        <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span class="counter" data-target="98">0</span>%
+                        <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span
+                                class="counter" data-target="98">0</span>%
                         </h2>
-                        <p class="text-white text-base md:text-[18px] lg:text-[20px] mt-3 md:mt-4 lg:mt-6">Happy clients</p>
+                        <p class="text-white text-base md:text-[18px] lg:text-[20px] mt-3 md:mt-4 lg:mt-6">Happy clients
+                        </p>
                     </div>
                 </div>
 
-                <div class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                <div
+                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
                     <div class="icon-box rounded-lg text-white">
-                        <img src="assets/images/counter2.svg" class="img-fluid lg:w-[64px] md:w-[50px] w-[32px]" alt="counter">
+                        <img src="assets/images/counter2.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
+                            alt="counter">
                     </div>
                     <div>
-                        <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span class="counter" data-target="140">0</span>+
+                        <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span
+                                class="counter" data-target="140">0</span>+
                         </h2>
                         <p class="text-white text-base md:text-[18px] lg:text-[20px] mt-3 md:mt-4 lg:mt-6">Clients</p>
                     </div>
                 </div>
 
-                <div class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                <div
+                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
                     <div class="icon-box rounded-lg text-white">
-                        <img src="assets/images/counter3.svg" class="img-fluid lg:w-[64px] md:w-[50px] w-[32px]" alt="counter">
+                        <img src="assets/images/counter3.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
+                            alt="counter">
                     </div>
                     <div>
-                        <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span class="counter" data-target="800">0</span>+
+                        <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span
+                                class="counter" data-target="800">0</span>+
                         </h2>
                         <p class="text-white text-base md:text-[18px] lg:text-[20px] mt-3 md:mt-4 lg:mt-6">Projects</p>
                     </div>
                 </div>
 
-                <div class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                <div
+                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
                     <div class="icon-box rounded-lg text-white">
-                        <img src="assets/images/counter4.svg" class="img-fluid lg:w-[64px] md:w-[50px] w-[32px]" alt="counter">
+                        <img src="assets/images/counter4.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
+                            alt="counter">
                     </div>
                     <div>
-                        <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span class="counter" data-target="14">0</span>
+                        <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span
+                                class="counter" data-target="14">0</span>
                         </h2>
                         <p class="text-white text-base md:text-[18px] lg:text-[20px] mt-3 md:mt-4 lg:mt-6">Awards</p>
                     </div>
@@ -1157,47 +1176,39 @@
         <div class="container">
             <div class="sm:grid grid-cols-2 flex flex-col-reverse items-center md:gap-8 gap-6">
                 <div>
-                    <img src="assets/images/pixxenteampicture.webp" alt="">
+                    <img src="assets/images/pixxenteampicture.webp" class="img-fluid" alt="team energy">
                 </div>
                 <div>
-                    <h2
-                        class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-6 mb-1.5 leading120">
-                        We design with empathy & energy
-                    </h2>
-                    <p
-                        class="sm:text-start text-center text-white md:text-[18px] sm:text-base text-[14px] leading-[140%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
-                        Pixxen is built by expert designers, product thinkers, and creative technologists who believe
-                        every pixel has a purpose.</p>
+                    <h2 class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-1.5 leading120"> We design with empathy & energy </h2>
+                    <p class="sm:text-start text-center text-[#A7BDB5] md:text-[18px] sm:text-base text-[14px] leading-[140%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
+                        Pixxen is built by expert designers, product thinkers, and creative technologists who believe every pixel has a purpose.</p>
 
-              <div class="flex sm:justify-start justify-center w-full">
-                      <button
-                        class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
-                        <span class="bg-overlay absolute inset-0 z-1"></span>
-                        <div class="btn-inner relative z-2 flex items-center gap-3">
-                            <div
-                                class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
-                                <div class="icon-slider flex flex-row ">
-                                    <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                        <path
-                                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                            fill="var(--color-green1)" />
-                                    </svg>
-                                    <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                        <path
-                                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                            fill="var(--color-green1)" />
-                                    </svg>
+                    <div class="flex sm:justify-start justify-center w-full">
+                        <button class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
+                            <span class="bg-overlay absolute inset-0 z-1"></span>
+                            <div class="btn-inner relative z-2 flex items-center gap-3">
+                                <div
+                                    class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                    <div class="icon-slider flex flex-row ">
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s Connect</span>
+                                    <span class="t-down md:text-[20px] text-base  font-medium text-white uppercase">Let’s Connect</span>
                                 </div>
                             </div>
-                            <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
-                                <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
-                                    Connect</span>
-                                <span class="t-down md:text-[20px] text-base  font-medium text-white uppercase">Let’s
-                                    Connect</span>
-                            </div>
-                        </div>
-                    </button>
-              </div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1311,7 +1322,7 @@
     <section class="tools-technology section-padding relative bg-green5 overflow-hidden">
         <div class="container">
             <div class="toolswrap relative z-10">
-                <h2 class="lg:text-[64px] sm:text-[48px] text-[32px] text-white mb-6 leading120 text-center md:mb-12">
+                <h2 class="lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white mb-6 leading120 text-center md:mb-12">
                     Tools & technology
                 </h2>
                 <div class="max-w-212 w-full mx-auto">
@@ -1358,7 +1369,7 @@
     <!-- client review section start -->
     <section class="section-padding client-review bg-green5">
         <div class="container">
-            <h2 class="lg:text-[64px] sm:text-[48px] text-[32px] text-white mb-6 leading120 text-center md:mb-12">
+            <h2 class="lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white mb-6 leading120 text-center md:mb-12">
                 Client reviews
             </h2>
 
@@ -1369,14 +1380,14 @@
 
                         <!-- Slide 1 -->
                         <li class="splide__slide">
-                            <div class="border-[#29473C] border rounded-3xl">
+                            <div class="border-dark-shade3 border rounded-3xl">
                                 <div
-                                    class="testimonial-heading p-8 flex items-center justify-between border-b border-[#29473C]">
+                                    class="testimonial-heading p-8 flex items-center justify-between border-b border-dark-shade3">
                                     <div class="flex items-center gap-3">
                                         <img src="assets/images/reviewimg1.png" class="img-fluid shrink-0 rounded-xl"
                                             alt="">
                                         <div>
-                                            <p class="text-white sm:text-base text-sm font-medium leading120">Mustafizur
+                                            <p class="text-white sm:text-base text-sm font-medium mb-0.5 leading120">Mustafizur
                                                 Rahman</p>
                                             <p class="text-[#759187] md:text-sm text-[10px] leading150">Sarah Lin,
                                                 Product Manager at Lumina</p>
@@ -1401,14 +1412,14 @@
 
                         <!-- Slide 2 -->
                         <li class="splide__slide">
-                            <div class="border-[#29473C] border rounded-3xl">
+                            <div class="border-dark-shade3 border rounded-3xl">
                                 <div
-                                    class="testimonial-heading p-8 flex items-center justify-between border-b border-[#29473C]">
+                                    class="testimonial-heading p-8 flex items-center justify-between border-b border-dark-shade3">
                                     <div class="flex items-center gap-3">
                                         <img src="assets/images/reviewimg1.png" class="img-fluid shrink-0 rounded-xl"
                                             alt="">
                                         <div>
-                                            <p class="text-white sm:text-base text-sm font-medium leading120">Mustafizur
+                                            <p class="text-white sm:text-base text-sm font-medium mb-0.5 leading120">Mustafizur
                                                 Rahman</p>
                                             <p class="text-[#759187] md:text-sm text-[10px] leading150">Sarah Lin,
                                                 Product Manager at Lumina</p>
@@ -1433,14 +1444,14 @@
 
                         <!-- Slide 3 -->
                         <li class="splide__slide">
-                            <div class="border-[#29473C] border rounded-3xl">
+                            <div class="border-dark-shade3 border rounded-3xl">
                                 <div
-                                    class="testimonial-heading p-8 flex items-center justify-between border-b border-[#29473C]">
+                                    class="testimonial-heading p-8 flex items-center justify-between border-b border-dark-shade3">
                                     <div class="flex items-center gap-3">
                                         <img src="assets/images/reviewimg1.png" class="img-fluid shrink-0 rounded-xl"
                                             alt="">
                                         <div>
-                                            <p class="text-white sm:text-base text-sm font-medium leading120">Mustafizur
+                                            <p class="text-white sm:text-base text-sm font-medium mb-0.5 leading120">Mustafizur
                                                 Rahman</p>
                                             <p class="text-[#759187] md:text-sm text-[10px] leading150">Sarah Lin,
                                                 Product Manager at Lumina</p>
@@ -1465,14 +1476,14 @@
 
                         <!-- Slide 4 -->
                         <li class="splide__slide">
-                            <div class="border-[#29473C] border rounded-3xl">
+                            <div class="border-dark-shade3 border rounded-3xl">
                                 <div
-                                    class="testimonial-heading p-8 flex items-center justify-between border-b border-[#29473C]">
+                                    class="testimonial-heading p-8 flex items-center justify-between border-b border-dark-shade3">
                                     <div class="flex items-center gap-3">
                                         <img src="assets/images/reviewimg1.png" class="img-fluid shrink-0 rounded-xl"
                                             alt="">
                                         <div>
-                                            <p class="text-white sm:text-base text-sm font-medium leading120">Mustafizur
+                                            <p class="text-white sm:text-base text-sm font-medium mb-0.5 leading120">Mustafizur
                                                 Rahman</p>
                                             <p class="text-[#759187] md:text-sm text-[10px] leading150">Sarah Lin,
                                                 Product Manager at Lumina</p>
@@ -1501,7 +1512,8 @@
 
             <!-- Custom Navigation Arrows -->
             <div class="custom-arrows flex items-center justify-center gap-4 mt-12">
-                <button class="custom-arrow bg-[#1F382F] rounded-2xl flex items-center justify-center md:w-18 w-14.5 md:h-18 h-14.5"
+                <button
+                    class="custom-arrow bg-[#1F382F] rounded-2xl flex items-center justify-center md:w-18 w-14.5 md:h-18 h-14.5"
                     id="prev-arrow" aria-label="Previous slide">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -1509,7 +1521,8 @@
                             fill="#759187" />
                     </svg>
                 </button>
-                <button class="custom-arrow bg-[#1F382F] rounded-2xl flex items-center justify-center md:w-18 w-14.5 md:h-18 h-14.5"
+                <button
+                    class="custom-arrow bg-[#1F382F] rounded-2xl flex items-center justify-center md:w-18 w-14.5 md:h-18 h-14.5"
                     id="next-arrow" aria-label="Next slide">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -1530,37 +1543,35 @@
     <section class="teamsection relative section-padding bg-green5 overflow-hidden">
         <div class="container">
             <div class="teamwrap relative z-10">
-                <h2 class="lg:text-[64px] sm:text-[48px] text-[32px] text-white mb-6 leading120 text-center md:mb-12">
+                <h2 class="lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white mb-6 leading120 text-center md:mb-12">
                     Pixxen team
                 </h2>
-                <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-8 md:gap-5 gap-1">
+                <div class="teammembers flex flex-wrap team-wrap md:gap-5 gap-3 lg:gap-8 items-stretch justify-center">
                     <div class="team-member mb-6">
                         <img src="assets/images/team1.webp" class="img-fluid w-full" alt="">
                         <div class="md:mt-6 mt-3 md:pl-6 pl-3 border-l border-[#759187] flex flex-col justify-between">
-                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Mohammodullah
-                                Siddik</p>
+                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Mohammodullah Siddik</p>
+                            <p class="text-[#759187] md:text-base sm:text-sm text-[12px]">Lead UI/UX Designer</p>
+                        </div>
+                    </div>
+                    <div class="team-member mb-6">
+                        <img src="assets/images/team5.webp" class="img-fluid w-full" alt="">
+                        <div class="md:mt-6 mt-3 md:pl-6 pl-3 border-l border-[#759187] flex flex-col justify-between">
+                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Md. Abdullah Al Mamun</p>
                             <p class="text-[#759187] md:text-base sm:text-sm text-[12px]">UI/UX Designer</p>
                         </div>
                     </div>
                     <div class="team-member mb-6">
                         <img src="assets/images/team2.webp" class="img-fluid w-full" alt="">
                         <div class="md:mt-6 mt-3 md:pl-6 pl-3 border-l border-[#759187] flex flex-col justify-between">
-                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Nasimul Huda</p>
+                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Md. Nasimul Huda</p>
                             <p class="text-[#759187] md:text-base sm:text-sm text-[12px]">UI/UX Designer</p>
                         </div>
                     </div>
                     <div class="team-member mb-6">
-                        <img src="assets/images/team3.webp" class="img-fluid w-full" alt="">
+                        <img src="assets/images/team6.webp" class="img-fluid w-full" alt="">
                         <div class="md:mt-6 mt-3 md:pl-6 pl-3 border-l border-[#759187] flex flex-col justify-between">
-                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Hasan Biswas</p>
-                            <p class="text-[#759187] md:text-base sm:text-sm text-[12px]">UI/UX Designer</p>
-                        </div>
-                    </div>
-                    <div class="team-member mb-6">
-                        <img src="assets/images/team4.webp" class="img-fluid w-full" alt="">
-                        <div class="md:mt-6 mt-3 md:pl-6 pl-3 border-l border-[#759187] flex flex-col justify-between">
-                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Karar Mahmud Jahan
-                            </p>
+                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Omar Faruk</p>
                             <p class="text-[#759187] md:text-base sm:text-sm text-[12px]">UI/UX Designer</p>
                         </div>
                     </div>
@@ -1683,7 +1694,7 @@
             <div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-6">
                 <div>
                     <h2
-                        class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-6 sm:mb-1.5 leading120">
+                        class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-1.5 leading120">
                         Frequently asked questions
                     </h2>
                     <button
@@ -1721,10 +1732,12 @@
                         <div class="faq-item active" data-faq="1">
                             <div class="faq-question flex items-start justify-between md:py-8 py-6 gap-6">
                                 <div class="flex items-start gap-4 flex-1">
-                                    <div class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
+                                    <div
+                                        class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-xl md:text-2xl font-medium">How long till I see a prototype?</h3>
+                                    <h3 class="text-white text-xl md:text-2xl font-medium">How long till I see a
+                                        prototype?</h3>
                                 </div>
                                 <button
                                     class="plus-icon text-white text-3xl font-light w-8 h-8 flex items-center justify-center shrink-0">
@@ -1751,10 +1764,12 @@
                         <div class="faq-item" data-faq="2">
                             <div class="faq-question flex items-start justify-between md:py-8 py-6 gap-6">
                                 <div class="flex items-start gap-4 flex-1">
-                                    <div class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
+                                    <div
+                                        class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-xl md:text-2xl font-medium">Do you work with internal teams?</h3>
+                                    <h3 class="text-white text-xl md:text-2xl font-medium">Do you work with internal
+                                        teams?</h3>
                                 </div>
                                 <button
                                     class="plus-icon text-white text-3xl font-light w-8 h-8 flex items-center justify-center shrink-0">
@@ -1780,7 +1795,8 @@
                         <div class="faq-item" data-faq="3">
                             <div class="faq-question flex items-start justify-between md:py-8 py-6 gap-6">
                                 <div class="flex items-start gap-4 flex-1">
-                                    <div class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
+                                    <div
+                                        class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
                                     <h3 class="text-white text-xl md:text-2xl font-medium">Who owns the IP?</h3>
@@ -1809,10 +1825,12 @@
                         <div class="faq-item" data-faq="4">
                             <div class="faq-question flex items-start justify-between md:py-8 py-6 gap-6">
                                 <div class="flex items-start gap-4 flex-1">
-                                    <div class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
+                                    <div
+                                        class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-xl md:text-2xl font-medium">Can we scale the design system later?
+                                    <h3 class="text-white text-xl md:text-2xl font-medium">Can we scale the design
+                                        system later?
                                     </h3>
                                 </div>
                                 <button
@@ -1837,33 +1855,33 @@
 
                     </div>
                     <div class="flex justify-center md:hidden mt-6">
-                         <button
-                        class="mega-reveal-btn relative  overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
-                        <span class="bg-overlay absolute inset-0 z-1"></span>
-                        <div class="btn-inner relative z-2 flex items-center gap-3">
-                            <div
-                                class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
-                                <div class="icon-slider flex flex-row ">
-                                    <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                        <path
-                                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                            fill="var(--color-green1)" />
-                                    </svg>
-                                    <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                        <path
-                                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                            fill="var(--color-green1)" />
-                                    </svg>
+                        <button
+                            class="mega-reveal-btn relative  overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
+                            <span class="bg-overlay absolute inset-0 z-1"></span>
+                            <div class="btn-inner relative z-2 flex items-center gap-3">
+                                <div
+                                    class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                    <div class="icon-slider flex flex-row ">
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">More
+                                        faq’s</span>
+                                    <span class="t-down md:text-[20px] text-base  font-medium text-white uppercase">More
+                                        faq’s</span>
                                 </div>
                             </div>
-                            <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
-                                <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">More
-                                    faq’s</span>
-                                <span class="t-down md:text-[20px] text-base  font-medium text-white uppercase">More
-                                    faq’s</span>
-                            </div>
-                        </div>
-                    </button>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1878,7 +1896,8 @@
     <section class="latest-blog section-padding bg-green5">
         <div class="container">
             <div class="flex items-center justify-between md:mb-12">
-                <h2 class="sm:text-start text-center w-full lg:text-[64px] sm:text-[48px] text-[32px] text-white mb-6 leading120">
+                <h2
+                    class="sm:text-start text-center w-full lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white mb-6 leading120">
                     Latest blogs
                 </h2>
                 <button
@@ -1901,8 +1920,10 @@
                             </div>
                         </div>
                         <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">View more</span>
-                            <span class="t-down md:text-[20px] text-base  font-medium text-white uppercase">View more</span>
+                            <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">View
+                                more</span>
+                            <span class="t-down md:text-[20px] text-base  font-medium text-white uppercase">View
+                                more</span>
                         </div>
                     </div>
                 </button>
@@ -1912,7 +1933,8 @@
                     <div>
                         <img src="assets/images/blog1.webp" class="img-fluid rounded-3xl w-full" alt="blog">
                         <div class="mt-5 pl-3 lg:pl-6 border-l border-dark-shade3 flex items-start gap-20">
-                            <h2 class="lg:text-2xl text-xl font-medium leading120 text-white">2026 website design trends every
+                            <h2 class="lg:text-2xl text-xl font-medium leading120 text-white">2026 website design trends
+                                every
                                 modern designer should know</h2>
                             <div class="blog-date py-1.75 px-4.25 bg-[#1F382F] rounded-xl">
                                 <p class="text-xl font-medium leading120 text-white">20</p>
@@ -1929,7 +1951,8 @@
                     <div>
                         <img src="assets/images/blog1.webp" class="img-fluid rounded-3xl w-full" alt="blog">
                         <div class="mt-5 pl-3 lg:pl-6 border-l border-dark-shade3 flex items-start gap-20">
-                            <h2 class="lg:text-2xl text-xl font-medium leading120 text-white">2026 website design trends every
+                            <h2 class="lg:text-2xl text-xl font-medium leading120 text-white">2026 website design trends
+                                every
                                 modern designer should know</h2>
                             <div class="blog-date py-1.75 px-4.25 bg-[#1F382F] rounded-xl">
                                 <p class="text-xl font-medium leading120 text-white">20</p>
@@ -1946,7 +1969,8 @@
                     <div>
                         <img src="assets/images/blog1.webp" class="img-fluid rounded-3xl w-full" alt="blog">
                         <div class="mt-5 pl-3 lg:pl-6 border-l border-dark-shade3 flex items-start gap-20">
-                            <h2 class="lg:text-2xl text-xl font-medium leading120 text-white">2026 website design trends every
+                            <h2 class="lg:text-2xl text-xl font-medium leading120 text-white">2026 website design trends
+                                every
                                 modern designer should know</h2>
                             <div class="blog-date py-1.75 px-4.25 bg-[#1F382F] rounded-xl">
                                 <p class="text-xl font-medium leading120 text-white">20</p>
@@ -1962,35 +1986,35 @@
 
 
             </div>
-               <div class="flex justify-center md:hidden mt-6">
-                         <button
-                        class="mega-reveal-btn relative  overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
-                        <span class="bg-overlay absolute inset-0 z-1"></span>
-                        <div class="btn-inner relative z-2 flex items-center gap-3">
-                            <div
-                                class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
-                                <div class="icon-slider flex flex-row ">
-                                    <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                        <path
-                                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                            fill="var(--color-green1)" />
-                                    </svg>
-                                    <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                        <path
-                                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                            fill="var(--color-green1)" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
-                                <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">More
-                                    faq’s</span>
-                                <span class="t-down md:text-[20px] text-base  font-medium text-white uppercase">More
-                                    faq’s</span>
+            <div class="flex justify-center md:hidden mt-6">
+                <button
+                    class="mega-reveal-btn relative  overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
+                    <span class="bg-overlay absolute inset-0 z-1"></span>
+                    <div class="btn-inner relative z-2 flex items-center gap-3">
+                        <div
+                            class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                            <div class="icon-slider flex flex-row ">
+                                <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                        fill="var(--color-green1)" />
+                                </svg>
+                                <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                        fill="var(--color-green1)" />
+                                </svg>
                             </div>
                         </div>
-                    </button>
+                        <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">More
+                                faq’s</span>
+                            <span class="t-down md:text-[20px] text-base  font-medium text-white uppercase">More
+                                faq’s</span>
+                        </div>
                     </div>
+                </button>
+            </div>
             <div>
 
             </div>
@@ -2002,14 +2026,18 @@
 
     <!-- cta section start -->
     <section class="cta-section relative section-padding bg-green5 overflow-hidden">
-        <img src="assets/images/shape-top.png" class="img-fluid absolute top-0 left-0 xl:max-w-full lg:max-w-[300px] md:max-w-[200px] sm:max-w-[150px] sm:block hidden" alt="">
-        <img src="assets/images/shape-right.png" class="img-fluid absolute bottom-0 right-0 xl:max-w-full lg:max-w-[300px] md:max-w-[200px] sm:max-w-[150px] sm:block hidden" alt="">
+        <img src="assets/images/shape-top.png"
+            class="img-fluid absolute top-0 left-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+            alt="">
+        <img src="assets/images/shape-right.png"
+            class="img-fluid absolute bottom-0 right-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+            alt="">
 
         <div class="container">
             <div class="cta-wrap z-80 relative">
-                <div class="max-w-170 mx-auto ">
+                <div class="max-w-170 mx-auto w-full">
                     <h2
-                        class="text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-6 sm:mb-1.5 mb-3 leading120">
+                        class="text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-1.5 mb-3 leading120">
                         Shape your next pixel
                     </h2>
                     <p
@@ -2059,12 +2087,14 @@
 
     <!-- footer section start -->
     <footer class="relative">
-        <div class="bg-green5 text-white  border-t border-b border-[#29473C] relative z-10 lg:mb-[210px] md:mb-[150px] sm:mb-[120px] mb-20">
+        <div
+            class="bg-green5 text-white  border-t border-b border-dark-shade3 relative z-10 lg:mb-52.5 md:mb-37.5 sm:mb-30 mb-20">
             <div class="container">
                 <!-- Desktop Grid Layout -->
                 <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
 
-                    <div class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b-1 border-[#29473C]">
+                    <div
+                        class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b border-dark-shade3">
                         <div class="grid md:grid-cols-4 grid-cols-2 xl:gap-8 gap-4">
                             <!-- Services Column -->
                             <div class="">
@@ -2145,10 +2175,13 @@
                     </div>
 
                     <!-- Newsletter Column -->
-                    <div class="md:pl-10 lg:pl-14 md:border-l  border-dark-shade3 lg:col-span-4 md:col-span-5 md:py-12 sm:py-8 py-6 flex flex-col justify-between gap-5">
+                    <div
+                        class="md:pl-10 lg:pl-14 md:border-l  border-dark-shade3 lg:col-span-4 md:col-span-5 md:py-12 sm:py-8 py-6 flex flex-col justify-between gap-5">
                         <div>
-                            <h3 class="text-green2 md:text-lg text-base font-semibold md:mb-3 mb-2 lg:mb-4">Join 5,000+ design lovers.</h3>
-                            <p class="text-[#759187] sm:text-sm text-[12px] mb-4 lg:mb-6">Monthly design insights, case studies, and
+                            <h3 class="text-green2 md:text-lg text-base font-semibold md:mb-3 mb-2 lg:mb-4">Join 5,000+
+                                design lovers.</h3>
+                            <p class="text-[#759187] sm:text-sm text-[12px] mb-4 lg:mb-6">Monthly design insights, case
+                                studies, and
                                 inspiration straight to your inbox.</p>
 
                             <!-- Email Input -->
@@ -2208,7 +2241,7 @@
 
                             </a>
                         </div>
-                          <!-- Copyright -->
+                        <!-- Copyright -->
                         <div class="mt-1 flex justify-center md:hidden ">
                             <p class="text-[#759187] text-sm text-center lg:text-left">© 2026 PIXXEN</p>
                         </div>
@@ -2218,7 +2251,8 @@
 
             </div>
         </div>
-        <div class="bg-gradient-to-b from-[#001B11] to-[#065136] fixed bottom-0 left-0 w-full lg:h-[210px] md:h-[150px] sm:h-[120px] h-20 -z-30 flex justify-center items-end">
+        <div
+            class="bg-linear-to-b from-[#001B11] to-green4 fixed bottom-0 left-0 w-full lg:h-52.5 md:h-37.5 sm:h-30 h-20 -z-30 flex justify-center items-end">
             <div class="flex justify-center text-center">
                 <img src="assets/images/pixxen-footerlogo.png" class="img-fluid w-full object-contain" alt="footerlogo">
             </div>
