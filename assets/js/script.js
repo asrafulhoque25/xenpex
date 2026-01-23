@@ -122,76 +122,33 @@ const checkAndAnimate = () => {
 
 window.addEventListener('load', checkAndAnimate);
 
-// ============================================
-// BANNER BACKGROUND ANIMATION
-// ============================================
-document.addEventListener("DOMContentLoaded", function() {
-    const banner = document.querySelector('.banner');
-    
-    if (!banner || typeof gsap === 'undefined') return;
-
-    document.addEventListener("mousemove", function(event) {
-        const x = (event.clientX / window.innerWidth) - 0.5;
-        const y = (event.clientY / window.innerHeight) - 0.5;
-
-        gsap.to(banner, {
-            duration: 0.6,
-            rotationY: 5 * x,
-            rotationX: 5 * y,
-            ease: "power1.out",
-            transformPerspective: 500,
-            transformOrigin: "center"
-        });
-    });
-});
 
 // ============================================
-// BANNER 3D SHAPE ANIMATION
+// 3D SHAPE ANIMATION (Home + About Page)
 // ============================================
 document.addEventListener("DOMContentLoaded", function() {
-    const banner = document.querySelector('.banner');
-    const shape = document.querySelector('.shape-3d');
+    if (typeof gsap === 'undefined') return;
     
-    if (!banner || !shape || typeof gsap === 'undefined') return;
-  
-    const setBannerRotationY = gsap.quickSetter(banner, "rotationY", "deg");
-    const setBannerRotationX = gsap.quickSetter(banner, "rotationX", "deg");
+    const shapes = document.querySelectorAll('.shape-3d');
     
-    const setShapeX = gsap.quickSetter(shape, "x", "px");
-    const setShapeY = gsap.quickSetter(shape, "y", "px");
-    const setShapeRotationY = gsap.quickSetter(shape, "rotationY", "deg");
-    const setShapeRotationX = gsap.quickSetter(shape, "rotationX", "deg");
-    const setShapeRotationZ = gsap.quickSetter(shape, "rotationZ", "deg");
-    const setShapeScale = gsap.quickSetter(shape, "scale");
-
-    gsap.ticker.add(() => {
-        gsap.to(shape, {
-            duration: 0.3,
-            overwrite: true
-        });
-    });
+    if (shapes.length === 0) return;
 
     document.addEventListener("mousemove", function(event) {
         const x = (event.clientX / window.innerWidth) - 0.5;
         const y = (event.clientY / window.innerHeight) - 0.5;
         
-        gsap.to(banner, {
-            duration: 0.6,
-            rotationY: 5 * x,
-            rotationX: 5 * y,
-            ease: "power1.out"
-        });
-        
-        gsap.to(shape, {
-            duration: 0.4,
-            x: x * 50,
-            y: y * 30,
-            rotationY: x * 15,
-            rotationX: -y * 15,
-            rotationZ: x * 5,
-            scale: 1 + (Math.abs(x) + Math.abs(y)) * 0.1,
-            ease: "power1.out",
-            overwrite: "auto"
+        shapes.forEach(shape => {
+            gsap.to(shape, {
+                duration: 0.4,
+                x: x * 50,
+                y: y * 30,
+                rotationY: x * 15,
+                rotationX: -y * 15,
+                rotationZ: x * 5,
+                scale: 1 + (Math.abs(x) + Math.abs(y)) * 0.1,
+                ease: "power1.out",
+                overwrite: "auto"
+            });
         });
     });
 });
@@ -328,35 +285,37 @@ if (window.innerWidth >= 1024) {
 // ============================================
 // OVERVIEW COUNTER
 // ============================================
-const overviewCounter = document.querySelector('.overview-counter');
+const counterSections = document.querySelectorAll('.overview-counter, .about-counter');
 
-if (overviewCounter && typeof gsap !== 'undefined') {
+if (counterSections.length > 0 && typeof gsap !== 'undefined') {
     if (gsap.registerPlugin) {
         gsap.registerPlugin(ScrollTrigger);
     }
     
-    const counters = document.querySelectorAll('.counter');
+    counterSections.forEach(counterSection => {
+        const counters = counterSection.querySelectorAll('.counter');
 
-    if (counters.length > 0) {
-        counters.forEach(counter => {
-            const target = +counter.getAttribute('data-target');
+        if (counters.length > 0) {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
 
-            gsap.to(counter, {
-                innerText: target,
-                duration: 2,
-                ease: "power2.out",
-                snap: { innerText: 1 }, 
-                scrollTrigger: {
-                    trigger: counter,
-                    start: "top 90%", 
-                    toggleActions: "play none none none"
-                },
-                onUpdate: function () {
-                    counter.innerHTML = Math.ceil(this.targets()[0].innerText);
-                }
+                gsap.to(counter, {
+                    innerText: target,
+                    duration: 2,
+                    ease: "power2.out",
+                    snap: { innerText: 1 }, 
+                    scrollTrigger: {
+                        trigger: counter,
+                        start: "top 90%", 
+                        toggleActions: "play none none none"
+                    },
+                    onUpdate: function () {
+                        counter.innerHTML = Math.ceil(this.targets()[0].innerText);
+                    }
+                });
             });
-        });
-    }
+        }
+    });
 }
 
 // ============================================
@@ -501,78 +460,86 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ============================================
-// GRADIENT BACKGROUND ANIMATION
+// GRADIENT BACKGROUND ANIMATION (UPDATED)
 // ============================================
 if (typeof gsap !== 'undefined' && gsap.registerPlugin) {
     gsap.registerPlugin(ScrollTrigger);
 }
 
 function applyGradientAnimation(sectionSelector) {
-    const section = document.querySelector(sectionSelector);
+    // querySelectorAll use kore shob section select korbo
+    const sections = document.querySelectorAll(sectionSelector);
     
-    if (!section || typeof gsap === 'undefined') return;
+    if (sections.length === 0 || typeof gsap === 'undefined') return;
     
-    const gradientOverlay1 = document.createElement('div');
-    gradientOverlay1.style.cssText = `
-        position: absolute;
-        inset: 0;
-        opacity: 0;
-        background: radial-gradient(50% 27.56% at 50% -10%, rgba(6, 81, 54, 0.8) 0%, transparent 100%);
-        pointer-events: none;
-        z-index: 0;
-        filter: blur(40px);
-    `;
+    // Prottek section er jonno loop chalabo
+    sections.forEach((section, index) => {
+        const gradientOverlay1 = document.createElement('div');
+        gradientOverlay1.style.cssText = `
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            background: radial-gradient(50% 27.56% at 50% -10%, rgba(6, 81, 54, 0.8) 0%, transparent 100%);
+            pointer-events: none;
+            z-index: 0;
+            filter: blur(40px);
+        `;
 
-    const gradientOverlay2 = document.createElement('div');
-    gradientOverlay2.style.cssText = `
-        position: absolute;
-        inset: 0;
-        opacity: 0;
-        background: radial-gradient(50% 27.56% at 50% 0%, #065136 0%, #002417 100%);
-        pointer-events: none;
-        z-index: 0;
-    `;
+        const gradientOverlay2 = document.createElement('div');
+        gradientOverlay2.style.cssText = `
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            background: radial-gradient(50% 27.56% at 50% 0%, #065136 0%, #002417 100%);
+            pointer-events: none;
+            z-index: 0;
+        `;
 
-    section.insertBefore(gradientOverlay1, section.firstChild);
-    section.insertBefore(gradientOverlay2, section.firstChild);
+        section.insertBefore(gradientOverlay1, section.firstChild);
+        section.insertBefore(gradientOverlay2, section.firstChild);
 
-    const masterTl = gsap.timeline({
-        scrollTrigger: {
-            trigger: sectionSelector,
-            start: 'top 75%',
-            end: 'top 25%',
-            scrub: 2,
+        const masterTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: section, // Unique trigger for each section
+                start: 'top 75%',
+                end: 'top 25%',
+                scrub: 2,
+            }
+        });
+
+        masterTl.to(gradientOverlay1, {
+            opacity: 0.6,
+            scale: 1.1,
+            duration: 1,
+            ease: 'power2.inOut'
+        }, 0);
+
+        masterTl.to(gradientOverlay2, {
+            opacity: 1,
+            backgroundPosition: '50% 8%',
+            duration: 1,
+            ease: 'power2.inOut'
+        }, 0);
+
+        const contentWrapper = section.querySelector('.cta-wrap, .teamwrap, .workprocess-wrap > div');
+        if (contentWrapper) {
+            masterTl.from(contentWrapper, {
+                y: 25,
+                opacity: 0.85,
+                duration: 1,
+                ease: 'power1.out'
+            }, 0.2);
         }
     });
-
-    masterTl.to(gradientOverlay1, {
-        opacity: 0.6,
-        scale: 1.1,
-        duration: 1,
-        ease: 'power2.inOut'
-    }, 0);
-
-    masterTl.to(gradientOverlay2, {
-        opacity: 1,
-        backgroundPosition: '50% 8%',
-        duration: 1,
-        ease: 'power2.inOut'
-    }, 0);
-
-    const contentWrapper = section.querySelector('.cta-wrap, .teamwrap, .workprocess-wrap > div');
-    if (contentWrapper) {
-        masterTl.from(contentWrapper, {
-            y: 25,
-            opacity: 0.85,
-            duration: 1,
-            ease: 'power1.out'
-        }, 0.2);
-    }
 }
 
 applyGradientAnimation('.cta-section');
 applyGradientAnimation('.teamsection');
 applyGradientAnimation('.work-progress');
+
+// ============================================
+// OVERVIEW/ABOUT COUNTER (UPDATED)
+// ============================================
 
 // ============================================
 // TOOLS BACKGROUND IMAGE TRANSITION
@@ -684,4 +651,127 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
+});
+
+
+
+
+//blog tab 
+
+// Tab Functionality
+function initBlogTab() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+    
+    if (tabButtons.length === 0 || tabPanes.length === 0) return;
+    
+    function switchTab(tabId) {
+        // Remove active class from all buttons
+        tabButtons.forEach(button => {
+            button.classList.remove('active');
+            button.classList.add('inactive');
+        });
+        
+        // Remove active class from all panes
+        tabPanes.forEach(pane => {
+            pane.classList.remove('active');
+        });
+        
+        // Add active class to clicked button
+        const activeButton = document.querySelector(`[data-tab="${tabId}"]`);
+        if (activeButton) {
+            activeButton.classList.remove('inactive');
+            activeButton.classList.add('active');
+        }
+        
+        // Show corresponding tab pane
+        const activePane = document.getElementById(tabId);
+        if (activePane) {
+            activePane.classList.add('active');
+            
+            // Check load more button visibility when switching tabs
+            checkLoadMoreButton();
+        }
+    }
+    
+    // Add click event listeners to all buttons
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const tabId = button.getAttribute('data-tab');
+            if (tabId) {
+                switchTab(tabId);
+            }
+        });
+    });
+}
+
+// Load More Functionality
+function initLoadMore() {
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    
+    if (!loadMoreBtn) return;
+    
+    // Initial check
+    checkLoadMoreButton();
+    
+    loadMoreBtn.addEventListener('click', function() {
+        // Get current active tab
+        const activeTab = document.querySelector('.tab-pane.active');
+        if (!activeTab) return;
+        
+        // Get all hidden blog items in active tab
+        const hiddenBlogs = activeTab.querySelectorAll('.blogitem.blog-hidden');
+        
+        if (hiddenBlogs.length === 0) {
+            // No more items to load
+            loadMoreBtn.style.display = 'none';
+            return;
+        }
+        
+        // Show next 12 items (or remaining items if less than 12)
+        const itemsToShow = Math.min(12, hiddenBlogs.length);
+        
+        for (let i = 0; i < itemsToShow; i++) {
+            const blog = hiddenBlogs[i];
+            
+            setTimeout(() => {
+                blog.classList.remove('blog-hidden');
+                blog.style.opacity = '0';
+                blog.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    blog.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    blog.style.opacity = '1';
+                    blog.style.transform = 'translateY(0)';
+                }, 50);
+            }, i * 50);
+        }
+        
+        // Check if there are more hidden items after showing these 12
+        setTimeout(() => {
+            checkLoadMoreButton();
+        }, itemsToShow * 50 + 500);
+    });
+}
+
+// Check if load more button should be visible
+function checkLoadMoreButton() {
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const activeTab = document.querySelector('.tab-pane.active');
+    
+    if (!loadMoreBtn || !activeTab) return;
+    
+    const hiddenBlogs = activeTab.querySelectorAll('.blogitem.blog-hidden');
+    
+    if (hiddenBlogs.length > 0) {
+        loadMoreBtn.style.display = 'inline-flex';
+    } else {
+        loadMoreBtn.style.display = 'none';
+    }
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    initBlogTab();
+    initLoadMore();
 });

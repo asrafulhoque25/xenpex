@@ -175,7 +175,7 @@
                         <div class="flex justify-center text-center mt-8">
                             <button
                                 class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-12 md:py-6 sm:px-8 sm:py-5 px-6 py-4 rounded-2xl  active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
-                                <span class="bg-overlay absolute inset-0 z-1"></span>
+                                <!-- <span class="bg-overlay absolute inset-0 z-1"></span> -->
                                 <div class="btn-inner relative z-2 flex items-center gap-3">
                                     <div
                                         class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
@@ -232,12 +232,11 @@
                     </clipPath>
                 </defs>
             </svg>
-
         </div>
         <div class="container">
             <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-12 mb-8">Pixxen Services
             </h2>
-            <div class="flex flex-wrap service-wrap md:gap-5 gap-3 lg:gap-8 items-center justify-center">
+            <div class="flex flex-wrap service-wrap md:gap-5 gap-3 lg:gap-8 items-stretch justify-center">
                 <a href="#"
                     class="service-item p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
                     <div>
@@ -1893,7 +1892,7 @@
 
 
     <!-- blog start -->
-    <section class="latest-blog section-padding bg-green5">
+    <section class="latest-blog section-padding bg-green5 blogs">
         <div class="container">
             <div class="flex items-center justify-between md:mb-12">
                 <h2
@@ -1928,11 +1927,13 @@
                     </div>
                 </button>
             </div>
-            <div class="blog-wrap grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
+            <div class="blog-wrap grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-8 gap-6">
                 <a href="#" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem">
-                    <div>
-                        <img src="assets/images/blog1.webp" class="img-fluid rounded-3xl w-full" alt="blog">
-                        <div class="mt-5 pl-3 lg:pl-6 border-l border-dark-shade3 flex items-start gap-20">
+                    <div> 
+                        <div class="overflow-hidden rounded-3xl">
+                                    <img src="assets/images/blog1.webp" class="img-fluid w-full" alt="blog">
+                                </div>
+                        <div class="mt-5 pl-3 lg:pl-6 border-l border-dark-shade3 flex items-start gap-10">
                             <h2 class="lg:text-2xl text-xl font-medium leading120 text-white">2026 website design trends
                                 every
                                 modern designer should know</h2>
@@ -1949,8 +1950,10 @@
                 </a>
                 <a href="#" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem">
                     <div>
-                        <img src="assets/images/blog1.webp" class="img-fluid rounded-3xl w-full" alt="blog">
-                        <div class="mt-5 pl-3 lg:pl-6 border-l border-dark-shade3 flex items-start gap-20">
+                        <div class="overflow-hidden rounded-3xl">
+                                    <img src="assets/images/blog1.webp" class="img-fluid w-full" alt="blog">
+                                </div>
+                        <div class="mt-5 pl-3 lg:pl-6 border-l border-dark-shade3 flex items-start gap-10">
                             <h2 class="lg:text-2xl text-xl font-medium leading120 text-white">2026 website design trends
                                 every
                                 modern designer should know</h2>
@@ -1967,8 +1970,10 @@
                 </a>
                 <a href="#" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem">
                     <div>
-                        <img src="assets/images/blog1.webp" class="img-fluid rounded-3xl w-full" alt="blog">
-                        <div class="mt-5 pl-3 lg:pl-6 border-l border-dark-shade3 flex items-start gap-20">
+                        <div class="overflow-hidden rounded-3xl">
+                                    <img src="assets/images/blog1.webp" class="img-fluid w-full" alt="blog">
+                                </div>
+                        <div class="mt-5 pl-3 lg:pl-6 border-l border-dark-shade3 flex items-start gap-10">
                             <h2 class="lg:text-2xl text-xl font-medium leading120 text-white">2026 website design trends
                                 every
                                 modern designer should know</h2>
@@ -2187,14 +2192,14 @@
                             <!-- Email Input -->
                             <div class="relative mb-3 md:mb-8 lg:mb-12">
                                 <input type="email" placeholder="Email address"
-                                    class="w-full bg-transparent border border-dark-shade3 rounded-lg px-4 py-5 lg:py-3.5 h-16.5 text-white placeholder-[#759187] focus:outline-none focus:border-green3 transition-colors text-sm lg:text-base pr-14" />
+                                    class="w-full bg-transparent border border-dark-shade3 rounded-lg px-4 py-5 lg:py-3.5 h-16 text-white placeholder-[#759187] focus:outline-none focus:border-green3 transition-colors text-sm lg:text-base pr-14" />
                                 <button
-                                    class="absolute cursor-pointer right-0 top-1/2 -translate-y-1/2 bg-green4 hover:bg-green3 p-4 rounded-r-lg transition-colors">
+                                    class="absolute group cursor-pointer right-px top-1/2 -translate-y-1/2 bg-green4 hover:bg-green3 p-3.75 rounded-r-lg transition-colors">
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M21.5628 14.6665L14.4108 7.51452L16.2964 5.62891L26.6673 15.9999L16.2964 26.3707L14.4108 24.4851L21.5628 17.3332H5.33398V14.6665H21.5628Z"
-                                            fill="#759187" />
+                                            fill="#759187" class="group-hover:fill-white transition-colors" />
                                     </svg>
 
                                 </button>
