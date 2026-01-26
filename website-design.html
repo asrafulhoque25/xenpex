@@ -407,10 +407,10 @@
         <div class="common-line-shape-animation absolute bottom-0 left-0 z-30 block lg:hidden">
             <img src="assets/images/workshape.svg" class="img-fluid " alt="works shape">
         </div>
-        <div class="steps-cont">
+        <div class="steps-cont grid grid-cols-2 gap-8">
 
             <!-- Left Side - Sticky Content -->
-            <div class="steps-left">
+            <div class="">
                 <div class="left-content">
                     <h2 class="text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-5 leading120">
                         Pixxen’s Web Design Specializations
@@ -423,54 +423,66 @@
             </div>
 
             <!-- Right Side - Scrollable Portfolio Items -->
-            <div class="steps-right">
+            <div class="">
 
                 <!-- Portfolio Item 1 - Mindora -->
-                <div class="step-content portfolio-card overflow-hidden">
-                    <div class="">
-                        <div
-                            class="relative rounded-3xl overflow-hidden portfolio-work-item lg:max-w-184  w-full ml-auto ">
-                            <div class="work-item-overlay absolute left-0 right-0 bottom-0"></div>
-                            <img src="assets/images/work1.webp" alt="Mindora Yoga" class="w-full h-full object-cover">
-
-                            <div
-                                class="max-w-172 w-full mx-auto  absolute left-0 right-0 bottom-0 px-8 py-12 all-portfolio-info">
-                                <div class="grid grid-cols-3 gap-1">
-                                    <div class="bg-green5 md:p-6 xl:p-4 p-3 rounded-3xl work-box-info">
-                                        <img src="assets/images/rating.svg" class="img-fluid" alt="">
-                                        <p
-                                            class="lg:text-[40px] md:text-[28px] text-[24px] font-medium text-white lg:pt-6 pt-3 lg:pb-10 pb-5">
-                                            4.8</p>
-                                        <p class="text-white lg:text-[15px] text-[14px] font-medium">Rating</p>
-                                    </div>
-                                    <div class="bg-green5 md:p-6 xl:p-4 p-3 rounded-3xl work-box-info">
-                                        <img src="assets/images/conversion-rate.svg" class="img-fluid" alt="">
-                                        <p
-                                            class="lg:text-[40px] md:text-[28px] text-[24px] font-medium text-white lg:pt-6 pt-3 lg:pb-10 pb-5">
-                                            32%</p>
-                                        <p class="text-white lg:text-[15px] text-[14px] font-medium">Conversion rate</p>
-                                    </div>
-                                    <a href="#"
-                                        class="bg-green5 md:p-6 xl:p-4 p-3 block rounded-3xl work-box-info relative flex items-center justify-center">
-                                        <img src="assets/images/view-details-shape.svg"
-                                            class="img-fluid absolute top-0 left-0" alt="">
-                                        <img src="assets/images/viewdetails-portfolio-arrow.png" class="img-fluid"
-                                            alt="shape arrow">
-                                        <p
-                                            class="text-white whitespace-nowrap lg:text-[15px] text-[14px] font-medium absolute left-1/2 -translate-x-1/2 md:bottom-6 bottom-4">
-                                            View details</p>
-                                    </a>
-                                </div>
-                                <div class="pt-9">
-                                    <h4
-                                        class="md:text-2xl text-xl font-medium text-white leading120 text-center pb-1.75">
-                                        Website Design for Mindora</h4>
-                                    <p class="text-[15px] text-white text-center">Increased conversions by 32% through
-                                        intuitive user flows</p>
-                                </div>
-                            </div>
+                <div class="step-content portfolio-card overflow-hidden ">
+                  <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 cta-section relative overflow-hidden">
+                    <div class="relative z-20">
+                        <img src="assets/images/web-design-specializations1.svg" class="img-fluid" alt="specializations">
+                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">Corporate & Brand Websites</h3>
+                        <p class="sm:text-base text-sm text-dark-shade5">Story-driven sites for established companies that need to communicate their vision, values, and offerings with authority and elegance.</p>
+                    
+                    <div class="grid grid-cols-2 my-8">
+                        <div class="pl-4">
+                            <p class="text-green2 text-base font-medium leading120 mb-3">Key Features</p>
+                            <ul class="list-disc text-dark-shade5 pl-7">
+                                <li><p class="text-dark-shade5 text-base leading150">Multi-page architecture</p></li>
+                                <li><p class="text-dark-shade5 text-base leading150">Team & leadership profiles</p></li>
+                                <li><p class="text-dark-shade5 text-base leading150">Case studies showcase</p></li>
+                                <li><p class="text-dark-shade5 text-base leading150">Press & media section</p></li>
+                            </ul>
+                        </div>
+                        <div class="pl-4 border-l border-dark-shade3">
+                            <p class="text-green2 text-base font-medium leading120 mb-3">Best For</p>
+                            <ul class="list-disc text-dark-shade5 pl-7">
+                                <li><p class="text-dark-shade5 text-base leading150">Enterprise companies</p></li>
+                                <li><p class="text-dark-shade5 text-base leading150">Professional services</p></li>
+                                <li><p class="text-dark-shade5 text-base leading150">Consulting firms</p></li>
+                                <li><p class="text-dark-shade5 text-base leading150">B2B organizations</p></li>
+                            </ul>
                         </div>
                     </div>
+                       <button
+                            class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
+                            <span class="bg-overlay absolute inset-0 z-1"></span>
+                            <div class="btn-inner relative z-2 flex items-center gap-3">
+                                <div
+                                    class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                    <div class="icon-slider flex flex-row ">
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
+                                        Connect</span>
+                                    <span
+                                        class="t-down md:text-[20px] text-base  font-medium text-white uppercase">Let’s
+                                        Connect</span>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                  </div>
                 </div>
 
                 <!-- Portfolio Item 2 - Education Platform -->

@@ -598,7 +598,7 @@ function applyBackgroundImageTransition(sectionSelector, imageUrl) {
                 scrub: 1.5
             },
             y: 30,
-            opacity: 0.8,
+            opacity: 1,
             duration: 1,
             ease: 'power1.out'
         });
