@@ -485,6 +485,7 @@ function applyGradientAnimation(sectionSelector) {
             filter: blur(40px);
         `;
 
+
         const gradientOverlay2 = document.createElement('div');
         gradientOverlay2.style.cssText = `
             position: absolute;
@@ -540,6 +541,10 @@ applyGradientAnimation('.work-progress');
 // ============================================
 // OVERVIEW/ABOUT COUNTER (UPDATED)
 // ============================================
+
+
+
+
 
 // ============================================
 // TOOLS BACKGROUND IMAGE TRANSITION

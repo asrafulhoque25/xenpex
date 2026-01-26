@@ -10,6 +10,7 @@
     --color-green5: #002417;
     --color-dark-shade3: #29473C;
     --color-dark-shade5: #A7BDB5;
+    --color-dark-shade6: #E6E9E8;
     --font-farro: "Farro", sans-serif;
 }
 
@@ -1303,3 +1304,19 @@ html {
         
 
 /* blog end */
+
+
+
+/* single service start */
+.processright::after{
+    content: '';
+    position: absolute;
+    left:32px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #29473C;
+    z-index: -2;
+}
+/* single service end */
