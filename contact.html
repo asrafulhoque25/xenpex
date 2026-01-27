@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Splide CSS -->
-    <title>About</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -134,53 +134,157 @@
     </nav>
 
 
-    <!-- About us banner section start -->
-    <section class="subbanner-wrapper bg-black min-h-screen font-farro relative">
+    <!-- contact section start -->
+    <section class="subbanner-wrapper bg-black min-h-screen font-farro relative ">
         <!-- Content layer (eta fixed thakbe) -->
         <div class="banner-content-wrapper">
             <div class="container relative z-10">
                 <div class="sm:grid grid-cols-2 flex flex-col-reverse items-center md:gap-8 gap-6">
-                    <div>
+                    <div class="border contactform my-[70px] bg-green5 border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8  sm:gap-14 overflow-hidden">
                         <h2
-                            class="sm:text-start text-center font-medium lg:text-[96px] sm:text-[64px] text-[32px] text-white md:mb-6 mb-1.5 leading120">
-                            About Pixxen
+                            class="sm:text-start text-center font-medium lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-6 mb-1.5 leading120">
+                            Drop Us a Line
                         </h2>
                         <p
-                            class="sm:text-start text-center text-white md:text-[18px] sm:text-base text-[14px] leading-[150%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
-                            Pixxen is a UI/UX studio that believes design can solve complex business challenges through simplicity and empathy.
+                            class="sm:text-start text-center text-dark-shade5 md:text-[18px] sm:text-base text-[14px] leading-[150%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
+                            Tell us your needs and concerns the simplest way possible, and we will reach out to schedule a one-on-one session at a time that works best for you.
                         </p>
 
-                        <div class="flex sm:justify-start justify-center w-full">
-                            <button
-                                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
-                                <span class="bg-overlay absolute inset-0 z-1"></span>
-                                <div class="btn-inner relative z-2 flex items-center gap-3">
-                                    <div
-                                        class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
-                                        <div class="icon-slider flex flex-row ">
-                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                                    fill="var(--color-green1)" />
-                                            </svg>
-                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                                    fill="var(--color-green1)" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
-                                        <span
-                                            class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
-                                            Connect</span>
-                                        <span
-                                            class="t-down md:text-[20px] text-base  font-medium text-white uppercase">Let’s
-                                            Connect</span>
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
+          <!-- Contact Form -->
+        <form id="contactForm" class="space-y-6">
+            
+            <!-- First Name & Last Name Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex flex-col gap-3">
+                    <label for="firstName" class="text-base font-medium text-dark-shade6">
+                        First Name
+                    </label>
+                    <input 
+                        type="text" 
+                        id="firstName" 
+                        name="firstName" 
+                        required
+                        class="w-full px-5  md:px-6 h-12.5 bg-darkShade2/80 border border-dark-shade3 rounded-2xl text-white placeholder-darkShade4 focus:border-green1 focus:outline-none transition-all duration-300"
+                    >
+                </div>
+                <div class="flex flex-col gap-3">
+                    <label for="lastName" class="text-base font-medium text-dark-shade6">
+                        Last Name
+                    </label>
+                    <input 
+                        type="text" 
+                        id="lastName" 
+                        name="lastName" 
+                        required
+                        class="w-full px-5  md:px-6 h-12.5 bg-darkShade2/80 border border-dark-shade3 rounded-2xl text-white placeholder-darkShade4 focus:border-green1 focus:outline-none transition-all duration-300"
+                    >
+                </div>
+            </div>
+
+            <!-- Email & Phone Number Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex flex-col gap-3">
+                    <label for="email" class="text-base font-medium text-dark-shade6">
+                        Email
+                    </label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required
+                        class="w-full px-5  md:px-6 h-12.5 bg-darkShade2/80 border border-dark-shade3 rounded-2xl text-white placeholder-darkShade4 focus:border-green1 focus:outline-none transition-all duration-300"
+                    >
+                </div>
+                <div class="flex flex-col gap-3">
+                    <label for="phone" class="text-base font-medium text-dark-shade6">
+                        Phone Number
+                    </label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        required
+                        class="w-full px-5  md:px-6 h-12.5 bg-darkShade2/80 border border-dark-shade3 rounded-2xl text-white placeholder-darkShade4 focus:border-green1 focus:outline-none transition-all duration-300"
+                    >
+                </div>
+            </div>
+
+            <!-- Service Required & Project Budget Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex flex-col gap-3">
+                    <label for="service" class="text-base font-medium text-dark-shade6">
+                        Service required
+                    </label>
+                    <select 
+                        id="service" 
+                        name="service" 
+                        required
+                        class="select-arrow w-full px-5  md:px-6 h-12.5 bg-darkShade2/80 border border-dark-shade3 rounded-2xl text-white placeholder-darkShade4 focus:border-green1 focus:outline-none transition-all duration-300"
+                    >
+                        <option value="" disabled selected class="text-darkShade4">Select your service</option>
+                        <option value="web-development" class="bg-green5 text-white">Web Development</option>
+                        <option value="mobile-app" class="bg-green5 text-white">Mobile App Development</option>
+                        <option value="ui-ux-design" class="bg-green5 text-white">UI/UX Design</option>
+                        <option value="digital-marketing" class="bg-green5 text-white">Digital Marketing</option>
+                        <option value="consulting" class="bg-green5 text-white">Consulting</option>
+                        <option value="other" class="bg-green5 text-white">Other</option>
+                    </select>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <label for="budget" class="text-base font-medium text-dark-shade6">
+                        Project Budget
+                    </label>
+                    <select 
+                        id="budget" 
+                        name="budget" 
+                        required
+                        class="select-arrow w-full px-5  md:px-6 h-12.5 bg-darkShade2/80 border border-dark-shade3 rounded-2xl text-white placeholder-darkShade4 focus:border-green1 focus:outline-none transition-all duration-300"
+                    >
+                        <option value="" disabled selected class="text-darkShade4">Select your budget</option>
+                        <option value="under-5k" class="bg-green5 text-white">Under $5,000</option>
+                        <option value="5k-10k" class="bg-green5 text-white">$5,000 - $10,000</option>
+                        <option value="10k-25k" class="bg-green5 text-white">$10,000 - $25,000</option>
+                        <option value="25k-50k" class="bg-green5 text-white">$25,000 - $50,000</option>
+                        <option value="50k-plus" class="bg-green5 text-white">$50,000+</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Project Details Textarea -->
+            <div class="flex flex-col gap-3">
+                <label for="details" class="text-base font-medium text-dark-shade6">
+                    Project details*
+                </label>
+                <textarea 
+                    id="details" 
+                    name="details" 
+                    required
+                    rows="6"
+                    class="w-full px-5  md:px-6 py-4 bg-darkShade2/80 border border-dark-shade3 rounded-2xl text-white placeholder-darkShade4 focus:border-green1 focus:outline-none transition-all duration-300"
+                ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button 
+                type="submit" 
+                class="w-full mt-4 px-6 py-4 md:py-4 bg-green1 hover:bg-green2 text-green5 font-bold text-lg md:text-xl uppercase tracking-wide rounded-2xl flex items-center justify-center gap-4 transition-all duration-300 hover:-translate-y-1  active:translate-y-0 group"
+            >
+             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2368_403)">
+<rect width="24" height="24" rx="12" fill="#065136"/>
+<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="#99FE00"/>
+</g>
+<defs>
+<clipPath id="clip0_2368_403">
+<rect width="24" height="24" rx="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+                Let's Connect
+            </button>
+
+        </form>
                     </div>
                     <div class="shape-3d">
                         <img src="assets/images/about-page-banner-img.png" class="img-fluid " alt="Image">
@@ -189,7 +293,7 @@
             </div>
         </div>
     </section>
-    <!--About us banner section end -->
+    <!--contact section end -->
 
 
 
@@ -198,264 +302,318 @@
     <section class="section-padding bg-green5">
         <div class="container">
             <div class="sm:grid grid-cols-2 flex flex-col-reverse items-center md:gap-8 gap-6">
-                <div>
-                    <img src="assets/images/behindjourney.webp" class="img-fluid" alt="team">
-                </div>
-                <div>
+                     <div>
                     <h2
                         class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-1.5 leading120">
-                        Different perspectives, one unified vision</h2>
+                        Every successful venture starts with a consultation!</h2>
                     <p
                         class="sm:text-start text-center text-[#A7BDB5] md:text-[18px] sm:text-base text-[14px] leading-[140%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
                         At Pixxen, we believe the best ideas come from collaboration across different perspectives,
                         cultures, and disciplines.</p>
 
-                    <div class="flex sm:justify-start justify-center w-full">
-                        <button
-                            class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
-                            <span class="bg-overlay absolute inset-0 z-1"></span>
-                            <div class="btn-inner relative z-2 flex items-center gap-3">
-                                <div
-                                    class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
-                                    <div class="icon-slider flex flex-row ">
-                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                            <path
-                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                                fill="var(--color-green1)" />
-                                        </svg>
-                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                            <path
-                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                                fill="var(--color-green1)" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
-                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
-                                        Connect</span>
-                                    <span
-                                        class="t-down md:text-[20px] text-base  font-medium text-white uppercase">Let’s
-                                        Connect</span>
-                                </div>
-                            </div>
-                        </button>
-                    </div>
+                 
                 </div>
+                <div>
+                    <img src="assets/images/success-venture.webp" class="img-fluid" alt="team">
+                </div>
+           
             </div>
+                 <div class="grid md:grid-cols-3 pt-24 sm:grid-cols-2 grid-cols-2 md:gap-5 gap-3 lg:gap-8 items-center justify-center =">
+          
+                <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
+                    <div>
+                       
+                         <img src="assets/images/consultation1.svg" class="img-fluid md:max-w-24 max-w-16"
+                            alt="dashboard">
+                           <div class="flex flex-col gap-4">
+                             <div>
+                        <h3
+                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            Phone Number </h3>
+                            <div>
+                                <p class="text-base text-dark-shade5">Dhaka Office:</p>
+                                <a href="tel:+880 178 355 3817" class="text-green2 font-medium text-xl">+880 178 355 3817</a>
+                            </div>
+
+                       </div>
+                            <div>
+                            <div>
+                                <p class="text-base text-dark-shade5">UK Office:</p>
+                                <a href="tel:+880 178 355 3817" class="text-green2 font-medium text-xl">+44 20 7946 0958</a>
+                            </div>
+
+                       </div>
+                           </div>
+                       <div>
+                        
+                       </div>
+                    </div>
+
+                </div>
+                <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
+                    <div> <img src="assets/images/consultation2.svg" class="img-fluid md:max-w-24 max-w-16"
+                            alt="dashboard">
+                           <div class="flex flex-col gap-4">
+                             <div>
+                        <h3
+                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            Email </h3>
+                            <div>
+                                <p class="text-base text-dark-shade5">Projects collaborations:</p>
+                                <a href="mailto:hello@pixxen.com" class="text-green2 font-medium text-xl">hello@pixxen.com</a>
+                            </div>
+
+                       </div>
+                            <div>
+                            <div>
+                                <p class="text-base text-dark-shade5">Join our dynamic team:</p>
+                                <a href="mailto:career@pixxen.com" class="text-green2 font-medium text-xl">career@pixxen.com</a>
+                            </div>
+
+                       </div>
+                           </div>
+                       <div>
+                        
+                       </div>
+                    </div>
+
+                </div>
+                <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
+                    <div>
+                       
+                         <img src="assets/images/consultation3.svg" class="img-fluid md:max-w-24 max-w-16"
+                            alt="dashboard">
+                           <div class="flex flex-col gap-4">
+                             <div>
+                        <h3
+                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            Address </h3>
+                            <div>
+                                <p class="text-base text-dark-shade5">Bangladesh:</p>
+                                <a href="#" class="text-green2 font-medium text-xl">23/6 Rupayan Shelford Tower, 16th Floor, Shyamoli, Dhaka – 1207</a>
+                            </div>
+
+                       </div>
+                            <div>
+                            <div>
+                                <p class="text-base text-dark-shade5">UK:</p>
+                                <a href="#" class="text-green2 font-medium text-xl">20-22 Wenlock Rd, London, N1 7GU</a>
+                            </div>
+
+                       </div>
+                           </div>
+                       <div>
+                        
+                       </div>
+                    </div>
+
+                </div>
+            
+          
+              
+            </div>
+
         </div>
     </section>
     <!-- team energy section end -->
 
 
-        <!-- marquee section start -->
-        <section class="marquee-section bg-green5 md:py-12 py-4 px-6 md:px-12">
-            <div class="marquee-stripe rotate-2 bg-green4 rounded-full">
-                <div class="marquee-container ltr">
-                    <div class="marquee-content">
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
-                                your next pixel</span>
-                        </div>
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
-                                Studio</span>
-                        </div>
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
-                                solutions</span>
-                        </div>
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
-                                Studio</span>
-                        </div>
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
-                                design</span>
-                        </div>
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
-                                Studio</span>
-                        </div>
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
-                                your vision</span>
-                        </div>
 
-                        <!-- Duplicate for seamless loop -->
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
-                                your next pixel</span>
-                        </div>
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
-                                Studio</span>
-                        </div>
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
-                                solutions</span>
-                        </div>
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
-                                Studio</span>
-                        </div>
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
-                                design</span>
-                        </div>
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
-                                Studio</span>
-                        </div>
-                        <div class="marquee-item">
-                            <div class="marquee-dot"></div>
-                            <span
-                                class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
-                                your vision</span>
-                        </div>
+
+
+     <!-- marquee section start -->
+    <section class="marquee-section bg-green5 md:py-12 py-4 px-6 md:px-12">
+        <div class="marquee-stripe rotate-2 bg-green4 rounded-full">
+            <div class="marquee-container ltr">
+                <div class="marquee-content">
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            your next pixel</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            solutions</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            design</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            your vision</span>
+                    </div>
+
+                    <!-- Duplicate for seamless loop -->
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            your next pixel</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            solutions</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            design</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            your vision</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <!-- marquee section end -->
 
 
 
 
-
-    <!-- team energy section start -->
-    <section class="section-padding bg-green5">
+    <!-- Find us on the map below start -->
+     <section class="mapbelow section-padding bg-green5">
         <div class="container">
-            <div class="sm:grid grid-cols-2 flex flex-col-reverse items-center md:gap-8 gap-6">
-                <div>
-                    <h2
-                        class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-1.5 leading120">
-                       Our mission
+             <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-1.5 mb-3 leading120">
+                        Find us on the map below.
                     </h2>
-                    <p
-                        class="sm:text-start text-center text-[#A7BDB5] md:text-[18px] sm:text-base text-[14px] leading-[140%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
-                        Our mission is to design meaningful digital experiences that solve real problems, inspire trust, and drive measurable impact through clarity, usability, and human centered thinking. We partner with ambitious brands to build scalable products, align strategy with design, and create experiences people genuinely enjoy using every day together worldwide responsibly.</p>
+                   <div class="w-full">
+    <div class="contact-map min-h-[640px] w-full relative">
+      <div class="w-full px-4 py-8">
+    <div class="contact-map w-full overflow-hidden rounded-2xl shadow-lg border border-gray-200">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4492.756639947007!2d90.3662427!3d23.773886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c12fdd8c0031%3A0xc7ad03c5730bee07!2sGetweb%20Ltd.!5e1!3m2!1sen!2sbd!4v1769511782094!5m2!1sen!2sbd" 
+            class="w-full h-[450px] md:h-[600px] border-0" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+    </div>
+</div>
+        </div>
+     </section>
+    <!-- Find us on the map below end -->
 
-                    <div class="flex sm:justify-start justify-center w-full">
-                        <button
-                            class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
-                            <span class="bg-overlay absolute inset-0 z-1"></span>
-                            <div class="btn-inner relative z-2 flex items-center gap-3">
-                                <div
-                                    class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
-                                    <div class="icon-slider flex flex-row ">
-                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                            <path
-                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                                fill="var(--color-green1)" />
-                                        </svg>
-                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                            <path
-                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                                fill="var(--color-green1)" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
-                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
-                                        Connect</span>
-                                    <span
-                                        class="t-down md:text-[20px] text-base  font-medium text-white uppercase">Let’s
-                                        Connect</span>
-                                </div>
-                            </div>
-                        </button>
+
+
+         <!-- counter[64px]ction-mediumt -->
+    <section class="about-counter section-padding min-h-screen flex items-end">
+        <div class="max-w-383.75 w-full mx-auto mt-auto md:px-5 px-4">
+            <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-3 gap-1 lg:min-h-[80vh] items-end">
+
+                <div
+                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                    <div class="icon-box rounded-lg text-white">
+                        <img src="assets/images/counter1.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
+                            alt="counter">
+                    </div>
+                    <div>
+                        <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span
+                                class="counter" data-target="98">0</span>%
+                        </h2>
+                        <p class="text-white text-base md:text-[18px] lg:text-[20px] mt-3 md:mt-4 lg:mt-6">Happy clients
+                        </p>
                     </div>
                 </div>
-                <div>
-                    <img src="assets/images/mission.webp" class="teamwork" alt="">
+
+                <div
+                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                    <div class="icon-box rounded-lg text-white">
+                        <img src="assets/images/counter2.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
+                            alt="counter">
+                    </div>
+                    <div>
+                        <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span
+                                class="counter" data-target="140">0</span>+
+                        </h2>
+                        <p class="text-white text-base md:text-[18px] lg:text-[20px] mt-3 md:mt-4 lg:mt-6">Clients</p>
+                    </div>
+                </div>
+
+                <div
+                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                    <div class="icon-box rounded-lg text-white">
+                        <img src="assets/images/counter3.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
+                            alt="counter">
+                    </div>
+                    <div>
+                        <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span
+                                class="counter" data-target="800">0</span>+
+                        </h2>
+                        <p class="text-white text-base md:text-[18px] lg:text-[20px] mt-3 md:mt-4 lg:mt-6">Projects</p>
+                    </div>
+                </div>
+
+                <div
+                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                    <div class="icon-box rounded-lg text-white">
+                        <img src="assets/images/counter4.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
+                            alt="counter">
+                    </div>
+                    <div>
+                        <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span
+                                class="counter" data-target="14">0</span>
+                        </h2>
+                        <p class="text-white text-base md:text-[18px] lg:text-[20px] mt-3 md:mt-4 lg:mt-6">Awards</p>
+                    </div>
                 </div>
 
             </div>
-
-       <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-2 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
-                <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
-                    <div>
-                        <img src="assets/images/mission1.svg" class="img-fluid md:max-w-24 max-w-16"
-                            alt="dashboard">
-                        <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
-                            Empathy</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Understanding users deeply to design experiences that truly support real human needs.</p>
-
-                    </div>
-
-                </div>
-                <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
-                    <div>
-                        <img src="assets/images/mission2.svg" class="img-fluid md:max-w-24 max-w-16"
-                            alt="dashboard">
-                        <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
-                            Collaboration</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Working closely across teams and perspectives to build stronger, smarter design solutions together.</p>
-
-                    </div>
-
-                </div>
-                      <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
-                    <div>
-                        <img src="assets/images/mission3.svg" class="img-fluid md:max-w-24 max-w-16"
-                            alt="dashboard">
-                        <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
-                            Curiosity</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Continuously exploring ideas, asking questions, and learning to create better, more thoughtful products.</p>
-
-                    </div>
-
-                </div>
-                <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
-                    <div>
-                        <img src="assets/images/mission1.svg" class="img-fluid md:max-w-24 max-w-16"
-                            alt="dashboard">
-                        <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
-                            Simplicity</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Reducing complexity to deliver clear, intuitive experiences that feel effortless to use.</p>
-
-                    </div>
-
-                </div>
-          
-              
-            </div>
-
-
         </div>
     </section>
-    <!-- team energy section end -->
-
+    <!-- counter section end -->
 
 
 

@@ -467,12 +467,12 @@ if (typeof gsap !== 'undefined' && gsap.registerPlugin) {
 }
 
 function applyGradientAnimation(sectionSelector) {
-    // querySelectorAll use kore shob section select korbo
+  
     const sections = document.querySelectorAll(sectionSelector);
     
     if (sections.length === 0 || typeof gsap === 'undefined') return;
     
-    // Prottek section er jonno loop chalabo
+    
     sections.forEach((section, index) => {
         const gradientOverlay1 = document.createElement('div');
         gradientOverlay1.style.cssText = `

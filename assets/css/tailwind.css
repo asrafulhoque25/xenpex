@@ -8,7 +8,9 @@
     --color-green3: #19914A;
     --color-green4: #065136;
     --color-green5: #002417;
+    --color-dark-shade2: #1F382F;
     --color-dark-shade3: #29473C;
+    --color-dark-shade4: #759187;
     --color-dark-shade5: #A7BDB5;
     --color-dark-shade6: #E6E9E8;
     --font-farro: "Farro", sans-serif;
@@ -1320,3 +1322,36 @@ html {
     z-index: -2;
 }
 /* single service end */
+
+
+
+
+/* video blur animation start */
+.video-blur-animation::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 555px;
+
+
+background: linear-gradient(180deg, rgba(0, 36, 23, 0.00) 0%, rgba(0, 36, 23, 0.5) 60%,rgba(0, 36, 23, 0.8) 80%, #002417 100%);
+-webkit-backdrop-filter: blur(18px);
+backdrop-filter: blur(18px);
+-webkit-mask-image: linear-gradient(to top, black 0%, black 30%, transparent 100%);
+mask-image: linear-gradient(to top, black 0%, #000000 30%, transparent 100%);
+transition: .3s all linear;
+align-items: end;
+align-content: end;
+
+}
+/* video blur animation end */
+
+
+
+/* contactform start */
+.contactform{
+background: radial-gradient(50% 27.56% at 50% 0%, var(--secondary-shade-3, #065136) 0%, var(--dark-shade-1, #002417) 100%);
+}
+/* contactform end */
