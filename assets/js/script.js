@@ -285,7 +285,7 @@ if (window.innerWidth >= 1024) {
 // ============================================
 // OVERVIEW COUNTER
 // ============================================
-const counterSections = document.querySelectorAll('.overview-counter, .about-counter');
+const counterSections = document.querySelectorAll('.overview-counter, .about-counter, .design-counter');
 
 if (counterSections.length > 0 && typeof gsap !== 'undefined') {
     if (gsap.registerPlugin) {
@@ -542,6 +542,186 @@ applyGradientAnimation('.work-progress');
 // OVERVIEW/ABOUT COUNTER (UPDATED)
 // ============================================
 
+// ============================================
+// CONTACT FORM GRADIENT BACKGROUND ANIMATION
+// ============================================
+if (typeof gsap !== 'undefined' && gsap.registerPlugin) {
+    gsap.registerPlugin(ScrollTrigger);
+}
+
+function applyContactGradientAnimation(sectionSelector) {
+    const sections = document.querySelectorAll(sectionSelector);
+    
+    if (sections.length === 0 || typeof gsap === 'undefined') return;
+    
+    sections.forEach((section, index) => {
+        // Create main gradient overlay
+        const gradientOverlay = document.createElement('div');
+        gradientOverlay.style.cssText = `
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            background: radial-gradient(
+                40% 20% at 50% 100%,
+                #065136 0%,
+                #002417 100%
+            );
+            pointer-events: none;
+            z-index: 1;
+            border-radius: 1.5rem;
+        `;
+
+        // Create blur overlay for depth
+        const blurOverlay = document.createElement('div');
+        blurOverlay.style.cssText = `
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            background: radial-gradient(
+                45% 25% at 50% 95%,
+                rgba(6, 81, 54, 0.9) 0%,
+                transparent 100%
+            );
+            pointer-events: none;
+            z-index: 0;
+            filter: blur(60px);
+            border-radius: 1.5rem;
+        `;
+
+        section.insertBefore(gradientOverlay, section.firstChild);
+        section.insertBefore(blurOverlay, section.firstChild);
+
+       
+        const masterTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: section,
+       start: 'bottom 95%',   
+      end: 'bottom 50%',     
+                scrub: 1.5,           
+             
+            }
+        });
+
+       
+        masterTl.to(blurOverlay, {
+            opacity: 0.8,
+            scale: 1.15,
+            duration: 1.5,
+            ease: 'power2.inOut'
+        }, 0);
+
+        
+        masterTl.to(gradientOverlay, {
+            opacity: 1,
+            scale: 1.05,
+            duration: 1.5,
+            ease: 'power2.inOut'
+        }, 0);
+
+
+    });
+}
+
+// Initialize gradient animation when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    // Small delay to ensure DOM is fully ready
+    setTimeout(() => {
+        applyContactGradientAnimation('.anatomy');
+    }, 100);
+});
+
+
+
+
+
+//normal bg gradient 
+
+if (typeof gsap !== 'undefined' && gsap.registerPlugin) {
+    gsap.registerPlugin(ScrollTrigger);
+}
+
+function applyLinearGradientOnScroll() {
+    const sections = document.querySelectorAll('.bg-linear-gradient');
+    
+    if (sections.length === 0 || typeof gsap === 'undefined') return;
+    
+    sections.forEach((section) => {
+        // Create a wrapper div for the gradient
+        const gradientBg = document.createElement('div');
+        gradientBg.style.cssText = `
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            background: linear-gradient(180deg, var(--dark-shade-1, #002417) 0%, var(--dark-extra-dark, #001B11) 100%);
+            pointer-events: none;
+            z-index: 0;
+        `;
+        
+        section.insertBefore(gradientBg, section.firstChild);
+        
+        // Animate gradient on scroll
+        gsap.to(gradientBg, {
+            opacity: 1,
+            scrollTrigger: {
+                trigger: section,
+                start: 'top 70%',
+                end: 'top 60%',
+                scrub: 1,
+            }
+        });
+    });
+}
+
+// Call the function
+applyLinearGradientOnScroll();
+
+
+
+
+
+
+//phase background scroll
+
+if (typeof gsap !== 'undefined' && gsap.registerPlugin) {
+    gsap.registerPlugin(ScrollTrigger);
+}
+
+function applyPhaseBackgroundAnimation(sectionSelector) {
+    const sections = document.querySelectorAll(sectionSelector);
+    
+    if (sections.length === 0 || typeof gsap === 'undefined') return;
+    
+    sections.forEach((section, index) => {
+        // Create background wrapper with Tailwind classes
+        const backgroundWrapper = document.createElement('div');
+        backgroundWrapper.className = 'absolute inset-0 opacity-0 pointer-events-none z-0 rounded-3xl border-white/16 bg-gradient-to-b from-white/10 to-transparent backdrop-blur-[0px]';
+        
+        section.insertBefore(backgroundWrapper, section.firstChild);
+       
+        const masterTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: section,
+                start: 'top 70%',   
+                end: 'top 60%',     
+                scrub: 1.5,           
+            }
+        });
+       
+        masterTl.to(backgroundWrapper, {
+            opacity: 1,
+            duration: 1.5,
+            ease: 'power2.inOut'
+        }, 0);
+    });
+}
+
+// Initialize animation when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    // Small delay to ensure DOM is fully ready
+    setTimeout(() => {
+        applyPhaseBackgroundAnimation('.phase-bg');
+    }, 100);
+});
 
 
 
