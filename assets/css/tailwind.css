@@ -545,7 +545,17 @@ html {
     filter: brightness(0) saturate(100%) invert(88%) sepia(39%) saturate(2279%) hue-rotate(26deg) brightness(102%) contrast(98%);
 }
 
-
+.lifecycle-circle::after{
+    content: '';
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    border-radius: 100px;
+    background-color: #19CC61;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
 
 /* service section end */
 
