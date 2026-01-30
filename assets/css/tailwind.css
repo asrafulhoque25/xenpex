@@ -1388,3 +1388,85 @@ align-content: end;
 background: radial-gradient(50% 27.56% at 50% 0%, var(--secondary-shade-3, #065136) 0%, var(--dark-shade-1, #002417) 100%);
 }
 /* contactform end */
+
+
+
+
+/* terms start */
+ /* Table of Contents - Sidebar */
+        .term-wrap{
+            display: grid;
+            grid-template-columns: 352px 1fr;
+            gap: 32px;
+        }
+        .term-wrap .toc-sidebar {
+            position: sticky;
+            top: 60px;
+            height: fit-content;
+            padding: 32px;
+            border-radius: 24px;
+            border: 1px solid var(--color-dark-shade3);
+        }
+
+        .term-wrap .toc-title {
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 24px;
+        }
+
+        .term-wrap .toc-list {
+            list-style: none;
+        }
+
+
+        .term-wrap .toc-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-dark-shade6);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+            padding: 8px 0px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .term-wrap .toc-number {
+         
+        }
+
+        .term-wrap .toc-link:hover {
+            color: var(--color-green2);
+        }
+
+        .term-wrap .toc-link.active {
+            color: var(--color-green2);
+        }
+
+        .term-wrap .toc-link.active .toc-number {
+            color: var(--color-green2);
+        }
+
+                .term-wrap .section-title {
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff ;
+            margin-bottom: 20px;
+        }
+
+        .term-wrap .section-text {
+            font-size: 18px;
+            color: var(--color-dark-shade5);
+            margin-bottom: 16px;
+            line-height: 150%;
+        }
+
+        .term-wrap .content-section{
+            border-top:1px solid var(--color-dark-shade3);
+            padding-top: 32px;
+            padding-bottom: 14px;
+        }
+/* terms end */

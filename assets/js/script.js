@@ -960,3 +960,69 @@ document.addEventListener('DOMContentLoaded', function() {
     initBlogTab();
     initLoadMore();
 });
+
+
+
+
+//terms condition and privacy policy
+
+// Check if the wrapper exists before running the script
+const termWrap = document.querySelector('.term-wrap');
+
+if (termWrap) {
+    // Table of Contents functionality
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const sections = document.querySelectorAll('.content-section');
+
+    // Smooth scroll on click
+    tocLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Highlight active section on scroll
+    function updateActiveSection() {
+        let currentSection = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            // Checking if current scroll position is within section bounds
+            if (window.scrollY >= (sectionTop - 100)) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+
+        tocLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${currentSection}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // Throttle scroll event for better performance
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+        if (scrollTimeout) {
+            window.cancelAnimationFrame(scrollTimeout);
+        }
+        scrollTimeout = window.requestAnimationFrame(() => {
+            updateActiveSection();
+        });
+    });
+
+    // Initial call to set active section
+    updateActiveSection();
+}

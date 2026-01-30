@@ -1,0 +1,684 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Splide CSS -->
+    <title>Terms</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+   <nav class="bg-[#012819] border-b border-green4 font-farro">
+        <div class="mx-auto">
+            <div class="flex items-center justify-between h-12">
+                <div class="flex items-center gap-4">
+                    <!-- Desktop Sidebar Button (hidden on mobile) -->
+                    <button id="desktop-sidebar"
+                        class="hidden lg:block text-green1 hover:text-green2 px-19 py-5 bg-green4 hover:bg-green3 cursor-pointer transition-colors"
+                        aria-label="Toggle menu">
+                        <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="42" height="2" fill="white" />
+                            <rect y="6" width="42" height="2" fill="white" />
+                        </svg>
+                    </button>
+
+                    <!-- Mobile Hamburger Button (visible only on mobile, LEFT of logo) -->
+                    <button id="mobile-menu-toggle" class="lg:hidden text-white hover:text-green1 p-2 transition-colors"
+                        aria-label="Toggle mobile menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="4" width="24" height="2" fill="currentColor" />
+                            <rect y="11" width="24" height="2" fill="currentColor" />
+                            <rect y="18" width="24" height="2" fill="currentColor" />
+                        </svg>
+                    </button>
+
+                    <a href="/" class="flex items-center">
+                        <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="desktop-dropdown">
+                        <a href="#services"
+                            class="text-white hover:text-green1 transition-colors text-base font-medium desktop-dropdown-toggle">
+                            SERVICES <span class="desktop-dropdown-icon">+</span>
+                        </a>
+                        <ul class="desktop-dropdown-menu">
+                            <li><a href="#">Service Item 1</a></li>
+                            <li><a href="#">Service Item 2</a></li>
+                            <li><a href="#">Service Item 3</a></li>
+                            <li><a href="#">Service Item 4</a></li>
+                            <li><a href="#">Service Item 5</a></li>
+                        </ul>
+                    </div>
+                    <a href="#works" class="text-white hover:text-green1 transition-colors text-base font-medium">
+                        WORKS
+                    </a>
+                    <a href="#pricing" class="text-white hover:text-green1 transition-colors text-base font-medium">
+                        PRICING
+                    </a>
+                    <a href="#about" class="text-white hover:text-green1 transition-colors text-base font-medium">
+                        ABOUT
+                    </a>
+                    <a href="#blog" class="text-white hover:text-green1 transition-colors text-base font-medium">
+                        BLOG
+                    </a>
+                </div>
+
+                <!-- Desktop Buttons -->
+                <div class="hidden lg:flex items-center">
+                    <a href="#contact"
+                        class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block px-12 py-3 text-white border border-green4 hover:border-green2 hover:bg-green4 transition-all font-medium">
+                         <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                                        <span class="t-up text-base  font-medium text-white uppercase">OUR
+                                            Contact</span>
+                                        <span class="t-down text-base  font-medium text-white uppercase">OUR
+                                            Contact</span>
+                                    </div>
+                    </a>
+                    <a href="#connect"
+                        class="px-12 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-green1 text-green5 hover:bg-green2 transition-colors font-bold">
+                        <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                                        <span class="t-up text-base  font-medium text-green4 uppercase">OUR
+                                            Let’s Connect</span>
+                                        <span class="t-down text-base  font-medium text-green4 uppercase">OUR
+                                            Let’s Connect</span>
+                                    </div>
+                    </a>
+                </div>
+
+                <!-- Mobile "LET'S CONNECT" button (visible on mobile) -->
+                <a href="#connect"
+                    class="lg:hidden px-10 py-4 text-xs bg-green1 text-green4 hover:bg-green2 transition-colors font-bold">
+                    CONNECT
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-item">
+                        <a href="#services" class="mobile-menu-link">
+                            SERVICES
+                            <span class="dropdown-icon">+</span>
+                        </a>
+                        <ul class="mobile-submenu">
+                            <li><a href="#">Service Item 1</a></li>
+                            <li><a href="#">Service Item 2</a></li>
+                            <li><a href="#">Service Item 3</a></li>
+                            <li><a href="#">Service Item 4</a></li>
+                            <li><a href="#">Service Item 5</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="#works" class="mobile-menu-link">WORKS</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="#pricing" class="mobile-menu-link">PRICING</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="#about" class="mobile-menu-link">ABOUT</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="#blog" class="mobile-menu-link">BLOG</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="#contact" class="mobile-menu-link mobile-contact-btn">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- team banner section start -->
+    <section class="subbanner-wrapper bg-black min-h-screen font-farro relative">
+        <!-- Content layer (eta fixed thakbe) -->
+        <div class="banner-content-wrapper">
+            <div class="container relative z-10">
+                <div class="sm:grid grid-cols-2 flex flex-col-reverse items-center md:gap-8 gap-6">
+                    <div>
+                        <h2 class="sm:text-start text-center font-medium lg:text-[72px] sm:text-[64px] text-[32px] text-white md:mb-6 mb-1.5 leading120">
+                            Terms & Conditions
+                        </h2>
+                        <p class="sm:text-start text-center text-white md:text-[18px] sm:text-base text-[14px] leading-[150%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
+                           As a user of this website, we request you to go through these terms and conditions to understand your rights and responsibilities, and make informed decisions about using our services.
+                        </p>
+                    </div>
+                    <div class="shape-3d">
+                        <img src="assets/images/about-page-banner-img.png" class="img-fluid " alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team banner section end -->
+
+
+
+
+    <!--  team wrap section start -->
+      <section class="bg-green5 section-padding">
+        <div class="container ">
+    <div class="term-wrap ">
+                  <!-- Table of Contents Sidebar -->
+        <aside class="toc-sidebar ">
+            <h2 class="toc-title">Table of Contents</h2>
+            <ul class="toc-list">
+                <li class="toc-item">
+                    <a href="#introduction" class="toc-link" data-section="introduction">
+                        <span class="toc-number">1.</span>
+                        <span>Introduction</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#services" class="toc-link" data-section="services">
+                        <span class="toc-number">2.</span>
+                        <span>Services Provided</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#contractor" class="toc-link" data-section="contractor">
+                        <span class="toc-number">3.</span>
+                        <span>Independent Contractor</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#payment" class="toc-link" data-section="payment">
+                        <span class="toc-number">4.</span>
+                        <span>Payment Terms</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#retainers" class="toc-link" data-section="retainers">
+                        <span class="toc-number">5.</span>
+                        <span>Retainers and Unused Hours</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#responsibilities" class="toc-link" data-section="responsibilities">
+                        <span class="toc-number">6.</span>
+                        <span>Client Responsibilities</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#communication" class="toc-link" data-section="communication">
+                        <span class="toc-number">7.</span>
+                        <span>Communication and Availability</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#deadlines" class="toc-link" data-section="deadlines">
+                        <span class="toc-number">8.</span>
+                        <span>Deadlines and Project Changes</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#confidentiality" class="toc-link" data-section="confidentiality">
+                        <span class="toc-number">9.</span>
+                        <span>Confidentiality and Data Protection</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#intellectual" class="toc-link" data-section="intellectual">
+                        <span class="toc-number">10.</span>
+                        <span>Intellectual Property</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#termination" class="toc-link" data-section="termination">
+                        <span class="toc-number">11.</span>
+                        <span>Termination</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#refunds" class="toc-link" data-section="refunds">
+                        <span class="toc-number">12.</span>
+                        <span>Refunds and Cancellations</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#limitation" class="toc-link" data-section="limitation">
+                        <span class="toc-number">13.</span>
+                        <span>Limitation of Liability</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#dispute" class="toc-link" data-section="dispute">
+                        <span class="toc-number">14.</span>
+                        <span>Dispute Resolution</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#changes" class="toc-link" data-section="changes">
+                        <span class="toc-number">15.</span>
+                        <span>Changes to Terms</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#governing" class="toc-link" data-section="governing">
+                        <span class="toc-number">16.</span>
+                        <span>Governing Law</span>
+                    </a>
+                </li>
+                <li class="toc-item">
+                    <a href="#entire" class="toc-link" data-section="entire">
+                        <span class="toc-number">17.</span>
+                        <span>Entire Agreement</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="content ">
+            <p class="text-[18px] text-dark-shade5 leading150 mb-8">These Terms and Conditions (“Terms”) govern your use of the services provided by Pixxen (“we,” “our,” or “us”). By engaging our various services, you (“Client,” “you,” or “your”) agree to be bound by these Terms. If you do not agree, you must not access or use our services.</p>
+           
+            <div id="introduction" class="content-section">
+                <h2 class="section-title">Introduction</h2>
+                <p class="section-text intro-text">
+                    <span class="highlight-text">Biobat</span> is a global virtual assistant company serving a rich client base. Our seasoned, pre-vetted remote professionals offer a wide range of skills and support to businesses and individuals 24/7.
+                </p>
+                <p class="section-text">
+                    These Terms and Conditions ("Terms") govern your use of the services provided by Pixcen ("we," or "us"). By engaging our various services, you ("Client," "you," or "your") agree to be bound by these Terms. If you do not agree, you must not access or use our services.
+                </p>
+                <p class="section-text">
+                    These Terms establish the legal framework for the relationship between Biobat and our Clients. Any additional agreements, including Service Proposals, Project Contracts, or Retainer Packages, form part of these Terms and should be read together.
+                </p>
+            </div>
+
+            <div id="services" class="content-section">
+                <h2 class="section-title">Services Provided</h2>
+                <p class="section-text">
+                    Biobat provides virtual assistant services remotely, including but not limited to Administrative VA, Technical VA, Ecommerce VA, Digital Marketing VA, Airbnb VA, Lead Generation VA, Real Estate VA, and PPC VA. The specific scope of work will be defined in writing before work begins. Services outside the agreed scope may be billed at an additional rate.
+                </p>
+            </div>
+
+            <div id="contractor" class="content-section">
+                <h2 class="section-title">Independent Contractor Relationship</h2>
+                <p class="section-text">
+                    All services are performed as an independent contractor. Nothing in these Terms creates an employer-employee, agency, or partnership relationship. You are not responsible for providing employment benefits, tax contributions, or insurance coverage for Biobat or its team members.
+                </p>
+            </div>
+
+            <div id="payment" class="content-section">
+                <h2 class="section-title">Payment Terms</h2>
+                <p class="section-text">
+                    Fees for services are as outlined in the relevant Service Agreement. Payment must be made in accordance with the agreed invoicing schedule. Unless otherwise stated, invoices are payable within 7 days of issue. Late payments may result in temporary suspension of services.
+                </p>
+                <p class="section-text">
+                    Expenses incurred on your behalf, such as third-party software subscriptions or project-related costs, will be approved by you in advance and billed separately.
+                </p>
+            </div>
+
+            <div id="retainers" class="content-section">
+                <h2 class="section-title">Retainers and Unused Hours</h2>
+                <p class="section-text">
+                    If you engage Biobat on a retainer basis, hours must be prepaid. Retainer hours are valid only for the billing period in which they are purchased. Hours unused in one period, unless expressly stated in writing. Work beyond the retainer is billed at the standard hourly rate or as otherwise agreed.
+                </p>
+            </div>
+
+            <div id="responsibilities" class="content-section">
+                <h2 class="section-title">Client Responsibilities</h2>
+                <p class="section-text">
+                    To enable Biobat to provide services effectively, you agree to supply clear instructions, timely access to required systems, and accurate information. You remain responsible for decisions made using the work we provide and for ensuring compliance with all applicable laws and regulations.
+                </p>
+            </div>
+
+            <div id="communication" class="content-section">
+                <h2 class="section-title">Communication and Availability</h2>
+                <p class="section-text">
+                    We maintain communication with clients through agreed channels such as email, messaging platforms, or project management tools. While Biobat strives to respond promptly, we do not guarantee 24/7 availability unless specifically contracted. Meetings or calls outside the agreed scope may be subject to additional charges.
+                </p>
+            </div>
+
+            <div id="deadlines" class="content-section">
+                <h2 class="section-title">Deadlines and Project Changes</h2>
+                <p class="section-text">
+                    We will use reasonable efforts to meet deadlines, but all delivery dates are estimates unless expressly guaranteed in writing. If the scope of work changes or new requirements are introduced, we may adjust fees, deadlines, or terms accordingly.
+                </p>
+            </div>
+
+            <div id="confidentiality" class="content-section">
+                <h2 class="section-title">Confidentiality and Data Protection</h2>
+                <p class="section-text">
+                    Both parties agree to maintain strict confidentiality regarding all proprietary, personal, and sensitive information exchanged during the engagement. We will not disclose such material to third parties without consent, except where required by law.
+                </p>
+                <p class="section-text">
+                    Biobat complies with applicable data protection laws and expects clients to provide lawful access to any systems, accounts, or data required for service delivery.
+                </p>
+            </div>
+
+            <div id="intellectual" class="content-section">
+                <h2 class="section-title">Intellectual Property</h2>
+                <p class="section-text">
+                    Upon full payment, ownership of deliverables created specifically for you under the Agreement will transfer to you. Pre-existing materials, processes, and tools used by Biobat remain our sole property. Unless agreed otherwise, we reserve the right to display anonymous examples of our work for marketing purposes.
+                </p>
+            </div>
+
+            <div id="termination" class="content-section">
+                <h2 class="section-title">Termination</h2>
+                <p class="section-text">
+                    Either party may terminate this Agreement by giving 7 days' written notice. We may terminate immediately if you fail to pay invoices, breach these Terms, or engage in unlawful or abusive behavior.
+                </p>
+                <p class="section-text">
+                    Upon termination, work ceases immediately. We will deliver any completed work produced up to the termination date, provided that payment obligations are met.
+                </p>
+            </div>
+
+            <div id="refunds" class="content-section">
+                <h2 class="section-title">Refunds and Cancellations</h2>
+                <p class="section-text">
+                    Payments made to Biobat are refundable if requested within 7 days of payment and stated in a written agreement. If you cancel services before completion of a project or billing period, you remain liable for fees incurred up to the date of cancellation.
+                </p>
+            </div>
+
+            <div id="limitation" class="content-section">
+                <h2 class="section-title">Limitation of Liability</h2>
+                <p class="section-text">
+                    Our services are provided "as is" without any warranty of performance or outcome. To the fullest extent permitted by law, Biobat's liability is limited to the total amount you have paid for services in the three 3 months preceding the claim. We are not liable for indirect, incidental, or consequential damages.
+                </p>
+            </div>
+
+            <div id="dispute" class="content-section">
+                <h2 class="section-title">Dispute Resolution</h2>
+                <p class="section-text">
+                    In the event of any disagreement, both parties agree to attempt resolution through good-faith discussions. If the matter cannot be resolved amicably, disputes may be referred to mediation or arbitration before resorting to court proceedings.
+                </p>
+            </div>
+
+            <div id="changes" class="content-section">
+                <h2 class="section-title">Changes to Terms</h2>
+                <p class="section-text">
+                    Biobat may revise these Terms from time to time. Any changes will be posted on our website and communicated to active Clients. Continued use of our services after such updates constitutes acceptance of the revised Terms.
+                </p>
+            </div>
+
+            <div id="governing" class="content-section">
+                <h2 class="section-title">Governing Law</h2>
+                <p class="section-text">
+                    These Terms shall be governed by and interpreted in accordance with the laws of the UAE and Bangladesh jurisdictions. Any legal proceedings must be brought in the courts of these jurisdictions.
+                </p>
+            </div>
+
+            <div id="entire" class="content-section">
+                <h2 class="section-title">Entire Agreement</h2>
+                <p class="section-text">
+                    These Terms, together with any Service Agreements or Proposals, constitute the entire agreement between you and Biobat and supersede all prior discussions, negotiations, or understandings.
+                </p>
+                <p class="section-text" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--color-dark-shade3);">
+                    <strong>Last Updated:</strong> Sep 01, 2025
+                </p>
+            </div>
+        </div>
+    </div>
+        </div>
+      </section>
+    <!-- team wrap section end -->
+
+
+
+
+
+    <!-- cta section start -->
+    <section class="cta-section relative section-padding bg-green5 overflow-hidden">
+        <img src="assets/images/shape-top.png"
+            class="img-fluid absolute top-0 left-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+            alt="">
+        <img src="assets/images/shape-right.png"
+            class="img-fluid absolute bottom-0 right-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+            alt="">
+
+        <div class="container">
+            <div class="cta-wrap z-80 relative">
+                <div class="max-w-170 mx-auto w-full">
+                    <h2
+                        class="text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-1.5 mb-3 leading120">
+                        Shape your next pixel
+                    </h2>
+                    <p
+                        class="text-white text-center md:text-[18px] sm:text-base text-[14px] leading-[140%] mx-auto sm:mt-6 font-normal mb-6 md:mb-8">
+                        Pixxen is built by expert designers, product thinkers, and creative technologists who believe
+                        every pixel has a purpose.</p>
+                    <div class="w-full flex justify-center">
+
+                        <button
+                            class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
+                            <span class="bg-overlay absolute inset-0 z-1"></span>
+                            <div class="btn-inner relative z-2 flex items-center gap-3">
+                                <div
+                                    class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                    <div class="icon-slider flex flex-row ">
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
+                                        Connect</span>
+                                    <span
+                                        class="t-down md:text-[20px] text-base  font-medium text-white uppercase">Let’s
+                                        Connect</span>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- cta section end -->
+
+
+
+    <!-- footer section start -->
+    <footer class="relative">
+        <div
+            class="bg-gradient-to-b from-[#002417] to-[#001B11] text-white  border-t border-b border-dark-shade3 relative z-10 lg:mb-52.5 md:mb-37.5 sm:mb-30 mb-20">
+            <div class="container">
+                <!-- Desktop Grid Layout -->
+                <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
+
+                    <div
+                        class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b border-dark-shade3">
+                        <div class="grid md:grid-cols-4 grid-cols-2 xl:gap-8 gap-4">
+                            <!-- Services Column -->
+                            <div class="">
+                                <h3 class="text-green2 text-base sm:text-lg font-semibold mb-3 lg:mb-6">Services</h3>
+                                <ul class="space-y-2 lg:space-y-3">
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">MOBILE
+                                            APP DESIGN</a></li>
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">DASHBOARD
+                                            DESIGN</a></li>
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">WEBSITE
+                                            DESIGN</a></li>
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">WEB
+                                            APP DESIGN</a></li>
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">SAAS
+                                            DESIGN</a></li>
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">BRANDING</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Pixxen Column -->
+                            <div class="">
+                                <h3 class="text-green2 text-base sm:text-lg font-semibold mb-3 lg:mb-6">Pixxen</h3>
+                                <ul class="space-y-2 lg:space-y-3">
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">ABOUT</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">CONTACT</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">PRICING</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">TEAM</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+                            <!-- Resources Column -->
+                            <div class="">
+                                <h3 class="text-green2 text-base sm:text-lg font-semibold mb-3 lg:mb-6">Resources</h3>
+                                <ul class="space-y-2 lg:space-y-3">
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">WORKS</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">BLOGS</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Legal Column -->
+                            <div class="">
+                                <h3 class="text-green2 text-base sm:text-lg font-semibold mb-3 lg:mb-6">Legal</h3>
+                                <ul class="space-y-2 lg:space-y-3">
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">TERMS</a>
+                                    </li>
+                                    <li><a href="#"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">PRIVACY</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Copyright -->
+                        <div class="mt-8 lg:mt-0 pt-6 lg:pt-0 border-t border-green4 lg:border-0 md:block hidden">
+                            <p class="text-[#759187] text-sm text-center lg:text-left">© 2026 PIXXEN</p>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Column -->
+                    <div
+                        class="md:pl-10 lg:pl-14 md:border-l  border-dark-shade3 lg:col-span-4 md:col-span-5 md:py-12 sm:py-8 py-6 flex flex-col justify-between gap-5">
+                        <div>
+                            <h3 class="text-green2 md:text-lg text-base font-semibold md:mb-3 mb-2 lg:mb-4">Join 5,000+
+                                design lovers.</h3>
+                            <p class="text-[#759187] sm:text-sm text-[12px] mb-4 lg:mb-6">Monthly design insights, case
+                                studies, and
+                                inspiration straight to your inbox.</p>
+
+                            <!-- Email Input -->
+                            <div class="relative mb-3 md:mb-8 lg:mb-12">
+                                <input type="email" placeholder="Email address"
+                                    class="w-full bg-transparent border border-dark-shade3 rounded-2xl px-4 py-5 lg:py-3.5 h-16 text-white placeholder-[#759187] focus:outline-none focus:border-green3 transition-colors text-sm lg:text-base pr-14" />
+                                <button
+                                    class="absolute group cursor-pointer right-px top-1/2 -translate-y-1/2 bg-green4 hover:bg-green3 p-3.75 rounded-r-2xl transition-colors">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.5628 14.6665L14.4108 7.51452L16.2964 5.62891L26.6673 15.9999L16.2964 26.3707L14.4108 24.4851L21.5628 17.3332H5.33398V14.6665H21.5628Z"
+                                            fill="#759187" class="group-hover:fill-white transition-colors" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="flex md:justify-start justify-center md:gap-2 gap-1 lg:gap-2">
+                            <a href="#" class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                            <a href="#" class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5 11C8.60457 11 9.5 10.1046 9.5 9C9.5 7.89543 8.60457 7 7.5 7H3V11H7.5ZM8.5 13H3V17H8.5C9.60457 17 10.5 16.1046 10.5 15C10.5 13.8954 9.60457 13 8.5 13ZM10.5632 11.5725C11.7239 12.2726 12.5 13.5457 12.5 15C12.5 17.2091 10.7091 19 8.5 19H1V5H7.5C9.70914 5 11.5 6.79086 11.5 9C11.5 9.97964 11.1478 10.877 10.5632 11.5725ZM15.5 6H21V7.5H15.5V6ZM23 14.5H15.5V14.75C15.5 16.2688 16.7312 17.5 18.25 17.5C19.3187 17.5 20.245 16.8904 20.7001 16H22.8338C22.2851 18.0169 20.4407 19.5 18.25 19.5C15.6266 19.5 13.5 17.3734 13.5 14.75V13.25C13.5 10.6266 15.6266 8.5 18.25 8.5C20.8734 8.5 23 10.6266 23 13.25V14.5ZM20.8965 12.5C20.57 11.3457 19.5088 10.5 18.25 10.5C16.9912 10.5 15.93 11.3457 15.6035 12.5H20.8965Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                            <a href="#" class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z"
+                                        fill="white" />
+                                </svg>
+
+
+                            </a>
+                            <a href="#" class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 9.55005C12.9171 8.61327 14.1111 8 15.5 8C18.5375 8 21 10.4624 21 13.5V21H19V13.5C19 11.567 17.433 10 15.5 10C13.567 10 12 11.567 12 13.5V21H10V8.5H12V9.55005ZM5 6.5C4.17157 6.5 3.5 5.82843 3.5 5C3.5 4.17157 4.17157 3.5 5 3.5C5.82842 3.5 6.5 4.17157 6.5 5C6.5 5.82843 5.82842 6.5 5 6.5ZM4 8.5H6V21H4V8.5Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                        </div>
+                        <!-- Copyright -->
+                        <div class="mt-1 flex justify-center md:hidden ">
+                            <p class="text-[#759187] text-sm text-center lg:text-left">© 2026 PIXXEN</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div
+            class="bg-linear-to-b from-[#001B11] to-green4 fixed bottom-0 left-0 w-full lg:h-52.5 md:h-37.5 sm:h-30 h-20 -z-30 flex justify-center items-end">
+            <div class="flex justify-center text-center">
+                <img src="assets/images/pixxen-footerlogo.png" class="img-fluid w-full object-contain" alt="footerlogo">
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
