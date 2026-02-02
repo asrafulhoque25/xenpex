@@ -174,20 +174,48 @@
             
             <!-- Tabs -->
             <div class="flex flex-wrap justify-center gap-3 lg:mb-24 md:mb-15  mb-10">
-                <button class="tab-button active h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px]" data-tab="all">
-                    All
+                <button class="tab-button  mega-reveal-btn relative overflow-hidden active h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px]" data-tab="all">
+                         <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                                        <span class="t-up text-base  font-medium uppercase">All</span>
+                                        <span class="t-down text-base  font-medium uppercase">All</span>
+                                    </div>
                 </button>
-                <button class="tab-button inactive h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px] font-normal" data-tab="design">
-                    Design
+                <button class="tab-button mega-reveal-btn relative overflow-hidden inactive h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px] font-normal" data-tab="design">
+                   <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                                        <span class="t-up text-base  font-medium uppercase">OUR
+                                            Design</span>
+                                        <span class="t-down text-base  font-medium uppercase">OUR
+                                            Design</span>
+                                    </div>
+                   
+                    
                 </button>
-                <button class="tab-button inactive h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px] font-normal" data-tab="ui-ux">
-                    UI/UX
+                <button class="tab-button mega-reveal-btn relative overflow-hidden inactive h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px] font-normal" data-tab="ui-ux">
+                    <div  class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+    <span class="t-up text-base  font-medium uppercase">
+                                            UI/UX</span>
+                                        <span class="t-down text-base  font-medium uppercase">
+                                            UI/UX</span>
+                    </div>
+                          
                 </button>
-                <button class="tab-button inactive h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px] font-normal" data-tab="product-thinking">
-                    Product Thinking
+                <button class="tab-button mega-reveal-btn relative overflow-hidden inactive h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px] font-normal" data-tab="product-thinking">
+                    <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+ <span class="t-up text-base  font-medium uppercase">
+                                            Product Thinking</span>
+                                        <span class="t-down text-base  font-medium uppercase">
+                                            Product Thinking</span>
+                    </div>
+                          
                 </button>
-                <button class="tab-button inactive h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px] font-normal" data-tab="design-trends">
-                    Design Trends
+                <button class="tab-button mega-reveal-btn relative overflow-hidden inactive h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px] font-normal" data-tab="design-trends">
+                    <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+<span class="t-up text-base  font-medium uppercase">
+                                            Design Trends</span>
+                                        <span class="t-down text-base  font-medium uppercase">
+                                            Design Trends</span>
+                    </div>
+                    
                 </button>
             </div>
             
@@ -812,24 +840,35 @@
                 
             </div>
             
-            <!-- Load More Button -->
-            <div class="text-center mt-12">
-                <button class="load-more-btn px-8 py-4 rounded-2xl font-semibold sm:text-lg inline-flex items-center gap-2 bg-green1 md:text-[20px] text-base  font-medium text-green4 uppercase cursor-pointer" id="loadMoreBtn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_4125_1742)">
-<rect width="24" height="24" rx="12" fill="#065136"/>
-<path d="M13.5008 16.1716L18.8648 10.8076L20.279 12.2218L12.5008 20L4.72266 12.2218L6.13688 10.8076L11.5008 16.1716V4H13.5008V16.1716Z" fill="#99FE00"/>
-</g>
-<defs>
-<clipPath id="clip0_4125_1742">
-<rect width="24" height="24" rx="12" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+      
 
-                    Load more
-                </button>
-            </div>
+    <!-- Load More Button -->
+ 
+                    <div class="flex sm:justify-center justify-center w-full mt-14">
+                        <button class="mega-reveal-btn load-more-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
+                            <span class="bg-overlay absolute inset-0 z-1"></span>
+                            <div class="btn-inner relative z-2 flex items-center gap-3">
+                                <div class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                    <div class="icon-slider flex flex-row rotate-90">
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z" fill="var(--color-green1)"></path>
+                                        </svg>
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z" fill="var(--color-green1)"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">LOAD MORE</span>
+                                    <span class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">LOAD MORE</span>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+
+
+
+
             
         </div>
     </section>

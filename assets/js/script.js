@@ -1026,3 +1026,117 @@ if (termWrap) {
     // Initial call to set active section
     updateActiveSection();
 }
+
+
+
+
+
+
+      // career section 
+
+      const careerSection = document.querySelector('.career');
+        
+        if (careerSection) {
+            // Variables
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const jobCards = document.querySelectorAll('.job-card');
+            const loadMoreBtn = document.querySelector('.load-more-btn');
+            const loadMoreContainer = document.querySelector('.load-more-container');
+            let currentCategory = 'all';
+            let visibleCount = 5;
+
+            // Initialize - Show first 5 items
+            function initializeJobs() {
+                jobCards.forEach((card, index) => {
+                    const cardIndex = parseInt(card.getAttribute('data-index'));
+                    if (cardIndex < 5) {
+                        card.classList.remove('hidden');
+                        card.classList.add('show');
+                    } else {
+                        card.classList.add('hidden');
+                        card.classList.remove('show');
+                    }
+                });
+                checkLoadMoreButton();
+            }
+
+            // Check if Load More button should be visible
+            function checkLoadMoreButton() {
+                const filteredCards = Array.from(jobCards).filter(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    return currentCategory === 'all' || cardCategory === currentCategory;
+                });
+
+                const visibleCards = filteredCards.filter(card => !card.classList.contains('hidden'));
+                
+                if (visibleCards.length >= filteredCards.length) {
+                    loadMoreContainer.classList.add('hidden');
+                } else {
+                    loadMoreContainer.classList.remove('hidden');
+                }
+            }
+
+            // Tab Filter Functionality
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active', 'bg-green1', 'text-green5', 'font-bold');
+                        btn.classList.add('bg-dark-shade3', 'text-white', 'font-medium');
+                    });
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active', 'bg-green1', 'text-green5', 'font-bold');
+                    button.classList.remove('bg-dark-shade3', 'text-white', 'font-medium');
+
+                    // Get selected category
+                    currentCategory = button.getAttribute('data-category');
+
+                    // Reset visible count
+                    visibleCount = 5;
+
+                    // Filter job cards
+                    const filteredCards = Array.from(jobCards).filter(card => {
+                        const cardCategory = card.getAttribute('data-category');
+                        return currentCategory === 'all' || cardCategory === currentCategory;
+                    });
+
+                    // Hide all cards first
+                    jobCards.forEach(card => {
+                        card.classList.add('hidden');
+                        card.classList.remove('show');
+                    });
+
+                    // Show first 5 of filtered cards
+                    filteredCards.slice(0, 5).forEach(card => {
+                        card.classList.remove('hidden');
+                        card.classList.add('show');
+                    });
+
+                    checkLoadMoreButton();
+                });
+            });
+
+            // Load More Functionality
+            loadMoreBtn.addEventListener('click', () => {
+                const filteredCards = Array.from(jobCards).filter(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    const isMatch = currentCategory === 'all' || cardCategory === currentCategory;
+                    return isMatch;
+                });
+
+                const hiddenCards = filteredCards.filter(card => card.classList.contains('hidden'));
+                const cardsToShow = hiddenCards.slice(0, 5);
+
+                cardsToShow.forEach(card => {
+                    card.classList.remove('hidden');
+                    card.classList.add('show');
+                });
+
+                visibleCount += 5;
+                checkLoadMoreButton();
+            });
+
+            // Initialize on page load
+            initializeJobs();
+        }

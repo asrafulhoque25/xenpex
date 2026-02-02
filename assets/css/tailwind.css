@@ -1169,6 +1169,9 @@ html {
 .blogitem:hover .readmore p {
   color: #99FE00;
 }
+.blogitem:hover svg * {
+  stroke: #99FE00;
+}
 /* blog end */
 
 
@@ -1229,7 +1232,7 @@ html {
         
         .blogs .tab-button.active {
             background: #99FE00;
-            color: #065136;
+            color: #065136 !important;
             border-color: #99FE00;
         }
         
@@ -1238,9 +1241,7 @@ html {
             color: #fff;
         }
         
-        .blogs .tab-button:hover {
-            border-color: #99FE00;
-        }
+      
         
         /* Search Input Styles */
         .blogs .search-wrapper {
@@ -1299,15 +1300,7 @@ html {
         }
         
         /* Load More Button */
-        .blogs .load-more-btn {
-            transition: all 0.3s ease;
-        }
-        
-        .blogs .load-more-btn:hover {
-            background: var(--color-green2);
-            transform: translateY(-2px);
-        }
-        
+  
         .blogs .load-more-btn:active {
             transform: translateY(0);
         }
@@ -1470,3 +1463,276 @@ background: radial-gradient(50% 27.56% at 50% 0%, var(--secondary-shade-3, #0651
             padding-bottom: 14px;
         }
 /* terms end */
+
+
+
+
+
+/* Blog details start */
+.blog-details-content h1{
+font-size: 72px;
+font-weight: 500;
+line-height: 120%; 
+color: #fff;
+margin-block: 16px;
+}
+.blog-details-content p{
+color: #A7BDB5;
+font-size: 16px;
+font-weight: 400;
+line-height: 150%;
+padding-bottom: 16px;
+}
+.blog-details-content a{
+color:#19CC61;
+font-family: Farro;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+text-decoration: underline;
+}
+.blog-details-content h2{
+color:  #FFF;
+font-size: 64px;
+font-weight: 500;
+line-height: 120%; 
+margin-top: 26px;
+margin-bottom: 16px;
+}
+.blog-details-content h3{
+color:  #FFF;
+font-size: 32px;
+font-weight: 500;
+line-height: 120%; 
+margin-top: 26px;
+margin-bottom: 16px;
+}
+.blog-details-content h4{
+color:  #FFF;
+font-size: 24px;
+font-weight: 500;
+line-height: 120%; 
+margin-top: 26px;
+margin-bottom: 16px;
+}
+.blog-details-content h5{
+color:  #FFF;
+font-size: 20px;
+font-weight: 500;
+line-height: 120%; 
+margin-top: 26px;
+margin-bottom: 16px;
+}
+.blog-details-content h6{
+color:  #FFF;
+font-size: 16px;
+font-weight: 500;
+line-height: 120%; 
+margin-top: 26px;
+margin-bottom: 16px;
+}
+.blog-details-content b{
+color:  #FFF;
+font-size: 16px;
+font-weight: 500;
+line-height: 120%; 
+margin-top: 26px;
+margin-bottom: 16px;
+}
+.blog-details-content img{ 
+margin-top: 24px;
+margin-bottom: 24px;
+border-radius: 12px;
+}
+
+
+
+
+.blog-details-content ul{
+padding-top: 16px;
+}
+.blog-details-content ul li{
+    position: relative;
+    margin-bottom: 12px;
+}
+.blog-details-content ul li::after{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../images/list-point.svg);
+    height: 24px;
+    width: 24px;
+    
+}
+.blog-details-content ul li p{
+padding-bottom: 0;
+padding-left: 40px;
+}
+
+
+
+
+.blog-details-content ol{
+padding-top: 16px;
+}
+.blog-details-content ol li{
+    position: relative;
+    margin-bottom: 12px;
+}
+.blog-details-content ol li::after{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    background-color: #19CC61;
+    border-radius: 100px;
+    
+}
+.blog-details-content ol li p{
+padding-bottom: 0;
+padding-left: 30px;
+}
+/* Blog details end */
+
+
+/* career start */
+    @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .job-card.show {
+            animation: fadeIn 0.4s ease;
+        }
+
+        .career-details{
+            background: var(--Radial-Bottom-BG, radial-gradient(50.93% 20.85% at 50% 100%, var(--secondary-shade-3, #065136) 0%, var(--dark-shade-1, #002417) 100%));
+        }
+
+
+
+
+
+
+
+.job-details p{
+color: #A7BDB5;
+font-size: 16px;
+font-weight: 400;
+line-height: 150%;
+padding-bottom: 16px;
+}
+.job-details a{
+color:#19CC61;
+font-family: Farro;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+text-decoration: underline;
+}
+.job-details h2{
+color:  #FFF;
+font-size: 64px;
+font-weight: 500;
+line-height: 120%; 
+margin-top: 26px;
+margin-bottom: 16px;
+}
+.job-details h3{
+color:  #FFF;
+font-size: 32px;
+font-weight: 500;
+line-height: 120%; 
+margin-top: 26px;
+margin-bottom: 16px;
+}
+.job-details h4{
+color:  #FFF;
+font-size: 24px;
+font-weight: 500;
+line-height: 120%; 
+margin-top: 20px;
+margin-bottom: 10px;
+}
+.job-details h5{
+color:  #FFF;
+font-size: 20px;
+font-weight: 500;
+line-height: 120%; 
+margin-top: 26px;
+margin-bottom: 16px;
+}
+.job-details h6{
+color:  #FFF;
+font-size: 16px;
+font-weight: 500;
+line-height: 120%; 
+margin-top: 26px;
+margin-bottom: 16px;
+}
+.job-details b{
+color:  #FFF;
+font-size: 16px;
+font-weight: 500;
+line-height: 120%; 
+margin-top: 26px;
+margin-bottom: 16px;
+}
+.job-details img{ 
+margin-top: 24px;
+margin-bottom: 24px;
+border-radius: 12px;
+}
+
+
+
+
+.job-details ul{
+padding-top: 16px;
+}
+.job-details ul li{
+    position: relative;
+    margin-bottom: 12px;
+}
+.job-details ul li::after{
+content: '';
+    position: absolute;
+    left:0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 8px;
+    width: 8px;
+    background-color: #19CC61;
+    border-radius: 100px;
+}
+.job-details ul li p{
+padding-bottom: 0;
+padding-left: 20px;
+}
+
+
+
+.job-details h4:not(:first-of-type) {
+    border-top: 1px solid #29473C;
+    padding-top: 24px; 
+}
+
+.applynow-box{
+border-radius: 24px;
+border: 1px solid var(--dark-shade-3, #29473C);
+background: var(--Radial-Top-BG, radial-gradient(50% 27.56% at 50% 0%, var(--secondary-shade-3, #065136) 0%, var(--dark-shade-1, #002417) 100%));
+}
+
+/* career end */
