@@ -556,6 +556,40 @@ html {
     top: 50%;
     transform: translate(-50%,-50%);
 }
+.scrollbox-counter {
+    position: relative;
+}
+
+/* Vertical Line */
+.scrollbox-counter::after {
+    content: '';
+    position: absolute;
+    left: 24px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #29473C;
+    z-index: 0;
+}
+
+@media (min-width: 768px) {
+    .scrollbox-counter::after { left: 32px; }
+}
+
+.phase-counter-wrapper {
+    position: sticky;
+    top: 50%;
+    /* We remove the transform here to prevent the "early stop" gap */
+    /* and use margins to center it instead */
+    margin-top: -32px; 
+    z-index: 20;
+}
+
+/* Ensure the counter number is always visible during transitions */
+.counter-number {
+    display: inline-block;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
 
 /* service section end */
 
@@ -937,6 +971,13 @@ html {
 }
 .about-counter{
     background-image: url(../images/teamvideo-thumbnail.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.scss-counter{
+    background-image: url(../images/scss-counter.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

@@ -1,3 +1,4 @@
+
 // ============================================
 // MOBILE MENU & NAVBAR
 // ============================================
@@ -285,7 +286,7 @@ if (window.innerWidth >= 1024) {
 // ============================================
 // OVERVIEW COUNTER
 // ============================================
-const counterSections = document.querySelectorAll('.overview-counter, .about-counter, .design-counter');
+const counterSections = document.querySelectorAll('.overview-counter, .about-counter, .design-counter, .scss-counter');
 
 if (counterSections.length > 0 && typeof gsap !== 'undefined') {
     if (gsap.registerPlugin) {
@@ -1140,3 +1141,50 @@ if (termWrap) {
             // Initialize on page load
             initializeJobs();
         }
+
+
+
+
+
+        // service section scroll box counter 
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const phaseItems = document.querySelectorAll('.phase-single-item');
+    const counterNumber = document.querySelector('.counter-number');
+    
+    if (!phaseItems.length || !counterNumber) return;
+
+    let lastActivePhase = "1";
+
+    const updateCounter = () => {
+        const triggerPoint = window.innerHeight / 2;
+        let currentPhase = lastActivePhase;
+
+        phaseItems.forEach((item) => {
+            const rect = item.getBoundingClientRect();
+            // If the top of the item has crossed the middle of the screen
+            if (rect.top <= triggerPoint) {
+                currentPhase = item.getAttribute('data-phase');
+            }
+        });
+
+        if (currentPhase !== lastActivePhase) {
+            lastActivePhase = currentPhase;
+            
+            // Animation for number change
+            counterNumber.style.opacity = '0';
+            counterNumber.style.transform = 'translateY(10px)';
+            
+            setTimeout(() => {
+                counterNumber.textContent = currentPhase;
+                counterNumber.style.opacity = '1';
+                counterNumber.style.transform = 'translateY(0)';
+            }, 150);
+        }
+    };
+
+    window.addEventListener('scroll', updateCounter, { passive: true });
+    window.addEventListener('resize', updateCounter);
+    updateCounter(); // Initial check
+});
