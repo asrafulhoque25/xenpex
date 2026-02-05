@@ -506,7 +506,7 @@ function applyGradientAnimation(sectionSelector) {
                 start: 'top 108%',
                 end: 'top 25%',
                 scrub: 2,
-                markers:true,
+                markers:false,
             }
         });
 
