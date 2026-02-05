@@ -579,8 +579,6 @@ html {
 .phase-counter-wrapper {
     position: sticky;
     top: 50%;
-    /* We remove the transform here to prevent the "early stop" gap */
-    /* and use margins to center it instead */
     margin-top: -32px; 
     z-index: 20;
 }
@@ -978,6 +976,13 @@ html {
 }
 .scss-counter{
     background-image: url(../images/scss-counter.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.branding-counter{
+    background-image: url(../images/teamvideo-thumbnail.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

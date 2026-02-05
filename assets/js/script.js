@@ -286,7 +286,7 @@ if (window.innerWidth >= 1024) {
 // ============================================
 // OVERVIEW COUNTER
 // ============================================
-const counterSections = document.querySelectorAll('.overview-counter, .about-counter, .design-counter, .scss-counter');
+const counterSections = document.querySelectorAll('.overview-counter, .about-counter, .design-counter, .branding-counter, .scss-counter');
 
 if (counterSections.length > 0 && typeof gsap !== 'undefined') {
     if (gsap.registerPlugin) {
@@ -503,9 +503,10 @@ function applyGradientAnimation(sectionSelector) {
         const masterTl = gsap.timeline({
             scrollTrigger: {
                 trigger: section, // Unique trigger for each section
-                start: 'top 75%',
+                start: 'top 108%',
                 end: 'top 25%',
                 scrub: 2,
+                markers:true,
             }
         });
 
