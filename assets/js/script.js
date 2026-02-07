@@ -286,7 +286,7 @@ if (window.innerWidth >= 1024) {
 // ============================================
 // OVERVIEW COUNTER
 // ============================================
-const counterSections = document.querySelectorAll('.overview-counter, .about-counter, .design-counter, .branding-counter, .scss-counter');
+const counterSections = document.querySelectorAll('.overview-counter, .about-counter, .design-counter, .branding-counter, .scss-counter, .web-counter');
 
 if (counterSections.length > 0 && typeof gsap !== 'undefined') {
     if (gsap.registerPlugin) {

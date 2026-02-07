@@ -988,6 +988,13 @@ html {
     background-position: center center;
     
 }
+.web-counter{
+    background-image: url(../images/web-counter.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
 /* counter end */
 
 
