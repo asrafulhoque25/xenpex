@@ -1789,3 +1789,21 @@ background: var(--Radial-Top-BG, radial-gradient(50% 27.56% at 50% 0%, var(--sec
 }
 
 /* career end */
+
+
+
+/* case study details start */
+.case-details-banner{
+    overflow: hidden;
+     position: relative;
+     min-height: 85vh;
+     display:flex;
+     align-items: start;
+     justify-content: center;
+     background: var(--Radial-Bottom-BG, radial-gradient(40.93% 20.85% at 50% 100%, var(--secondary-shade-3, #065136) 0%, var(--dark-shade-1, #002417) 100%));
+     
+}
+
+
+
+/* case study details end */
