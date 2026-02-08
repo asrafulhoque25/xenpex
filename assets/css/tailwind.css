@@ -63,6 +63,13 @@ html {
 
 /* navbar start */
 
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 888;
+}
+
 /* Desktop Dropdown Styles */
 .desktop-dropdown {
     position: relative;
@@ -362,18 +369,31 @@ html {
      display:flex;
      align-items: center;
      justify-content: center;
+   
 }
 .subbanner-wrapper .banner-content-wrapper{
      display:flex;
      align-items: center;
      justify-content: center;
      min-height: 85vh;
+       padding: 120px 0 96px 0;
 }
 
 .subbanner-wrapper {
     background-image: url(../images/bannerimg.webp);
     background-size: cover;
     min-height: 85vh;
+}
+
+@media(max-width:991px){
+.subbanner-wrapper .banner-content-wrapper{
+       padding: 120px 0 60px 0;
+}
+}
+@media(max-width:640px){
+.subbanner-wrapper .banner-content-wrapper{
+       padding: 120px 0 48px 0;
+}
 }
 /* Background Reveal */
 .banner-wrapper .bg-overlay {
@@ -412,7 +432,11 @@ html {
     transform: translateY(-100%);
 }
 
-
+@media (max-width:640px) {
+    .mega-reveal-btn{
+        height: 52px;
+    }
+}
 
 
 
@@ -1013,6 +1037,12 @@ html {
             margin: 0 -20px;
             padding: 1rem 0;
         }
+
+        @media (max-width:640px) {
+             .marquee-stripe {
+                padding: .5rem 0;
+             }
+        }
         
         /* Stripe rotation classes */
         .marquee-stripe.rotate-2 {
@@ -1085,7 +1115,12 @@ html {
             border-radius: 50%;
             flex-shrink: 0;
         }
-        
+             @media (max-width:640px) {
+               .marquee-dot {
+            width: 6px;
+            height: 6px;
+        }
+        }
    
         
         /* Left to Right Animation */
