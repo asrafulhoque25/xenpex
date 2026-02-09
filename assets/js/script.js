@@ -179,8 +179,8 @@ document.addEventListener('DOMContentLoaded', function() {
             1536: { perPage: 5 },
             1280: { perPage: 4 },
             1024: { perPage: 3 },
-            768: { perPage: 2 },
-            640: { perPage: 1 }
+            768: { perPage: 2.5 },
+            640: { perPage: 1.5 }
         }
     });
 
@@ -365,7 +365,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-
 // ============================================
 // FAQ ACCORDION
 // ============================================
@@ -374,28 +373,29 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (faqItems.length === 0 || typeof gsap === 'undefined') return;
     
+    // Initialize all FAQ items as collapsed
     faqItems.forEach((item) => {
         const answer = item.querySelector('.faq-answer');
+        const icon = item.querySelector('.plus-icon');
+        
+        // Remove active class from all items
+        item.classList.remove('active');
+        
+        // Set all answers to height 0
         if (answer) {
             gsap.set(answer, { height: 0 });
         }
+        
+        // Set all icons to rotation 0
+        if (icon) {
+            gsap.set(icon, { rotation: 0 });
+        }
     });
 
-    const firstItem = faqItems[0];
-    if (firstItem) {
-        const firstAnswer = firstItem.querySelector('.faq-answer');
-        const firstBorder = firstItem.querySelector('.green-border');
-        const firstIcon = firstItem.querySelector('.plus-icon');
-        
-        if (firstAnswer) gsap.set(firstAnswer, { height: 'auto' });
-        if (firstBorder) gsap.set(firstBorder, { opacity: 1 });
-        if (firstIcon) gsap.set(firstIcon, { rotation: 45 });
-    }
-
+    // Add click event listeners
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         const answer = item.querySelector('.faq-answer');
-        const border = item.querySelector('.green-border');
         const icon = item.querySelector('.plus-icon');
         
         if (!question) return;
@@ -403,9 +403,9 @@ document.addEventListener('DOMContentLoaded', function() {
         question.addEventListener('click', () => {
             const isActive = item.classList.contains('active');
             
+            // Close all other items
             faqItems.forEach(otherItem => {
                 const otherAnswer = otherItem.querySelector('.faq-answer');
-                const otherBorder = otherItem.querySelector('.green-border');
                 const otherIcon = otherItem.querySelector('.plus-icon');
                 
                 otherItem.classList.remove('active');
@@ -417,12 +417,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         ease: 'power2.inOut'
                     });
                 }
-                if (otherBorder) {
-                    gsap.to(otherBorder, {
-                        opacity: 0,
-                        duration: 0.3
-                    });
-                }
                 if (otherIcon) {
                     gsap.to(otherIcon, {
                         rotation: 0,
@@ -432,6 +426,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
+            // Open clicked item if it wasn't active
             if (!isActive) {
                 item.classList.add('active');
                 
@@ -440,12 +435,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         height: 'auto',
                         duration: 0.4,
                         ease: 'power2.inOut'
-                    });
-                }
-                if (border) {
-                    gsap.to(border, {
-                        opacity: 1,
-                        duration: 0.3
                     });
                 }
                 if (icon) {
