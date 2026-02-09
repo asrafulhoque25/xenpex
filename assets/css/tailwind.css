@@ -1215,11 +1215,7 @@ nav{
     border-radius: 16px;
 }
 }
-@media (max-width:576px) {
-   .teammembers .team-member{
-    width:100%;
-}
-}
+
 
 /* team end */
 
