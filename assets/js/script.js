@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
         drag: 'free',
         focus: 'center',
         perPage: 5,
-        gap: '0px',
+         gap: '12px',
         arrows: false,
         pagination: false,
         autoScroll: {
@@ -178,9 +178,9 @@ document.addEventListener('DOMContentLoaded', function() {
         breakpoints: {
             1536: { perPage: 5 },
             1280: { perPage: 4 },
-            1024: { perPage: 3 },
+            1024: { perPage: 3 , gap: '10px',},
             768: { perPage: 2.5 },
-            640: { perPage: 1.5 }
+            640: { perPage: 1.5, gap: '8px', }
         }
     });
 
