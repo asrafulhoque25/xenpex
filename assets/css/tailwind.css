@@ -354,6 +354,11 @@ nav{
     min-height: 95vh;
 }
 
+@media(max-width:640px){
+    .banner {
+        background-position: center;
+    }
+}
 
 /* 3D Shape - smooth transition er jonno */
 .banner-wrapper .shape-3d {
@@ -400,6 +405,12 @@ nav{
 .subbanner-wrapper .banner-content-wrapper{
        padding: 120px 0 48px 0;
 }
+}
+
+@media (max-width:640px) {
+    .subbanner-wrapper{
+        background-position: center;
+    }
 }
 /* Background Reveal */
 .banner-wrapper .bg-overlay {
@@ -852,6 +863,7 @@ nav{
         @media(max-width:1024px){
              .left-content {
                min-height: auto;
+               position: static;
         }
         }
 

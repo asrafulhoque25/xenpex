@@ -514,9 +514,6 @@
   .h-screen {
     height: 100vh;
   }
-  .min-h-100 {
-    min-height: calc(var(--spacing) * 100);
-  }
   .min-h-125\.25 {
     min-height: calc(var(--spacing) * 125.25);
   }
@@ -531,6 +528,9 @@
   }
   .w-4\.5 {
     width: calc(var(--spacing) * 4.5);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
@@ -561,6 +561,9 @@
   }
   .w-31\.5 {
     width: calc(var(--spacing) * 31.5);
+  }
+  .w-\[18px\] {
+    width: 18px;
   }
   .w-\[19px\] {
     width: 19px;
@@ -1844,6 +1847,11 @@
       flex-direction: row;
     }
   }
+  .sm\:items-center {
+    @media (width >= 40rem) {
+      align-items: center;
+    }
+  }
   .sm\:justify-center {
     @media (width >= 40rem) {
       justify-content: center;
@@ -1857,6 +1865,11 @@
   .sm\:gap-0 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:gap-1 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 1);
     }
   }
   .sm\:gap-2 {
@@ -1929,6 +1942,11 @@
     @media (width >= 40rem) {
       border-left-style: var(--tw-border-style);
       border-left-width: 1px;
+    }
+  }
+  .sm\:p-4 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 4);
     }
   }
   .sm\:p-5 {
@@ -2224,6 +2242,11 @@
   .md\:block {
     @media (width >= 48rem) {
       display: block;
+    }
+  }
+  .md\:grid {
+    @media (width >= 48rem) {
+      display: grid;
     }
   }
   .md\:hidden {
@@ -3304,6 +3327,11 @@ nav {
   z-index: 2;
   min-height: 95vh;
 }
+@media (max-width:640px) {
+  .banner {
+    background-position: center;
+  }
+}
 .banner-wrapper .shape-3d {
   transition: transform 0.1s ease-out;
   will-change: transform;
@@ -3342,6 +3370,11 @@ nav {
 @media (max-width:640px) {
   .subbanner-wrapper .banner-content-wrapper {
     padding: 120px 0 48px 0;
+  }
+}
+@media (max-width:640px) {
+  .subbanner-wrapper {
+    background-position: center;
   }
 }
 .banner-wrapper .bg-overlay {
@@ -3677,6 +3710,7 @@ nav {
 @media (max-width:1024px) {
   .left-content {
     min-height: auto;
+    position: static;
   }
 }
 @media (max-width:991px) {

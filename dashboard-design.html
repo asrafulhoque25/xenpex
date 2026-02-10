@@ -12,10 +12,10 @@
 
 <body>
 
-    <nav class="bg-[#012819] border-b border-green4 font-farro">
+    <nav class="bg-[#012819] border-b border-green4">
         <div class="mx-auto">
             <div class="flex items-center justify-between h-12">
-                <div class="flex items-center gap-4">
+                <div class="flex items-center sm:gap-4 gap-3">
                     <!-- Desktop Sidebar Button (hidden on mobile) -->
                     <button id="desktop-sidebar"
                         class="hidden lg:block text-green1 hover:text-green2 px-19 py-5 bg-green4 hover:bg-green3 cursor-pointer transition-colors"
@@ -37,7 +37,7 @@
                     </button>
 
                     <a href="/" class="flex items-center">
-                        <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid">
+                        <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid sm:max-w-auto max-w-[130px]">
                     </a>
                 </div>
 
@@ -94,8 +94,8 @@
 
                 <!-- Mobile "LET'S CONNECT" button (visible on mobile) -->
                 <a href="#connect"
-                    class="lg:hidden px-10 py-4 text-xs bg-green1 text-green4 hover:bg-green2 transition-colors font-bold">
-                    CONNECT
+                    class="lg:hidden px-5 sm:px-10 py-4 text-xs bg-green1 text-green4 hover:bg-green2 transition-colors font-bold">
+                    Let’s Connect
                 </a>
             </div>
         </div>
@@ -149,24 +149,24 @@
         <!-- Content layer (eta fixed thakbe) -->
         <div class="banner-content-wrapper">
             <div class="container relative z-10">
-                <div class="sm:grid grid-cols-2 flex flex-col-reverse items-center md:gap-8 gap-6">
+                <div class="md:grid grid-cols-2 flex flex-col items-center md:gap-8 gap-6">
                     <div>
                         <div class="flex items-center justify-start gap-2 pb-5">
                             <span class="sm:w-2.5 w-1.5 sm:h-2.5 h-1.5 sm:rounded-[3px] rounded-xs bg-green2"></span>
                             <p class="text-green2 sm:text-base text-[12px] font-medium">Dashboard Design Service</p>
                         </div>
                         <h2
-                            class="sm:text-start text-center font-medium lg:text-[72px] sm:text-[52px] text-[32px] text-white md:mb-6 mb-1.5 leading120">
+                            class="text-start font-medium lg:text-[72px] sm:text-[52px] text-[36px] text-white md:mb-6 mb-1.5 leading120">
                             Where complex data becomes clear decisions
                         </h2>
                         <p
-                            class="sm:text-start text-center text-white md:text-[18px] sm:text-base text-[14px] leading-[150%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
+                            class="text-start  text-white md:text-[18px] sm:text-base text-[14px] leading-[150%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
                             We design high-performance SaaS interfaces and internal tools that reduce cognitive load and
                             empower faster decision-making.</p>
 
-                        <div class="flex sm:justify-start justify-center w-full gap-4">
+                        <div class="flex justify-start flex-wrap w-full sm:gap-4 gap-3">
                             <button
-                                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
+                                class="mega-reveal-btn sm:w-auto w-full flex justify-center relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
                                 <span class="bg-overlay absolute inset-0 z-1"></span>
                                 <div class="btn-inner relative z-2 flex items-center gap-3">
                                     <div
@@ -195,7 +195,7 @@
                                 </div>
                             </button>
                             <button
-                                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-transparen border border-white  transition-all duration-200">
+                                class="mega-reveal-btn sm:w-auto w-full flex justify-center relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-transparen border border-white  transition-all duration-200">
                                 <span class="bg-overlay absolute inset-0 z-1"></span>
                                 <div class="btn-inner relative z-2 flex items-center gap-3">
 
@@ -210,18 +210,18 @@
                                 </div>
                             </button>
                         </div>
-                        <div class="flex items-center gap-6 mt-8">
-                            <div class="flex items-center gap-3">
+                        <div class="flex sm:flex-row flex-col sm:items-center items-start sm:gap-6 gap-3 sm:mt-8 mt-5">
+                            <div class="flex items-start gap-3">
                                 <div class="flex items-center  shrink-0">
-                                    <img src="assets/images/white-check.svg" class="img-fluid shrink-0 " alt="">
+                                    <img src="assets/images/white-check.svg" class="img-fluid shrink-0 sm:w-auto w-5" alt="">
                                 </div>
-                                <p class="text-base leading150 text-white">Free Consultation</p>
+                                <p class="sm:text-base text-sm leading150 text-white">Free Consultation</p>
                             </div>
-                            <div class="flex items-center gap-3">
+                            <div class="flex items-start gap-3">
                                 <div class="flex items-center  shrink-0">
-                                    <img src="assets/images/white-check.svg" class="img-fluid shrink-0 " alt="">
+                                    <img src="assets/images/white-check.svg" class="img-fluid shrink-0 sm:w-auto w-5" alt="">
                                 </div>
-                                <p class="text-base leading150 text-white">Unlimited Revisions</p>
+                                <p class="sm:text-base text-sm leading150 text-white">Unlimited Revisions</p>
                             </div>
 
                         </div>
@@ -257,39 +257,39 @@
 
 
             <div
-                class="core-pillar-wrap grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
+                class="core-pillar-wrap grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 sm:mt-8 mt-6">
                 <div
                     class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
                     <div> <img src="assets/images/problem1.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
                         <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             Data Overwhelm</h3>
                         <p class="sm:text-base text-[14px] text-dark-shade5">Are your users lost in a sea of charts?
                             When every metric screams for attention, nothing gets the focus it deserves.</p>
-                        <ul class="mt-8 flex flex-col gap-3 border-b border-dark-shade3 pb-8 mb-8">
+                        <ul class="sm:mt-8 mt-4 flex flex-col sm:gap-3 gap-1.5 border-b border-dark-shade3 sm:pb-8 pb-4 sm:mb-8 mb-4">
                             <li>
-                                <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start gap-3">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Information paralysis leads to
                                         poor decisions</p>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start gap-3">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Users spend more time searching
                                         than analyzing</p>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start gap-3">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Critical insights get buried in
                                         clutter</p>
                                 </div>
                             </li>
                         </ul>
-                        <p class="text-2xl text-white font-medium">73%</p>
+                        <p class="sm:text-2xl text-xl text-white font-medium">73%</p>
                         <p class="text-dark-shade5 text-base mt-2">Of users abandon complex dashboards within first week
                         </p>
                     </div>
@@ -298,34 +298,34 @@
                     class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
                     <div> <img src="assets/images/problem2.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
                         <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             Slow Onboarding</h3>
                         <p class="sm:text-base text-[14px] text-dark-shade5">Does it take weeks to train a new user on
                             your platform? Every hour spent on training is an hour not spent on productive work.</p>
-                        <ul class="mt-8 flex flex-col gap-3 border-b border-dark-shade3 pb-8 mb-8">
+                        <ul class="sm:mt-8 mt-4 flex flex-col sm:gap-3 gap-1.5 border-b border-dark-shade3 sm:pb-8 pb-4 sm:mb-8 mb-4">
                             <li>
-                                <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start gap-3">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Extended training periods delay
                                         ROI</p>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start gap-3">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Support tickets overwhelm your
                                         team</p>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start gap-3">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">User frustration starts from
                                         day one</p>
                                 </div>
                             </li>
                         </ul>
-                        <p class="text-2xl text-white font-medium">3-4 weeks</p>
+                        <p class="sm:text-2xl text-xl text-white font-medium">3-4 weeks</p>
                         <p class="text-dark-shade5 text-base mt-2">Average time to proficiency with poorly designed SaaS
                         </p>
                     </div>
@@ -334,34 +334,34 @@
                     class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
                     <div> <img src="assets/images/problem3.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
                         <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             High Churn Rate</h3>
                         <p class="sm:text-base text-[14px] text-dark-shade5">Poor UX leads to low adoption and high
                             churn rates. When users can't extract value quickly, they leave for competitors.</p>
-                        <ul class="mt-8 flex flex-col gap-3 border-b border-dark-shade3 pb-8 mb-8">
+                        <ul class="sm:mt-8 mt-4 flex flex-col sm:gap-3 gap-1.5 border-b border-dark-shade3 sm:pb-8 pb-4 sm:mb-8 mb-4">
                             <li>
-                                <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start gap-3">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Information paralysis leads to
                                         poor decisions</p>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start gap-3">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Negative word-of-mouth and
                                         reviews</p>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start gap-3">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Revenue loss compounds monthly
                                     </p>
                                 </div>
                             </li>
                         </ul>
-                        <p class="text-2xl text-white font-medium">73%</p>
+                        <p class="sm:text-2xl text-xl text-white font-medium">73%</p>
                         <p class="text-dark-shade5 text-base mt-2">Average annual churn for SaaS with poor UX</p>
                     </div>
                 </div>
@@ -383,43 +383,43 @@
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your next pixel</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
                             solutions</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
                             design</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your vision</span>
                     </div>
 
@@ -427,43 +427,43 @@
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your next pixel</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
                             solutions</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
                             design</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your vision</span>
                     </div>
                 </div>
@@ -495,51 +495,51 @@
 
 
                 <div class="rounded-3xl border border-dark-shade3">
-                    <div class="grid grid-cols-2 relative">
+                    <div class="grid md:grid-cols-2 grid-cols-1 relative">
 
                         <img src="assets/images//specialized-dashboard1.webp"
                             class="img-fluid h-full rounded-l-3xl object-cover" alt="specialized">
 
-                        <div class="grid grid-cols-2">
+                        <div class="grid sm:grid-cols-2 grid-cols-1">
                             <div class="col-span-1  ">
-                                <div class="lg:p-8 p-6">
+                                <div class="lg:p-8 sm:p-6 p-4">
                                     <div>
                                         <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">Data
                                             Visualization</h3>
-                                        <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">Custom charts,
+                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">Custom charts,
                                             graphs, and heatmaps designed for instant comprehension. We transform raw
                                             numbers into visual stories that guide action.</p>
                                         <div class="md:mt-6 mt-4">
-                                            <ul>
+                                            <ul class="flex flex-col gap-0.5">
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Interactive
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Interactive
                                                             Chart Libraries</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Custom
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Custom
                                                             Infographics</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Heat Maps &
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Heat Maps &
                                                             Flow Diagrams</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Responsive Data
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Responsive Data
                                                             Tables</p>
                                                     </div>
                                                 </li>
@@ -548,58 +548,58 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-span-1 justify-self-end self-end">
+                            <div class="col-span-1 justify-self-end self-end sm:block hidden">
                                 <img src="assets/images/dashboard-shape.svg" class="img-fluid" alt="shap dashboard">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="rounded-3xl border border-dark-shade3">
-                    <div class="grid grid-cols-2 relative">
+                    <div class="grid md:grid-cols-2 grid-cols-1 relative">
 
                         <img src="assets/images//specialized-dashboard2.webp"
                             class="img-fluid h-full rounded-l-3xl object-cover" alt="specialized">
 
-                        <div class="grid grid-cols-2">
+                        <div class="grid sm:grid-cols-2 grid-cols-1">
                             <div class="col-span-1  ">
-                                <div class="lg:p-8 p-6">
+                                <div class="lg:p-8 sm:p-6 p-4">
                                     <div>
                                         <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">Admin
                                             Panels</h3>
-                                        <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">Streamlined
+                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">Streamlined
                                             back-office tools that empower your operations team. Designed for power
                                             users who need speed and precision.</p>
                                         <div class="md:mt-6 mt-4">
-                                            <ul>
+                                            <ul class="flex flex-col gap-0.5">
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Role-Based
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Role-Based
                                                             Access Control</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Bulk Operations
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Bulk Operations
                                                             UI</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Advanced Search
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Advanced Search
                                                             & Filtering</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Activity Logs &
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Activity Logs &
                                                             Audit Trails</p>
                                                     </div>
                                                 </li>
@@ -608,58 +608,58 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-span-1 justify-self-end self-end">
+                            <div class="col-span-1 justify-self-end self-end sm:block hidden">
                                 <img src="assets/images/dashboard-shape.svg" class="img-fluid" alt="shap dashboard">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="rounded-3xl border border-dark-shade3">
-                    <div class="grid grid-cols-2 relative">
+                    <div class="grid md:grid-cols-2 grid-cols-1 relativ">
 
                         <img src="assets/images/specialized-dashboard1.webp"
                             class="img-fluid h-full rounded-l-3xl object-cover" alt="specialized">
 
-                        <div class="grid grid-cols-2">
+                        <div class="grid sm:grid-cols-2 grid-cols-1">
                             <div class="col-span-1  ">
-                                <div class="lg:p-8 p-6">
+                                <div class="lg:p-8 sm:p-6 p-4">
                                     <div>
                                         <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">Product
                                             Design</h3>
-                                        <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">Complete UI/UX for
+                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">Complete UI/UX for
                                             B2B and B2C software platforms. From onboarding to advanced features, we
                                             design the entire user journey.</p>
                                         <div class="md:mt-6 mt-4">
-                                            <ul>
+                                            <ul class="flex flex-col gap-0.5">
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">User Onboarding
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">User Onboarding
                                                             Flows</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Settings &
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Settings &
                                                             Preferences</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Notification
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Notification
                                                             Systems</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Subscription &
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Subscription &
                                                             Billing UI</p>
                                                     </div>
                                                 </li>
@@ -668,7 +668,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-span-1 justify-self-end self-end">
+                            <div class="col-span-1 justify-self-end self-end sm:block hidden">
                                 <img src="assets/images/dashboard-shape.svg" class="img-fluid" alt="shap dashboard">
                             </div>
                         </div>
@@ -690,8 +690,7 @@
         <div class="max-w-383.75 w-full mx-auto mt-auto md:px-5 px-4">
             <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-3 gap-1 lg:min-h-[80vh] items-end">
 
-                <div
-                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                <div class="counter-card h-full sm:h-auto lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
                     <div class="icon-box rounded-lg text-white">
                         <img src="assets/images/counter1.svg" class="img-fluid lg:w-16 md:w-12.5 w-8" alt="counter">
                     </div>
@@ -705,8 +704,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                <div class="counter-card h-full sm:h-auto lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
                     <div class="icon-box rounded-lg text-white">
                         <img src="assets/images/counter2.svg" class="img-fluid lg:w-16 md:w-12.5 w-8" alt="counter">
                     </div>
@@ -719,8 +717,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                <div class="counter-card h-full sm:h-auto lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
                     <div class="icon-box rounded-lg text-white">
                         <img src="assets/images/counter3.svg" class="img-fluid lg:w-16 md:w-12.5 w-8" alt="counter">
                     </div>
@@ -733,8 +730,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                <div class="counter-card h-full sm:h-auto lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
                     <div class="icon-box rounded-lg text-white">
                         <img src="assets/images/counter4.svg" class="img-fluid lg:w-16 md:w-12.5 w-8" alt="counter">
                     </div>
@@ -773,14 +769,17 @@
 
 
             <div
-                class="core-pillar-wrap grid md:grid-cols-4 sm:grid-cols-2 grid-cols-2 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
+                class="core-pillar-wrap grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
                 <div
                     class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
-                    <div> <img src="assets/images/edge1.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                    <div> 
+                        <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/edge1.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
                         <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             Custom Design Systems</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">We build scalable component libraries so your
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-[#A7BDB5]">We build scalable component libraries so your
                             dashboard can grow without breaking. Every button, input, and card is documented and
                             reusable.</p>
 
@@ -788,33 +787,42 @@
                 </div>
                 <div
                     class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
-                    <div> <img src="assets/images/edge2.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                    <div> 
+                        <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/edge2.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
                         <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             User Role Mapping</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Interfaces tailored to different user levels
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-[#A7BDB5]">Interfaces tailored to different user levels
                             (Admin vs. Viewer). Each role sees exactly what they need—nothing more, nothing less.</p>
 
                     </div>
                 </div>
                 <div
                     class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
-                    <div> <img src="assets/images/edge3.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                    <div>
+                        <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/edge3.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
                         <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             Performance Optimization</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Lightweight designs that load data-heavy
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-[#A7BDB5]">Lightweight designs that load data-heavy
                             screens instantly. We optimize every asset and interaction for maximum speed.</p>
 
                     </div>
                 </div>
                 <div
                     class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
-                    <div> <img src="assets/images/edge4.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                    <div> 
+                        <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/edge4.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
                         <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             Actionable UX</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Moving beyond "pretty charts" to interfaces
+                        <p class="text-center sm:text-start text-center sm:text-start sm:text-base text-[12px] text-[#A7BDB5]">Moving beyond "pretty charts" to interfaces
                             that prompt user action. Every screen has a clear next step and purpose.</p>
 
                     </div>
@@ -830,15 +838,15 @@
     <!--  design principle start -->
     <div class=" relative bg-linear-gradient bg-[#001B11] relative section-padding overflow-hidden ">
         <div class="container relative z-20">
-            <div class="grid lg:grid-cols-2 gap-8">
+            <div class="grid lg:grid-cols-2 sm:gap-8">
 
                 <!-- Left Side -->
-                <div class="max-w-152 w-full lg:sticky top-20 min-h-100 h-100">
+                <div class="left-content">
                     <h2
-                        class=" text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-5 leading120">
+                        class=" text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-5 mb-3 leading120">
                         Design Principle
                     </h2>
-                    <p class="text-base lg:text-lg text-dark-shade5 mb-9 lg:mb-12">
+                    <p class="sm:text-base text-sm lg:text-lg text-dark-shade5 sm:mb-6 md:pb-4 pb-3 lg:mb-12">
                         Our design decisions are grounded in proven principles that reduce friction and maximize usability.
                     </p>
                     <button
@@ -866,69 +874,71 @@
                             </div>
                         </div>
                     </button>
+                     <img src="assets/images/workshape.svg"
+                            class="img-fluid absolute -left-50 -bottom-24 z-10 hidden lg:block " alt="works shape">
                 </div>
 
                 <!-- right Side -->
-                <div class=" flex flex-col gap-2 relative z-10">
+                <div class=" flex flex-col sm:gap-2 relative z-10">
                     <div class="md:py-8 py-6 border-t border-b border-dark-shade3">
                         <h3
-                            class="text-white leading120 text-[18px] md:text-[20px] lg:text-[24px] font-medium md:pb-4 pb-2">
+                            class="text-white leading120 text-[18px] md:text-[20px] lg:text-[24px] font-medium md:pb-4 pb-3">
                             Why We're Leaders in FinTech UX</h3>
-                        <p class="sm:text-base text-sm text-dark-shade5">With over 50 financial technology projects
+                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5">With over 50 financial technology projects
                             delivered, we understand the unique challenges of designing for trust, security, and
                             compliance while maintaining exceptional user experience. Our FinTech designs have processed
                             over $2B in transactions.</p>
 
                         <div
-                            class="bg-dark-shade2 md:mt-8 mt-6 rounded-xl p-4 flex justify-between items-center gap-[6px] ">
+                            class="bg-dark-shade2 md:mt-8 sm:mt-6 mt-3 rounded-xl p-2 sm:p-4 flex justify-between items-center gap-[6px] ">
                             <div
-                                class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-xl font-medium leading120">-67%</p>
-                                <p class="text-dark-shade5 text-sm leading150">Time to insight</p>
+                                class="flex flex-col gap-1.5 sm:gap-3 justify-center items-center border-r border-dark-shade4 w-full">
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">-67%</p>
+                                <p class="text-dark-shade5 sm:text-sm text-[12px] leading150">Time to insight</p>
                             </div>
-                            <div class="flex flex-col gap-3 justify-center items-center w-full">
-                                <p class="text-dark-shade6 text-xl font-medium leading120">+89%</p>
-                                <p class="text-dark-shade5 text-sm leading150">Task completion</p>
+                            <div class="flex flex-col gap-1.5 sm:gap-3 justify-center items-center w-full">
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">+89%</p>
+                                <p class="text-dark-shade5 sm:text-sm text-[12px] leading150">Task completion</p>
                             </div>
                         </div>
                     </div>
                     <div class="md:py-8 py-6 border-b border-dark-shade3">
                         <h3
-                            class="text-white leading120 text-[18px] md:text-[20px] lg:text-[24px] font-medium md:pb-4 pb-2">
+                            class="text-white leading120 text-[18px] md:text-[20px] lg:text-[24px] font-medium md:pb-4 pb-3">
                             Progressive Disclosure</h3>
-                        <p class="sm:text-base text-sm text-dark-shade5">Advanced features are hidden until needed.
+                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5">Advanced features are hidden until needed.
                             Beginners see simplicity, experts access power—all in the same interface.</p>
 
                         <div
-                            class="bg-dark-shade2 md:mt-8 mt-6 rounded-xl p-4 flex justify-between items-center gap-[6px] ">
+                            class="bg-dark-shade2 md:mt-8 sm:mt-6 mt-3 rounded-xl p-2 sm:p-4 flex justify-between items-center gap-[6px] ">
                             <div
-                                class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-xl font-medium leading120">-52%</p>
-                                <p class="text-dark-shade5 text-sm leading150">Time to insight</p>
+                                class="flex flex-col gap-1.5 sm:gap-3 justify-center items-center border-r border-dark-shade4 w-full">
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">-52%</p>
+                                <p class="text-dark-shade5 sm:text-sm text-[12px] leading150">Time to insight</p>
                             </div>
-                            <div class="flex flex-col gap-3 justify-center items-center w-full">
-                                <p class="text-dark-shade6 text-xl font-medium leading120">+76%</p>
-                                <p class="text-dark-shade5 text-sm leading150">Task completion</p>
+                            <div class="flex flex-col gap-1.5 sm:gap-3 justify-center items-center w-full">
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">+76%</p>
+                                <p class="text-dark-shade5 sm:text-sm text-[12px] leading150">Task completion</p>
                             </div>
                         </div>
                     </div>
                     <div class="md:py-8 py-6 border-b border-dark-shade3">
                         <h3
-                            class="text-white leading120 text-[18px] md:text-[20px] lg:text-[24px] font-medium md:pb-4 pb-2">
+                            class="text-white leading120 text-[18px] md:text-[20px] lg:text-[24px] font-medium md:pb-4 pb-3">
                             Contextual Awareness</h3>
-                        <p class="sm:text-base text-sm text-dark-shade5">Smart defaults and predictive actions based on
+                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5">Smart defaults and predictive actions based on
                             user behavior. The interface adapts to each user's workflow patterns.</p>
 
                         <div
-                            class="bg-dark-shade2 md:mt-8 mt-6 rounded-xl p-4 flex justify-between items-center gap-[6px] ">
+                            class="bg-dark-shade2 md:mt-8 sm:mt-6 mt-3 rounded-xl p-2 sm:p-4 flex justify-between items-center gap-[6px] ">
                             <div
-                                class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-xl font-medium leading120">-41%</p>
-                                <p class="text-dark-shade5 text-sm leading150">Time to insight</p>
+                                class="flex flex-col gap-1.5 sm:gap-3 justify-center items-center border-r border-dark-shade4 w-full">
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">-41%</p>
+                                <p class="text-dark-shade5 sm:text-sm text-[12px] leading150">Time to insight</p>
                             </div>
-                            <div class="flex flex-col gap-3 justify-center items-center w-full">
-                                <p class="text-dark-shade6 text-xl font-medium leading120">+93%</p>
-                                <p class="text-dark-shade5 text-sm leading150">Task completion</p>
+                            <div class="flex flex-col gap-1.5 sm:gap-3 justify-center items-center w-full">
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">+93%</p>
+                                <p class="text-dark-shade5 sm:text-sm text-[12px] leading150">Task completion</p>
                             </div>
                         </div>
                     </div>
@@ -958,103 +968,107 @@
 
 
             <div
-                class="core-pillar-wrap grid md:grid-cols-2 sm:grid-cols-2 grid-cols-2 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
+                class="core-pillar-wrap grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
                 <div
-                    class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
+                    class="border h-full border-dark-shade3 rounded-3xl flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
                     <div> <img src="assets/images/transformation1.svg" class="img-fluid" alt="dashboard">
-                        <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                        <div class="p-4 sm:p-5 lg:p-8 ">
+                            <h3
+                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium md:pb-6 pb-3">
                             Before</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Lightweight designs that load data-heavy
+                        <p class="md:text-base sm:text-sm text-[12px] text-[#A7BDB5]">Lightweight designs that load data-heavy
                             screens instantly. We optimize every asset and interaction for maximum speed.</p>
-                        <ul class="mt-8 flex flex-col md:gap-2 gap-2">
+                        <ul class="md:mt-8 sm:mt-4  mt-3 flex flex-col md:gap-2 sm:gap-1 gap-0.5">
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
-                                        <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Cluttered
+                                        <p class="text-[#A7BDB5] md:text-base sm:text-sm text-[12px] leading150">Cluttered
                                             navigation with 47 menu items</p>
                                     </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
-                                        <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Inconsistent data
+                                        <p class="text-[#A7BDB5] md:text-base sm:text-sm text-[12px] leading150">Inconsistent data
                                             visualization styles</p>
                                     </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
-                                        <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">No clear visual
+                                        <p class="text-[#A7BDB5] md:text-base sm:text-sm text-[12px] leading150">No clear visual
                                             hierarchy</p>
                                     </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
-                                        <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Mobile experience
+                                        <p class="text-[#A7BDB5] md:text-base sm:text-sm text-[12px] leading150">Mobile experience
                                             broken</p>
                                     </div>
                                 </div>
                             </li>
 
                         </ul>
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
+                    class="border h-full border-dark-shade3 rounded-3xl flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
                     <div> <img src="assets/images/transformation2.svg" class="img-fluid" alt="dashboard">
-                        <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                        <div class="p-4 sm:p-5 lg:p-8 ">
+                            <h3
+                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium md:pb-6 pb-3">
                             After</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Lightweight designs that load data-heavy
+                        <p class="md:text-base sm:text-sm text-[12px] text-[#A7BDB5]">Lightweight designs that load data-heavy
                             screens instantly. We optimize every asset and interaction for maximum speed.</p>
-                        <ul class="mt-8 flex flex-col md:gap-2 gap-2">
+                        <ul class="md:mt-8 sm:mt-4  mt-3 flex flex-col md:gap-2 sm:gap-1 gap-0.5">
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
-                                        <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Simplified to 12
+                                        <p class="text-[#A7BDB5] md:text-base sm:text-sm text-[12px] leading150">Simplified to 12
                                             core actions</p>
                                     </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
-                                        <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Unified design
+                                        <p class="text-[#A7BDB5] md:text-base sm:text-sm text-[12px] leading150">Unified design
                                             system</p>
                                     </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
-                                        <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Clear visual
+                                        <p class="text-[#A7BDB5] md:text-base sm:text-sm text-[12px] leading150">Clear visual
                                             hierarchy with focus states</p>
                                     </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
-                                        <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Fully responsive
+                                        <p class="text-[#A7BDB5] md:text-base sm:text-sm text-[12px] leading150">Fully responsive
                                             across all devices</p>
                                     </div>
                                 </div>
                             </li>
 
                         </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -1161,8 +1175,8 @@
 
                         <ul class="flex flex-col md:gap-3 gap-2">
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
                                         <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Pre-configured
                                             theme tokens</p>
@@ -1170,8 +1184,8 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
                                         <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Custom utility
                                             classes documented</p>
@@ -1179,8 +1193,8 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
                                         <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Responsive
                                             breakpoints defined</p>
@@ -1203,8 +1217,8 @@
 
                         <ul class="flex flex-col md:gap-3 gap-2">
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
                                         <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">SCSS variables
                                             provided</p>
@@ -1212,8 +1226,8 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
                                         <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Component
                                             overrides documented</p>
@@ -1221,8 +1235,8 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-3 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[18px]" alt="check">
                                     <div class="flex flex-col gap-2">
                                         <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Accessibility
                                             standards met</p>
@@ -1293,43 +1307,43 @@
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your next pixel</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
                             solutions</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
                             design</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your vision</span>
                     </div>
 
@@ -1337,43 +1351,43 @@
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your next pixel</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
                             solutions</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
                             design</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your vision</span>
                     </div>
                 </div>
@@ -1484,7 +1498,7 @@
                                 <p class="text-green2 sm:text-base text-[12px] font-medium">Phase 1</p>
                             </div>
                             <h3
-                                class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                                class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                                 Data Audit</h3>
                             <p class="sm:text-base text-sm text-dark-shade5">We start by analyzing your existing data
                                 structure, identifying which metrics drive actual business decisions versus vanity
@@ -1496,38 +1510,38 @@
                                     <p class="text-white text-base font-medium leading120 mb-3">Deliverables</p>
                                     <ul class="list-disc text-dark-shade5 pl-7">
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Metrics priority matrix</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Metrics priority matrix</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">User persona analysis</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">User persona analysis</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Current state assessment
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Current state assessment
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Opportunity map</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Opportunity map</p>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="pl-4 border-l border-dark-shade3">
                                     <p class="text-white text-base font-medium leading120 mb-3">Timeline</p>
-                                    <p class="text-dark-shade5 text-base leading150">3-5 business days</p>
-                                    <p class="text-dark-shade5 text-base leading150">Includes stakeholder workshops and
+                                    <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">3-5 business days</p>
+                                    <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Includes stakeholder workshops and
                                         data analysis</p>
                                 </div>
                                 <div class="pl-4 border-l border-dark-shade3">
                                     <p class="text-white text-base font-medium leading120 mb-3">Key Questions</p>
                                     <ul class="list-disc text-dark-shade5 pl-7">
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">What decisions need data?
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">What decisions need data?
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Who uses this daily?</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Who uses this daily?</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">What's currently broken?
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">What's currently broken?
                                             </p>
                                         </li>
                                     </ul>
@@ -1545,7 +1559,7 @@
                                 <p class="text-green2 sm:text-base text-[12px] font-medium">Phase 2</p>
                             </div>
                             <h3
-                                class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                                class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                                 Information Architecture</h3>
                             <p class="sm:text-base text-sm text-dark-shade5">We organize your dashboard's navigation and
                                 content hierarchy to minimize cognitive load. This includes card sorting exercises, user
@@ -1557,38 +1571,38 @@
                                     <p class="text-white text-base font-medium leading120 mb-3">Deliverables</p>
                                     <ul class="list-disc text-dark-shade5 pl-7">
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Metrics priority matrix</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Metrics priority matrix</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">User persona analysis</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">User persona analysis</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Current state assessment
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Current state assessment
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Opportunity map</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Opportunity map</p>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="pl-4 border-l border-dark-shade3">
                                     <p class="text-white text-base font-medium leading120 mb-3">Timeline</p>
-                                    <p class="text-dark-shade5 text-base leading150">3-5 business days</p>
-                                    <p class="text-dark-shade5 text-base leading150">Includes stakeholder workshops and
+                                    <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">3-5 business days</p>
+                                    <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Includes stakeholder workshops and
                                         data analysis</p>
                                 </div>
                                 <div class="pl-4 border-l border-dark-shade3">
                                     <p class="text-white text-base font-medium leading120 mb-3">Key Questions</p>
                                     <ul class="list-disc text-dark-shade5 pl-7">
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">What decisions need data?
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">What decisions need data?
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Who uses this daily?</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Who uses this daily?</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">What's currently broken?
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">What's currently broken?
                                             </p>
                                         </li>
                                     </ul>
@@ -1606,7 +1620,7 @@
                                 <p class="text-green2 sm:text-base text-[12px] font-medium">Phase 3</p>
                             </div>
                             <h3
-                                class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                                class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                                 Visual Language</h3>
                             <p class="sm:text-base text-sm text-dark-shade5">We establish a cohesive design system with
                                 strategic use of color psychology. Red for urgent alerts, green for positive trends,
@@ -1618,38 +1632,38 @@
                                     <p class="text-white text-base font-medium leading120 mb-3">Deliverables</p>
                                     <ul class="list-disc text-dark-shade5 pl-7">
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Metrics priority matrix</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Metrics priority matrix</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">User persona analysis</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">User persona analysis</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Current state assessment
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Current state assessment
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Opportunity map</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Opportunity map</p>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="pl-4 border-l border-dark-shade3">
                                     <p class="text-white text-base font-medium leading120 mb-3">Timeline</p>
-                                    <p class="text-dark-shade5 text-base leading150">3-5 business days</p>
-                                    <p class="text-dark-shade5 text-base leading150">Includes stakeholder workshops and
+                                    <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">3-5 business days</p>
+                                    <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Includes stakeholder workshops and
                                         data analysis</p>
                                 </div>
                                 <div class="pl-4 border-l border-dark-shade3">
                                     <p class="text-white text-base font-medium leading120 mb-3">Key Questions</p>
                                     <ul class="list-disc text-dark-shade5 pl-7">
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">What decisions need data?
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">What decisions need data?
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Who uses this daily?</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Who uses this daily?</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">What's currently broken?
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">What's currently broken?
                                             </p>
                                         </li>
                                     </ul>
@@ -1667,7 +1681,7 @@
                                 <p class="text-green2 sm:text-base text-[12px] font-medium">Phase 4</p>
                             </div>
                             <h3
-                                class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                                class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                                 Prototyping & Interaction Design</h3>
                             <p class="sm:text-base text-sm text-dark-shade5">We create high-fidelity, interactive
                                 prototypes that you can click through and test with real users. This phase reveals
@@ -1679,38 +1693,38 @@
                                     <p class="text-white text-base font-medium leading120 mb-3">Deliverables</p>
                                     <ul class="list-disc text-dark-shade5 pl-7">
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Metrics priority matrix</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Metrics priority matrix</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">User persona analysis</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">User persona analysis</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Current state assessment
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Current state assessment
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Opportunity map</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Opportunity map</p>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="pl-4 border-l border-dark-shade3">
                                     <p class="text-white text-base font-medium leading120 mb-3">Timeline</p>
-                                    <p class="text-dark-shade5 text-base leading150">3-5 business days</p>
-                                    <p class="text-dark-shade5 text-base leading150">Includes stakeholder workshops and
+                                    <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">3-5 business days</p>
+                                    <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Includes stakeholder workshops and
                                         data analysis</p>
                                 </div>
                                 <div class="pl-4 border-l border-dark-shade3">
                                     <p class="text-white text-base font-medium leading120 mb-3">Key Questions</p>
                                     <ul class="list-disc text-dark-shade5 pl-7">
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">What decisions need data?
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">What decisions need data?
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Who uses this daily?</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Who uses this daily?</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">What's currently broken?
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">What's currently broken?
                                             </p>
                                         </li>
                                     </ul>
@@ -1727,7 +1741,7 @@
                                 <p class="text-green2 sm:text-base text-[12px] font-medium">Phase 5</p>
                             </div>
                             <h3
-                                class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                                class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                                 Stress Testing with Real Data</h3>
                             <p class="sm:text-base text-sm text-dark-shade5">The final phase tests how your dashboard
                                 handles edge cases—what happens with 10,000 rows of data? Missing data? Extreme values?
@@ -1738,38 +1752,38 @@
                                     <p class="text-white text-base font-medium leading120 mb-3">Deliverables</p>
                                     <ul class="list-disc text-dark-shade5 pl-7">
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Metrics priority matrix</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Metrics priority matrix</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">User persona analysis</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">User persona analysis</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Current state assessment
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Current state assessment
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Opportunity map</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Opportunity map</p>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="pl-4 border-l border-dark-shade3">
                                     <p class="text-white text-base font-medium leading120 mb-3">Timeline</p>
-                                    <p class="text-dark-shade5 text-base leading150">3-5 business days</p>
-                                    <p class="text-dark-shade5 text-base leading150">Includes stakeholder workshops and
+                                    <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">3-5 business days</p>
+                                    <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Includes stakeholder workshops and
                                         data analysis</p>
                                 </div>
                                 <div class="pl-4 border-l border-dark-shade3">
                                     <p class="text-white text-base font-medium leading120 mb-3">Key Questions</p>
                                     <ul class="list-disc text-dark-shade5 pl-7">
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">What decisions need data?
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">What decisions need data?
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">Who uses this daily?</p>
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Who uses this daily?</p>
                                         </li>
                                         <li>
-                                            <p class="text-dark-shade5 text-base leading150">What's currently broken?
+                                            <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">What's currently broken?
                                             </p>
                                         </li>
                                     </ul>
@@ -2067,19 +2081,19 @@
                     </button>
                 </div>
                 <div class="flex items-center justify-center gap-6 mt-8">
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-start gap-3">
                         <div class="flex items-center  shrink-0">
                             <img src="assets/images/white-check.svg" class="img-fluid shrink-0 " alt="">
                         </div>
                         <p class="text-base leading150 text-white">No long-term contracts</p>
                     </div>
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-start gap-3">
                         <div class="flex items-center  shrink-0">
                             <img src="assets/images/white-check.svg" class="img-fluid shrink-0 " alt="">
                         </div>
                         <p class="text-base leading150 text-white">4-6 week delivery</p>
                     </div>
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-start gap-3">
                         <div class="flex items-center  shrink-0">
                             <img src="assets/images/white-check.svg" class="img-fluid shrink-0 " alt="">
                         </div>
