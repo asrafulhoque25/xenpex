@@ -3354,13 +3354,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 85vh;
+  min-height: 95vh;
   padding: 120px 0 96px 0;
 }
 .subbanner-wrapper {
   background-image: url(../images/bannerimg.webp);
   background-size: cover;
-  min-height: 85vh;
+  min-height: 55vh;
 }
 @media (max-width:991px) {
   .subbanner-wrapper .banner-content-wrapper {
