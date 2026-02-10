@@ -523,9 +523,6 @@
   .min-h-125\.25 {
     min-height: calc(var(--spacing) * 125.25);
   }
-  .min-h-\[480px\] {
-    min-height: 480px;
-  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -1359,6 +1356,9 @@
   .text-\[32px\] {
     font-size: 32px;
   }
+  .text-\[36px\] {
+    font-size: 36px;
+  }
   .text-\[48px\] {
     font-size: 48px;
   }
@@ -1416,9 +1416,6 @@
   }
   .text-\[\#A7BDB5\] {
     color: #A7BDB5;
-  }
-  .text-\[12\] {
-    color: 12;
   }
   .text-dark-shade4 {
     color: var(--color-dark-shade4);
