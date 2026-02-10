@@ -511,6 +511,9 @@
   .h-\[36px\] {
     height: 36px;
   }
+  .h-\[52px\] {
+    height: 52px;
+  }
   .h-full {
     height: 100%;
   }
@@ -592,6 +595,9 @@
   .max-w-87\.5 {
     max-width: calc(var(--spacing) * 87.5);
   }
+  .max-w-97\.5 {
+    max-width: calc(var(--spacing) * 97.5);
+  }
   .max-w-102 {
     max-width: calc(var(--spacing) * 102);
   }
@@ -661,9 +667,6 @@
   .max-w-\[196px\] {
     max-width: 196px;
   }
-  .max-w-\[296\] {
-    max-width: 296;
-  }
   .max-w-\[296px\] {
     max-width: 296px;
   }
@@ -673,14 +676,8 @@
   .max-w-\[390px\] {
     max-width: 390px;
   }
-  .max-w-\[420px\] {
-    max-width: 420px;
-  }
   .max-w-\[480px\] {
     max-width: 480px;
-  }
-  .max-w-\[704px\] {
-    max-width: 704px;
   }
   .max-w-\[736px\] {
     max-width: 736px;
@@ -890,6 +887,9 @@
   }
   .overflow-x-auto {
     overflow-x: auto;
+  }
+  .rounded {
+    border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -1121,6 +1121,9 @@
   .object-cover {
     object-fit: cover;
   }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
@@ -1241,6 +1244,9 @@
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
   }
+  .pt-24 {
+    padding-top: calc(var(--spacing) * 24);
+  }
   .pt-25 {
     padding-top: calc(var(--spacing) * 25);
   }
@@ -1286,6 +1292,9 @@
   .pb-24 {
     padding-bottom: calc(var(--spacing) * 24);
   }
+  .pb-\[2px\] {
+    padding-bottom: 2px;
+  }
   .pb-\[96px\] {
     padding-bottom: 96px;
   }
@@ -1294,6 +1303,9 @@
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
+  }
+  .pl-6 {
+    padding-left: calc(var(--spacing) * 6);
   }
   .pl-7 {
     padding-left: calc(var(--spacing) * 7);
@@ -1757,6 +1769,11 @@
       height: calc(var(--spacing) * 8);
     }
   }
+  .sm\:h-15\.5 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 15.5);
+    }
+  }
   .sm\:h-16 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 16);
@@ -1832,11 +1849,6 @@
       max-width: 704px;
     }
   }
-  .sm\:max-w-\[736px\] {
-    @media (width >= 40rem) {
-      max-width: 736px;
-    }
-  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1907,6 +1919,11 @@
       gap: calc(var(--spacing) * 14);
     }
   }
+  .sm\:gap-23 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 23);
+    }
+  }
   .sm\:gap-y-10 {
     @media (width >= 40rem) {
       row-gap: calc(var(--spacing) * 10);
@@ -1932,6 +1949,11 @@
     @media (width >= 40rem) {
       border-left-style: var(--tw-border-style);
       border-left-width: 1px;
+    }
+  }
+  .sm\:border-dark-shade3 {
+    @media (width >= 40rem) {
+      border-color: var(--color-dark-shade3);
     }
   }
   .sm\:p-5 {
@@ -1969,6 +1991,11 @@
       padding-block: calc(var(--spacing) * 4);
     }
   }
+  .sm\:py-6 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 6);
+    }
+  }
   .sm\:py-8 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 8);
@@ -2004,6 +2031,11 @@
       padding-top: calc(var(--spacing) * 36);
     }
   }
+  .sm\:pt-\[144px\] {
+    @media (width >= 40rem) {
+      padding-top: 144px;
+    }
+  }
   .sm\:pr-12 {
     @media (width >= 40rem) {
       padding-right: calc(var(--spacing) * 12);
@@ -2022,6 +2054,11 @@
   .sm\:pb-24 {
     @media (width >= 40rem) {
       padding-bottom: calc(var(--spacing) * 24);
+    }
+  }
+  .sm\:pb-\[96px\] {
+    @media (width >= 40rem) {
+      padding-bottom: 96px;
     }
   }
   .sm\:pl-4 {
@@ -2118,9 +2155,19 @@
       font-size: 56px;
     }
   }
+  .sm\:text-\[62px\] {
+    @media (width >= 40rem) {
+      font-size: 62px;
+    }
+  }
   .sm\:text-\[64px\] {
     @media (width >= 40rem) {
       font-size: 64px;
+    }
+  }
+  .sm\:text-\[28\] {
+    @media (width >= 40rem) {
+      color: 28;
     }
   }
   .md\:bottom-6 {
@@ -2620,6 +2667,11 @@
   .md\:text-\[60px\] {
     @media (width >= 48rem) {
       font-size: 60px;
+    }
+  }
+  .md\:text-\[62px\] {
+    @media (width >= 48rem) {
+      font-size: 62px;
     }
   }
   .lg\:sticky {
