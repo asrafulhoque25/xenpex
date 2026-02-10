@@ -849,6 +849,11 @@ nav{
                 top: 60px;
         }
         }
+        @media(max-width:1024px){
+             .left-content {
+               min-height: auto;
+        }
+        }
 
         @media(max-width:991px){
              .left-content {
@@ -1212,7 +1217,6 @@ nav{
 @media (max-width:767px) {
    .teammembers .team-member{
     width: calc(50% - 6px);
-    border-radius: 16px;
 }
 }
 /* team end */

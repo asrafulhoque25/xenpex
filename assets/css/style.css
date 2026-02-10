@@ -391,6 +391,9 @@
   .-mr-4 {
     margin-right: calc(var(--spacing) * -4);
   }
+  .mr-auto {
+    margin-right: auto;
+  }
   .-mb-2 {
     margin-bottom: calc(var(--spacing) * -2);
   }
@@ -570,6 +573,9 @@
   }
   .w-\[22px\] {
     width: 22px;
+  }
+  .w-\[200px\] {
+    width: 200px;
   }
   .w-fit {
     width: fit-content;
@@ -1411,6 +1417,9 @@
   .text-\[\#A7BDB5\] {
     color: #A7BDB5;
   }
+  .text-\[12\] {
+    color: 12;
+  }
   .text-dark-shade4 {
     color: var(--color-dark-shade4);
   }
@@ -1644,6 +1653,11 @@
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
   }
+  .sm\:mt-4 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 4);
+    }
+  }
   .sm\:mt-6 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 6);
@@ -1752,6 +1766,16 @@
   .sm\:h-auto {
     @media (width >= 40rem) {
       height: auto;
+    }
+  }
+  .sm\:min-h-\[480px\] {
+    @media (width >= 40rem) {
+      min-height: 480px;
+    }
+  }
+  .sm\:min-h-screen {
+    @media (width >= 40rem) {
+      min-height: 100vh;
     }
   }
   .sm\:w-2\.5 {
@@ -2135,6 +2159,11 @@
       margin-bottom: calc(var(--spacing) * 8);
     }
   }
+  .md\:mb-9 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 9);
+    }
+  }
   .md\:mb-10 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 10);
@@ -2425,6 +2454,11 @@
   .md\:py-4 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:py-5 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 5);
     }
   }
   .md\:py-6 {
@@ -3598,6 +3632,11 @@ nav {
     top: 60px;
   }
 }
+@media (max-width:1024px) {
+  .left-content {
+    min-height: auto;
+  }
+}
 @media (max-width:991px) {
   .left-content {
     position: static;
@@ -3882,12 +3921,6 @@ nav {
 @media (max-width:767px) {
   .teammembers .team-member {
     width: calc(50% - 6px);
-    border-radius: 16px;
-  }
-}
-@media (max-width:576px) {
-  .teammembers .team-member {
-    width: 100%;
   }
 }
 .custom-arrow {
