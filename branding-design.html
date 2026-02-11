@@ -12,10 +12,10 @@
 
 <body>
 
-   <nav class="bg-[#012819] border-b border-green4 font-farro">
+    <nav class="bg-[#012819] border-b border-green4">
         <div class="mx-auto">
             <div class="flex items-center justify-between h-12">
-                <div class="flex items-center gap-4">
+                <div class="flex items-center sm:gap-4 gap-3">
                     <!-- Desktop Sidebar Button (hidden on mobile) -->
                     <button id="desktop-sidebar"
                         class="hidden lg:block text-green1 hover:text-green2 px-19 py-5 bg-green4 hover:bg-green3 cursor-pointer transition-colors"
@@ -37,7 +37,7 @@
                     </button>
 
                     <a href="/" class="flex items-center">
-                        <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid">
+                        <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid sm:max-w-auto max-w-[130px]">
                     </a>
                 </div>
 
@@ -74,28 +74,28 @@
                 <div class="hidden lg:flex items-center">
                     <a href="#contact"
                         class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block px-12 py-3 text-white border border-green4 hover:border-green2 hover:bg-green4 transition-all font-medium">
-                         <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
-                                        <span class="t-up text-base  font-medium text-white uppercase">OUR
-                                            Contact</span>
-                                        <span class="t-down text-base  font-medium text-white uppercase">OUR
-                                            Contact</span>
-                                    </div>
+                        <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up text-base  font-medium text-white uppercase">OUR
+                                Contact</span>
+                            <span class="t-down text-base  font-medium text-white uppercase">OUR
+                                Contact</span>
+                        </div>
                     </a>
                     <a href="#connect"
                         class="px-12 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-green1 text-green5 hover:bg-green2 transition-colors font-bold">
                         <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
-                                        <span class="t-up text-base  font-medium text-green4 uppercase">OUR
-                                            Let’s Connect</span>
-                                        <span class="t-down text-base  font-medium text-green4 uppercase">OUR
-                                            Let’s Connect</span>
-                                    </div>
+                            <span class="t-up text-base  font-medium text-green4 uppercase">OUR
+                                Let’s Connect</span>
+                            <span class="t-down text-base  font-medium text-green4 uppercase">OUR
+                                Let’s Connect</span>
+                        </div>
                     </a>
                 </div>
 
                 <!-- Mobile "LET'S CONNECT" button (visible on mobile) -->
                 <a href="#connect"
-                    class="lg:hidden px-10 py-4 text-xs bg-green1 text-green4 hover:bg-green2 transition-colors font-bold">
-                    CONNECT
+                    class="lg:hidden px-5 sm:px-10 py-4 text-xs bg-green1 text-green4 hover:bg-green2 transition-colors font-bold">
+                    Let’s Connect
                 </a>
             </div>
         </div>
@@ -145,27 +145,27 @@
 
 
     <!-- banner section start --><!-- banner section start -->
-    <section class="subbanner-wrapper bg-black min-h-screen font-farro relative">
+    <section class="subbanner-wrapper bg-black sm:min-h-screen font-farro relative">
         <!-- Content layer (eta fixed thakbe) -->
         <div class="banner-content-wrapper">
             <div class="container relative z-10">
-                <div class="sm:grid grid-cols-2 flex flex-col-reverse items-center md:gap-8 gap-6">
+                <div class="md:grid grid-cols-2 flex flex-col items-center md:gap-8 gap-6">
                     <div>
                         <div class="flex items-center justify-start gap-2 pb-5">
                             <span class="sm:w-2.5 w-1.5 sm:h-2.5 h-1.5 sm:rounded-[3px] rounded-xs bg-green2"></span>
                             <p class="text-green2 sm:text-base text-[12px] font-medium">Branding design service</p>
                         </div>
                         <h2
-                            class="sm:text-start text-center font-medium lg:text-[72px] sm:text-[52px] text-[32px] text-white md:mb-6 mb-1.5 leading120">
+                            class="text-start font-medium lg:text-[72px] sm:text-[52px] text-[36px] text-white md:mb-6 mb-1.5 leading120">
                             Branding design service
                         </h2>
                         <p
-                            class="sm:text-start text-center text-white md:text-[18px] sm:text-base text-[14px] leading-[150%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
+                            class="text-start  text-white md:text-[18px] sm:text-base text-[14px] leading-[150%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
                            We craft high-converting, SEO-optimized websites that blend breathtaking aesthetics with strategic user journeys.</p>
 
-                        <div class="flex sm:justify-start justify-center w-full gap-4">
+                        <div class="flex justify-start flex-wrap w-full sm:gap-4 gap-3">
                             <button
-                                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
+                                class="mega-reveal-btn sm:w-auto w-full flex justify-center relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
                                 <span class="bg-overlay absolute inset-0 z-1"></span>
                                 <div class="btn-inner relative z-2 flex items-center gap-3">
                                     <div
@@ -192,7 +192,7 @@
                                 </div>
                             </button>
                             <button
-                                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-transparen border border-white  transition-all duration-200">
+                                class="mega-reveal-btn sm:w-auto w-full flex justify-center relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-transparen border border-white  transition-all duration-200">
                                 <span class="bg-overlay absolute inset-0 z-1"></span>
                                 <div class="btn-inner relative z-2 flex items-center gap-3">
                                 
@@ -234,29 +234,38 @@
                 </div>
 
 
-                <div class="core-pillar-wrap grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
+                <div class="core-pillar-wrap grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 sm:mt-8 mt-6">
                     <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
-                    <div> <img src="assets/images/why-branding1.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                    <div> 
+                        <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/why-branding1.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
+                        <h3 class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                           Recognition</h3>
-                        <p class="sm:text-base text-[14px] text-dark-shade5">Stand out in a saturated market. A strong brand identity ensures you're not just seen, but remembered. Your visual presence becomes your competitive advantage.</p>
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-dark-shade5">Stand out in a saturated market. A strong brand identity ensures you're not just seen, but remembered. Your visual presence becomes your competitive advantage.</p>
                         
                     
                     </div>
                 </div>
                     <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
-                    <div> <img src="assets/images/why-branding2.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                    <div> 
+                         <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/why-branding2.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
+                        <h3 class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                            Premium Positioning</h3>
-                        <p class="sm:text-base text-[14px] text-dark-shade5">Charge what you're worth by looking the part. Professional branding signals quality, expertise, and trustworthiness allowing you to command premium pricing.</p>
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-dark-shade5">Charge what you're worth by looking the part. Professional branding signals quality, expertise, and trustworthiness allowing you to command premium pricing.</p>
                         
                     </div>
                 </div>
                     <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
-                    <div> <img src="assets/images/why-branding3.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                    <div> 
+                        <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/why-branding3.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
+                        <h3 class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                            Consistency</h3>
-                        <p class="sm:text-base text-[14px] text-dark-shade5">Build trust through a unified voice and look across every touchpoint. From your website to your business cards, consistency breeds familiarity and confidence.</p>
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-dark-shade5">Build trust through a unified voice and look across every touchpoint. From your website to your business cards, consistency breeds familiarity and confidence.</p>
                         
                     </div>
                 </div>
@@ -278,43 +287,43 @@
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your next pixel</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
                             solutions</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
                             design</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your vision</span>
                     </div>
 
@@ -322,43 +331,43 @@
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your next pixel</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
                             solutions</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
                             design</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your vision</span>
                     </div>
                 </div>
@@ -385,17 +394,17 @@
                 <div class=" md:mt-12 mt-8 flex flex-col gap-3">
                  
                    <div class="rounded-3xl border border-dark-shade3">
-                      <div class="grid grid-cols-2 relative">
+                      <div class="grid md:grid-cols-2 grid-cols-1 relative">
                         <img src="assets/images/powerful-brand1.svg" class="img-fluid h-full rounded-l-3xl object-cover" alt="specialized">
-                        <div class="grid grid-cols-2">
+                        <div class="grid sm:grid-cols-2 grid-cols-1">
                             <div class="col-span-1  ">
-                                <div class="lg:p-8 p-6">
+                                <div class="lg:p-8 sm:p-6 p-4">
                                     <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">Logo Architecture</h3>
-                                    <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">Your logo is more than a pretty picture—it's a strategic tool. We create versatile logo systems that adapt to any context while maintaining instant recognition.</p>
+                                    <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">Your logo is more than a pretty picture—it's a strategic tool. We create versatile logo systems that adapt to any context while maintaining instant recognition.</p>
                             
                                 </div>
                             </div>
-                            <div class="col-span-1 justify-self-end self-end">
+                            <div class="col-span-1 justify-self-end self-end sm:block hidden">
                                 <img src="assets/images/dashboard-shape.svg" class="img-fluid" alt="shap dashboard">
                             </div>
                         </div>
@@ -405,17 +414,17 @@
 
 
                    <div class="rounded-3xl border border-dark-shade3">
-                      <div class="grid grid-cols-2 relative">
+                      <div class="grid md:grid-cols-2 grid-cols-1 relative">
                         <img src="assets/images/powerful-brand2.svg" class="img-fluid h-full rounded-l-3xl object-cover" alt="specialized">
-                        <div class="grid grid-cols-2">
+                        <div class="grid sm:grid-cols-2 grid-cols-1">
                             <div class="col-span-1  ">
-                                <div class="lg:p-8 p-6">
+                                <div class="lg:p-8 sm:p-6 p-4">
                                     <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">Color Psychology</h3>
-                                    <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">Colors evoke emotions and drive decisions. We craft strategic color palettes that align with your brand personality and resonate with your target audience.</p>
+                                    <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">Colors evoke emotions and drive decisions. We craft strategic color palettes that align with your brand personality and resonate with your target audience.</p>
                             
                                 </div>
                             </div>
-                            <div class="col-span-1 justify-self-end self-end">
+                            <div class="col-span-1 justify-self-end self-end sm:block hidden">
                                 <img src="assets/images/dashboard-shape.svg" class="img-fluid" alt="shap dashboard">
                             </div>
                         </div>
@@ -424,17 +433,17 @@
 
 
                     <div class="rounded-3xl border border-dark-shade3">
-                      <div class="grid grid-cols-2 relative">
+                      <div class="grid md:grid-cols-2 grid-cols-1 relative">
                         <img src="assets/images/powerful-brand3.svg" class="img-fluid h-full rounded-l-3xl object-cover" alt="specialized">
-                        <div class="grid grid-cols-2">
+                        <div class="grid sm:grid-cols-2 grid-cols-1">
                             <div class="col-span-1  ">
-                                <div class="lg:p-8 p-6">
+                                <div class="lg:p-8 sm:p-6 p-4">
                                     <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">Typography System</h3>
-                                    <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">The right typeface speaks volumes before a word is read. We establish typographic hierarchies that guide readers and reinforce your brand voice.</p>
+                                    <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">The right typeface speaks volumes before a word is read. We establish typographic hierarchies that guide readers and reinforce your brand voice.</p>
                             
                                 </div>
                             </div>
-                            <div class="col-span-1 justify-self-end self-end">
+                            <div class="col-span-1 justify-self-end self-end sm:block hidden">
                                 <img src="assets/images/dashboard-shape.svg" class="img-fluid" alt="shap dashboard">
                             </div>
                         </div>
@@ -459,28 +468,34 @@
                     <p class="text-[#A7BDB5] text-center md:text-[18px] sm:text-base text-[14px] leading-[140%] font-normal">
                       See how your brand identity comes to life across every customer touchpoint—from digital to print, big to small.</p>
                 </div>
-                <div class="grid grid-cols-2 gap-2 mt-12">
+                <div class="grid md:grid-cols-2 gap-2 md:mt-12 sm:mt-8 mt-6">
                    <div class="border border-dark-shade3 rounded-3xl">
-                     <div class="p-8 ">
-                        <h3 class="text-[32px] font-medium leading120 mb-4 text-white text-center">Digital Presence</h3>
-                        <p class="text-base text-dark-shade5 leading150 pb-8 text-center">Your brand's digital footprint across web and social platforms</p>
+                     <div class="md:p-8 p-6">
+                        <h3 class="lg:text-[32px] md:text-[28px] text-2xl font-medium leading120 md:mb-4 mb-3 text-white text-center">Digital Presence</h3>
+                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5 leading150 md:pb-8 sm:pb-6 pb-4 text-center">Your brand's digital footprint across web and social platforms</p>
                         <div class="grid grid-cols-3">
                             <div class=" text-center inline-flex justify-center flex-col">
-                                <img src="assets/images/digital-resence1.svg" class="w-16 h-16 flex justify-center w-full px-2" alt="digital presence">
-                                <p class="text-base font-medium leading120 mt-6 px-2 text-white">Instagram Profile</p>
+                                <div class="flex w-full justify-center">
+                                    <img src="assets/images/digital-resence1.svg" class="w-11 md:w-16 h-11 md:h-16 flex justify-center w-full px-2" alt="digital presence">
+                                </div>
+                                <p class="md:text-base text-sm font-medium leading120 md:mt-6 mt-3 md:px-2 px-1 text-white">Instagram Profile</p>
                             </div>
                             <div class=" border-l border-r border-dark-shade3 text-center inline-flex justify-center flex-col">
-                                <img src="assets/images/digital-resence2.svg" class="w-16 h-16 flex justify-center w-full px-2" alt="digital presence">
-                                <p class="text-base font-medium leading120 mt-6 px-2 text-white">Instagram Profile</p>
+                                  <div class="flex w-full justify-center">
+                                    <img src="assets/images/digital-resence2.svg" class="w-11 md:w-16 h-11 md:h-16 flex justify-center w-full px-2" alt="digital presence">
+                                </div>
+                                <p class="md:text-base text-sm font-medium leading120 md:mt-6 mt-3 md:px-2 px-1 text-white">Instagram Profile</p>
                             </div>
                              <div class=" text-center inline-flex justify-center flex-col">
-                                <img src="assets/images/digital-resence3.svg" class="w-16 h-16 flex justify-center w-full px-2" alt="digital presence">
-                                <p class="text-base font-medium leading120 mt-6 px-2 text-white">Instagram Profile</p>
+                                  <div class="flex w-full justify-center">
+                                    <img src="assets/images/digital-resence3.svg" class="w-11 md:w-16 h-11 md:h-16 flex justify-center w-full px-2" alt="digital presence">
+                                </div>
+                                <p class="md:text-base text-sm font-medium leading120 md:mt-6 mt-3 md:px-2 px-1 text-white">Instagram Profile</p>
                             </div>
                         </div>
-                        <p class="text-center text-green3 text-[18px] mt-8">and many more...</p>
+                        <p class="text-center text-green3 md:text-[18px] sm:text-base text-sm md:mt-8 sm:mt-6 mt-4">and many more...</p>
                     </div>
-                    <img src="assets/images/brandshape.svg" class="img-fluid" alt="brandshape">
+                    <img src="assets/images/brandshape.svg" class="img-fluid md:w-auto sm:w-50 w-34.25" alt="brandshape">
                    </div>
                    <div>
                     <img src="assets/images/action2.webp" class="img-fluid" alt="action">
@@ -502,32 +517,32 @@
 
             <!-- Left Side -->
             <div class="">
-                    <h2 class=" text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-5 leading120">
+                    <h2 class=" text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-5 mb-3 leading120">
                        Design Starts with Strategy
                     </h2>
-                    <p class="text-base lg:text-lg text-dark-shade5 mb-9 lg:mb-12">
+                    <p class="sm:text-base text-sm lg:text-lg text-dark-shade5 sm:mb-9 mb-6 lg:mb-12">
                       Beautiful design without strategy is just decoration. We start by understanding your business, audience, and market position to ensure every visual decision drives results.
                     </p>
                     <div class="flex flex-col gap-4">
-                        <div class="flex items-center gap-6">
-                            <img src="assets/images/strategy1.svg" class="img-fluid shrink-0" alt="strategy">
+                        <div class="flex sm:items-center items-start md:gap-6 sm:gap-4 gap-3">
+                            <img src="assets/images/strategy1.svg" class="img-fluid shrink-0 sm:w-auto w-10.5" alt="strategy">
                             <div>
-                                <h4 class="text-xl font-medium leading120 mb-3 text-white">Target Audience Analysis</h4>
-                                <p class="text-dark-shade5 text-base leading150">Explore demographics, psychographics, and pain points of ideal customers.</p>
+                                <h4 class="sm:text-xl text-base font-medium leading120 sm:mb-2 mb-1.25 md:mb-3 text-white">Target Audience Analysis</h4>
+                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Explore demographics, psychographics, and pain points of ideal customers.</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-6">
-                            <img src="assets/images/strategy2.svg" class="img-fluid shrink-0" alt="strategy">
+                        <div class="flex sm:items-center items-start md:gap-6 sm:gap-4 gap-3">
+                            <img src="assets/images/strategy2.svg" class="img-fluid shrink-0 sm:w-auto w-10.5" alt="strategy">
                             <div>
-                                <h4 class="text-xl font-medium leading120 mb-3 text-white">Competitive Landscape</h4>
-                                <p class="text-dark-shade5 text-base leading150">Audit competitor positioning to find differentiation opportunities.</p>
+                                <h4 class="sm:text-xl text-base font-medium leading120 sm:mb-2 mb-1.25 md:mb-3 text-white">Competitive Landscape</h4>
+                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Audit competitor positioning to find differentiation opportunities.</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-6">
-                            <img src="assets/images/strategy3.svg" class="img-fluid shrink-0" alt="strategy">
+                        <div class="flex sm:items-center items-start md:gap-6 sm:gap-4 gap-3">
+                            <img src="assets/images/strategy3.svg" class="img-fluid shrink-0 sm:w-auto w-10.5" alt="strategy">
                             <div>
-                                <h4 class="text-xl font-medium leading120 mb-3 text-white">Brand Positioning</h4>
-                                <p class="text-dark-shade5 text-base leading150">Define your unique value and market perception.</p>
+                                <h4 class="sm:text-xl text-base font-medium leading120 sm:mb-2 mb-1.25 md:mb-3 text-white">Brand Positioning</h4>
+                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Define your unique value and market perception.</p>
                             </div>
                         </div>
                     </div>
@@ -535,55 +550,130 @@
 
             <!-- right Side -->
              <div class=" flex flex-col gap-2 relative z-10">
-            <div class="flex items-center gap-6 py-8 border-t border-b border-dark-shade3">
-                <div class="w-31.5 h-31.5 border border-dark-shade3 rounded-3xl flex flex-col items-center justify-center p-4">
-                    <p class="text-base text-green3 text-center">Session</p>
-                    <p class="text-[64px] font-medium leading120 text-green3">01</p>
+            <div class="flex items-start sm:gap-4 gap-3 md:gap-6 md:py-8 sm:py-6 py-4 border-t border-b border-dark-shade3">
+                <div class="md:w-31.5 sm:w-24 w-20 md:h-31.5 sm:h-24 h-20 border border-dark-shade3 rounded-3xl flex flex-col items-center justify-center p-4">
+                    <p class="md:text-base sm:text-sm text-[12px] text-green3 text-center">Session</p>
+                    <p class="md:text-[64px] sm:text-10.5 text-[32px] font-medium leading120 text-green3">01</p>
                 </div>
                    <div class=" flex items-start justify-between w-full">
                             <div>
-                                <p class="text-white md:text-[32px] text-2xl font-medium leading120 mb-3">Discovery</p>
-                            <ul class="list-disc text-dark-shade5 pl-7">
-                                <li><p class="text-dark-shade5 text-base leading150">Business goals and vision</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Current brand perception</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Market challenges</p></li>
-                            </ul>
+                                <p class="text-white md:text-[32px] text-2xl font-medium leading120 sm:mb-3 mb-2">Discovery</p>
+                                  <ul class="flex flex-col gap-0.5">
+                                                <li>
+                                                    <div class="flex items-center sm:gap-2 gap-1">
+                                                        <img src="assets/images/web-point.svg"
+                                                            class="img-fluid shrink-0" alt="point icon">
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Two-Factor Authentication (2FA)</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center sm:gap-2 gap-1">
+                                                        <img src="assets/images/web-point.svg"
+                                                            class="img-fluid shrink-0" alt="point icon">
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Role-Based Access Control</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center sm:gap-2 gap-1">
+                                                        <img src="assets/images/web-point.svg"
+                                                            class="img-fluid shrink-0" alt="point icon">
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Data Privacy Controls</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center sm:gap-2 gap-1">
+                                                        <img src="assets/images/web-point.svg"
+                                                            class="img-fluid shrink-0" alt="point icon">
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Audit Trails & Logging</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
                             </div>
-                            <p class="text-base text-dark-shade5 leading150">2 hours</p>
+                            <p class="sm:text-base text-[12px] text-dark-shade5 leading150">2 hours</p>
                         </div>
             </div>
-            <div class="flex items-center gap-6 py-8 border-b border-dark-shade3">
-                <div class="w-31.5 h-31.5 border border-dark-shade3 rounded-3xl flex flex-col items-center justify-center p-4">
-                    <p class="text-base text-green3 text-center">Session</p>
-                    <p class="text-[64px] font-medium leading120 text-green3">02</p>
+            <div class="flex items-start sm:gap-4 gap-3 md:gap-6 md:py-8 sm:py-6 py-4 border-b border-dark-shade3">
+                <div class="md:w-31.5 sm:w-24 w-20 md:h-31.5 sm:h-24 h-20 border border-dark-shade3 rounded-3xl flex flex-col items-center justify-center p-4">
+                    <p class="md:text-base sm:text-sm text-[12px] text-green3 text-center">Session</p>
+                    <p class="md:text-[64px] sm:text-10.5 text-[32px] font-medium leading120 text-green3">02</p>
                 </div>
                    <div class=" flex items-start justify-between w-full">
                             <div>
-                                <p class="text-white md:text-[32px] text-2xl font-medium leading120 mb-3">Positioning</p>
-                            <ul class="list-disc text-dark-shade5 pl-7">
-                                <li><p class="text-dark-shade5 text-base leading150">Unique value proposition</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Brand personality traits</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Competitive differentiation</p></li>
-                            </ul>
+                                <p class="text-white md:text-[32px] text-2xl font-medium leading120 sm:mb-3 mb-2">Positioning</p>
+                                 <ul class="flex flex-col gap-0.5">
+                                                <li>
+                                                    <div class="flex items-center sm:gap-2 gap-1">
+                                                        <img src="assets/images/web-point.svg"
+                                                            class="img-fluid shrink-0" alt="point icon">
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Two-Factor Authentication (2FA)</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center sm:gap-2 gap-1">
+                                                        <img src="assets/images/web-point.svg"
+                                                            class="img-fluid shrink-0" alt="point icon">
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Role-Based Access Control</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center sm:gap-2 gap-1">
+                                                        <img src="assets/images/web-point.svg"
+                                                            class="img-fluid shrink-0" alt="point icon">
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Data Privacy Controls</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center sm:gap-2 gap-1">
+                                                        <img src="assets/images/web-point.svg"
+                                                            class="img-fluid shrink-0" alt="point icon">
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Audit Trails & Logging</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
                             </div>
-                            <p class="text-base text-dark-shade5 leading150">2 hours</p>
+                            <p class="sm:text-base text-[12px] text-dark-shade5 leading150">2 hours</p>
                         </div>
             </div>
-            <div class="flex items-center gap-6 py-8 border-b border-dark-shade3">
-                <div class="w-31.5 h-31.5 border border-dark-shade3 rounded-3xl flex flex-col items-center justify-center p-4">
-                    <p class="text-base text-green3 text-center">Session</p>
-                    <p class="text-[64px] font-medium leading120 text-green3">03</p>
+            <div class="flex items-start sm:gap-4 gap-3 md:gap-6 md:py-8 sm:py-6 py-4 border-b border-dark-shade3">
+                <div class="md:w-31.5 sm:w-24 w-20 md:h-31.5 sm:h-24 h-20 border border-dark-shade3 rounded-3xl flex flex-col items-center justify-center p-4">
+                    <p class="md:text-base sm:text-sm text-[12px] text-green3 text-center">Session</p>
+                    <p class="md:text-[64px] sm:text-10.5 text-[32px] font-medium leading120 text-green3">03</p>
                 </div>
                    <div class=" flex items-start justify-between w-full">
                             <div>
-                                <p class="text-white md:text-[32px] text-2xl font-medium leading120 mb-3">Messaging</p>
-                            <ul class="list-disc text-dark-shade5 pl-7">
-                                <li><p class="text-dark-shade5 text-base leading150">Brand voice and tone</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Key messaging pillars</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Tagline development</p></li>
-                            </ul>
+                                <p class="text-white md:text-[32px] text-2xl font-medium leading120 sm:mb-3 mb-2">Messaging</p>
+                                <ul class="flex flex-col gap-0.5">
+                                                <li>
+                                                    <div class="flex items-center sm:gap-2 gap-1">
+                                                        <img src="assets/images/web-point.svg"
+                                                            class="img-fluid shrink-0" alt="point icon">
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Two-Factor Authentication (2FA)</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center sm:gap-2 gap-1">
+                                                        <img src="assets/images/web-point.svg"
+                                                            class="img-fluid shrink-0" alt="point icon">
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Role-Based Access Control</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center sm:gap-2 gap-1">
+                                                        <img src="assets/images/web-point.svg"
+                                                            class="img-fluid shrink-0" alt="point icon">
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Data Privacy Controls</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex items-center sm:gap-2 gap-1">
+                                                        <img src="assets/images/web-point.svg"
+                                                            class="img-fluid shrink-0" alt="point icon">
+                                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Audit Trails & Logging</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
                             </div>
-                            <p class="text-base text-dark-shade5 leading150">2 hours</p>
+                            <p class="sm:text-base text-[12px] text-dark-shade5 leading150">2 hours</p>
                         </div>
             </div>
              </div>
@@ -606,43 +696,43 @@
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your next pixel</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
                             solutions</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
                             design</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your vision</span>
                     </div>
 
@@ -650,43 +740,43 @@
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your next pixel</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
                             solutions</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
                             design</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your vision</span>
                     </div>
                 </div>
@@ -710,36 +800,48 @@
                 </div>
 
 
-                <div class="core-pillar-wrap grid md:grid-cols-4 sm:grid-cols-2 grid-cols-2 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
-                    <div class="border border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden h-full">
-                    <div> <img src="assets/images/edge4.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                <div class="core-pillar-wrap grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 sm:mt-8 mt-6">
+                    <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
+                    <div> 
+                        <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/edge4.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
+                        <h3 class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             Mission</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Why your company exists and the problem it solvesWhy your company exists and the problem it solves Why your company exists and the problem it solves</p>
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-dark-shade5">Why your company exists and the problem it solvesWhy your company exists and the problem it solves Why your company exists and the problem it solves</p>
                       
                     </div>
                 </div>
-                    <div class="border border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden h-full">
-                    <div> <img src="assets/images/vision.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                    <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
+                    <div> 
+                        <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/vision.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
+                        <h3 class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             Vision</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Why your company exists and the problem it solvesWhy your company exists and the problem it solves Why your company exists and the problem it solves</p>
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-dark-shade5">Why your company exists and the problem it solvesWhy your company exists and the problem it solves Why your company exists and the problem it solves</p>
                        
                     </div>
                 </div>
-                    <div class="border border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden h-full">
-                    <div> <img src="assets/images/values.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                    <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
+                    <div> 
+                        <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/values.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
+                        <h3 class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                            Values</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Why your company exists and the problem it solvesWhy your company exists and the problem it solves Why your company exists and the problem it solves</p>
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-dark-shade5">Why your company exists and the problem it solvesWhy your company exists and the problem it solves Why your company exists and the problem it solves</p>
                         
                     </div>
                 </div>
-                    <div class="border border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden h-full">
-                    <div> <img src="assets/images/personality.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                    <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
+                    <div> 
+                        <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/personality.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
+                        <h3 class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                            Personality</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Why your company exists and the problem it solvesWhy your company exists and the problem it solves Why your company exists and the problem it solves</p>
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-dark-shade5">Why your company exists and the problem it solvesWhy your company exists and the problem it solves Why your company exists and the problem it solves</p>
                        
                     </div>
                 </div>
@@ -758,33 +860,28 @@
             <img src="assets/images/workshape.svg" class="img-fluid " alt="works shape">
         </div>
         <div class="container">
-            <div class="grid lg:grid-cols-2 gap-8">
+            <div class="grid lg:grid-cols-2 sm:gap-8">
 
             <!-- Left Side - Sticky Content -->
             <div class="">
                 <div class="left-content">
-                    <h2 class="text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-5 leading120">
+                    <h2 class="text-center sm:text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-5 mb-3 leading120">
                         The Pixxen Brand Lab
                     </h2>
-                    <p class="text-base lg:text-lg text-dark-shade5 mb-9 lg:mb-12">
+                    <p class="text-center sm:text-start text-sm sm:text-base lg:text-lg text-dark-shade5 md:mb-9 sm:mb-4 mb-3 lg:mb-12">
                        Branding is a deeply collaborative process. We work hand-in-hand with you to uncover your brand's true essence and bring it to life.
                     </p>
-                      <button
-                            class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
+                    <div class="flex sm:justify-start justify-center">
+                        <button class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
                             <span class="bg-overlay absolute inset-0 z-1"></span>
                             <div class="btn-inner relative z-2 flex items-center gap-3">
-                                <div
-                                    class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                <div class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
                                     <div class="icon-slider flex flex-row ">
                                         <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                            <path
-                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                                fill="var(--color-green1)" />
+                                            <path d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z" fill="var(--color-green1)"></path>
                                         </svg>
                                         <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                            <path
-                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                                fill="var(--color-green1)" />
+                                            <path d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z" fill="var(--color-green1)"></path>
                                         </svg>
                                     </div>
                                 </div>
@@ -794,6 +891,8 @@
                                 </div>
                             </div>
                         </button>
+                     </div>
+                 
                <img src="assets/images/workshape.svg" class="img-fluid absolute -left-50 -bottom-24 z-10 hidden lg:block "
             alt="works shape">
     
@@ -808,30 +907,30 @@
                   <div class="p-4 sm:p-5 lg:p-8 w-full rounded-3xl border border-white/16 phase-bg relative">
                     <div class="relative z-20">
                         <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium md:pb-6 pb-3">Immersion & Audit</h3>
-                        <p class="sm:text-base text-sm text-dark-shade5">We dive into your industry, competitors, and target audience. Understanding your market landscape is crucial to positioning you effectively.</p>
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">We dive into your industry, competitors, and target audience. Understanding your market landscape is crucial to positioning you effectively.</p>
                     
-                     <ul class="mt-8 flex flex-col md:gap-2 gap-2">
+                     <ul class="md:mt-8 sm:mt-4 mt-3 flex flex-col md:gap-2 gap-1">
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-2 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[14px]" alt="check">
                                    <div class="flex flex-col gap-2">
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Simplified to 12 core actions</p>
+                                     <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px] leading150">Simplified to 12 core actions</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-2 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[14px]" alt="check">
                                    <div class="flex flex-col gap-2">
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Unified design system</p>
+                                     <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px] leading150">Unified design system</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-2 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[14px]" alt="check">
                                    <div class="flex flex-col gap-2">
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Clear visual hierarchy with focus states</p>
+                                     <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px] leading150">Clear visual hierarchy with focus states</p>
                                    </div>
                                 </div>
                             </li>
@@ -841,30 +940,30 @@
                   <div class="p-4 sm:p-5 lg:p-8 w-full rounded-3xl border border-white/16 phase-bg relative">
                     <div class="relative z-20">
                         <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium md:pb-6 pb-3">Concept Exploration</h3>
-                        <p class="sm:text-base text-sm text-dark-shade5">Developing 2–3 distinct creative directions for the brand. Each concept tells a different story while staying true to your core values.</p>
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">Developing 2–3 distinct creative directions for the brand. Each concept tells a different story while staying true to your core values.</p>
                     
-                     <ul class="mt-8 flex flex-col md:gap-2 gap-2">
+                     <ul class="md:mt-8 sm:mt-4 mt-3 flex flex-col md:gap-2 gap-1">
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-2 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[14px]" alt="check">
                                    <div class="flex flex-col gap-2">
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Mood Boards</p>
+                                     <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px] leading150">Mood Boards</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-2 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[14px]" alt="check">
                                    <div class="flex flex-col gap-2">
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Logo Concepts</p>
+                                     <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px] leading150">Logo Concepts</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-2 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[14px]" alt="check">
                                    <div class="flex flex-col gap-2">
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Style Directions</p>
+                                     <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px] leading150">Style Directions</p>
                                    </div>
                                 </div>
                             </li>
@@ -874,30 +973,30 @@
                   <div class="p-4 sm:p-5 lg:p-8 w-full rounded-3xl border border-white/16 phase-bg relative">
                     <div class="relative z-20">
                         <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium md:pb-6 pb-3">Refinement</h3>
-                        <p class="sm:text-base text-sm text-dark-shade5">Polishing the chosen direction based on your feedback. We iterate until every detail perfectly captures your brand's essence.</p>
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">Polishing the chosen direction based on your feedback. We iterate until every detail perfectly captures your brand's essence.</p>
                     
-                     <ul class="mt-8 flex flex-col md:gap-2 gap-2">
+                     <ul class="md:mt-8 sm:mt-4 mt-3 flex flex-col md:gap-2 gap-1">
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-2 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[14px]" alt="check">
                                    <div class="flex flex-col gap-2">
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Design Iterations</p>
+                                     <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px] leading150">Design Iterations</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-2 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[14px]" alt="check">
                                    <div class="flex flex-col gap-2">
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Stakeholder Review</p>
+                                     <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px] leading150">Stakeholder Review</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
+                                <div class="flex items-start md:gap-4 sm:gap-2 gap-1.5">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[14px]" alt="check">
                                    <div class="flex flex-col gap-2">
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Final Adjustments</p>
+                                     <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px] leading150">Final Adjustments</p>
                                    </div>
                                 </div>
                             </li>

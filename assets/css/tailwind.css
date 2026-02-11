@@ -404,6 +404,7 @@ nav{
 @media(max-width:640px){
 .subbanner-wrapper .banner-content-wrapper{
        padding: 120px 0 48px 0;
+       min-height: auto;
 }
 }
 
