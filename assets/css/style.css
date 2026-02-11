@@ -286,6 +286,9 @@
   .-z-10 {
     z-index: calc(10 * -1);
   }
+  .-z-20 {
+    z-index: calc(20 * -1);
+  }
   .-z-30 {
     z-index: calc(30 * -1);
   }
@@ -1976,6 +1979,18 @@
     @media (width >= 40rem) {
       border-right-style: var(--tw-border-style);
       border-right-width: 1px;
+    }
+  }
+  .sm\:border-b {
+    @media (width >= 40rem) {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 1px;
+    }
+  }
+  .sm\:border-b-0 {
+    @media (width >= 40rem) {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 0px;
     }
   }
   .sm\:border-l {

@@ -800,7 +800,7 @@
                 </div>
 
 
-                <div class="core-pillar-wrap grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 sm:mt-8 mt-6">
+                <div class="core-pillar-wrap grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 sm:mt-8 mt-6">
                     <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
                     <div> 
                         <div class="sm:block flex justify-center w-full">
@@ -1190,7 +1190,7 @@
 
     
     <!-- counter[64px]ction-mediumt -->
-    <section class="overview-counter section-padding min-h-screen flex items-end">
+    <section class="overview-counter section-padding min-h-screen flex items-end sticky -z-20 bottom-0 ">
         <div class="max-w-383.75 w-full mx-auto mt-auto md:px-5 px-4">
             <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-3 gap-1 lg:min-h-[80vh] items-end">
 
@@ -1431,18 +1431,17 @@
 
 
 
-      <!-- faq  start -->
+   <!-- faq  start -->
 
     <section class="section-padding faq bg-green5">
         <div class="container">
             <div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-6">
                 <div>
-                    <h2
-                        class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-1.5 leading120">
+                    <h2 class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-1.5 leading120">
                         Frequently asked questions
                     </h2>
                     <button
-                        class="mega-reveal-btn relative md:block hidden overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
+                        class="mega-reveal-btn relative md:block hidden overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
                         <span class="bg-overlay absolute inset-0 z-1"></span>
                         <div class="btn-inner relative z-2 flex items-center gap-3">
                             <div
@@ -1474,13 +1473,14 @@
 
                         <!-- FAQ Item 1 -->
                         <div class="faq-item active" data-faq="1">
-                            <div class="faq-question flex items-start justify-between md:py-8 py-6 gap-6">
-                                <div class="flex items-start gap-4 flex-1">
+                            <div class="faq-question flex items-start justify-between md:py-8 sm:py-6 py-4 gap-6">
+                                <div class="flex items-start sm:gap-4 gap-3 flex-1">
                                     <div
                                         class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-xl md:text-2xl font-medium">Do you design for Dark Mode?</h3>
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">How long till I see a
+                                        prototype?</h3>
                                 </div>
                                 <button
                                     class="plus-icon text-white text-3xl font-light w-8 h-8 flex items-center justify-center shrink-0">
@@ -1494,7 +1494,7 @@
                             <div class="faq-answer">
                                 <div class="answer-content pl-9 sm:pl-11 sm:pb-8 pb-6 sm:pr-12 pr-6">
                                     <!-- <div class="green-border"></div> -->
-                                    <p class="text-gray-300 sm:text-lg text-base">
+                                    <p class="text-gray-300 sm:text-lg text-sm sm:text-base">
                                         With our ultra-fast charging stations, you can charge up to 80% in about 20
                                         minutes perfect for a quick stop. Charging overnight at home with a Level 2
                                         charger gives you a full battery by morning, ready for the day.
@@ -1505,13 +1505,14 @@
 
                         <!-- FAQ Item 2 -->
                         <div class="faq-item" data-faq="2">
-                            <div class="faq-question flex items-start justify-between md:py-8 py-6 gap-6">
-                                <div class="flex items-start gap-4 flex-1">
+                            <div class="faq-question flex items-start justify-between md:py-8 sm:py-6 py-4 gap-6">
+                                <div class="flex items-start sm:gap-4 gap-3 flex-1">
                                     <div
                                         class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-xl md:text-2xl font-medium">How do you handle large data tables and filtering?</h3>
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Do you work with internal
+                                        teams?</h3>
                                 </div>
                                 <button
                                     class="plus-icon text-white text-3xl font-light w-8 h-8 flex items-center justify-center shrink-0">
@@ -1525,7 +1526,7 @@
                             <div class="faq-answer">
                                 <div class="answer-content pl-9 sm:pl-11 sm:pb-8 pb-6 sm:pr-12 pr-6">
                                     <!-- <div class="green-border"></div> -->
-                                    <p class="text-gray-300 sm:text-lg text-base">
+                                    <p class="text-gray-300 sm:text-lg text-sm sm:text-base">
                                         Yes, we collaborate closely with internal teams to ensure seamless integration
                                         and alignment with your company's goals and processes.
                                     </p>
@@ -1535,13 +1536,13 @@
 
                         <!-- FAQ Item 3 -->
                         <div class="faq-item" data-faq="3">
-                            <div class="faq-question flex items-start justify-between md:py-8 py-6 gap-6">
-                                <div class="flex items-start gap-4 flex-1">
+                            <div class="faq-question flex items-start justify-between md:py-8 sm:py-6 py-4 gap-6">
+                                <div class="flex items-start sm:gap-4 gap-3 flex-1">
                                     <div
                                         class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-xl md:text-2xl font-medium">Can you help us modernize an old legacy enterprise system?</h3>
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Who owns the IP?</h3>
                                 </div>
                                 <button
                                     class="plus-icon text-white text-3xl font-light w-8 h-8 flex items-center justify-center shrink-0">
@@ -1555,7 +1556,7 @@
                             <div class="faq-answer">
                                 <div class="answer-content pl-9 sm:pl-11 sm:pb-8 pb-6 sm:pr-12 pr-6">
                                     <!-- <div class="green-border"></div> -->
-                                    <p class="text-gray-300 sm:text-lg text-base">
+                                    <p class="text-gray-300 sm:text-lg text-sm sm:text-base">
                                         All intellectual property rights are transferred to you upon project completion,
                                         ensuring you have full ownership of the deliverables.
                                     </p>
@@ -1565,13 +1566,14 @@
 
                         <!-- FAQ Item 4 -->
                         <div class="faq-item" data-faq="4">
-                            <div class="faq-question flex items-start justify-between md:py-8 py-6 gap-6">
-                                <div class="flex items-start gap-4 flex-1">
+                            <div class="faq-question flex items-start justify-between md:py-8 sm:py-6 py-4 gap-6">
+                                <div class="flex items-start sm:gap-4 gap-3 flex-1">
                                     <div
                                         class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-xl md:text-2xl font-medium">What's included in your design deliverables?
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Can we scale the design
+                                        system later?
                                     </h3>
                                 </div>
                                 <button
@@ -1586,7 +1588,7 @@
                             <div class="faq-answer">
                                 <div class="answer-content pl-9 sm:pl-11 sm:pb-8 pb-6 sm:pr-12 pr-6">
                                     <!-- <div class="green-border"></div> -->
-                                    <p class="text-gray-300 sm:text-lg text-base">
+                                    <p class="text-gray-300 sm:text-lg text-sm sm:text-base">
                                         Absolutely! Our design systems are built with scalability in mind, allowing for
                                         easy expansion and adaptation as your needs grow.
                                     </p>
@@ -1597,7 +1599,7 @@
                     </div>
                     <div class="flex justify-center md:hidden mt-6">
                         <button
-                            class="mega-reveal-btn relative  overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
+                            class="mega-reveal-btn relative  overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
                             <span class="bg-overlay absolute inset-0 z-1"></span>
                             <div class="btn-inner relative z-2 flex items-center gap-3">
                                 <div
@@ -1629,7 +1631,6 @@
         </div>
     </section>
     <!-- faq  end -->
-
 
 
 
