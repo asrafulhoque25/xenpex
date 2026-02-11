@@ -637,6 +637,11 @@ nav{
     background-color: #29473C;
     z-index: 0;
 }
+@media (max-width:640px) {
+    .scrollbox-counter::after {
+left: 22px;
+    }
+}
 
 @media (min-width: 768px) {
     .scrollbox-counter::after { left: 32px; }
