@@ -12,10 +12,10 @@
 
 <body>
 
-    <nav class="bg-[#012819] border-b border-green4 font-farro">
+ <nav class="bg-[#012819] border-b border-green4">
         <div class="mx-auto">
             <div class="flex items-center justify-between h-12">
-                <div class="flex items-center gap-4">
+                <div class="flex items-center sm:gap-4 gap-3">
                     <!-- Desktop Sidebar Button (hidden on mobile) -->
                     <button id="desktop-sidebar"
                         class="hidden lg:block text-green1 hover:text-green2 px-19 py-5 bg-green4 hover:bg-green3 cursor-pointer transition-colors"
@@ -37,7 +37,7 @@
                     </button>
 
                     <a href="/" class="flex items-center">
-                        <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid">
+                        <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid sm:max-w-auto max-w-[130px]">
                     </a>
                 </div>
 
@@ -94,8 +94,8 @@
 
                 <!-- Mobile "LET'S CONNECT" button (visible on mobile) -->
                 <a href="#connect"
-                    class="lg:hidden px-10 py-4 text-xs bg-green1 text-green4 hover:bg-green2 transition-colors font-bold">
-                    CONNECT
+                    class="lg:hidden px-5 sm:px-10 py-4 text-xs bg-green1 text-green4 hover:bg-green2 transition-colors font-bold">
+                    Let’s Connect
                 </a>
             </div>
         </div>
@@ -144,26 +144,27 @@
     </nav>
 
 
+
     <!-- banner section start --><!-- banner section start -->
     <section class="subbanner-wrapper bg-black min-h-screen font-farro relative">
         <!-- Content layer (eta fixed thakbe) -->
         <div class="banner-content-wrapper">
             <div class="container relative z-10">
-                <div class="sm:grid grid-cols-2 flex flex-col-reverse items-center md:gap-8 gap-6">
+                <div class="sm:grid grid-cols-2 flex flex-col items-center md:gap-8 gap-6">
                     <div>
                         <div class="flex items-center justify-start gap-2 pb-5">
                             <span class="sm:w-2.5 w-1.5 sm:h-2.5 h-1.5 sm:rounded-[3px] rounded-xs bg-green2"></span>
                             <p class="text-green2 sm:text-base text-[12px] font-medium">Web App Design Service</p>
                         </div>
-                        <h2 class="sm:text-start text-center font-medium lg:text-[72px] sm:text-[52px] text-[32px] text-white md:mb-6 mb-1.5 leading120">
+                        <h2 class="text-start font-medium lg:text-[72px] sm:text-[52px] text-[36px] text-white md:mb-6 mb-1.5 leading120">
                             Custom Web Applications, Built for Precision
                         </h2>
-                        <p class="sm:text-start text-center text-white md:text-[18px] sm:text-base text-[14px] leading-[150%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
+                        <p class="text-start  text-white md:text-[18px] sm:text-base text-[14px] leading-[150%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
                            We design robust, scalable, and secure web applications that solve complex business challenges. From custom portals to internal tools, we turn your unique requirements into intuitive digital experiences.</p>
 
-                        <div class="flex sm:justify-start justify-center w-full gap-4">
+                        <div class="flex justify-start flex-wrap w-full sm:gap-4 gap-3">
                             <button
-                                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
+                                class="mega-reveal-btn sm:w-auto w-full flex justify-center relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
                                 <span class="bg-overlay absolute inset-0 z-1"></span>
                                 <div class="btn-inner relative z-2 flex items-center gap-3">
                                     <div
@@ -188,7 +189,7 @@
                                 </div>
                             </button>
                             <button
-                                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-transparen border border-white  transition-all duration-200">
+                                class="mega-reveal-btn sm:w-auto w-full flex justify-center relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-transparen border border-white  transition-all duration-200">
                                 <span class="bg-overlay absolute inset-0 z-1"></span>
                                 <div class="btn-inner relative z-2 flex items-center gap-3">
 
@@ -229,32 +230,31 @@
 
 
             <div
-                class="core-pillar-wrap grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
+                class="core-pillar-wrap grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
                 <div
                     class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
                     <div> <img src="assets/images/efficiency-gap-1.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
                         <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             Manual Bottlenecks</h3>
-                        <p class="sm:text-base text-[14px] text-dark-shade5">Are outdated spreadsheets slowing your team down? Manual data entry and error-prone processes cost you valuable time and resources every single day.</p>
-                        <ul class="mt-8 flex flex-col gap-3">
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">Are outdated spreadsheets slowing your team down? Manual data entry and error-prone processes cost you valuable time and resources every single day.</p>
+                        <ul class="sm:mt-8 mt-4 flex flex-col gap-1.5 sm:gap-3">
                             <li>
                                 <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Hours wasted on duplicate data entry</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
-                                    <p class="text-dark-shade5 sm:text-base text-[14px]">Human errors in critical calculations</p>
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-dark-shade5 sm:text-base text-[14px]">img-fluid shrink-0 sm:w-auto w-4.5 itical calculations</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
-                                    <p class="text-dark-shade5 sm:text-base text-[14px]">No real-time collaboration capabilities</p>
-                                </div>
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-dark-shade5 sm:text-base text-[14px]">No real-time collaboration capa"img-fluid shrink-0 sm:w-auto w-4.5         </div>
                             </li>
                         </ul>
                   
@@ -264,27 +264,27 @@
                     class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
                     <div> <img src="assets/images/efficiency-gap-2.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
                         <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             Fragmented Tools</h3>
-                        <p class="sm:text-base text-[14px] text-dark-shade5">Stop jumping between five apps to complete one task. Disconnected systems create data silos and communication breakdowns across your organization.</p>
-                        <ul class="mt-8 flex flex-col gap-3">
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">Stop jumping between five apps to complete one task. Disconnected systems create data silos and communication breakdowns across your organization.</p>
+                        <ul class="sm:mt-8 mt-4 flex flex-col gap-1.5 sm:gap-3">
                             <li>
                                 <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Extended training periods delay
                                         ROI</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Support tickets overwhelm your
                                         team</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">User frustration starts from
                                         day one</p>
                                 </div>
@@ -297,27 +297,27 @@
                     class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
                     <div> <img src="assets/images/efficiency-gap-3.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
                         <h3
-                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                            class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             Scalability Issues</h3>
-                        <p class="sm:text-base text-[14px] text-dark-shade5">Build a foundation that grows with your user base without breaking. Off-the-shelf solutions can't adapt to your unique business requirements at scale.</p>
-                        <ul class="mt-8 flex flex-col gap-3">
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">Build a foundation that grows with your user base without breaking. Off-the-shelf solutions can't adapt to your unique business requirements at scale.</p>
+                        <ul class="sm:mt-8 mt-4 flex flex-col gap-1.5 sm:gap-3">
                             <li>
                                 <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Information paralysis leads to
                                         poor decisions</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Negative word-of-mouth and
                                         reviews</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-center gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
                                     <p class="text-dark-shade5 sm:text-base text-[14px]">Revenue loss compounds monthly
                                     </p>
                                 </div>
@@ -341,43 +341,43 @@
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your next pixel</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
                             solutions</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
                             design</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your vision</span>
                     </div>
 
@@ -385,43 +385,43 @@
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your next pixel</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
                             solutions</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
                             design</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your vision</span>
                     </div>
                 </div>
@@ -441,16 +441,16 @@
             <img src="assets/images/workshape.svg" class="img-fluid " alt="works shape">
         </div>
         <div class="container">
-            <div class="grid lg:grid-cols-2 gap-8">
+            <div class="grid lg:grid-cols-2 sm:gap-8">
 
                 <!-- Left Side - Sticky Content -->
                 <div class="">
                     <div class="left-content">
                         <h2
-                            class="text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-5 leading120">
+                            class=" text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-5 mb-3 leading120">
                             Custom Web App Specializations
                         </h2>
-                        <p class="text-base lg:text-lg text-dark-shade5 mb-9 lg:mb-12">
+                        <p class="sm:text-base text-sm lg:text-lg text-dark-shade5 sm:mb-6 md:pb-4 pb-3 lg:mb-12">
                            From client-facing portals to complex internal systems, we build applications tailored to your exact business needs.
                         </p>
                          <button
@@ -490,7 +490,7 @@
                 </div>
 
                 <!-- Right Side - Scrollable Portfolio Items -->
-                <div class="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1">
+                <div class="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-3">
 
                     <!-- service Item  -->
                     <div class="step-content portfolio-card overflow-hidden ">
@@ -498,44 +498,44 @@
                             class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 cta-section relative overflow-hidden">
                             <div class="relative z-20">
                                <img src="assets/images/partner-portal.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                            Client & Partner Portals</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Secure, branded environments where your clients and partners can manage accounts, access resources, submit requests, and track project progress in real-time.</p>
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">Secure, branded environments where your clients and partners can manage accounts, access resources, submit requests, and track project progress in real-time.</p>
                        <div class="mt-4">
                                     <ul>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Custom user dashboards</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Custom user dashboards</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Document management systems</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Document management systems</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Role-based access control</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Role-based access control</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Automated notifications & alerts</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Automated notifications & alerts</p>
                                             </div>
                                         </li>
                                     </ul>
 
-                                    <div class="pl-8 border-l border-dark-shade3 mt-5">
-                                        <p class="text-xl font-medium leading120 mb-2 text-white">8-12 weeks</p>
-                                        <p class="text-base text-dark-shade5 leading150">Typical delivery</p>
+                                    <div class="sm:pl-8 pl-5 border-l border-dark-shade3 sm:mt-5 mt-3">
+                                        <p class="text-xl font-medium leading120 sm:mb-2 mb-1.5 text-white">8-12 weeks</p>
+                                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5 leading150">Typical delivery</p>
                                     </div>
 
                                  
@@ -550,44 +550,44 @@
                             class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 cta-section relative overflow-hidden">
                             <div class="relative z-20">
                                          <img src="assets/images/crm.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                            Custom CRM/ERP Solutions</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Tailored internal tools that fit your specific business logic, automate workflows, and provide actionable insights without the bloat of generic enterprise software.</p>
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">Tailored internal tools that fit your specific business logic, automate workflows, and provide actionable insights without the bloat of generic enterprise software.</p>
                        <div class="mt-4">
                                     <ul>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Custom user dashboards</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Custom user dashboards</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Document management systems</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Document management systems</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Role-based access control</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Role-based access control</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Automated notifications & alerts</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Automated notifications & alerts</p>
                                             </div>
                                         </li>
                                     </ul>
 
-                                    <div class="pl-8 border-l border-dark-shade3 mt-5">
-                                        <p class="text-xl font-medium leading120 mb-2 text-white">12-16 weeks</p>
-                                        <p class="text-base text-dark-shade5 leading150">Typical delivery</p>
+                                    <div class="sm:pl-8 pl-5 border-l border-dark-shade3 sm:mt-5 mt-3">
+                                        <p class="text-xl font-medium leading120 sm:mb-2 mb-1.5 text-white">12-16 weeks</p>
+                                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5 leading150">Typical delivery</p>
                                     </div>
 
                                  
@@ -603,44 +603,44 @@
                             class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 cta-section relative overflow-hidden">
                             <div class="relative z-20">
                                          <img src="assets/images/webapp.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                            Progressive Web Apps (PWA)</h3>
                         <p class="sm:text-base text-[14px] text-dark-shade5">Web-based applications that look and feel like native mobile apps, with offline functionality, push notifications, and home screen installation—without app store approval.</p>
                        <div class="mt-4">
                                     <ul>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Custom user dashboards</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Custom user dashboards</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Document management systems</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Document management systems</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Role-based access control</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Role-based access control</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Automated notifications & alerts</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Automated notifications & alerts</p>
                                             </div>
                                         </li>
                                     </ul>
 
-                                    <div class="pl-8 border-l border-dark-shade3 mt-5">
-                                        <p class="text-xl font-medium leading120 mb-2 text-white">10-14 weeks</p>
-                                        <p class="text-base text-dark-shade5 leading150">Typical delivery</p>
+                                    <div class="sm:pl-8 pl-5 border-l border-dark-shade3 sm:mt-5 mt-3">
+                                        <p class="text-xl font-medium leading120 sm:mb-2 mb-1.5 text-white">10-14 weeks</p>
+                                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5 leading150">Typical delivery</p>
                                     </div>
 
                                  
@@ -655,44 +655,44 @@
                             class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 cta-section relative overflow-hidden">
                             <div class="relative z-20">
                                     <img src="assets/images/inventory.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                           Inventory & Logistics Dashboards</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Visualize real-time supply chains, track assets across locations, manage stock levels, and optimize logistics operations with intelligent dashboards and predictive analytics.</p>
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">Visualize real-time supply chains, track assets across locations, manage stock levels, and optimize logistics operations with intelligent dashboards and predictive analytics.</p>
                        <div class="mt-4">
                                     <ul>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Custom user dashboards</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Custom user dashboards</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Document management systems</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Document management systems</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Role-based access control</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Role-based access control</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
-                                                <img src="assets/images/icon-point.svg" class="img-fluid shrink-0"
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Automated notifications & alerts</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Automated notifications & alerts</p>
                                             </div>
                                         </li>
                                     </ul>
 
-                                    <div class="pl-8 border-l border-dark-shade3 mt-5">
-                                        <p class="text-xl font-medium leading120 mb-2 text-white">8-12 weeks</p>
-                                        <p class="text-base text-dark-shade5 leading150">Typical delivery</p>
+                                    <div class="sm:pl-8 pl-5 border-l border-dark-shade3 sm:mt-5 mt-3">
+                                        <p class="text-xl font-medium leading120 sm:mb-2 mb-1.5 text-white">8-12 weeks</p>
+                                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5 leading150">Typical delivery</p>
                                     </div>
 
                                  
@@ -701,7 +701,7 @@
                             </div>
                         </div>
                     </div>
-                </div </div>
+                </div 
             </div>
     </section>
     <!-- Core SaaS Specializations section end -->
@@ -715,7 +715,7 @@
             <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-3 gap-1 lg:min-h-[80vh] items-end">
 
                 <div
-                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                    class="counter-card h-full sm:h-auto lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5/80 backdrop-blur-[32px]">
                     <div class="icon-box rounded-lg text-white">
                         <img src="assets/images/app.svg" class="img-fluid lg:w-16 md:w-12.5 w-8" alt="counter">
                     </div>
@@ -729,7 +729,7 @@
                 </div>
 
                 <div
-                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                    class="counter-card h-full sm:h-auto lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5/80 backdrop-blur-[32px]">
                     <div class="icon-box rounded-lg text-white">
                         <img src="assets/images/counter1.svg" class="img-fluid lg:w-16 md:w-12.5 w-8" alt="counter">
                     </div>
@@ -743,7 +743,7 @@
                 </div>
 
                 <div
-                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                    class="counter-card h-full sm:h-auto lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5/80 backdrop-blur-[32px]">
                     <div class="icon-box rounded-lg text-white">
                         <img src="assets/images/counter2.svg" class="img-fluid lg:w-16 md:w-12.5 w-8" alt="counter">
                     </div>
@@ -756,7 +756,7 @@
                 </div>
 
                 <div
-                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                    class="counter-card h-full sm:h-auto lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5/80 backdrop-blur-[32px]">
                     <div class="icon-box rounded-lg text-white">
                         <img src="assets/images/time.svg" class="img-fluid lg:w-16 md:w-12.5 w-8" alt="counter">
                     </div>
@@ -779,52 +779,52 @@
       <!-- User Feedback & Testing Loop start -->
      <section class="section-padding bg-[linear-gradient(180deg,_var(--dark-shade-1,#002417)_0%,_var(--dark-extra-dark,#001B11)_100%)]">
         <div class="container">
-                <div class="grid grid-cols-2 items-center gap-8">
+                <div class="grid md:grid-cols-2 grid-cols-1 items-center gap-8">
                         <div>
-                 <h2 class="text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-5 leading120">
+                 <h2 class="text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-5 mb-3 leading120">
                         Where Product Logic Meets Intelligent UX
                     </h2>
-                    <p class="text-base lg:text-lg text-dark-shade5 mb-6 lg:mb-8">
+                    <p class="sm:text-base text-sm lg:text-lg text-dark-shade5 sm:mb-6 mb-4 lg:mb-8">
                      At Pixxen, we focus on Information Architecture (IA) first. Before any pixel is pushed, we map out complex user roles, data relationships, and business rules. This ensures your application's "brain" is structured for scalability, security, and seamless user experiences.
                     </p>
                        
-                       <ul class="mt-8 flex flex-col md:gap-6 gap-5">
+                       <ul class="sm:mt-8 flex flex-col md:gap-6 gap-5">
                             <li>
                                 <div class="flex items-start md:gap-4 gap-3">
-                                    <div class=" w-6 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
-                                        <span class="text-green4 font-medium text-xl sm:text-2xl">
+                                    <div class=" sm:w-6 w-5 sm:h-6 h-5 bg-green2 sm:rounded-lg rounded-[6px] flex items-center justify-center shrink-0">
+                                        <span class="text-green4 font-medium sm:text-xl md:text-2xl text-base">
                                             1
                                         </span>
                                     </div>
-                                   <div class="flex flex-col gap-2">
-                                     <p class="text-dark-shade6 md:text-xl text-[18px] font-medium leading120">Information Architecture Mapping</p>
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">We create detailed IA diagrams that visualize how data flows through your system, ensuring logical hierarchies and intuitive navigation structures.</p>
+                                   <div class="flex flex-col sm:gap-2 gap-1.5">
+                                     <p class="text-dark-shade6 md:text-xl sm:text-[18px] text-base font-medium leading120">Information Architecture Mapping</p>
+                                     <p class="text-dark-shade5 md:text-base smtext-[14px] text-[12px] leading150">We create detailed IA diagrams that visualize how data flows through your system, ensuring logical hierarchies and intuitive navigation structures.</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-start md:gap-4 gap-3">
-                                    <div class=" w-6 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
-                                        <span class="text-green4 font-medium text-xl sm:text-2xl">
+                                    <div class=" sm:w-6 w-5 sm:h-6 h-5 bg-green2 sm:rounded-lg rounded-[6px] flex items-center justify-center shrink-0">
+                                        <span class="text-green4 font-medium sm:text-xl md:text-2xl text-base">
                                             2
                                         </span>
                                     </div>
-                                   <div class="flex flex-col gap-2">
-                                     <p class="text-dark-shade6 md:text-xl text-[18px] font-medium leading120">User Role & Permission Design</p>
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Complex applications require sophisticated access control. We design permission systems that are secure yet flexible enough to adapt to your organizational structure.</p>
+                                   <div class="flex flex-col sm:gap-2 gap-1.5">
+                                     <p class="text-dark-shade6 md:text-xl sm:text-[18px] text-base font-medium leading120">User Role & Permission Design</p>
+                                     <p class="text-dark-shade5 md:text-base smtext-[14px] text-[12px] leading150">Complex applications require sophisticated access control. We design permission systems that are secure yet flexible enough to adapt to your organizational structure.</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-start md:gap-4 gap-3">
-                                    <div class=" w-6 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
-                                        <span class="text-green4 font-medium text-xl sm:text-2xl">
+                                    <div class=" sm:w-6 w-5 sm:h-6 h-5 bg-green2 sm:rounded-lg rounded-[6px] flex items-center justify-center shrink-0">
+                                        <span class="text-green4 font-medium sm:text-xl md:text-2xl text-base">
                                            3
                                         </span>
                                     </div>
-                                   <div class="flex flex-col gap-2">
-                                     <p class="text-dark-shade6 md:text-xl text-[18px] font-medium leading120">Multi-Step Process Optimization</p>
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">From onboarding flows to complex approval workflows, we design each step to minimize friction while maintaining data integrity and compliance requirements.</p>
+                                   <div class="flex flex-col sm:gap-2 gap-1.5">
+                                     <p class="text-dark-shade6 md:text-xl sm:text-[18px] text-base font-medium leading120">Multi-Step Process Optimization</p>
+                                     <p class="text-dark-shade5 md:text-base smtext-[14px] text-[12px] leading150">From onboarding flows to complex approval workflows, we design each step to minimize friction while maintaining data integrity and compliance requirements.</p>
                                    </div>
                                 </div>
                             </li>
@@ -855,10 +855,10 @@
                           <!-- Left Side - Sticky Content -->
             <div class="max-w-152 w-full ">
                 <div class="left-content">
-                    <h2 class=" text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-5 leading120">
+                    <h2 class="text-center sm:text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-4 sm:mb-1.5 mb-3 leading120">
                       Our Design Process
                     </h2>
-                    <p class="text-base lg:text-lg text-dark-shade5 mb-9 lg:mb-12">
+                    <p class="text-dark-shade5 text-center sm:text-start md:text-[18px] sm:text-base text-[14px] leading-[140%] font-normal">
                      A proven methodology that transforms ideas into exceptional mobile experiences
                     </p>
                <img src="assets/images/workshape.svg" class="img-fluid absolute -left-51 -bottom-24 z-10 hidden lg:block "
@@ -869,43 +869,43 @@
 
                 <!-- right Side -->
 
-          <div class="flex items-start gap-16.5 scrollbox-counter relative">
+          <div class="flex items-start lg:gap-16.5 md:gap-10 sm:gap-6 gap-3 scrollbox-counter relative">
     <div class="phase-counter-wrapper">
-        <p class="phase-counter md:w-16 w-12 relative z-10 md:h-16 h-12 bg-green2 rounded-2xl flex items-center justify-center text-green4 text-2xl md:text-3xl font-medium shrink-0">
+        <p class="phase-counter md:w-16 w-10.5 relative z-10 md:h-16 h-10.5 bg-green2 rounded-2xl flex items-center justify-center text-green4 text-2xl md:text-3xl font-medium shrink-0">
             <span class="counter-number">1</span>
         </p>
     </div>
     
-    <div class="flex flex-col gap-2 relative z-10 phase-items-wrapper">
+    <div class="flex flex-col sm:gap-2 gap-1.5 relative z-10 phase-items-wrapper">
         <div class="flex lg:gap-16.25 md:gap-10 sm:gap-8 gap-5 items-start phase-single-item" data-phase="1">
             <div class="p-4 sm:p-5 lg:p-8 rounded-3xl border border-white/16 phase-bg relative">
                  <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">Requirement Engineering</h3>
-                                        <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">We start by diving deep into your business processes, pain points, and goals. Through stakeholder interviews, workflow analysis, and competitive research, we gather comprehensive functional specifications and user stories that form the foundation of your application.</p>
-                                        <div class="md:mt-6 mt-4">
-                                             <div class="pl-8 border-l border-dark-shade3 my-5">
-                                        <p class="text-xl font-medium leading120 mb-2 text-white">1-2 weeks</p>
-                                        <p class="text-base text-dark-shade5 leading150">Duration</p>
+                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">We start by diving deep into your business processes, pain points, and goals. Through stakeholder interviews, workflow analysis, and competitive research, we gather comprehensive functional specifications and user stories that form the foundation of your application.</p>
+                                        <div class="md:mt-6 sm:mt-4 mt-3">
+                                             <div class="sm:pl-8 pl-5 border-l border-dark-shade3 sm:my-5 sm:py-3 sm:mb-0  mb-3">
+                                        <p class="md:text-xl sm:text-[18px] text-base font-medium leading120 sm:mb-2 mb-1.5 text-white">1-2 weeks</p>
+                                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5 leading150">Duration</p>
                                     </div>
-                                            <ul>
+                                            <ul class="flex flex-col gap-0.5 sm:gap-0">
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Stakeholder Interviews</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Stakeholder Interviews</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">User Story Mapping</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">User Story Mapping</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Competitive Analysis</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Competitive Analysis</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -916,32 +916,32 @@
         <div class="flex lg:gap-16.25 md:gap-10 sm:gap-8 gap-5 items-center phase-single-item" data-phase="2">
                    <div class="p-4 sm:p-5 lg:p-8 rounded-3xl border border-white/16 phase-bg relative">
                  <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">User Flow & Logic Mapping</h3>
-                                        <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">Building the blueprint of the application's "brain." We create detailed flowcharts, state diagrams, and data models that visualize every possible user journey, decision point, and system interaction. This ensures logical consistency and identifies edge cases before development begins.</p>
-                                        <div class="md:mt-6 mt-4">
-                                             <div class="pl-8 border-l border-dark-shade3 my-5">
-                                        <p class="text-xl font-medium leading120 mb-2 text-white">1-2 weeks</p>
-                                        <p class="text-base text-dark-shade5 leading150">Duration</p>
+                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">Building the blueprint of the application's "brain." We create detailed flowcharts, state diagrams, and data models that visualize every possible user journey, decision point, and system interaction. This ensures logical consistency and identifies edge cases before development begins.</p>
+                                        <div class="md:mt-6 sm:mt-4 mt-3">
+                                             <div class="sm:pl-8 pl-5 border-l border-dark-shade3 sm:my-5 sm:py-3 sm:mb-0  mb-3">
+                                        <p class="md:text-xl sm:text-[18px] text-base font-medium leading120 sm:mb-2 mb-1.5 text-white">1-2 weeks</p>
+                                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5 leading150">Duration</p>
                                     </div>
-                                            <ul>
+                                            <ul class="flex flex-col gap-0.5 sm:gap-0">
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Information Architecture</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Information Architecture</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">User Flow Diagrams</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">User Flow Diagrams</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Data Modeling</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Data Modeling</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -952,32 +952,32 @@
         <div class="flex lg:gap-16.25 md:gap-10 sm:gap-8 gap-5 items-center phase-single-item" data-phase="3">
                       <div class="p-4 sm:p-5 lg:p-8 rounded-3xl border border-white/16 phase-bg relative">
                  <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">Iterative Prototyping</h3>
-                                        <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">Validating complex interactions with clickable wireframes. We build low-to-medium fidelity prototypes that allow stakeholders to experience the application flow before committing to visual design. This iterative approach catches usability issues early and saves significant development time.</p>
-                                        <div class="md:mt-6 mt-4">
-                                             <div class="pl-8 border-l border-dark-shade3 my-5">
-                                        <p class="text-xl font-medium leading120 mb-2 text-white">1-2 weeks</p>
-                                        <p class="text-base text-dark-shade5 leading150">Duration</p>
+                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">Validating complex interactions with clickable wireframes. We build low-to-medium fidelity prototypes that allow stakeholders to experience the application flow before committing to visual design. This iterative approach catches usability issues early and saves significant development time.</p>
+                                        <div class="md:mt-6 sm:mt-4 mt-3">
+                                             <div class="sm:pl-8 pl-5 border-l border-dark-shade3 sm:my-5 sm:py-3 sm:mb-0  mb-3">
+                                        <p class="md:text-xl sm:text-[18px] text-base font-medium leading120 sm:mb-2 mb-1.5 text-white">1-2 weeks</p>
+                                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5 leading150">Duration</p>
                                     </div>
-                                            <ul>
+                                            <ul class="flex flex-col gap-0.5 sm:gap-0">
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Stakeholder Interviews</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Stakeholder Interviews</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">User Story Mapping</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">User Story Mapping</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Competitive Analysis</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Competitive Analysis</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -988,32 +988,32 @@
         <div class="flex lg:gap-16.25 md:gap-10 sm:gap-8 gap-5 items-center phase-single-item" data-phase="4">
                     <div class="p-4 sm:p-5 lg:p-8 rounded-3xl border border-white/16 phase-bg relative">
                  <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">Interface Engineering</h3>
-                                        <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">Designing high-fidelity, accessible UI components. With validated prototypes in hand, we craft pixel-perfect interfaces using design systems and component libraries. Every element is optimized for accessibility, performance, and cross-browser compatibility.</p>
-                                        <div class="md:mt-6 mt-4">
-                                             <div class="pl-8 border-l border-dark-shade3 my-5">
-                                        <p class="text-xl font-medium leading120 mb-2 text-white">1-2 weeks</p>
-                                        <p class="text-base text-dark-shade5 leading150">Duration</p>
+                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">Designing high-fidelity, accessible UI components. With validated prototypes in hand, we craft pixel-perfect interfaces using design systems and component libraries. Every element is optimized for accessibility, performance, and cross-browser compatibility.</p>
+                                        <div class="md:mt-6 sm:mt-4 mt-3">
+                                             <div class="sm:pl-8 pl-5 border-l border-dark-shade3 sm:my-5 sm:py-3 sm:mb-0  mb-3">
+                                        <p class="md:text-xl sm:text-[18px] text-base font-medium leading120 sm:mb-2 mb-1.5 text-white">1-2 weeks</p>
+                                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5 leading150">Duration</p>
                                     </div>
-                                            <ul>
+                                            <ul class="flex flex-col gap-0.5 sm:gap-0">
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Stakeholder Interviews</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Stakeholder Interviews</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">User Story Mapping</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">User Story Mapping</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Competitive Analysis</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Competitive Analysis</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -1023,32 +1023,32 @@
         <div class="flex lg:gap-16.25 md:gap-10 sm:gap-8 gap-5 items-center phase-single-item" data-phase="5">
                     <div class="p-4 sm:p-5 lg:p-8 rounded-3xl border border-white/16 phase-bg relative">
                  <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">Technical Documentation</h3>
-                                        <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">Comprehensive specs for front-end and back-end developers. We deliver detailed technical documentation that includes component specifications, API requirements, database schemas, and implementation guidelines. This ensures seamless handoff and reduces development questions by 80%.</p>
-                                        <div class="md:mt-6 mt-4">
-                                             <div class="pl-8 border-l border-dark-shade3 my-5">
-                                        <p class="text-xl font-medium leading120 mb-2 text-white">1-2 weeks</p>
-                                        <p class="text-base text-dark-shade5 leading150">Duration</p>
+                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">Comprehensive specs for front-end and back-end developers. We deliver detailed technical documentation that includes component specifications, API requirements, database schemas, and implementation guidelines. This ensures seamless handoff and reduces development questions by 80%.</p>
+                                        <div class="md:mt-6 sm:mt-4 mt-3">
+                                             <div class="sm:pl-8 pl-5 border-l border-dark-shade3 sm:my-5 sm:py-3 sm:mb-0  mb-3">
+                                        <p class="md:text-xl sm:text-[18px] text-base font-medium leading120 sm:mb-2 mb-1.5 text-white">1-2 weeks</p>
+                                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5 leading150">Duration</p>
                                     </div>
-                                            <ul>
+                                            <ul class="flex flex-col gap-0.5 sm:gap-0">
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Component Specs</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Component Specs</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">API Documentation</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">API Documentation</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="flex items-center gap-2">
                                                 <img src="assets/images/web-point.svg" class="img-fluid shrink-0"
                                                     alt="point icon">
-                                                <p class="text-dark-shade5 text-base leading150">Developer Handoff</p>
+                                                <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Developer Handoff</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -1058,8 +1058,8 @@
         <div class="flex lg:gap-16.25 md:gap-10 sm:gap-8 gap-5 items-center phase-single-item" data-phase="6">
                     <div class="p-4 sm:p-5 lg:p-8 rounded-3xl border border-white/16 phase-bg relative w-full">
                  <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">Total Timeline: 11-17 Weeks</h3>
-                                        <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">From initial requirements to developer-ready specifications</p>
-                                        <div class="md:mt-6 mt-4">
+                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">From initial requirements to developer-ready specifications</p>
+                                        <div class="md:mt-6 sm:mt-4 mt-3">
                                      
                                           <button
                         class="mega-reveal-btn relative md:block hidden overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
@@ -1120,96 +1120,96 @@
             </div>
             <div class=" md:mt-12 mt-8 flex flex-col gap-3">
                 <div class="rounded-3xl border border-dark-shade3">
-                    <div class="grid grid-cols-2 relative">
+                    <div class="grid md:grid-cols-2 grid-cols-1 relative">
 
                         <img src="assets/images/secure-design1.svg" class="img-fluid h-full rounded-l-3xl object-cover"
                             alt="specialized">
 
-                        <div class="grid grid-cols-2">
+                        <div class="grid sm:grid-cols-2 grid-cols-1">
                             <div class="col-span-1  ">
-                                <div class="lg:p-8 p-6">
+                                <div class="lg:p-8 sm:p-6 p-4">
                                        <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">Security-Focused User experience</h3>
-                                        <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">Security without friction through intuitive authentication, permissions, and data flows for apps.</p>
+                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">Security without friction through intuitive authentication, permissions, and data flows for apps.</p>
                                         <div class="md:mt-4 mt-3">
-                                            <ul>
+                                            <ul class="flex flex-col gap-0.5 sm:gap-0">
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Two-Factor Authentication (2FA)</p>
+                                                        <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Two-Factor Authentication (2FA)</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Role-Based Access Control</p>
+                                                        <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Role-Based Access Control</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Data Privacy Controls</p>
+                                                        <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Data Privacy Controls</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Audit Trails & Logging</p>
+                                                        <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Audit Trails & Logging</p>
                                                     </div>
                                                 </li>
                                             </ul>
                                         </div>
                                 </div>
                             </div>
-                            <div class="col-span-1 justify-self-end self-end">
+                            <div class="col-span-1 justify-self-end self-end sm:block hidden">
                                 <img src="assets/images/dashboard-shape.svg" class="img-fluid" alt="shap dashboard">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="rounded-3xl border border-dark-shade3">
-                    <div class="grid grid-cols-2 relative">
+                    <div class="grid md:grid-cols-2 grid-cols-1 relative">
 
                         <img src="assets/images/secure-design2.svg" class="img-fluid h-full rounded-l-3xl object-cover"
                             alt="specialized">
 
-                        <div class="grid grid-cols-2">
+                        <div class="grid sm:grid-cols-2 grid-cols-1">
                             <div class="col-span-1  ">
 
-                                <div class="lg:p-8 p-6">
+                                <div class="lg:p-8 sm:p-6 p-4">
                                    <h3 class="lg:text-[32px] md:text-2xl text-xl font-medium text-white">Performance-Focused UI</h3>
-                                        <p class="text-dark-shade5 text-base leading150 md:mt-4 mt-2">Speed is built in, optimizing interactions to feel instant even with complex data.</p>
+                                        <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150 md:mt-4 mt-2">Speed is built in, optimizing interactions to feel instant even with complex data.</p>
                                         <div class="md:mt-4 mt-3">
-                                            <ul>
+                                            <ul class="flex flex-col gap-0.5 sm:gap-0">
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Lazy Loading Indicators</p>
+                                                        <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Lazy Loading Indicators</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Skeleton Screens</p>
+                                                        <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Skeleton Screens</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Optimistic UI Updates</p>
+                                                        <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Optimistic UI Updates</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="flex items-center gap-2">
-                                                        <img src="assets/images/icon-point.svg"
+                                                        <img src="assets/images/web-point.svg"
                                                             class="img-fluid shrink-0" alt="point icon">
-                                                        <p class="text-dark-shade5 text-base leading150">Performance Budgets</p>
+                                                        <p class="text-dark-shade5 md:text-base sm:text-[14px] text-[12px]  leading150">Performance Budgets</p>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -1217,7 +1217,7 @@
                                     
                                 </div>
                             </div>
-                            <div class="col-span-1 justify-self-end self-end">
+                            <div class="col-span-1 justify-self-end self-end sm:block hidden">
                                 <img src="assets/images/dashboard-shape.svg" class="img-fluid" alt="shap dashboard">
                             </div>
                         </div>
@@ -1249,7 +1249,7 @@
 
 
             <div
-                class="core-pillar-wrap grid md:grid-cols-2 sm:grid-cols-2 grid-cols-2 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
+                class="core-pillar-wrap grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
                 <div class="border h-full border-dark-shade3 rounded-3xl flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
                     <div> 
                         <img src="assets/images/complex-data.svg" class="img-fluid" alt="dashboard">
@@ -1257,41 +1257,41 @@
     <h3
                             class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium md:pb-6 pb-3">
                             The problem</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Manual Inventory Management Nightmare</p>
-                           <ul class="mt-8 flex flex-col md:gap-6 gap-5">
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">Manual Inventory Management Nightmare</p>
+                           <ul class="md:mt-8 sm:mt-5 mt-3 flex flex-col md:gap-6 sm:gap-5 gap-3">
                             <li>
                                 <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
-                                   <div class="flex flex-col gap-2">
-                                     <p class="text-dark-shade6 md:text-xl text-[18px] font-medium leading120">Fragmented Data Across 12 Spreadsheets</p>
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Team members maintaining separate Excel files with no real-time sync, leading to constant data conflicts and version control issues.</p>
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[20px]" alt="check">
+                                   <div class="flex flex-col sm:gap-2 gap-1.5">
+                                     <p class="text-dark-shade6 md:text-xl sm:text-[18px] text-base font-medium leading120">Fragmented Data Across 12 Spreadsheets</p>
+                                     <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5] leading150 ">Team members maintaining separate Excel files with no real-time sync, leading to constant data conflicts and version control issues.</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
-                                   <div class="flex flex-col gap-2">
-                                     <p class="text-dark-shade6 md:text-xl text-[18px] font-medium leading120">6+ Hours Daily on Manual Data Entry</p>
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Staff wasting valuable time copying information between systems, with a 15% error rate causing costly inventory discrepancies.</p>
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[20px]" alt="check">
+                                   <div class="flex flex-col sm:gap-2 gap-1.5">
+                                     <p class="text-dark-shade6 md:text-xl sm:text-[18px] text-base font-medium leading120">6+ Hours Daily on Manual Data Entry</p>
+                                     <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5] leading150 ">Staff wasting valuable time copying information between systems, with a 15% error rate causing costly inventory discrepancies.</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
-                                   <div class="flex flex-col gap-2">
-                                     <p class="text-dark-shade6 md:text-xl text-[18px] font-medium leading120">Zero Visibility Across 8 Warehouses</p>
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">No centralized view of inventory levels, making it impossible to optimize stock distribution or prevent stockouts.</p>
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[20px]" alt="check">
+                                   <div class="flex flex-col sm:gap-2 gap-1.5">
+                                     <p class="text-dark-shade6 md:text-xl sm:text-[18px] text-base font-medium leading120">Zero Visibility Across 8 Warehouses</p>
+                                     <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5] leading150 ">No centralized view of inventory levels, making it impossible to optimize stock distribution or prevent stockouts.</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0" alt="check">
-                                   <div class="flex flex-col gap-2">
-                                     <p class="text-dark-shade6 md:text-xl text-[18px] font-medium leading120">Week-Long Reporting Process</p>
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Generating monthly reports required manually consolidating data from multiple sources, taking 5-7 business days.</p>
+                                    <img src="assets/images/problem-cross.svg" class="img-fluid shrink-0 sm:w-auto w-[20px]" alt="check">
+                                   <div class="flex flex-col sm:gap-2 gap-1.5">
+                                     <p class="text-dark-shade6 md:text-xl sm:text-[18px] text-base font-medium leading120">Week-Long Reporting Process</p>
+                                     <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5] leading150 ">Generating monthly reports required manually consolidating data from multiple sources, taking 5-7 business days.</p>
                                    </div>
                                 </div>
                             </li>
@@ -1299,20 +1299,20 @@
                         </ul>
 
                           <div
-                            class="bg-dark-shade2 md:mt-8 mt-6 rounded-xl p-4 flex justify-between items-center gap-[6px] ">
+                            class="bg-dark-shade2 md:mt-8 sm:mt-6 mt-3 rounded-xl sm:p-4 p-2 flex justify-between items-center gap-[6px]  ">
                             <div
-                                class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-xl font-medium leading120">$240K</p>
-                                <p class="text-dark-shade5 text-sm leading150">Annual Cost of Errors</p>
+                                class="flex flex-col sm:gap-3 gap-1.5 justify-center items-center border-r border-dark-shade4 w-full">
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">$240K</p>
+                                <p class="text-dark-shade5 sm:text-sm text-[10px] leading150 text-center">Annual Cost of Errors</p>
                             </div>
                             <div
-                                class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-xl font-medium leading120">15%</p>
-                                <p class="text-dark-shade5 text-sm leading150">Data Error Rate</p>
+                                class="flex flex-col sm:gap-3 gap-1.5 justify-center items-center border-r border-dark-shade4 w-full">
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">15%</p>
+                                <p class="text-dark-shade5 sm:text-sm text-[10px] leading150 text-center">Data Error Rate</p>
                             </div>
-                            <div class="flex flex-col gap-3 justify-center items-center w-full">
-                                <p class="text-dark-shade6 text-xl font-medium leading120">32hrs</p>
-                                <p class="text-dark-shade5 text-sm leading150">Weekly Manual Work</p>
+                            <div class="flex flex-col sm:gap-3 gap-1.5 justify-center items-center w-full">
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">32hrs</p>
+                                <p class="text-dark-shade5 sm:text-sm text-[10px] leading150 text-center">Weekly Manual Work</p>
                             </div>
                         </div>
                        </div>
@@ -1327,61 +1327,61 @@
   <h3
                             class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium md:pb-6 pb-3">
                             The solution</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Custom Inventory Intelligence Platform</p>
-                           <ul class="mt-8 flex flex-col md:gap-6 gap-5 ">
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">Custom Inventory Intelligence Platform</p>
+                           <ul class="md:mt-8 sm:mt-5 mt-3 flex flex-col md:gap-6 sm:gap-5 gap-3">
                             <li>
                                 <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
-                                   <div class="flex flex-col gap-2">
-                                     <p class="text-dark-shade6 md:text-xl text-[18px] font-medium leading120">Real-Time Centralized Dashboard</p>
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Single source of truth with live inventory updates across all locations, accessible to authorized users from any device.</p>
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[20px]" alt="check">
+                                   <div class="flex flex-col sm:gap-2 gap-1.5">
+                                     <p class="text-dark-shade6 md:text-xl sm:text-[18px] text-base font-medium leading120">Real-Time Centralized Dashboard</p>
+                                     <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5] leading150">Single source of truth with live inventory updates across all locations, accessible to authorized users from any device.</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
-                                   <div class="flex flex-col gap-2">
-                                     <p class="text-dark-shade6 md:text-xl text-[18px] font-medium leading120">Automated Data Sync & Validation</p>
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Intelligent validation rules and automated data entry from barcode scans and API integrations with existing systems.</p>
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[20px]" alt="check">
+                                   <div class="flex flex-col sm:gap-2 gap-1.5">
+                                     <p class="text-dark-shade6 md:text-xl sm:text-[18px] text-base font-medium leading120">Automated Data Sync & Validation</p>
+                                     <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5] leading150">Intelligent validation rules and automated data entry from barcode scans and API integrations with existing systems.</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
-                                   <div class="flex flex-col gap-2">
-                                     <p class="text-dark-shade6 md:text-xl text-[18px] font-medium leading120">Predictive Stock Alerts</p>
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Machine learning-powered predictions for reorder points, preventing stockouts and optimizing warehouse space utilization.</p>
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[20px]" alt="check">
+                                   <div class="flex flex-col sm:gap-2 gap-1.5">
+                                     <p class="text-dark-shade6 md:text-xl sm:text-[18px] text-base font-medium leading120">Predictive Stock Alerts</p>
+                                     <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5] leading150">Machine learning-powered predictions for reorder points, preventing stockouts and optimizing warehouse space utilization.</p>
                                    </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-start md:gap-4 gap-3">
-                                    <img src="assets/images/check.svg" class="img-fluid shrink-0" alt="check">
-                                   <div class="flex flex-col gap-2">
-                                     <p class="text-dark-shade6 md:text-xl text-[18px] font-medium leading120">One-Click Reporting</p>
-                                     <p class="text-[#A7BDB5] sm:text-base text-[14px] leading150">Customizable reports generated instantly with export to Excel, PDF, or automated email delivery to stakeholders.</p>
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-[20px]" alt="check">
+                                   <div class="flex flex-col sm:gap-2 gap-1.5">
+                                     <p class="text-dark-shade6 md:text-xl sm:text-[18px] text-base font-medium leading120">One-Click Reporting</p>
+                                     <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5] leading150">Customizable reports generated instantly with export to Excel, PDF, or automated email delivery to stakeholders.</p>
                                    </div>
                                 </div>
                             </li>
                             
                         </ul>
                               <div
-                            class="bg-dark-shade2 md:mt-8 mt-6 rounded-xl p-4 flex justify-between items-center gap-[6px] ">
+                            class="bg-dark-shade2 md:mt-8 sm:mt-6 mt-3 rounded-xl sm:p-4 p-2 flex justify-between items-center gap-[6px]  ">
                             <div
-                                class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-xl font-medium leading120">60%</p>
-                                <p class="text-dark-shade5 text-sm leading150">Time Saved</p>
+                                class="flex flex-col sm:gap-3 gap-1.5 justify-center items-center border-r border-dark-shade4 w-full">
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">60%</p>
+                                <p class="text-dark-shade5 sm:text-sm text-[10px] leading150 text-center">Time Saved</p>
                             </div>
                             <div
-                                class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-xl font-medium leading120">98%</p>
-                                <p class="text-dark-shade5 text-sm leading150">Data Accuracy</p>
+                                class="flex flex-col sm:gap-3 gap-1.5 justify-center items-center border-r border-dark-shade4 w-full">
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">98%</p>
+                                <p class="text-dark-shade5 sm:text-sm text-[10px] leading150 text-center">Data Accuracy</p>
                             </div>
-                            <div class="flex flex-col gap-3 justify-center items-center w-full">
-                                <p class="text-dark-shade6 text-xl font-medium leading120">$180K</p>
-                                <p class="text-dark-shade5 text-sm leading150">Annual Savings</p>
+                            <div class="flex flex-col sm:gap-3 gap-1.5 justify-center items-center w-full">
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">$180K</p>
+                                <p class="text-dark-shade5 sm:text-sm text-[10px] leading150 text-center">Annual Savings</p>
                             </div>
                         </div>
                         </div>
@@ -1436,43 +1436,43 @@
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your next pixel</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
                             solutions</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
                             design</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your vision</span>
                     </div>
 
@@ -1480,43 +1480,43 @@
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your next pixel</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Best
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
                             solutions</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Creative
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
                             design</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-green lg:text-[32px] md:text-[28px] text-[24px] text-green1  font-medium">Pixxen
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
                             Studio</span>
                     </div>
                     <div class="marquee-item">
                         <div class="marquee-dot"></div>
                         <span
-                            class="marquee-text-white lg:text-[32px] md:text-[28px] text-[24px] text-white  font-medium">Shape
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
                             your vision</span>
                     </div>
                 </div>
@@ -1702,7 +1702,7 @@
 
 
 
-
+       
     <!-- faq  start -->
 
     <section class="section-padding faq bg-[linear-gradient(180deg,#002417_0%,#001B11_100%)]">
@@ -1713,7 +1713,7 @@
                         Frequently asked questions
                     </h2>
                     <button
-                        class="mega-reveal-btn relative md:block hidden overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
+                        class="mega-reveal-btn relative md:block hidden overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
                         <span class="bg-overlay absolute inset-0 z-1"></span>
                         <div class="btn-inner relative z-2 flex items-center gap-3">
                             <div
@@ -1745,14 +1745,14 @@
 
                         <!-- FAQ Item 1 -->
                         <div class="faq-item active" data-faq="1">
-                            <div class="faq-question flex items-start justify-between md:py-8 py-6 gap-6">
-                                <div class="flex items-start gap-4 flex-1">
+                            <div class="faq-question flex items-start justify-between md:py-8 sm:py-6 py-4 gap-6">
+                                <div class="flex items-start sm:gap-4 gap-3 flex-1">
                                     <div
                                         class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-xl md:text-2xl font-medium">Do you design for Dark Mode?
-                                    </h3>
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">How long till I see a
+                                        prototype?</h3>
                                 </div>
                                 <button
                                     class="plus-icon text-white text-3xl font-light w-8 h-8 flex items-center justify-center shrink-0">
@@ -1766,7 +1766,7 @@
                             <div class="faq-answer">
                                 <div class="answer-content pl-9 sm:pl-11 sm:pb-8 pb-6 sm:pr-12 pr-6">
                                     <!-- <div class="green-border"></div> -->
-                                    <p class="text-gray-300 sm:text-lg text-base">
+                                    <p class="text-gray-300 sm:text-lg text-sm sm:text-base">
                                         With our ultra-fast charging stations, you can charge up to 80% in about 20
                                         minutes perfect for a quick stop. Charging overnight at home with a Level 2
                                         charger gives you a full battery by morning, ready for the day.
@@ -1777,14 +1777,14 @@
 
                         <!-- FAQ Item 2 -->
                         <div class="faq-item" data-faq="2">
-                            <div class="faq-question flex items-start justify-between md:py-8 py-6 gap-6">
-                                <div class="flex items-start gap-4 flex-1">
+                            <div class="faq-question flex items-start justify-between md:py-8 sm:py-6 py-4 gap-6">
+                                <div class="flex items-start sm:gap-4 gap-3 flex-1">
                                     <div
                                         class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-xl md:text-2xl font-medium">How do you handle large data
-                                        tables and filtering?</h3>
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Do you work with internal
+                                        teams?</h3>
                                 </div>
                                 <button
                                     class="plus-icon text-white text-3xl font-light w-8 h-8 flex items-center justify-center shrink-0">
@@ -1798,7 +1798,7 @@
                             <div class="faq-answer">
                                 <div class="answer-content pl-9 sm:pl-11 sm:pb-8 pb-6 sm:pr-12 pr-6">
                                     <!-- <div class="green-border"></div> -->
-                                    <p class="text-gray-300 sm:text-lg text-base">
+                                    <p class="text-gray-300 sm:text-lg text-sm sm:text-base">
                                         Yes, we collaborate closely with internal teams to ensure seamless integration
                                         and alignment with your company's goals and processes.
                                     </p>
@@ -1808,14 +1808,13 @@
 
                         <!-- FAQ Item 3 -->
                         <div class="faq-item" data-faq="3">
-                            <div class="faq-question flex items-start justify-between md:py-8 py-6 gap-6">
-                                <div class="flex items-start gap-4 flex-1">
+                            <div class="faq-question flex items-start justify-between md:py-8 sm:py-6 py-4 gap-6">
+                                <div class="flex items-start sm:gap-4 gap-3 flex-1">
                                     <div
                                         class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-xl md:text-2xl font-medium">Can you help us modernize an
-                                        old legacy enterprise system?</h3>
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Who owns the IP?</h3>
                                 </div>
                                 <button
                                     class="plus-icon text-white text-3xl font-light w-8 h-8 flex items-center justify-center shrink-0">
@@ -1829,7 +1828,7 @@
                             <div class="faq-answer">
                                 <div class="answer-content pl-9 sm:pl-11 sm:pb-8 pb-6 sm:pr-12 pr-6">
                                     <!-- <div class="green-border"></div> -->
-                                    <p class="text-gray-300 sm:text-lg text-base">
+                                    <p class="text-gray-300 sm:text-lg text-sm sm:text-base">
                                         All intellectual property rights are transferred to you upon project completion,
                                         ensuring you have full ownership of the deliverables.
                                     </p>
@@ -1839,14 +1838,14 @@
 
                         <!-- FAQ Item 4 -->
                         <div class="faq-item" data-faq="4">
-                            <div class="faq-question flex items-start justify-between md:py-8 py-6 gap-6">
-                                <div class="flex items-start gap-4 flex-1">
+                            <div class="faq-question flex items-start justify-between md:py-8 sm:py-6 py-4 gap-6">
+                                <div class="flex items-start sm:gap-4 gap-3 flex-1">
                                     <div
                                         class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-xl md:text-2xl font-medium">What's included in your
-                                        design deliverables?
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Can we scale the design
+                                        system later?
                                     </h3>
                                 </div>
                                 <button
@@ -1861,7 +1860,7 @@
                             <div class="faq-answer">
                                 <div class="answer-content pl-9 sm:pl-11 sm:pb-8 pb-6 sm:pr-12 pr-6">
                                     <!-- <div class="green-border"></div> -->
-                                    <p class="text-gray-300 sm:text-lg text-base">
+                                    <p class="text-gray-300 sm:text-lg text-sm sm:text-base">
                                         Absolutely! Our design systems are built with scalability in mind, allowing for
                                         easy expansion and adaptation as your needs grow.
                                     </p>
@@ -1872,7 +1871,7 @@
                     </div>
                     <div class="flex justify-center md:hidden mt-6">
                         <button
-                            class="mega-reveal-btn relative  overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
+                            class="mega-reveal-btn relative  overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
                             <span class="bg-overlay absolute inset-0 z-1"></span>
                             <div class="btn-inner relative z-2 flex items-center gap-3">
                                 <div
@@ -1893,8 +1892,7 @@
                                 <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
                                     <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">More
                                         faq’s</span>
-                                    <span
-                                        class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">More
+                                    <span class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">More
                                         faq’s</span>
                                 </div>
                             </div>
@@ -1905,9 +1903,6 @@
         </div>
     </section>
     <!-- faq  end -->
-
-
-
 
 
 
@@ -1975,8 +1970,7 @@
 
     <!-- footer section start -->
     <footer class="relative">
-        <div
-            class="bg-gradient-to-b from-[#002417] to-[#001B11] text-white  border-t border-b border-dark-shade3 relative z-10 lg:mb-52.5 md:mb-37.5 sm:mb-30 mb-20">
+         <div class="bg-gradient-to-b from-[#002417] to-[#001B11] text-white  border-t border-b border-dark-shade3 ">
             <div class="container">
                 <!-- Desktop Grid Layout -->
                 <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
@@ -2077,7 +2071,7 @@
                                 <input type="email" placeholder="Email address"
                                     class="w-full bg-transparent border border-dark-shade3 rounded-2xl px-4 py-5 lg:py-3.5 h-16 text-white placeholder-[#759187] focus:outline-none focus:border-green3 transition-colors text-sm lg:text-base pr-14" />
                                 <button
-                                    class="absolute group cursor-pointer right-px top-1/2 -translate-y-1/2 bg-green4 hover:bg-green3 p-3.75 rounded-r-2xl transition-colors">
+                                    class="absolute group cursor-pointer right-px top-1/2 -translate-y-1/2 bg-dark-shade3 hover:bg-green3 p-3.75 rounded-r-2xl transition-colors">
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -2091,8 +2085,7 @@
 
                         <!-- Social Icons -->
                         <div class="flex md:justify-start justify-center md:gap-2 gap-1 lg:gap-2">
-                            <a href="#"
-                                class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                            <a href="#" class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -2101,8 +2094,7 @@
                                 </svg>
 
                             </a>
-                            <a href="#"
-                                class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                            <a href="#" class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -2111,8 +2103,7 @@
                                 </svg>
 
                             </a>
-                            <a href="#"
-                                class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                            <a href="#" class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -2122,8 +2113,7 @@
 
 
                             </a>
-                            <a href="#"
-                                class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                            <a href="#" class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -2144,7 +2134,7 @@
             </div>
         </div>
         <div
-            class="bg-linear-to-b from-[#001B11] to-green4 fixed bottom-0 left-0 w-full lg:h-52.5 md:h-37.5 sm:h-30 h-20 -z-30 flex justify-center items-end">
+            class="bg-linear-to-b from-[#001B11] to-green4 sticky -z-10 bottom-0 left-0 w-full  flex justify-center items-end">
             <div class="flex justify-center text-center">
                 <img src="assets/images/pixxen-footerlogo.png" class="img-fluid w-full object-contain" alt="footerlogo">
             </div>

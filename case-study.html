@@ -12,10 +12,10 @@
 
 <body>
 
-   <nav class="bg-[#012819] border-b border-green4 font-farro">
+ <nav class="bg-[#012819] border-b border-green4">
         <div class="mx-auto">
             <div class="flex items-center justify-between h-12">
-                <div class="flex items-center gap-4">
+                <div class="flex items-center sm:gap-4 gap-3">
                     <!-- Desktop Sidebar Button (hidden on mobile) -->
                     <button id="desktop-sidebar"
                         class="hidden lg:block text-green1 hover:text-green2 px-19 py-5 bg-green4 hover:bg-green3 cursor-pointer transition-colors"
@@ -37,7 +37,7 @@
                     </button>
 
                     <a href="/" class="flex items-center">
-                        <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid">
+                        <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid sm:max-w-auto max-w-[130px]">
                     </a>
                 </div>
 
@@ -74,28 +74,28 @@
                 <div class="hidden lg:flex items-center">
                     <a href="#contact"
                         class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block px-12 py-3 text-white border border-green4 hover:border-green2 hover:bg-green4 transition-all font-medium">
-                         <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
-                                        <span class="t-up text-base  font-medium text-white uppercase">OUR
-                                            Contact</span>
-                                        <span class="t-down text-base  font-medium text-white uppercase">OUR
-                                            Contact</span>
-                                    </div>
+                        <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up text-base  font-medium text-white uppercase">OUR
+                                Contact</span>
+                            <span class="t-down text-base  font-medium text-white uppercase">OUR
+                                Contact</span>
+                        </div>
                     </a>
                     <a href="#connect"
                         class="px-12 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-green1 text-green5 hover:bg-green2 transition-colors font-bold">
                         <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
-                                        <span class="t-up text-base  font-medium text-green4 uppercase">OUR
-                                            Let’s Connect</span>
-                                        <span class="t-down text-base  font-medium text-green4 uppercase">OUR
-                                            Let’s Connect</span>
-                                    </div>
+                            <span class="t-up text-base  font-medium text-green4 uppercase">OUR
+                                Let’s Connect</span>
+                            <span class="t-down text-base  font-medium text-green4 uppercase">OUR
+                                Let’s Connect</span>
+                        </div>
                     </a>
                 </div>
 
                 <!-- Mobile "LET'S CONNECT" button (visible on mobile) -->
                 <a href="#connect"
-                    class="lg:hidden px-10 py-4 text-xs bg-green1 text-green4 hover:bg-green2 transition-colors font-bold">
-                    CONNECT
+                    class="lg:hidden px-5 sm:px-10 py-4 text-xs bg-green1 text-green4 hover:bg-green2 transition-colors font-bold">
+                    Let’s Connect
                 </a>
             </div>
         </div>
@@ -146,7 +146,7 @@
 
 
     <!-- banner video Section start -->
-    <section class="h-208 w-full bg-green5 video-blur-animation relative">
+    <section class="sm:h-208 h-172 w-full bg-green5 video-blur-animation relative">
         <video class="w-full h-full object-cover" loop playsinline autoplay muted preload="metadata">
             <source src="assets/images/pixenvideo.mp4" type="video/mp4">
         </video>
@@ -160,9 +160,9 @@
     <section class=" blogs relative z-20">
         
             <!-- Header -->
-            <div class="text-center max-w-184 mx-auto w-full px-5 -mb-2 bg-transparent  absolute -top-48 left-1/2 -translate-x-1/2">
+            <div class="text-center max-w-184 mx-auto w-full px-5 -mb-2 bg-transparent  absolute sm:-top-48 -top-35 left-1/2 -translate-x-1/2">
                 <h1
-                    class="text-center text-white lg:text-[72px] md:text-6xl text-5xl font-medium sm:py-3 py-2 leading120">
+                    class="text-center text-white lg:text-[72px] md:text-6xl sm:text-5xl text-4xl font-medium sm:py-3 py-2 leading120">
                     Our works</h1>
                 <p
                     class="text-white text-center md:text-[18px] sm:text-base text-[14px] leading-[140%] mx-auto font-normal">
@@ -174,29 +174,29 @@
 
 
             <!-- Tabs -->
-            <div class="flex flex-wrap justify-center gap-3 lg:mb-12 md:mb-10 mb-8">
+            <div class="flex flex-wrap justify-center sm:gap-3 gap-1.5 lg:mb-12 md:mb-10 mb-8">
                 <button
-                    class="tab-button active h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px]"
+                    class="tab-button active md:h-13 sm:h-10 h-9 md:px-8 sm:px-5 px-6 md:py-2.5 py-1 md:rounded-xl rounded-[8px] text-[14px] sm:text-base md:text-[18px]"
                     data-tab="all">
                     All
                 </button>
                 <button
-                    class="tab-button inactive h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px] font-normal"
+                    class="tab-button inactive md:h-13 sm:h-10 h-9 md:px-8 sm:px-5 px-6 md:py-2.5 py-1 md:rounded-xl rounded-[8px] text-[14px] sm:text-base md:text-[18px] font-normal"
                     data-tab="design">
                     Design
                 </button>
                 <button
-                    class="tab-button inactive h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px] font-normal"
+                    class="tab-button inactive md:h-13 sm:h-10 h-9 md:px-8 sm:px-5 px-6 md:py-2.5 py-1 md:rounded-xl rounded-[8px] text-[14px] sm:text-base md:text-[18px] font-normal"
                     data-tab="ui-ux">
                     UI/UX
                 </button>
                 <button
-                    class="tab-button inactive h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px] font-normal"
+                    class="tab-button inactive md:h-13 sm:h-10 h-9 md:px-8 sm:px-5 px-6 md:py-2.5 py-1 md:rounded-xl rounded-[8px] text-[14px] sm:text-base md:text-[18px] font-normal"
                     data-tab="product-thinking">
                     Product Thinking
                 </button>
                 <button
-                    class="tab-button inactive h-13 md:px-8 px-5 md:py-2.5 py-1 rounded-xl text-[14px] sm:text-base md:text-[18px] font-normal"
+                    class="tab-button inactive md:h-13 sm:h-10 h-9 md:px-8 sm:px-5 px-6 md:py-2.5 py-1 md:rounded-xl rounded-[8px] text-[14px] sm:text-base md:text-[18px] font-normal"
                     data-tab="design-trends">
                     Design Trends
                 </button>
@@ -208,7 +208,7 @@
                 <!-- All Tab -->
                 <div id="all" class="tab-pane active">
                     <div
-                        class="blog-wrap grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-x-8 gap-x-6 md:gap-y-24 gap-y-16">
+                        class="blog-wrap grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-x-8 gap-x-6 md:gap-y-24 sm:gap-y-12 gap-y-6" >
                         <!-- Initial 12 Blog Items -->
                         <a href="#" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem">
                             <div>
@@ -1120,25 +1120,25 @@
 
             <!-- Load More Button -->
             <div class="text-center mt-12">
-                <button
-                    class="load-more-btn px-8 py-4 rounded-2xl font-semibold sm:text-lg inline-flex items-center gap-2 bg-green1 md:text-[20px] text-base  font-medium text-green4 uppercase cursor-pointer"
-                    id="loadMoreBtn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_4125_1742)">
-                            <rect width="24" height="24" rx="12" fill="#065136" />
-                            <path
-                                d="M13.5008 16.1716L18.8648 10.8076L20.279 12.2218L12.5008 20L4.72266 12.2218L6.13688 10.8076L11.5008 16.1716V4H13.5008V16.1716Z"
-                                fill="#99FE00" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_4125_1742">
-                                <rect width="24" height="24" rx="12" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-
-                    Load more
-                </button>
+               <button class="mega-reveal-btn load-more-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
+                            <span class="bg-overlay absolute inset-0 z-1"></span>
+                            <div class="btn-inner relative z-2 flex items-center gap-3">
+                                <div class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                    <div class="icon-slider flex flex-row rotate-90">
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z" fill="var(--color-green1)"></path>
+                                        </svg>
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z" fill="var(--color-green1)"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">LOAD MORE</span>
+                                    <span class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">LOAD MORE</span>
+                                </div>
+                            </div>
+                        </button>
             </div>
 
         </div>
@@ -1251,7 +1251,7 @@
         
    
         <div class="container">
-            <div class="grid lg:grid-cols-2 gap-8">
+            <div class="grid lg:grid-cols-2 sm:gap-8">
 
             <!-- Left Side - Sticky Content -->
             <div class="">
@@ -1269,46 +1269,96 @@
             </div>
 
             <!-- Right Side - Scrollable Portfolio Items -->
-            <div class="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1">
+            <div class="grid lg:grid-cols-1 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-3">
 
                 <!-- service Item  -->
                 <div class="step-content portfolio-card overflow-hidden ">
                   <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 cta-section relative overflow-hidden">
                     <div class="relative z-20">
-                        <img src="assets/images/web-design-specializations1.svg" class="img-fluid" alt="specializations">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">Why We're Leaders in FinTech UX</h3>
-                        <p class="sm:text-base text-sm text-dark-shade5">With over 50 financial technology projects delivered, we understand the unique challenges of designing for trust, security, and compliance while maintaining exceptional user experience. Our FinTech designs have processed over $2B in transactions.</p>
+                        <img src="assets/images/web-design-specializations1.svg" class="img-fluid md:max-w-24 max-w-16" alt="specializations">
+                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-4 sm:pt-6 md:pt-8 md:pb-6 pb-3">Why We're Leaders in FinTech UX</h3>
+                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5">With over 50 financial technology projects delivered, we understand the unique challenges of designing for trust, security, and compliance while maintaining exceptional user experience. Our FinTech designs have processed over $2B in transactions.</p>
                     
-                              <div class="bg-dark-shade2 md:mt-8 mt-6 rounded-xl p-6 flex justify-between items-center ">
+                              <div class="bg-dark-shade2 md:mt-8 sm:mt-6 mt-3 rounded-xl sm:p-4 p-2 flex justify-between items-center gap-[6px]  ">
                             <div class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-2xl font-medium leading120">50+</p>
-                                 <p class="text-dark-shade5 text-base leading150">FinTech Projects</p>
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">50+</p>
+                                 <p class="text-dark-shade5 md:text-base sm:text-sm text-[10px] text-center leading150">FinTech Projects</p>
                             </div>
                             <div class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-2xl font-medium leading120">$2B+</p>
-                                 <p class="text-dark-shade5 text-base leading150">Transactions Processed</p>
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">$2B+</p>
+                                 <p class="text-dark-shade5 md:text-base sm:text-sm text-[10px] text-center leading150">Transactions Processed</p>
                             </div>
                             <div class="flex flex-col gap-3 justify-center items-center w-full">
-                                <p class="text-dark-shade6 text-2xl font-medium leading120">50+</p>
-                                 <p class="text-dark-shade5 text-base leading150">Security Compliance</p>
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">50+</p>
+                                 <p class="text-dark-shade5 md:text-base sm:text-sm text-[10px] text-center leading150">Security Compliance</p>
                             </div>
                       </div>
 
-                    <div class="grid grid-cols-2 mt-8">
-                        <div class="pl-4 border-l border-dark-shade3">
+                    <div class="grid sm:gap-0 gap-0.5 sm:grid-cols-2 grid-cols-1 md:mt-8 sm:mt-6 mt-4">
+                        <div class="sm:pl-4 sm:border-l border-dark-shade3">
                             <p class="text-white text-base font-medium leading120 mb-3">Key capabilities</p>
-                            <ul class="list-disc text-dark-shade5 pl-7">
-                                <li><p class="text-dark-shade5 text-base leading150">Payment Gateway Design</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Digital Banking</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Crypto Wallets</p></li>
-                            </ul>
+                            <ul class="flex flex-col gap-0.5">
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Multi-level data
+                                                    hierarchy visualization</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Real-time data
+                                                    streaming interfaces</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Advanced filtering and
+                                                    search systems</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Custom reporting and
+                                                    export features</p>
+                                            </div>
+                                        </li>
+                                    </ul>
                         </div>
-                        <div class="pl-4 mt-8">
-                            <ul class="list-disc text-dark-shade5 pl-7">
-                                <li><p class="text-dark-shade5 text-base leading150">Trading Platforms</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Investment Apps</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Lending Platforms</p></li>
-                            </ul>
+                        <div class="sm:pl-4 sm:mt-8 mt-0.5">
+                            <ul class="flex flex-col gap-0.5">
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Multi-level data
+                                                    hierarchy visualization</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Real-time data
+                                                    streaming interfaces</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Advanced filtering and
+                                                    search systems</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Custom reporting and
+                                                    export features</p>
+                                            </div>
+                                        </li>
+                                    </ul>
                         </div>
                     </div>
                 
@@ -1319,40 +1369,90 @@
                 <div class="step-content portfolio-card overflow-hidden ">
                   <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 cta-section relative overflow-hidden">
                     <div class="relative z-20">
-                        <img src="assets/images/web-design-specializations1.svg" class="img-fluid" alt="specializations">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">Why We're Leaders in FinTech UX</h3>
-                        <p class="sm:text-base text-sm text-dark-shade5">With over 50 financial technology projects delivered, we understand the unique challenges of designing for trust, security, and compliance while maintaining exceptional user experience. Our FinTech designs have processed over $2B in transactions.</p>
+                        <img src="assets/images/web-design-specializations1.svg" class="img-fluid md:max-w-24 max-w-16" alt="specializations">
+                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-4 sm:pt-6 md:pt-8 md:pb-6 pb-3">Why We're Leaders in FinTech UX</h3>
+                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5">With over 50 financial technology projects delivered, we understand the unique challenges of designing for trust, security, and compliance while maintaining exceptional user experience. Our FinTech designs have processed over $2B in transactions.</p>
                     
-                              <div class="bg-dark-shade2 md:mt-8 mt-6 rounded-xl p-6 flex justify-between items-center ">
+                           <div class="bg-dark-shade2 md:mt-8 sm:mt-6 mt-3 rounded-xl sm:p-4 p-2 flex justify-between items-center gap-[6px]  ">
                             <div class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-2xl font-medium leading120">50+</p>
-                                 <p class="text-dark-shade5 text-base leading150">FinTech Projects</p>
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">50+</p>
+                                 <p class="text-dark-shade5 md:text-base sm:text-sm text-[10px] text-center leading150">FinTech Projects</p>
                             </div>
                             <div class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-2xl font-medium leading120">$2B+</p>
-                                 <p class="text-dark-shade5 text-base leading150">Transactions Processed</p>
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">$2B+</p>
+                                 <p class="text-dark-shade5 md:text-base sm:text-sm text-[10px] text-center leading150">Transactions Processed</p>
                             </div>
                             <div class="flex flex-col gap-3 justify-center items-center w-full">
-                                <p class="text-dark-shade6 text-2xl font-medium leading120">50+</p>
-                                 <p class="text-dark-shade5 text-base leading150">Security Compliance</p>
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">50+</p>
+                                 <p class="text-dark-shade5 md:text-base sm:text-sm text-[10px] text-center leading150">Security Compliance</p>
                             </div>
                       </div>
 
-                    <div class="grid grid-cols-2 mt-8">
-                        <div class="pl-4 border-l border-dark-shade3">
+                    <div class="grid sm:gap-0 gap-0.5 sm:grid-cols-2 grid-cols-1 md:mt-8 sm:mt-6 mt-4">
+                        <div class="sm:pl-4 sm:border-l border-dark-shade3">
                             <p class="text-white text-base font-medium leading120 mb-3">Key capabilities</p>
-                            <ul class="list-disc text-dark-shade5 pl-7">
-                                <li><p class="text-dark-shade5 text-base leading150">Payment Gateway Design</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Digital Banking</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Crypto Wallets</p></li>
-                            </ul>
+                            <ul class="flex flex-col gap-0.5">
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Multi-level data
+                                                    hierarchy visualization</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Real-time data
+                                                    streaming interfaces</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Advanced filtering and
+                                                    search systems</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Custom reporting and
+                                                    export features</p>
+                                            </div>
+                                        </li>
+                                    </ul>
                         </div>
-                        <div class="pl-4 mt-8">
-                            <ul class="list-disc text-dark-shade5 pl-7">
-                                <li><p class="text-dark-shade5 text-base leading150">Trading Platforms</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Investment Apps</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Lending Platforms</p></li>
-                            </ul>
+                        <div class="sm:pl-4 sm:mt-8 mt-0.5">
+                           <ul class="flex flex-col gap-0.5">
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Multi-level data
+                                                    hierarchy visualization</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Real-time data
+                                                    streaming interfaces</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Advanced filtering and
+                                                    search systems</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Custom reporting and
+                                                    export features</p>
+                                            </div>
+                                        </li>
+                                    </ul>
                         </div>
                     </div>
                 
@@ -1363,40 +1463,90 @@
                 <div class="step-content portfolio-card overflow-hidden ">
                   <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 cta-section relative overflow-hidden">
                     <div class="relative z-20">
-                        <img src="assets/images/web-design-specializations1.svg" class="img-fluid" alt="specializations">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">Why We're Leaders in FinTech UX</h3>
-                        <p class="sm:text-base text-sm text-dark-shade5">With over 50 financial technology projects delivered, we understand the unique challenges of designing for trust, security, and compliance while maintaining exceptional user experience. Our FinTech designs have processed over $2B in transactions.</p>
+                        <img src="assets/images/web-design-specializations1.svg" class="img-fluid md:max-w-24 max-w-16" alt="specializations">
+                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-4 sm:pt-6 md:pt-8 md:pb-6 pb-3">Why We're Leaders in FinTech UX</h3>
+                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5">With over 50 financial technology projects delivered, we understand the unique challenges of designing for trust, security, and compliance while maintaining exceptional user experience. Our FinTech designs have processed over $2B in transactions.</p>
                     
-                              <div class="bg-dark-shade2 md:mt-8 mt-6 rounded-xl p-6 flex justify-between items-center ">
+                              <div class="bg-dark-shade2 md:mt-8 sm:mt-6 mt-3 rounded-xl sm:p-4 p-2 flex justify-between items-center gap-[6px]  ">
                             <div class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-2xl font-medium leading120">50+</p>
-                                 <p class="text-dark-shade5 text-base leading150">FinTech Projects</p>
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">50+</p>
+                                 <p class="text-dark-shade5 md:text-base sm:text-sm text-[10px] text-center leading150">FinTech Projects</p>
                             </div>
                             <div class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-2xl font-medium leading120">$2B+</p>
-                                 <p class="text-dark-shade5 text-base leading150">Transactions Processed</p>
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">$2B+</p>
+                                 <p class="text-dark-shade5 md:text-base sm:text-sm text-[10px] text-center leading150">Transactions Processed</p>
                             </div>
                             <div class="flex flex-col gap-3 justify-center items-center w-full">
-                                <p class="text-dark-shade6 text-2xl font-medium leading120">50+</p>
-                                 <p class="text-dark-shade5 text-base leading150">Security Compliance</p>
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">50+</p>
+                                 <p class="text-dark-shade5 md:text-base sm:text-sm text-[10px] text-center leading150">Security Compliance</p>
                             </div>
                       </div>
 
-                    <div class="grid grid-cols-2 mt-8">
-                        <div class="pl-4 border-l border-dark-shade3">
+                    <div class="grid sm:gap-0 gap-0.5 sm:grid-cols-2 grid-cols-1 md:mt-8 sm:mt-6 mt-4">
+                        <div class="sm:pl-4 sm:border-l border-dark-shade3">
                             <p class="text-white text-base font-medium leading120 mb-3">Key capabilities</p>
-                            <ul class="list-disc text-dark-shade5 pl-7">
-                                <li><p class="text-dark-shade5 text-base leading150">Payment Gateway Design</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Digital Banking</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Crypto Wallets</p></li>
-                            </ul>
+                           <ul class="flex flex-col gap-0.5">
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Multi-level data
+                                                    hierarchy visualization</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Real-time data
+                                                    streaming interfaces</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Advanced filtering and
+                                                    search systems</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Custom reporting and
+                                                    export features</p>
+                                            </div>
+                                        </li>
+                                    </ul>
                         </div>
-                        <div class="pl-4 mt-8">
-                            <ul class="list-disc text-dark-shade5 pl-7">
-                                <li><p class="text-dark-shade5 text-base leading150">Trading Platforms</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Investment Apps</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Lending Platforms</p></li>
-                            </ul>
+                        <div class="sm:pl-4 sm:mt-8 mt-0.5">
+                           <ul class="flex flex-col gap-0.5">
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Multi-level data
+                                                    hierarchy visualization</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Real-time data
+                                                    streaming interfaces</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Advanced filtering and
+                                                    search systems</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Custom reporting and
+                                                    export features</p>
+                                            </div>
+                                        </li>
+                                    </ul>
                         </div>
                     </div>
                 
@@ -1407,40 +1557,90 @@
                 <div class="step-content portfolio-card overflow-hidden ">
                   <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 cta-section relative overflow-hidden">
                     <div class="relative z-20">
-                        <img src="assets/images/web-design-specializations1.svg" class="img-fluid" alt="specializations">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">Why We're Leaders in FinTech UX</h3>
-                        <p class="sm:text-base text-sm text-dark-shade5">With over 50 financial technology projects delivered, we understand the unique challenges of designing for trust, security, and compliance while maintaining exceptional user experience. Our FinTech designs have processed over $2B in transactions.</p>
+                        <img src="assets/images/web-design-specializations1.svg" class="img-fluid md:max-w-24 max-w-16" alt="specializations">
+                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-4 sm:pt-6 md:pt-8 md:pb-6 pb-3">Why We're Leaders in FinTech UX</h3>
+                        <p class="md:text-base sm:text-sm text-[12px] text-dark-shade5">With over 50 financial technology projects delivered, we understand the unique challenges of designing for trust, security, and compliance while maintaining exceptional user experience. Our FinTech designs have processed over $2B in transactions.</p>
                     
-                              <div class="bg-dark-shade2 md:mt-8 mt-6 rounded-xl p-6 flex justify-between items-center ">
+                       <div class="bg-dark-shade2 md:mt-8 sm:mt-6 mt-3 rounded-xl sm:p-4 p-2 flex justify-between items-center gap-[6px]  ">
                             <div class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-2xl font-medium leading120">50+</p>
-                                 <p class="text-dark-shade5 text-base leading150">FinTech Projects</p>
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">50+</p>
+                                 <p class="text-dark-shade5 md:text-base sm:text-sm text-[10px] text-center leading150">FinTech Projects</p>
                             </div>
                             <div class="flex flex-col gap-3 justify-center items-center border-r border-dark-shade4 w-full">
-                                <p class="text-dark-shade6 text-2xl font-medium leading120">$2B+</p>
-                                 <p class="text-dark-shade5 text-base leading150">Transactions Processed</p>
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">$2B+</p>
+                                 <p class="text-dark-shade5 md:text-base sm:text-sm text-[10px] text-center leading150">Transactions Processed</p>
                             </div>
                             <div class="flex flex-col gap-3 justify-center items-center w-full">
-                                <p class="text-dark-shade6 text-2xl font-medium leading120">50+</p>
-                                 <p class="text-dark-shade5 text-base leading150">Security Compliance</p>
+                                <p class="text-dark-shade6 sm:text-xl text-base font-medium leading120">50+</p>
+                                 <p class="text-dark-shade5 md:text-base sm:text-sm text-[10px] text-center leading150">Security Compliance</p>
                             </div>
                       </div>
 
-                    <div class="grid grid-cols-2 mt-8">
-                        <div class="pl-4 border-l border-dark-shade3">
+                    <div class="grid sm:gap-0 gap-0.5 sm:grid-cols-2 grid-cols-1 md:mt-8 sm:mt-6 mt-4">
+                        <div class="sm:pl-4 sm:border-l border-dark-shade3">
                             <p class="text-white text-base font-medium leading120 mb-3">Key capabilities</p>
-                            <ul class="list-disc text-dark-shade5 pl-7">
-                                <li><p class="text-dark-shade5 text-base leading150">Payment Gateway Design</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Digital Banking</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Crypto Wallets</p></li>
-                            </ul>
+                            <ul class="flex flex-col gap-0.5">
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Multi-level data
+                                                    hierarchy visualization</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Real-time data
+                                                    streaming interfaces</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Advanced filtering and
+                                                    search systems</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Custom reporting and
+                                                    export features</p>
+                                            </div>
+                                        </li>
+                                    </ul>
                         </div>
-                        <div class="pl-4 mt-8">
-                            <ul class="list-disc text-dark-shade5 pl-7">
-                                <li><p class="text-dark-shade5 text-base leading150">Trading Platforms</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Investment Apps</p></li>
-                                <li><p class="text-dark-shade5 text-base leading150">Lending Platforms</p></li>
-                            </ul>
+                        <div class="sm:pl-4 sm:mt-8 mt-0.5">
+                           <ul class="flex flex-col gap-0.5">
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Multi-level data
+                                                    hierarchy visualization</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Real-time data
+                                                    streaming interfaces</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Advanced filtering and
+                                                    search systems</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center gap-2">
+                                                <img src="assets/images/web-point.svg" class="img-fluid shrink-0" alt="point icon">
+                                                <p class="text-dark-shade5 md:text-base sm:text-sm text-[12px] leading150">Custom reporting and
+                                                    export features</p>
+                                            </div>
+                                        </li>
+                                    </ul>
                         </div>
                     </div>
                 
@@ -1532,7 +1732,7 @@
             <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-3 gap-1 lg:min-h-[80vh] items-end">
 
                 <div
-                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                    class="counter-card h-full sm:h-auto lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5/80 backdrop-blur-[32px]">
                     <div class="icon-box rounded-lg text-white">
                         <img src="assets/images/counter1.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
                             alt="counter">
@@ -1547,7 +1747,7 @@
                 </div>
 
                 <div
-                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                    class="counter-card h-full sm:h-auto lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5/80 backdrop-blur-[32px]">
                     <div class="icon-box rounded-lg text-white">
                         <img src="assets/images/counter2.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
                             alt="counter">
@@ -1561,7 +1761,7 @@
                 </div>
 
                 <div
-                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                    class="counter-card h-full sm:h-auto lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5/80 backdrop-blur-[32px]">
                     <div class="icon-box rounded-lg text-white">
                         <img src="assets/images/counter3.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
                             alt="counter">
@@ -1575,7 +1775,7 @@
                 </div>
 
                 <div
-                    class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
+                    class="counter-card h-full sm:h-auto lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5/80 backdrop-blur-[32px]">
                     <div class="icon-box rounded-lg text-white">
                         <img src="assets/images/counter4.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
                             alt="counter">
