@@ -149,7 +149,7 @@
         <!-- Content layer (eta fixed thakbe) -->
         <div class="banner-content-wrapper">
             <div class="container relative z-10">
-                <div class="sm:grid grid-cols-2 flex flex-col-reverse items-center md:gap-8 gap-6">
+                <div class="sm:grid grid-cols-2 flex flex-col items-center md:gap-8 gap-6">
                     <div>
                         <h2
                             class="sm:text-start text-center font-medium lg:text-[72px] sm:text-[52px] text-[32px] text-white md:mb-6 mb-1.5 leading120">
@@ -208,312 +208,332 @@
       <div class="grid grid-cols-1 lg:grid-cols-[250px_1fr] gap-6 lg:gap-10">
             
             <!-- Sidebar Tabs -->
-            <div class="flex flex-row lg:flex-col flex-wrap gap-2.5  overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
-                <button class="tab-button active bg-green1 text-green4 w-fit font-bold px-6 py-3.5 rounded-xl text-left whitespace-nowrap transition-all duration-300 hover:bg-green1 hover:text-green4" data-category="all">
-                    All
+            <div class="inline-flex career-sidebar-tab lg:justify-start justify-center w-full flex-row lg:flex-col flex-wrap gap-2.5  overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
+            
+
+                 <button class="tab-button  mega-reveal-btn relative overflow-hidden active w-fit bg-green1 text-green4 md:h-13 sm:h-10 h-9 md:px-8 sm:px-5 px-6 md:py-2.5 py-1 md:rounded-xl rounded-[8px] text-[14px] sm:text-base md:text-[18px] font-normal" data-category="all">
+                         <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                                        <span class="t-up text-base  font-medium uppercase">All</span>
+                                        <span class="t-down text-base  font-medium uppercase">All</span>
+                                    </div>
                 </button>
-                <button class="tab-button bg-dark-shade2 text-dark-shade6 w-fit text-[18px] font-medium px-6 py-3.5 rounded-xl text-left whitespace-nowrap transition-all duration-300 hover:bg-green1 hover:text-green4" data-category="design">
-                    Design
+                 <button class="tab-button  mega-reveal-btn relative overflow-hidden w-fit bg-dark-shade2 text-dark-shade6 md:h-13 sm:h-10 h-9 md:px-8 sm:px-5 px-6 md:py-2.5 py-1 md:rounded-xl rounded-[8px] text-[14px] sm:text-base md:text-[18px] font-normal"  data-category="design">
+                         <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                                        <span class="t-up text-base  font-medium uppercase">Design</span>
+                                        <span class="t-down text-base  font-medium uppercase">Design</span>
+                                    </div>
                 </button>
-                <button class="tab-button bg-dark-shade2 text-dark-shade6 w-fit text-[18px] font-medium px-6 py-3.5 rounded-xl text-left whitespace-nowrap transition-all duration-300 hover:bg-green1 hover:text-green4" data-category="ui-ux">
-                    UI/UX
+                 <button class="tab-button  mega-reveal-btn relative overflow-hidden w-fit bg-dark-shade2 text-dark-shade6 md:h-13 sm:h-10 h-9 md:px-8 sm:px-5 px-6 md:py-2.5 py-1 md:rounded-xl rounded-[8px] text-[14px] sm:text-base md:text-[18px] font-normal"  data-category="ui-ux">
+                         <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                                        <span class="t-up text-base  font-medium uppercase"> UI/UX</span>
+                                        <span class="t-down text-base  font-medium uppercase"> UI/UX</span>
+                                    </div>
                 </button>
-                <button class="tab-button bg-dark-shade2 text-dark-shade6 w-fit text-[18px] font-medium px-6 py-3.5 rounded-xl text-left whitespace-nowrap transition-all duration-300 hover:bg-green1 hover:text-green4" data-category="product">
-                    Product Thinking
+                 <button class="tab-button  mega-reveal-btn relative overflow-hidden w-fit bg-dark-shade2 text-dark-shade6 md:h-13 sm:h-10 h-9 md:px-8 sm:px-5 px-6 md:py-2.5 py-1 md:rounded-xl rounded-[8px] text-[14px] sm:text-base md:text-[18px] font-normal"  data-category="product">
+                         <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                                        <span class="t-up text-base  font-medium uppercase">Product Thinking</span>
+                                        <span class="t-down text-base  font-medium uppercase">Product Thinking</span>
+                                    </div>
                 </button>
-                <button class="tab-button bg-dark-shade2 text-dark-shade6 w-fit text-[18px] font-medium px-6 py-3.5 rounded-xl text-left whitespace-nowrap transition-all duration-300 hover:bg-green1 hover:text-green4" data-category="trends">
-                    Design Trends
+                 <button class="tab-button  mega-reveal-btn relative overflow-hidden w-fit bg-dark-shade2 text-dark-shade6 md:h-13 sm:h-10 h-9 md:px-8 sm:px-5 px-6 md:py-2.5 py-1 md:rounded-xl rounded-[8px] text-[14px] sm:text-base md:text-[18px] font-normal"  data-category="trends">
+                         <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                                        <span class="t-up text-base  font-medium uppercase"> Design Trends</span>
+                                        <span class="t-down text-base  font-medium uppercase"> Design Trends</span>
+                                    </div>
                 </button>
+
+                
+           
             </div>
 
             <!-- Job List -->
             <div class="flex flex-col gap-5" id="jobList">
                 
                 <!-- UI/UX Designer -->
-                <div class="job-card show bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="ui-ux" data-index="0">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card show bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="ui-ux" data-index="0">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         UI/UX Designer
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium  uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
+
                         VIEW DETAILS
                     </button>
                 </div>
 
-                <!-- Senior Graphics Designer -->
-                <div class="job-card show bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="design" data-index="1">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+             <!-- Senior Graphics Designer -->
+                <div class="job-card show bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="design" data-index="1">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         Senior Graphics Designer
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
 
                 <!-- Framer Developer -->
-                <div class="job-card show bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="product" data-index="2">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card show bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="product" data-index="2">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         Framer Developer
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
 
                 <!-- Product Designer -->
-                <div class="job-card show bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="product" data-index="3">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card show bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="product" data-index="3">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         Product Designer
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
 
                 <!-- Motion Graphics Designer -->
-                <div class="job-card show bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="design" data-index="4">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card show bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="design" data-index="4">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         Motion Graphics Designer
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
 
                 <!-- Web Developer -->
-                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="product" data-index="5">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="product" data-index="5">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         Web Developer
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
 
                 <!-- Brand Designer -->
-                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="design" data-index="6">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="design" data-index="6">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         Brand Designer
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
 
                 <!-- UX Researcher -->
-                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="ui-ux" data-index="7">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="ui-ux" data-index="7">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         UX Researcher
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
 
                 <!-- Design Strategist -->
-                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="trends" data-index="8">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="trends" data-index="8">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         Design Strategist
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
 
                 <!-- Interaction Designer -->
-                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="ui-ux" data-index="9">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="ui-ux" data-index="9">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         Interaction Designer
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
 
                 <!-- Creative Director -->
-                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="design" data-index="10">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="design" data-index="10">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         Creative Director
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
 
                 <!-- Frontend Developer -->
-                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="product" data-index="11">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="product" data-index="11">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         Frontend Developer
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
 
                 <!-- Visual Designer -->
-                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="design" data-index="12">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="design" data-index="12">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         Visual Designer
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
 
                 <!-- Design Systems Lead -->
-                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="trends" data-index="13">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="trends" data-index="13">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         Design Systems Lead
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
 
                 <!-- Product Manager -->
-                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="product" data-index="14">
-                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white px-4 py-3 rounded-full text-base font-medium tracking-wider uppercase mb-8 h-[36px] leading-normal">
+                <div class="job-card hidden bg-transparent border border-dark-shade3 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:border-green1 hover:-translate-y-0.5" data-category="product" data-index="14">
+                    <span class="inline-flex items-center justify-center bg-dark-shade3 text-white sm:px-4 px-3.5 sm:py-3 py-2 rounded-full sm:text-base text-sm font-medium uppercase md:mb-8 sm:mb-5 mb-4 sm:h-9 h-6.5 leading-normal">
                         REMOTE
                     </span>
-                    <h3 class="text-2xl lg:text-[28px] font-bold text-white mb-3">
+                    <h3 class="sm:text-2xl text-xl lg:text-[28px] sm:font-bold font-medium text-white mb-3">
                         Product Manager
                     </h3>
-                    <p class="text-dark-shade5 text-[15px] leading-relaxed mb-6">
+                    <p class="text-dark-shade5 sm:text-[15px] text-sm mb-4 sm:mb-6">
                         Kickstart your career in design with us! We're looking for passionate individuals ready to learn and grow at Pixxen. Kickstart your career in design with us!
                     </p>
-                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-sm font-semibold tracking-wider uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                    <button class="view-details-btn inline-flex items-center gap-2 text-dark-shade5 text-base font-medium uppercase transition-all duration-300 hover:text-green1 hover:gap-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.4764 9.16658L9.00637 4.69657L10.1849 3.51807L16.6667 9.99992L10.1849 16.4817L9.00637 15.3032L13.4764 10.8332H3.33337V9.16658H13.4764Z" fill="#759187"/>
+</svg>
                         VIEW DETAILS
                     </button>
                 </div>
-
                             
         <!-- Load More Button -->
  
@@ -664,52 +684,72 @@
                 </div>
 
 
-                <div class="core-pillar-wrap grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
+                <div class="core-pillar-wrap grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 sm:mt-8 mt-6">
                     <div class="border border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden h-full">
-                    <div> <img src="assets/images/support.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                    <div> 
+                        <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/support.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
+
+                        <h3 class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             Support</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">We’re a caring, kind, and supportive family that’s always got your back.</p>
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-[#A7BDB5]">We’re a caring, kind, and supportive family that’s always got your back.</p>
                       
                     </div>
                 </div>
                     <div class="border border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden h-full">
-                    <div> <img src="assets/images/growth.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                    <div> 
+                          <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/growth.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
+
+                        <h3 class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                             Growth</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Your growth is our responsibility because your success is our success.</p>
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-[#A7BDB5]">Your growth is our responsibility because your success is our success.</p>
                        
                     </div>
                 </div>
                     <div class="border border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden h-full">
-                    <div> <img src="assets/images/security.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                    <div> 
+                        <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/security.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
+                        <h3 class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                            Security</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">We protect sensitive information with the highest level of security and professionalism.</p>
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-[#A7BDB5]">We protect sensitive information with the highest level of security and professionalism.</p>
                         
                     </div>
                 </div>
                     <div class="border border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden h-full">
-                    <div> <img src="assets/images/reward.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                    <div> 
+                        <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/reward.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
+                        <h3 class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                            Rewards</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Hard work deserves recognition – expect raises, bonuses, and lots of appreciation.</p>
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-[#A7BDB5]">Hard work deserves recognition – expect raises, bonuses, and lots of appreciation.</p>
                        
                     </div>
                 </div>
                     <div class="border border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden h-full">
-                    <div> <img src="assets/images/mission1.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                    <div> 
+                           <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/mission1.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
+                        <h3 class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                            Positive Culture</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">We believe in good vibes and open communication for a productive, loyal workforce.</p>
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-[#A7BDB5]">We believe in good vibes and open communication for a productive, loyal workforce.</p>
                        
                     </div>
                 </div>
                     <div class="border border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden h-full">
-                    <div> <img src="assets/images/flexibility.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
-                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
+                    <div> 
+                           <div class="sm:block flex justify-center w-full">
+                            <img src="assets/images/flexibility.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        </div>
+                        <h3 class="text-white sm:text-start text-center leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
                            Flexibility</h3>
-                        <p class="sm:text-base text-[14px] text-[#A7BDB5]">Enjoy the freedom to design your schedule and work from where you feel most productive.</p>
+                        <p class="text-center sm:text-start sm:text-base text-[12px] text-[#A7BDB5]">Enjoy the freedom to design your schedule and work from where you feel most productive.</p>
                        
                     </div>
                 </div>
@@ -723,20 +763,23 @@
 
 
     
-    <!-- team testimonial section start -->
+
+
+
+        <!-- team testimonial section start -->
     <section class="team-leader-testimonail bg-green5 min-h-125.25">
         <div class="container">
-            <div class="team-leader-testimonial-wrap rounded-3xl flex sm:flex-row flex-col flex-col-reverse justify-between gap-0">
-                <div class=" max-w-[350px] lg:max-w-[501px] w-full flex items-end ">
+            <div class="team-leader-testimonial-wrap rounded-3xl flex sm:flex-row flex-col  justify-between gap-0">
+                <div class="max-w-87.5 lg:max-w-125.25 w-full flex items-end ">
                     <img src="assets/images/leader-testimonial.webp" class="img-fluid" alt="testimonial">
                 </div>
-                <div class="lg:py-12 py-6">
-                    <div class="sm:border-l border-white lg:px-12 px-5 h-full flex flex-col justify-between">
-                       <div>
-                         <h2 class="lg:text-[64px] sm:text-[48px] text-[32px] font-medium leading120 text-white mb-4 md:mb-6">Life at Pixxen</h2>
-                        <p class="text-[32px] font-medium leading120 text-white">Pixxen gives designers the freedom to think deeply, collaborate openly, & craft meaningful digital experiences. It’s a place where design decisions truly matter.</p>
-                       </div>
-                        <div class="flex items-end justify-between gap-5">
+                <div class="lg:py-12 py-6 sm:border-0 border-t border-white">
+                    <div class="sm:border-l border-white lg:px-12 px-5 h-full flex flex-col justify-between ">
+                        <div>
+                            <h2 class="lg:text-[64px] sm:text-[42px] text-[32px] font-medium leading120 text-white md:mb-6 mb-4 ">Life at Pixxen</h2>
+                        <p class="md:text-[32px] text-[28px] text-2xl font-medium leading120 text-white ">Pixxen gives designers the freedom to think deeply, collaborate openly, & craft meaningful digital experiences. It’s a place where design decisions truly matter.</p>
+                        </div>
+                        <div class="flex items-end justify-between gap-5 mt-12 md:mt-8">
                             <div>
                                 <p class="md:text-2xl text-xl font-medium md:mb-2 mb-1 text-white">Mohammodullah Siddik</p>
                                 <p class="md:text-base text-sm  text-white">Lead UI/UX Designer</p>
@@ -751,6 +794,7 @@
     <!-- team testimonial section end -->
 
 
+
     
     <!-- team energy section start -->
     <section class="section-padding bg-green5">
@@ -761,45 +805,16 @@
                 </div>
                 <div>
                     <h2
-                        class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-1.5 leading120">
+                        class="text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-1.5 leading120">
                         We’re a Big Family You’ll Love to Work With</h2>
                     <p
-                        class="sm:text-start text-center text-[#A7BDB5] md:text-[18px] sm:text-base text-[14px] leading-[140%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-4 md:mb-6">
+                        class="text-start text-[#A7BDB5] md:text-[18px] sm:text-base text-[14px] leading-[140%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-4 md:mb-6">
                         At Pixxen, we’re proud to have established a positive and supportive work environment that brings out the best in every member. We’ve all the resources, training facilities, and work opportunities you need to advance your career and make it successful.</p>
                     <p
-                        class="sm:text-start text-center text-[#A7BDB5] md:text-[18px] sm:text-base text-[14px] leading-[140%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
+                        class="text-start text-[#A7BDB5] md:text-[18px] sm:text-base text-[14px] leading-[140%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
                        The best part? You become an integral part of an ambitious team and take your skill to the next level – all in a flexible, remote-friendly work environment.</p>
 
-                    <div class="flex sm:justify-start justify-center w-full">
-                        <button
-                            class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green4 transition-all duration-200">
-                            <span class="bg-overlay absolute inset-0 z-1"></span>
-                            <div class="btn-inner relative z-2 flex items-center gap-3">
-                                <div
-                                    class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
-                                    <div class="icon-slider flex flex-row ">
-                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                            <path
-                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                                fill="var(--color-green1)" />
-                                        </svg>
-                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                            <path
-                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
-                                                fill="var(--color-green1)" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
-                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
-                                        Connect</span>
-                                    <span
-                                        class="t-down md:text-[20px] text-base  font-medium text-white uppercase">Let’s
-                                        Connect</span>
-                                </div>
-                            </div>
-                        </button>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -836,7 +851,7 @@
             <!-- Video Element -->
             <video id="videoPlayer" class="w-full h-full object-cover rounded-lg" controls
                 controlsList="nodownload">
-                <source src="https://pexnet.com/videos/video-content-1.mp4" type="video/mp4">
+                <source src="assets/images/pixenvideo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>

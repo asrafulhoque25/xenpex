@@ -957,70 +957,98 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //terms condition and privacy policy
 
-// Check if the wrapper exists before running the script
-const termWrap = document.querySelector('.term-wrap');
-
-if (termWrap) {
-    // Table of Contents functionality
-    const tocLinks = document.querySelectorAll('.toc-link');
-    const sections = document.querySelectorAll('.content-section');
-
-    // Smooth scroll on click
-    tocLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
+  // Check if the wrapper exists before running the script
+        const termWrap = document.querySelector('.term-wrap');
+        
+        if (termWrap) {
+            // Table of Contents Collapsible functionality
+            const tocSidebar = document.querySelector('.toc-sidebar');
+            const tocHeader = document.querySelector('.toc-header');
             
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+            // Set initial collapsed state on mobile
+            function setInitialState() {
+                if (window.innerWidth <= 1024) {
+                    tocSidebar.classList.add('collapsed');
+                }
+            }
+            
+            // Toggle collapse/expand on header click
+            if (tocHeader) {
+                tocHeader.addEventListener('click', function() {
+                    tocSidebar.classList.toggle('collapsed');
                 });
             }
-        });
-    });
-
-    // Highlight active section on scroll
-    function updateActiveSection() {
-        let currentSection = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
             
-            // Checking if current scroll position is within section bounds
-            if (window.scrollY >= (sectionTop - 100)) {
-                currentSection = section.getAttribute('id');
+            // Table of Contents navigation functionality
+            const tocLinks = document.querySelectorAll('.toc-link');
+            const sections = document.querySelectorAll('.content-section');
+            
+            // Smooth scroll on TOC link click
+            tocLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Auto-collapse TOC on mobile after clicking a link
+                        if (window.innerWidth <= 1024) {
+                            tocSidebar.classList.add('collapsed');
+                        }
+                    }
+                });
+            });
+            
+            // Highlight active section on scroll
+            function updateActiveSection() {
+                let currentSection = '';
+                
+                sections.forEach(function(section) {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    // Check if current scroll position is within section bounds
+                    if (window.scrollY >= (sectionTop - 100)) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+                
+                // Update active link styling
+                tocLinks.forEach(function(link) {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + currentSection) {
+                        link.classList.add('active');
+                    }
+                });
             }
-        });
-
-        tocLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${currentSection}`) {
-                link.classList.add('active');
-            }
-        });
-    }
-
-    // Throttle scroll event for better performance
-    let scrollTimeout;
-    window.addEventListener('scroll', () => {
-        if (scrollTimeout) {
-            window.cancelAnimationFrame(scrollTimeout);
-        }
-        scrollTimeout = window.requestAnimationFrame(() => {
+            
+            // Throttle scroll event for better performance
+            let scrollTimeout;
+            window.addEventListener('scroll', function() {
+                if (scrollTimeout) {
+                    window.cancelAnimationFrame(scrollTimeout);
+                }
+                scrollTimeout = window.requestAnimationFrame(function() {
+                    updateActiveSection();
+                });
+            });
+            
+            // Initialize on page load
+            setInitialState();
             updateActiveSection();
-        });
-    });
-
-    // Initial call to set active section
-    updateActiveSection();
-}
-
-
-
-
+            
+            // Re-check collapsed state on window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 1024) {
+                    tocSidebar.classList.remove('collapsed');
+                }
+            });
+        }
 
 
       // career section 
@@ -1178,3 +1206,157 @@ if (termWrap) {
     window.addEventListener('resize', updateCounter);
     updateCounter(); // Initial check
 });
+
+
+
+//blog details 
+
+// Calculate Reading Time
+function calculateReadingTime() {
+    const content = document.querySelector('.blog-details-content');
+    const readingTimeElement = document.querySelector('.toc-blog-title');
+    
+    if (!content || !readingTimeElement) return;
+    
+    // Get all text content
+    const text = content.innerText || content.textContent;
+    
+    const words = text.trim().split(/\s+/).length;
+    
+
+    const wordsPerMinute = 225;
+    const readingTime = Math.ceil(words / wordsPerMinute);
+    
+    readingTimeElement.textContent = `${readingTime} Min Read`;
+}
+
+// Reading Progress Bar
+function updateReadingProgress() {
+    const content = document.querySelector('.blog-details-content');
+    const progressBar = document.querySelector('.reading-progress-bar');
+    
+    if (!content || !progressBar) return;
+    
+    const contentRect = content.getBoundingClientRect();
+    const contentHeight = content.offsetHeight;
+    const viewportHeight = window.innerHeight;
+    const scrollableHeight = contentHeight - viewportHeight;
+    
+    // Calculate scroll progress
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const contentTop = content.offsetTop;
+    const scrolled = scrollTop - contentTop;
+    const progress = Math.min(Math.max((scrolled / scrollableHeight) * 100, 0), 100);
+    
+    progressBar.style.width = progress + '%';
+}
+
+// Dynamic Table of Contents Generator
+function generateTableOfContents() {
+    const content = document.querySelector('.blog-details-content');
+    const tocList = document.querySelector('.toc-blog-list');
+    
+    if (!content || !tocList) return;
+    
+    // Get all h2 headings from content
+    const headings = content.querySelectorAll('h2');
+    
+    // Clear existing TOC items
+    tocList.innerHTML = '';
+    
+    // Generate TOC items dynamically
+    headings.forEach((heading, index) => {
+        // Create unique ID for each heading
+        const headingId = `section-${index}`;
+        heading.setAttribute('id', headingId);
+        
+        // Create TOC list item
+        const li = document.createElement('li');
+        li.className = 'toc-blog-item';
+        
+        const a = document.createElement('a');
+        a.href = `#${headingId}`;
+        a.innerHTML = `<span class="header-highlight">${heading.textContent}</span>`;
+        
+        li.appendChild(a);
+        tocList.appendChild(li);
+    });
+}
+
+// Active Section Highlighting
+function highlightActiveSection() {
+    const headings = document.querySelectorAll('.blog-details-content h2');
+    const tocItems = document.querySelectorAll('.toc-blog-item');
+    
+    if (!headings.length || !tocItems.length) return;
+    
+    let activeIndex = -1;
+    
+    headings.forEach((heading, index) => {
+        const rect = heading.getBoundingClientRect();
+        // Check if heading is in viewport (with some offset from top)
+        if (rect.top <= 150) {
+            activeIndex = index;
+        }
+    });
+    
+    // Remove active class from all items
+    tocItems.forEach(item => item.classList.remove('active'));
+    
+    // Add active class to current section
+    if (activeIndex >= 0 && tocItems[activeIndex]) {
+        tocItems[activeIndex].classList.add('active');
+    }
+}
+
+// Smooth Scroll to Section
+function initSmoothScroll() {
+    const tocLinks = document.querySelectorAll('.toc-blog-item a');
+    
+    tocLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                const offsetTop = targetSection.offsetTop - 100; // 100px offset from top
+                
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+// Initialize all functions
+function initBlogDetails() {
+    // Calculate and display reading time
+    calculateReadingTime();
+    
+    // Generate TOC from h2 tags
+    generateTableOfContents();
+    
+    // Initialize smooth scroll
+    initSmoothScroll();
+    
+    // Update on scroll
+    window.addEventListener('scroll', () => {
+        updateReadingProgress();
+        highlightActiveSection();
+    });
+    
+    // Initial call
+    updateReadingProgress();
+    highlightActiveSection();
+}
+
+// Run when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBlogDetails);
+} else {
+    initBlogDetails();
+}
