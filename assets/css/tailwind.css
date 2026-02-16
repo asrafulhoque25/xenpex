@@ -1707,6 +1707,10 @@ background: radial-gradient(50% 27.56% at 50% 0%, var(--secondary-shade-3, #0651
             grid-template-columns: 1fr !important;
             gap:24px;
         }
+         .term-wrap .toc-link {
+            font-size: 14px;
+            padding: 4px 0;
+         }
         }
         @media (max-width:640px) {
     
