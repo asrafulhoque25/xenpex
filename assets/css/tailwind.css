@@ -1622,6 +1622,7 @@ background: radial-gradient(50% 27.56% at 50% 0%, var(--secondary-shade-3, #0651
         }
         .term-wrap .toc-list{
             padding-inline: 32px;
+            padding-bottom: 32px;
         }
         .term-wrap .toc-title {
             font-size: 24px;
@@ -1720,6 +1721,7 @@ background: radial-gradient(50% 27.56% at 50% 0%, var(--secondary-shade-3, #0651
         }
         .term-wrap .toc-list{
             padding-inline: 16px;
+            padding-bottom: 16px;
         }
 
 
