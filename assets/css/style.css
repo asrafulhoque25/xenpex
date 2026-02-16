@@ -4585,6 +4585,7 @@ nav {
 }
 .term-wrap .toc-list {
   padding-inline: 32px;
+  padding-bottom: 32px;
 }
 .term-wrap .toc-title {
   font-size: 24px;
@@ -4653,6 +4654,10 @@ nav {
     grid-template-columns: 1fr !important;
     gap: 24px;
   }
+  .term-wrap .toc-link {
+    font-size: 14px;
+    padding: 4px 0;
+  }
 }
 @media (max-width:640px) {
   .term-wrap .toc-sidebar {
@@ -4666,6 +4671,7 @@ nav {
   }
   .term-wrap .toc-list {
     padding-inline: 16px;
+    padding-bottom: 16px;
   }
   .term-wrap .section-text {
     font-size: 14px;
