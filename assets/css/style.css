@@ -607,6 +607,9 @@
   .w-\[22px\] {
     width: 22px;
   }
+  .w-\[195px\] {
+    width: 195px;
+  }
   .w-\[200px\] {
     width: 200px;
   }
@@ -1152,6 +1155,9 @@
   .object-cover {
     object-fit: cover;
   }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
@@ -1184,6 +1190,9 @@
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
   }
   .px-3\.5 {
     padding-inline: calc(var(--spacing) * 3.5);
@@ -1241,9 +1250,6 @@
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
-  }
-  .py-20 {
-    padding-block: calc(var(--spacing) * 20);
   }
   .py-\[2px\] {
     padding-block: 2px;
@@ -1331,6 +1337,9 @@
   }
   .pb-48 {
     padding-bottom: calc(var(--spacing) * 48);
+  }
+  .pb-50 {
+    padding-bottom: calc(var(--spacing) * 50);
   }
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
@@ -5069,10 +5078,10 @@ nav {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  height: 8px;
-  width: 8px;
-  background-color: #19CC61;
-  border-radius: 100px;
+  background-image: url(../images/web-point.svg);
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
 }
 .job-details ul li p {
   padding-bottom: 0;
@@ -5086,6 +5095,48 @@ nav {
   border-radius: 24px;
   border: 1px solid var(--dark-shade-3, #29473C);
   background: var(--Radial-Top-BG, radial-gradient(50% 27.56% at 50% 0%, var(--secondary-shade-3, #065136) 0%, var(--dark-shade-1, #002417) 100%));
+}
+@media (max-width:640px) {
+  .job-details p {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  .job-details a {
+    font-size: 14px;
+  }
+  .job-details h2 {
+    font-size: 32px;
+  }
+  .job-details h3 {
+    font-size: 24px;
+  }
+  .job-details h4 {
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .job-details h5 {
+    font-size: 16px;
+  }
+  .job-details h6 {
+    font-size: 14px;
+  }
+  .job-details b {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .job-details img {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+  }
+  .job-details ul li {
+    margin-bottom: 8px;
+  }
+  .job-details ul {
+    padding-top: 8px;
+  }
 }
 .case-details-banner {
   overflow: hidden;
