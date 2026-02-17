@@ -68,246 +68,551 @@ html {
 
 
 /* navbar start */
+        /* =============================================
+           DESKTOP DROPDOWN — Pixxen figma design
+        ============================================= */
+        nav{
+            text-transform: uppercase;
+        }
+        .desktop-dropdown {
+            position: relative;
+        }
 
-nav{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 888;
-}
+        .desktop-dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+        }
 
-/* Desktop Dropdown Styles */
-.desktop-dropdown {
-    position: relative;
-}
+        .desktop-dropdown-icon {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            font-size: 18px;
+            font-weight: 500;
+        }
 
-.desktop-dropdown-toggle {
+        /* ── Mega dropdown panel ── */
+        .desktop-dropdown-menu {
+            position: absolute;
+            top: calc(100% + 12px);
+            left: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            background-color: #002417;          /* dark panel bg */
+            border: 1px solid #29473C;
+            border-radius: 24px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            min-width: 626px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px);
+            transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+            z-index: 1000;
+            overflow: hidden;
+        }
+
+        .desktop-dropdown:hover .desktop-dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* ── LEFT: service list ── */
+        .dropdown-service-list {
+            /* flex: 0 0 260px; */
+            padding: 24px;
+        }
+
+        .dropdown-service-list li {
+            margin: 0;
+        }
+
+        .dropdown-service-list a {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: #fff;
+            text-decoration: none;
+            padding: 11px 20px;
+           font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 125% */
+text-transform: uppercase;
+            border-radius: 12px;
+            background-color: transparent;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .dropdown-service-list a:hover,
+        .dropdown-service-list a.active {
+            background-color: #1F382F;
+        }
+
+       
+
+        /* Service icon wrapper */
+ 
+
+        /* .service-icon svg {
+            width: 18px;
+            height: 18px;
+        } */
+
+        /* ── RIGHT: preview grid ── */
+        .dropdown-preview {
+            justify-content: end;
     display: flex;
-    align-items: center;
-    gap: 4px;
-    cursor: pointer;
-}
+    align-items: end;
+        }
 
-.desktop-dropdown-icon {
-    display: inline-block;
-    transition: transform 0.3s ease;
-    font-size: 18px;
-    font-weight: 500;
-}
 
-.desktop-dropdown:hover .desktop-dropdown-icon {
-    transform: rotate(0deg);
-}
+        /* ==============================================
+           MOBILE MENU — 2-panel slide system
+        ============================================== */
 
-.desktop-dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #012819;
-    border: 1px solid rgba(0, 255, 157, 0.2);
-    border-top: 2px solid #99FE00;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-width: 200px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-    z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
+        /* Dark overlay behind the whole menu */
+        .mobile-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 9990;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.35s ease, visibility 0.35s ease;
+        }
+        .mobile-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
 
-.desktop-dropdown:hover .desktop-dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
+        /* Wrapper: holds both panels side by side */
+        .mobile-menu-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 9999;
+            pointer-events: none;
+        }
+        .mobile-menu-wrapper.active {
+            pointer-events: all;
+        }
 
-.desktop-dropdown-menu li {
-    margin: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
+        /* ── PANEL BASE ── */
+        .mm-panel {
+            position: absolute;
+            top: 0;
+            right: 0;
 
-.desktop-dropdown-menu li:last-child {
-    border-bottom: none;
-}
+            height: 100vh;
+            background: var(--Linear-Bg, linear-gradient(180deg, var(--dark-shade-1, #002417) 0%, var(--dark-extra-dark, #001B11) 100%));
+            overflow-y: auto;
+            transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+        }
 
-.desktop-dropdown-menu a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding: 12px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
+        /* ── PANEL 1: Main Menu ── */
+        .mm-main {
+            left: 0;
+            transform: translateX(-100%);
+            display: flex;
+            flex-direction: column;
+        }
+        .mobile-menu-wrapper.active .mm-main {
+            transform: translateX(0);
+        }
+        .mobile-menu-wrapper.active.services-open .mm-main {
+            transform: translateX(-100%);
+        }
 
-.desktop-dropdown-menu a:hover {
-    background-color: rgba(0, 255, 157, 0.1);
-    color: #99FE00;
-    padding-left: 25px;
-}
+        /* Main panel header */
+        .mm-main-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px 24px 24px;
+        }
+        .mm-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: -0.02em;
+        }
+        .mm-close-btn {
+            width: 64px;
+            height: 64px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.08);
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s ease, color 0.2s ease;
+            flex-shrink: 0;
+        }
+        .mm-close-btn:hover {
+            background: #99FE00;
+        }
+        .mm-close-btn:hover svg * {
+            fill: var(--color-dark-shade2) !important;
+        }
 
-/* Remove default ul styles if any */
-.desktop-dropdown-toggle ul {
-    display: none;
-}
+        /* Nav list */
+        .mm-nav-list {
+            list-style: none;
+            padding: 16px 0 0 0;
+            margin: 0;
+            flex: 1;
+        }
+     
+        .mm-nav-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+            padding: 14px 24px;
+            font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 125% */
+text-transform: uppercase;
+            transition: color 0.2s ease, background 0.2s ease;
+        }
+        .mm-nav-link:hover {
+            color: #99FE00;
+            background: rgba(153,254,0,0.04);
+        }
+        .mm-nav-link .mm-plus {
+            font-size: 28px;
+            font-weight: 300;
+            color: #fff;
+            line-height: 1;
+        }
+        .mm-nav-link:hover .mm-plus {
+            color: #99FE00;
+        }
 
-/* Mobile Menu Styles */
-.mobile-menu {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 80%;
-    max-width: 300px;
-    height: 100vh;
-    background-color: #012819;
-    z-index: 9999;
-    transition: left 0.3s ease-in-out;
-    overflow-y: auto;
-}
+        /* LET'S CONNECT button at bottom */
+        .mm-connect-btn {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 32px 24px 0 24px;
+            padding: 16px 24px;
+            background: #99FE00;
+            color: #002417;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            border-radius: 6px;
+            transition: background 0.2s ease;
+        }
+        .mm-connect-btn:hover {
+            background: #19CC61;
+        }
+        .mm-connect-btn .mm-arrow {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #002417;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
 
-.mobile-menu.active {
-    left: 0;
-}
+        /* ── PANEL 2: Services submenu ── */
+        .mm-services {
+            left: 0;
+            transform: translateX(100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .mobile-menu-wrapper.active.services-open .mm-services {
+            transform: translateX(0);
+        }
 
-.mobile-menu-content {
-    padding: 20px;
-    position: relative;
-}
+        /* Services panel header */
+        .mm-services-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 20px 8px 20px;
+        }
+        .mm-back-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: none;
+            border: none;
+            color: var(--color-dark-shade5);
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 8px 0;
+            transition: color 0.2s ease;
+        }
+        .mm-back-btn:hover { color: #99FE00; }
+        .mm-services-title {
+            font-size: 36px;
+            font-weight: 500;
+            color: #fff;
+            padding: 16px 20px 20px 20px;
+        }
 
-.mobile-menu-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: transparent;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: color 0.3s ease;
-}
+        /* 2×3 service cards grid */
+        .mm-services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 0 16px;
+        }
+        .mm-service-card {
+            background: transparent;
+           border-radius: 12px;
+            border: 1px solid var(--dark-shade-3, #29473C);
+            padding: 16px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            transition: border-color 0.2s ease, background 0.2s ease;
+            cursor: pointer;
+        }
+        .mm-service-card:hover {
+            border-color: rgba(153,254,0,0.35);
+            background: rgba(153,254,0,0.06);
+        }
+   
+        .mm-service-card .card-label {
+            font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 125% */
+text-transform: uppercase;
+            color: #fff;
+        }
+        .mm-service-card:hover .card-label { color: #99FE00; }
 
-.mobile-menu-close:hover {
-    color: #99FE00;
-}
+        /* Decorative grid lines at bottom (subtle) */
+        .mm-deco {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            opacity: 0.08;
+            pointer-events: none;
+        }
 
-.mobile-menu-list {
-    list-style: none;
-    padding: 0;
-    margin: 50px 0 0 0;
-}
+        @media (min-width: 1024px) {
+            .mobile-menu-wrapper,
+            .mobile-overlay { display: none; }
+        }
 
-.mobile-menu-item {
-    margin-bottom: 10px;
-}
+        nav { position: fixed; top: 0; width: 100%; z-index: 888; }
 
-.mobile-menu-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff;
-    text-decoration: none;
-    padding: 15px 10px;
-    font-size: 16px;
-    font-weight: 500;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-}
 
-.mobile-menu-link:hover {
-    color: #99FE00;
-    background-color: rgba(0, 255, 157, 0.05);
-}
 
-.dropdown-icon {
-    font-size: 20px;
-    transition: transform 0.3s ease;
-}
 
-.mobile-menu-item.active .dropdown-icon {
-    transform: rotate(45deg);
-}
 
-.mobile-submenu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.2);
-}
+        /* full width and height menu  */
 
-.mobile-menu-item.active .mobile-submenu {
-    max-height: 500px;
-}
 
-.mobile-submenu li {
-    margin: 0;
-}
+           /* ─── Demo trigger button (your actual navbar button) ─── */
 
-.mobile-submenu a {
-    display: block;
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    padding: 12px 20px 12px 30px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
+    .demo-trigger svg rect { fill: white; }
 
-.mobile-submenu a:hover {
-    color: #99FE00;
-    background-color: rgba(0, 255, 157, 0.05);
-    padding-left: 35px;
-}
-
-.mobile-contact-btn {
-    border: 1px solid #99FE00;
-    border-radius: 4px;
-    margin-top: 20px;
-    text-align: center;
-    justify-content: center;
-}
-
-.mobile-contact-btn:hover {
-    background-color: rgba(0, 255, 157, 0.1);
-}
-
-/* Overlay background when menu is open */
-.mobile-menu::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    z-index: -1;
-}
-
-.mobile-menu.active::before {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* Hide mobile menu on desktop */
-@media (min-width: 1024px) {
-    .mobile-menu {
-        display: none;
+    /* ─── 1024px এর নিচে button ও menu সম্পূর্ণ লুকানো ─── */
+    @media (max-width: 1023px) {
+      #desktop-sidebar { display: none !important; }
+      #pixxen-menu     { display: none !important; }
     }
-}
 
+    /* ─── FULL PAGE OVERLAY ─── */
+    #pixxen-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      pointer-events: none;
+      visibility: hidden;
+      background: linear-gradient(180deg, var(--dark-shade-1, #002417) 0%, var(--dark-extra-dark, #001B11) 100%);
+    }
+    #pixxen-menu.is-open {
+      pointer-events: all;
+      visibility: visible;
+    }
 
+    /* ─── TOP PANEL (menu content) ─── */
+    .menu-top {
+      flex: 1;
+      background: var(--green5);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      /* starts above viewport */
+      transform: translateY(-100%);
+    }
 
+    /* ─── BOTTOM PANEL (logo bar) ─── */
+    .menu-bottom {
+      height: 180px;
+      border-top: 1px solid #29473C;
+      background: linear-gradient(180deg, var(--dark-extra-dark, #001B11) 0%, var(--secondary-shade-3, #065136) 100%);
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      padding-top: 12px;
+      transform: translateY(100%);
+    }
 
+    /* ─── Decorative grid lines ─── */
+    .grid-lines {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .grid-lines svg {
+      width: 100%;
+      height: 100%;
+      opacity: 0.18;
+    }
+
+    /* ─── TOP-RIGHT button (LET'S CONNECT) ─── */
+    .connect-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      
+      z-index: 888;
+    }
+
+    /* ─── CLOSE BUTTON ─── */
+    .close-wrap {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+    }
+    .close-btn {
+      width: 72px;
+      height: 72px;
+      background: rgba(255,255,255,0.08);
+      border: none;
+      border-radius: 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(8px);
+      transition: background 0.25s, transform 0.25s;
+    }
+    .close-btn:hover { background: rgba(255,255,255,0.14); transform: scale(1.07); }
+    .close-btn svg { width: 28px; height: 28px; stroke: white; stroke-width: 2.5; }
+
+    /* ─── NAV COLUMNS ─── */
+    .nav-columns {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      gap: 0;
+      max-width: 750px;
+      width: 100%;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+
+    .nav-col {
+      min-width: 150px;
+      margin-right: 10px;
+    }
+
+    .nav-col-title {
+      color:  #19CC61;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 24px */
+      margin-bottom: 24px;
+    }
+
+    .nav-col ul { list-style: none; }
+
+    .nav-col ul li {
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+
+    .nav-col ul li a {
+
+    color:  #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    text-transform: uppercase;
+      transition: color 0.2s;
+      display: inline-block;
+    }
+    .nav-col ul li a:hover { color: var(--color-green1) }
+
+    /* ─── BOTTOM LOGO ─── */
+    .bottom-logo {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 0 60px;
+    }
+
+    .logo-icon {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      flex-shrink: 0;
+    }
+
+    /* The cross/plus green shape */
+    .logo-icon .cross-top {
+      position: absolute;
+      top: 0; left: 18px;
+      width: 36px; height: 36px;
+      background: var(--green1);
+    }
+    .logo-icon .cross-mid {
+      position: absolute;
+      top: 18px; left: 0;
+      width: 90px; height: 36px;
+      background: var(--green1);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 36% 100%, 36% 60%, 20% 60%, 20% 100%, 0 100%);
+    }
+
+    /* ─── Crosshair decorative (top-left) ─── */
+    .deco-cross {
+      position: absolute;
+      pointer-events: none;
+    }
+  
 
 
 
@@ -366,7 +671,7 @@ nav{
     will-change: transform;
     max-width: 500px;
     width: 100%;
-    z-index: 2;
+    z-index: 40;
 }
  .shape-3d {
     transition: transform 0.1s ease-out;

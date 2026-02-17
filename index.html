@@ -12,144 +12,434 @@
 
 <body>
 
-     <nav class="bg-[#012819] border-b border-green4">
+    <nav class="bg-[#012819] border-b border-green4">
         <div class="mx-auto">
             <div class="flex items-center justify-between h-12">
                 <div class="flex items-center sm:gap-4 gap-3">
-                    <!-- Desktop Sidebar Button (hidden on mobile) -->
-                    <button id="desktop-sidebar"
-                        class="hidden lg:block text-green1 hover:text-green2 px-19 py-5 bg-green4 hover:bg-green3 cursor-pointer transition-colors"
+                    <!-- Desktop Sidebar Button -->
+                    <button id="desktop-sidebar" aria-label="Toggle menu"
+                        class="demo-trigger hidden lg:block text-green1 hover:text-green2 xl:px-19 md:px-6 py-5 bg-green4 hover:bg-green3 cursor-pointer transition-colors"
                         aria-label="Toggle menu">
                         <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="42" height="2" fill="white" />
                             <rect y="6" width="42" height="2" fill="white" />
                         </svg>
                     </button>
-
-                    <!-- Mobile Hamburger Button (visible only on mobile, LEFT of logo) -->
+                    <!-- Mobile Hamburger -->
                     <button id="mobile-menu-toggle" class="lg:hidden text-white hover:text-green1 p-2 transition-colors"
                         aria-label="Toggle mobile menu">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <rect y="4" width="24" height="2" fill="currentColor" />
                             <rect y="11" width="24" height="2" fill="currentColor" />
                             <rect y="18" width="24" height="2" fill="currentColor" />
                         </svg>
                     </button>
-
                     <a href="/" class="flex items-center">
-                        <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid sm:max-w-auto max-w-[130px]">
+                        <!-- replace with your logo img -->
+                        <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid sm:w-auto w-[136px]">
                     </a>
                 </div>
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center space-x-8">
+
+                    <!-- ====== SERVICES DROPDOWN ====== -->
                     <div class="desktop-dropdown">
                         <a href="#services"
                             class="text-white hover:text-green1 transition-colors text-base font-medium desktop-dropdown-toggle">
-                            SERVICES <span class="desktop-dropdown-icon">+</span>
+                            SERVICES <span class="desktop-dropdown-icon ml-1">+</span>
                         </a>
-                        <ul class="desktop-dropdown-menu">
-                            <li><a href="#">Service Item 1</a></li>
-                            <li><a href="#">Service Item 2</a></li>
-                            <li><a href="#">Service Item 3</a></li>
-                            <li><a href="#">Service Item 4</a></li>
-                            <li><a href="#">Service Item 5</a></li>
-                        </ul>
+
+                        <!-- Mega panel: list LEFT + grid RIGHT -->
+                        <div class="desktop-dropdown-menu">
+
+                            <!-- LEFT: service items -->
+                            <ul class="dropdown-service-list">
+                                <li>
+                                    <a href="/mobile-app-design.html">
+                                        <span class="service-icon">
+                                            <!-- Mobile icon -->
+                                            <img src="assets/images/dropdownicon1.svg" class="img-fluid"
+                                                alt="dropdown-icon">
+                                        </span>
+                                        MOBILE APP DESIGN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/dashboard-design.html">
+                                        <span class="service-icon">
+                                            <!-- Dashboard/pie icon -->
+                                            <img src="assets/images/dropdownicon2.svg" class="img-fluid"
+                                                alt="dropdown-icon">
+                                        </span>
+                                        DASHBOARD DESIGN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/website-design.html">
+                                        <span class="service-icon">
+                                            <!-- Monitor icon -->
+                                            <img src="assets/images/dropdownicon3.svg" class="img-fluid"
+                                                alt="dropdown-icon">
+                                        </span>
+                                        WEBSITE DESIGN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/web-application-design.html">
+                                        <span class="service-icon">
+                                            <!-- Laptop icon -->
+                                            <img src="assets/images/dropdownicon4.svg" class="img-fluid"
+                                                alt="dropdown-icon">
+                                        </span>
+                                        WEB APP DESIGN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/saas-design.html">
+                                        <span class="service-icon">
+                                            <!-- Desktop/screen icon -->
+                                            <img src="assets/images/dropdownicon5.svg" class="img-fluid"
+                                                alt="dropdown-icon">
+                                        </span>
+                                        SAAS DESIGN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/branding-design.html">
+                                        <span class="service-icon">
+                                            <!-- Brand/star icon -->
+                                            <img src="assets/images/dropdownicon6.svg" class="img-fluid"
+                                                alt="dropdown-icon">
+                                        </span>
+                                        BRANDING
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- right: items -->
+                             <div class="flex items-end">
+                                <img src="assets/images/dropdown-shape.svg" alt="">
+                             </div>
+
+                        </div>
+                        <!-- end .desktop-dropdown-menu -->
                     </div>
-                    <a href="#works" class="text-white hover:text-green1 transition-colors text-base font-medium">
-                        WORKS
-                    </a>
-                    <a href="#pricing" class="text-white hover:text-green1 transition-colors text-base font-medium">
-                        PRICING
-                    </a>
-                    <a href="#about" class="text-white hover:text-green1 transition-colors text-base font-medium">
-                        ABOUT
-                    </a>
-                    <a href="#blog" class="text-white hover:text-green1 transition-colors text-base font-medium">
-                        BLOG
-                    </a>
+                    <!-- ====== end SERVICES ====== -->
+
+                    <a href="/case-study.html"
+                        class="text-white hover:text-green1 transition-colors text-base font-medium">CASE STUDIES</a>
+                        <a href="/about.html"
+                            class="text-white hover:text-green1 transition-colors text-base font-medium">ABOUT</a>
+                            <a href="/blog.html"
+                                class="text-white hover:text-green1 transition-colors text-base font-medium">BLOG</a>
+                    <a href="/contact.html"
+                        class="text-white hover:text-green1 transition-colors text-base font-medium">Contact</a>
                 </div>
 
                 <!-- Desktop Buttons -->
                 <div class="hidden lg:flex items-center">
-                    <a href="#contact"
-                        class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block px-12 py-3 text-white border border-green4 hover:border-green2 hover:bg-green4 transition-all font-medium">
+                    <a href="/contact.html"
+                        class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block xl:px-12 md:px-5 py-3 text-white border border-green4  transition-all font-medium">
                         <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up text-base  font-medium text-white uppercase">OUR
-                                Contact</span>
-                            <span class="t-down text-base  font-medium text-white uppercase">OUR
-                                Contact</span>
+                            <span class="t-up text-base  font-medium text-white uppercase">OUR Contact</span>
+                            <span class="t-down text-base  font-medium text-white uppercase">OUR Contact</span>
                         </div>
                     </a>
-                    <a href="#connect"
-                        class="px-12 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-green1 text-green5 hover:bg-green2 transition-colors font-bold">
+                    <a href="/contact.html"
+                        class="xl:px-12 md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-green1 text-green5 transition-colors font-bold">
                         <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up text-base  font-medium text-green4 uppercase">OUR
-                                Let’s Connect</span>
-                            <span class="t-down text-base  font-medium text-green4 uppercase">OUR
-                                Let’s Connect</span>
+                            <span class="t-up text-base  font-medium text-green4 uppercase">Let’s Connect</span>
+                            <span class="t-down text-base  font-medium text-green4 uppercase">Let’s Connect</span>
                         </div>
                     </a>
                 </div>
 
-                <!-- Mobile "LET'S CONNECT" button (visible on mobile) -->
-                <a href="#connect"
-                    class="lg:hidden px-5 sm:px-10 py-4 text-xs bg-green1 text-green4 hover:bg-green2 transition-colors font-bold">
-                    Let’s Connect
+                <!-- Mobile LET'S CONNECT -->
+                <a href="/contact.html"
+                    class="lg:hidden px-4 sm:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-4.25 sm:py-4 bg-green1 text-green5 transition-colors font-bold">
+                    <div class="text-mask sm:h-5 h-6 overflow-hidden flex flex-col">
+                        <span class="t-up text-sm  font-medium text-green4 uppercase">OUR Let’s Connect</span>
+                        <span class="t-down text-sm  font-medium text-green4 uppercase">OUR Let’s Connect</span>
+                    </div>
                 </a>
             </div>
         </div>
 
-        <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="mobile-menu">
-            <div class="mobile-menu-content">
-                <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close menu">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                </button>
+        <!-- ====================== MOBILE MENU (2-panel) ====================== -->
+        <!-- Dark overlay -->
+        <div id="mobile-overlay" class="mobile-overlay"></div>
 
-                <ul class="mobile-menu-list">
-                    <li class="mobile-menu-item">
-                        <a href="#services" class="mobile-menu-link">
+        <!-- Wrapper holds both panels -->
+        <div id="mobile-menu-wrapper" class="mobile-menu-wrapper">
+
+            <!-- PANEL 1: Main Menu -->
+            <div id="mm-main" class="mm-panel mm-main">
+                <div class="mm-main-header">
+                    <span class="mm-title">Menu</span>
+                    <button id="mm-close" class="mm-close-btn" aria-label="Close menu">
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                                fill="white" />
+                        </svg>
+
+                    </button>
+                </div>
+
+                <ul class="mm-nav-list">
+                    <li>
+                        <!-- SERVICES: opens panel 2 -->
+                        <button id="mm-services-trigger" class="mm-nav-link w-full text-left"
+                            style="background:none;border:none;cursor:pointer;">
                             SERVICES
-                            <span class="dropdown-icon">+</span>
-                        </a>
-                        <ul class="mobile-submenu">
-                            <li><a href="#">Service Item 1</a></li>
-                            <li><a href="#">Service Item 2</a></li>
-                            <li><a href="#">Service Item 3</a></li>
-                            <li><a href="#">Service Item 4</a></li>
-                            <li><a href="#">Service Item 5</a></li>
-                        </ul>
+                            <span class="mm-plus">+</span>
+                        </button>
                     </li>
-                    <li class="mobile-menu-item">
-                        <a href="#works" class="mobile-menu-link">WORKS</a>
-                    </li>
-                    <li class="mobile-menu-item">
-                        <a href="#pricing" class="mobile-menu-link">PRICING</a>
-                    </li>
-                    <li class="mobile-menu-item">
-                        <a href="#about" class="mobile-menu-link">ABOUT</a>
-                    </li>
-                    <li class="mobile-menu-item">
-                        <a href="#blog" class="mobile-menu-link">BLOG</a>
-                    </li>
-                    <li class="mobile-menu-item">
-                        <a href="#contact" class="mobile-menu-link mobile-contact-btn">CONTACT</a>
+                    <li><a href="/case-study.html" class="mm-nav-link">case studies</a></li>
+                    <li><a href="/about.html" class="mm-nav-link">about</a></li>
+                    <li><a href="/blog.html" class="mm-nav-link">blog</a></li>
+                    <li><a href="/contact.html" class="mm-nav-link">contact</a></li>
+                    <li><a href="/team.html" class="mm-nav-link">team</a></li>
+                    <li>
+                        <div class="flex justify-start  mt-8 mx-4">
+                            <a href="/contact.html"
+                                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 transition-all duration-200">
+
+                                <div class="btn-inner relative z-2 flex items-center gap-3">
+                                    <div
+                                        class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                        <div class="icon-slider flex flex-row ">
+                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                    fill="var(--color-green1)" />
+                                            </svg>
+                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                    fill="var(--color-green1)" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                        <span
+                                            class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
+                                            Connect</span>
+                                        <span
+                                            class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
+                                            Connect</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </li>
                 </ul>
+
+                <!-- LET'S CONNECT -->
+                <div>
+                    <div>
+                        <div class="w-full flex justify-end">
+                            <img src="assets/images/menu-mobile-shape.svg" class="img-fluid sm:w-auto w-[190px]"
+                                alt="mobile menu">
+                        </div>
+                        <img src="assets/images/mobile-bottom-logo.svg" class="img-fluid w-full" alt="mobile menu">
+                    </div>
+                </div>
+
+
             </div>
+
+            <!-- PANEL 2: Services -->
+            <div id="mm-services" class="mm-panel mm-services">
+                <div class="mm-services-header">
+                    <button id="mm-back" class="mm-back-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        BACK
+                    </button>
+                    <button id="mm-services-close" class="mm-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                                fill="white" />
+                        </svg>
+
+                    </button>
+                </div>
+
+                <div>
+                    <div class="mm-services-title">Services</div>
+
+                    <!-- 2×3 grid -->
+                    <div class="mm-services-grid">
+                        <!-- Mobile App Design -->
+                        <a href="/mobile-app-design.html" class="mm-service-card">
+                            <span class="card-icon">
+                                <img src="assets/images/dropdownicon1.svg" class="img-fluid" alt="dropdown-icon">
+                            </span>
+                            <span class="card-label">MOBILE APP DESIGN</span>
+                        </a>
+                        <!-- Dashboard Design -->
+                        <a href="/dashboard-design.html" class="mm-service-card">
+                            <span class="card-icon">
+                                <img src="assets/images/dropdownicon2.svg" class="img-fluid" alt="dropdown-icon">
+                            </span>
+                            <span class="card-label">DASHBOARD DESIGN</span>
+                        </a>
+                        <!-- Website Design -->
+                        <a href="/website-design.html" class="mm-service-card">
+                            <span class="card-icon">
+                                <img src="assets/images/dropdownicon3.svg" class="img-fluid" alt="dropdown-icon">
+                            </span>
+                            <span class="card-label">WEBSITE DESIGN</span>
+                        </a>
+                        <!-- Web App Design -->
+                        <a href="/web-application-design.html" class="mm-service-card">
+                            <span class="card-icon">
+                                <img src="assets/images/dropdownicon4.svg" class="img-fluid" alt="dropdown-icon">
+                            </span>
+                            <span class="card-label">WEB APP DESIGN</span>
+                        </a>
+                        <!-- SaaS Design -->
+                        <a href="/saas-design.html" class="mm-service-card">
+                            <span class="card-icon">
+                                <img src="assets/images/dropdownicon5.svg" class="img-fluid" alt="dropdown-icon">
+                            </span>
+                            <span class="card-label">SAAS DESIGN</span>
+                        </a>
+                        <!-- Branding -->
+                        <a href="/branding-design.html" class="mm-service-card">
+                            <span class="card-icon">
+                                <img src="assets/images/dropdownicon6.svg" class="img-fluid" alt="dropdown-icon">
+                            </span>
+                            <span class="card-label">BRANDING</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- decorative bottom grid -->
+                <div>
+                    <div>
+                        <div class="w-full flex justify-end">
+                            <img src="assets/images/menu-mobile-shape.svg" class="img-fluid sm:w-auto w-[190px]"
+                                alt="mobile menu">
+                        </div>
+                        <img src="assets/images/mobile-bottom-logo.svg" class="img-fluid w-full" alt="mobile menu">
+                    </div>
+                </div>
+            </div>
+
         </div>
+        <!-- end mobile-menu-wrapper -->
     </nav>
+
+    <!-- FULL PAGE MENU -->
+<div id="pixxen-menu" role="dialog" aria-modal="true" aria-label="Main navigation">
+
+  <!-- TOP PANEL: slides in from top -->
+  <div class="menu-top" id="menu-top">
+
+    <!-- Grid decoration top-left -->
+    <div class="deco-cross" style="top:0px; left:0px;">
+      <img src="assets/images/large-menu-top.svg" class="img-fluid" alt="">
+    </div>
+
+    <!-- Grid decoration top-right area -->
+    <div class="deco-cross" style="bottom:0px; right:0px;">
+      <img src="assets/images/large-menu-bottom.svg" class="img-fluid" alt="">
+    </div>
+
+    <!-- LET'S CONNECT -->
+  
+      <a href="/contact.html"
+                        class="xl:px-12 connect-btn md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-green1 text-green5 transition-colors font-bold">
+                        <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up text-base  font-medium text-green4 uppercase">Let’s Connect</span>
+                            <span class="t-down text-base  font-medium text-green4 uppercase">Let’s Connect</span>
+                        </div>
+                    </a>
+
+    <!-- CLOSE BUTTON -->
+    <div class="close-wrap">
+      <button class="close-btn" id="menu-close" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- NAV LINKS -->
+    <nav class="nav-columns" id="nav-columns">
+
+      <div class="nav-col" id="col-services">
+        <div class="nav-col-title">Services</div>
+        <ul>
+          <li><a href="/mobile-app-design.html">Mobile App Design</a></li>
+          <li><a href="/dashboard-design.html">Dashboard Design</a></li>
+          <li><a href="/website-design.html">Website Design</a></li>
+          <li><a href="/web-application-design.html">Web App Design</a></li>
+          <li><a href="/saas-design.html">SaaS Design</a></li>
+          <li><a href="/branding-design.html">Branding</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-col" id="col-pixxen">
+        <div class="nav-col-title">Pixxen</div>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/case-study.html">Case Studies</a></li>
+          <li><a href="/team.html">Team</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-col" id="col-resources">
+        <div class="nav-col-title">Resources</div>
+        <ul>
+          <li><a href="/career.html">Career</a></li>
+          <li><a href="/blog.html">Blogs</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-col" id="col-legal">
+        <div class="nav-col-title">Legal</div>
+        <ul>
+          <li><a href="/terms.html">Terms</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+
+    </nav>
+
+  </div><!-- /menu-top -->
+
+
+  <!-- BOTTOM PANEL: slides in from bottom (logo bar) -->
+  <div class="menu-bottom" id="menu-bottom">
+
+  
+    <!-- LOGO -->
+    <div class="bottom-logo" id="bottom-logo">
+     
+        <img src="assets/images/largemenu-pixxen-logo.svg" class="img-fluid" alt="largemenu">
+    </div>
+
+  </div><!-- /menu-bottom -->
+
+</div>
+<!-- / FULL PAGE MENU -->
 
 
     <!-- banner section start -->
     <section class="banner-wrapper bg-black min-h-screen font-farro relative pt-12">
         <!-- 3D Shape with mouse effect -->
-        <img src="assets/images/3dshape.png" class="shape-3d img-fluid absolute bottom-0 left-1/2 z-10 -translate-x-1/2"
-            alt="">
-        <div class="banner-line-shape hidden md:block  absolute bottom-0 left-0 z-30">
+        <img src="assets/images/3dshape.png"
+            class="shape-3d img-fluid absolute bottom-0 left-1/2 z-40 -translate-x-1/2 " alt="">
+        <div class="banner-line-shape hidden md:block  absolute bottom-0 left-0 z-10">
             <svg width="500" height="484" viewBox="0 0 500 484" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="94" width="232" height="2" fill="white" />
                 <rect y="192" width="330" height="2" fill="white" />
@@ -162,7 +452,7 @@
             </svg>
         </div>
 
-     
+
         <div class="banner"></div>
 
         <div class="banner-content-wrapper">
@@ -182,25 +472,35 @@
                             Pixxen is built by expert designers, product thinkers, and creative technologists who
                             believe every pixel has a purpose.</p>
                         <div class="flex justify-center text-center mt-8">
-                           <button class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
-                       
-                        <div class="btn-inner relative z-2 flex items-center gap-3">
-                            <div class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
-                                <div class="icon-slider flex flex-row ">
-                                    <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                        <path d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z" fill="var(--color-green1)"></path>
-                                    </svg>
-                                    <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
-                                        <path d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z" fill="var(--color-green1)"></path>
-                                    </svg>
+                            <button
+                                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
+
+                                <div class="btn-inner relative z-2 flex items-center gap-3">
+                                    <div
+                                        class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                        <div class="icon-slider flex flex-row ">
+                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                    fill="var(--color-green1)"></path>
+                                            </svg>
+                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                    fill="var(--color-green1)"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="text-mask lg:h-7.5 md:h-6.5 h-6 overflow-hidden flex flex-col">
+                                        <span
+                                            class="t-up xl:text-[20px] lg:text-[18px] text-base  font-medium text-green4 uppercase">Our
+                                            services</span>
+                                        <span
+                                            class="t-down xl:text-[20px] lg:text-[18px] text-base  font-medium text-green4 uppercase">Our
+                                            services</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="text-mask lg:h-7.5 md:h-6.5 h-6 overflow-hidden flex flex-col">
-                                <span class="t-up xl:text-[20px] lg:text-[18px] text-base  font-medium text-green4 uppercase">Our services</span>
-                                <span class="t-down xl:text-[20px] lg:text-[18px] text-base  font-medium text-green4 uppercase">Our services</span>
-                            </div>
-                        </div>
-                    </button>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -233,10 +533,10 @@
             </svg>
         </div>
         <div class="container">
-            <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-12 mb-8">Pixxen Services
+            <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-12 mb-8 font-medium">Pixxen Services
             </h2>
             <div class="flex flex-wrap service-wrap md:gap-5 gap-3 lg:gap-8 items-stretch justify-center">
-                <a href="#"
+                <a href="/mobile-app-design.html"
                     class="service-item lg:px-8 lg:pt-8 sm:px-5 sm:pb-4 sm:pt-5 px-4 pt-4 flex flex-col justify-between gap-6 sm:gap-10 overflow-hidden moredetails">
                     <div>
                         <img src="assets/images/pixxenservice1.svg" class="img-fluid md:max-w-24 max-w-16"
@@ -249,18 +549,21 @@
                         <p class="sm:text-base text-[14px] text-[#A7BDB5]">Crafting brands that connect emotionally.</p>
 
                     </div>
-                 
-                              <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
+
+                    <div
+                        class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
                         <img src="assets/images/service-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
-                       
-                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up md:text-[18px] text-base  font-medium text-dark-shade5 uppercase">View details</span>
-                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View details</span>
+
+                        <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View
+                                details</span>
                         </div>
                     </div>
 
                 </a>
-                <a href="#"
+                <a href="/dashboard-design.html"
                     class="service-item lg:px-8 lg:pt-8 sm:px-5 sm:pb-4 sm:pt-5 px-4 pt-4 flex flex-col justify-between gap-6 sm:gap-10 overflow-hidden moredetails">
                     <div>
                         <img src="assets/images/dashboarddesign.svg" class="img-fluid md:max-w-24 max-w-16"
@@ -273,17 +576,20 @@
                         <p class="sm:text-base text-[14px] text-[#A7BDB5]">Crafting brands that connect emotionally.</p>
 
                     </div>
-                           <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
+                    <div
+                        class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
                         <img src="assets/images/service-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
-                       
-                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up md:text-[18px] text-base  font-medium text-dark-shade5 uppercase">View details</span>
-                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View details</span>
+
+                        <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View
+                                details</span>
                         </div>
                     </div>
 
                 </a>
-                <a href="#"
+                <a href="/website-design.html"
                     class="service-item lg:px-8 lg:pt-8 sm:px-5 sm:pb-4 sm:pt-5 px-4 pt-4 flex flex-col justify-between gap-6 sm:gap-10 overflow-hidden moredetails">
                     <div>
                         <img src="assets/images/pixxenservice3.svg" class="img-fluid md:max-w-24 max-w-16"
@@ -296,17 +602,20 @@
                         <p class="sm:text-base text-[14px] text-[#A7BDB5]">Crafting brands that connect emotionally.</p>
 
                     </div>
-                         <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
+                    <div
+                        class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
                         <img src="assets/images/service-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
-                       
-                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up md:text-[18px] text-base  font-medium text-dark-shade5 uppercase">View details</span>
-                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View details</span>
+
+                        <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View
+                                details</span>
                         </div>
                     </div>
 
                 </a>
-                <a href="#"
+                <a href="/web-application-design.html"
                     class="service-item lg:px-8 lg:pt-8 sm:px-5 sm:pb-4 sm:pt-5 px-4 pt-4 flex flex-col justify-between gap-6 sm:gap-10 overflow-hidden moredetails">
                     <div>
                         <img src="assets/images/pixxenservice4.svg" class="img-fluid md:max-w-24 max-w-16"
@@ -319,17 +628,20 @@
                         <p class="sm:text-base text-[14px] text-[#A7BDB5]">Crafting brands that connect emotionally.</p>
 
                     </div>
-                        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
+                    <div
+                        class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
                         <img src="assets/images/service-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
-                       
-                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up md:text-[18px] text-base  font-medium text-dark-shade5 uppercase">View details</span>
-                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View details</span>
+
+                        <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View
+                                details</span>
                         </div>
                     </div>
 
                 </a>
-                <a href="#"
+                <a href="/saas-design.html"
                     class="service-item lg:px-8 lg:pt-8 sm:px-5 sm:pb-4 sm:pt-5 px-4 pt-4 flex flex-col justify-between gap-6 sm:gap-10 overflow-hidden moredetails">
                     <div>
                         <img src="assets/images/pixxenservice5.svg" class="img-fluid md:max-w-24 max-w-16"
@@ -342,17 +654,20 @@
                         <p class="sm:text-base text-[14px] text-[#A7BDB5]">Crafting brands that connect emotionally.</p>
 
                     </div>
-                         <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
+                    <div
+                        class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
                         <img src="assets/images/service-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
-                       
-                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up md:text-[18px] text-base  font-medium text-dark-shade5 uppercase">View details</span>
-                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View details</span>
+
+                        <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View
+                                details</span>
                         </div>
                     </div>
 
                 </a>
-                <a href="#"
+                <a href="/branding-design.html"
                     class="service-item lg:px-8 lg:pt-8 sm:px-5 sm:pb-4 sm:pt-5 px-4 pt-4 flex flex-col justify-between gap-6 sm:gap-10 overflow-hidden moredetails">
                     <div>
                         <img src="assets/images/pixxenservice6.svg" class="img-fluid md:max-w-24 max-w-16"
@@ -365,12 +680,15 @@
                         <p class="sm:text-base text-[14px] text-[#A7BDB5]">Crafting brands that connect emotionally.</p>
 
                     </div>
-                     <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
+                    <div
+                        class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
                         <img src="assets/images/service-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
-                       
-                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up md:text-[18px] text-base  font-medium text-dark-shade5 uppercase">View details</span>
-                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View details</span>
+
+                        <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View
+                                details</span>
                         </div>
                     </div>
 
@@ -387,7 +705,7 @@
     <!-- video testimonial section start -->
     <section class="video-testimonails bg-green5 py-12 sm:py-15 lg:py-24 relative">
         <div class="">
-            <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-12 mb-8">Success stories
+            <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-12 mb-8 font-medium">Success stories
             </h2>
 
             <div class="video-testimonial-wrapper">
@@ -428,10 +746,12 @@
                                             <div class="company-logo ">
                                                 <img src="assets/images/pixxen-logo.svg" class="img-fluid" alt="">
                                             </div>
-                                            <p class="text-white sm:text-[14px] text-[10px]">Pixxen’s design process transformed our
+                                            <p class="text-white sm:text-[14px] text-[10px]">Pixxen’s design process
+                                                transformed our
                                                 digital product. We saw user engagement jump by 45%.</p>
                                             <div class="flex flex-col gap-1">
-                                                <h4 class="text-sm sm:text-base font-medium text-white">Mustafizur Rahman</h4>
+                                                <h4 class="text-sm sm:text-base font-medium text-white">Mustafizur
+                                                    Rahman</h4>
                                                 <p class="text-[#8D9C96] text-[10px] sm:text-[12px]">Founder & CEO</p>
                                             </div>
                                         </div>
@@ -473,10 +793,12 @@
                                             <div class="company-logo ">
                                                 <img src="assets/images/pixxen-logo.svg" class="img-fluid" alt="">
                                             </div>
-                                            <p class="text-white sm:text-[14px] text-[10px]">Pixxen’s design process transformed our
+                                            <p class="text-white sm:text-[14px] text-[10px]">Pixxen’s design process
+                                                transformed our
                                                 digital product. We saw user engagement jump by 45%.</p>
                                             <div class="flex flex-col gap-1">
-                                                <h4 class="text-sm sm:text-base font-medium text-white">Mustafizur Rahman</h4>
+                                                <h4 class="text-sm sm:text-base font-medium text-white">Mustafizur
+                                                    Rahman</h4>
                                                 <p class="text-[#8D9C96] text-[10px] sm:text-[12px]">Founder & CEO</p>
                                             </div>
                                         </div>
@@ -518,10 +840,12 @@
                                             <div class="company-logo ">
                                                 <img src="assets/images/pixxen-logo.svg" class="img-fluid" alt="">
                                             </div>
-                                            <p class="text-white sm:text-[14px] text-[10px]">Pixxen’s design process transformed our
+                                            <p class="text-white sm:text-[14px] text-[10px]">Pixxen’s design process
+                                                transformed our
                                                 digital product. We saw user engagement jump by 45%.</p>
                                             <div class="flex flex-col gap-1">
-                                                <h4 class="text-sm sm:text-base font-medium text-white">Mustafizur Rahman</h4>
+                                                <h4 class="text-sm sm:text-base font-medium text-white">Mustafizur
+                                                    Rahman</h4>
                                                 <p class="text-[#8D9C96] text-[10px] sm:text-[12px]">Founder & CEO</p>
                                             </div>
                                         </div>
@@ -563,10 +887,12 @@
                                             <div class="company-logo ">
                                                 <img src="assets/images/pixxen-logo.svg" class="img-fluid" alt="">
                                             </div>
-                                            <p class="text-white sm:text-[14px] text-[10px]">Pixxen’s design process transformed our
+                                            <p class="text-white sm:text-[14px] text-[10px]">Pixxen’s design process
+                                                transformed our
                                                 digital product. We saw user engagement jump by 45%.</p>
                                             <div class="flex flex-col gap-1">
-                                                <h4 class="text-sm sm:text-base font-medium text-white">Mustafizur Rahman</h4>
+                                                <h4 class="text-sm sm:text-base font-medium text-white">Mustafizur
+                                                    Rahman</h4>
                                                 <p class="text-[#8D9C96] text-[10px] sm:text-[12px]">Founder & CEO</p>
                                             </div>
                                         </div>
@@ -608,10 +934,12 @@
                                             <div class="company-logo ">
                                                 <img src="assets/images/pixxen-logo.svg" class="img-fluid" alt="">
                                             </div>
-                                            <p class="text-white sm:text-[14px] text-[10px]">Pixxen’s design process transformed our
+                                            <p class="text-white sm:text-[14px] text-[10px]">Pixxen’s design process
+                                                transformed our
                                                 digital product. We saw user engagement jump by 45%.</p>
                                             <div class="flex flex-col gap-1">
-                                                <h4 class="text-sm sm:text-base font-medium text-white">Mustafizur Rahman</h4>
+                                                <h4 class="text-sm sm:text-base font-medium text-white">Mustafizur
+                                                    Rahman</h4>
                                                 <p class="text-[#8D9C96] text-[10px] sm:text-[12px]">Founder & CEO</p>
                                             </div>
                                         </div>
@@ -653,10 +981,12 @@
                                             <div class="company-logo ">
                                                 <img src="assets/images/pixxen-logo.svg" class="img-fluid" alt="">
                                             </div>
-                                            <p class="text-white sm:text-[14px] text-[10px]">Pixxen’s design process transformed our
+                                            <p class="text-white sm:text-[14px] text-[10px]">Pixxen’s design process
+                                                transformed our
                                                 digital product. We saw user engagement jump by 45%.</p>
                                             <div class="flex flex-col gap-1">
-                                                <h4 class="text-sm sm:text-base font-medium text-white">Mustafizur Rahman</h4>
+                                                <h4 class="text-sm sm:text-base font-medium text-white">Mustafizur
+                                                    Rahman</h4>
                                                 <p class="text-[#8D9C96] text-[10px] sm:text-[12px]">Founder & CEO</p>
                                             </div>
                                         </div>
@@ -678,7 +1008,7 @@
 
     <!-- Sticky Portfolio Section (Webflow Style) -->
     <section class="steps-section relative section-padding" id="portfolioSection">
-        
+
         <div class="common-line-shape-animation absolute bottom-0 left-0 z-30 block lg:hidden">
             <img src="assets/images/workshape.svg" class="img-fluid " alt="works shape">
         </div>
@@ -686,19 +1016,20 @@
 
             <!-- Left Side - Sticky Content -->
             <div class="steps-left">
-               
+
                 <div class="left-content">
-                     <img src="assets/images/workshape.svg" class="img-fluid absolute -left-56 -bottom-24 z-10 hidden lg:block "
-            alt="works shape">
-                    <h2 class="text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-5 leading120">
+                    <img src="assets/images/workshape.svg"
+                        class="img-fluid absolute -left-56 -bottom-24 z-10 hidden lg:block " alt="works shape">
+                    <h2
+                        class="text-start lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-5 leading120">
                         Our works
                     </h2>
                     <p class="text-base lg:text-lg text-[#A7BDB5] mb-9 lg:mb-12">
                         Pixxen is built by expert designers, product thinkers, and creative technologists who believe
                         every pixel has a purpose.
                     </p>
-                    <button
-                        class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
+                    <a href="/case-study.html"
+                        class="mega-reveal-btn relative inline-block overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
                         <span class="bg-overlay absolute inset-0 z-1"></span>
                         <div class="btn-inner relative z-2 flex items-center gap-3">
                             <div
@@ -726,7 +1057,7 @@
                                     more works</span>
                             </div>
                         </div>
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -1022,8 +1353,8 @@
                     </div>
                 </a>
 
-            
-             
+
+
 
             </div>
 
@@ -1096,7 +1427,8 @@
                                 32%</p>
                             <p class="text-white lg:text-[15px] text-[14px] font-medium">Conversion </p>
                         </div>
-                        <div class="bg-green5 md:p-6 xl:p-4 p-3 border-dark-shade3 border rounded-3xl work-box-info relative flex items-center justify-center">
+                        <div
+                            class="bg-green5 md:p-6 xl:p-4 p-3 border-dark-shade3 border rounded-3xl work-box-info relative flex items-center justify-center">
                             <img src="assets/images/view-details-shape.svg" class="img-fluid absolute top-0 left-0"
                                 alt="">
                             <img src="assets/images/viewdetails-portfolio-arrow.png" class="img-fluid"
@@ -1128,7 +1460,8 @@
                                 32%</p>
                             <p class="text-white lg:text-[15px] text-[14px] font-medium">Conversion </p>
                         </div>
-                        <div class="bg-green5 md:p-6 xl:p-4 p-3 border-dark-shade3 border rounded-3xl work-box-info relative flex items-center justify-center">
+                        <div
+                            class="bg-green5 md:p-6 xl:p-4 p-3 border-dark-shade3 border rounded-3xl work-box-info relative flex items-center justify-center">
                             <img src="assets/images/view-details-shape.svg" class="img-fluid absolute top-0 left-0"
                                 alt="">
                             <img src="assets/images/viewdetails-portfolio-arrow.png" class="img-fluid"
@@ -1279,8 +1612,7 @@
                 <div
                     class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
                     <div class="icon-box rounded-lg text-white">
-                        <img src="assets/images/counter1.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
-                            alt="counter">
+                        <img src="assets/images/counter1.svg" class="img-fluid lg:w-16 md:w-12.5 w-8" alt="counter">
                     </div>
                     <div>
                         <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span
@@ -1294,8 +1626,7 @@
                 <div
                     class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
                     <div class="icon-box rounded-lg text-white">
-                        <img src="assets/images/counter2.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
-                            alt="counter">
+                        <img src="assets/images/counter2.svg" class="img-fluid lg:w-16 md:w-12.5 w-8" alt="counter">
                     </div>
                     <div>
                         <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span
@@ -1308,8 +1639,7 @@
                 <div
                     class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
                     <div class="icon-box rounded-lg text-white">
-                        <img src="assets/images/counter3.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
-                            alt="counter">
+                        <img src="assets/images/counter3.svg" class="img-fluid lg:w-16 md:w-12.5 w-8" alt="counter">
                     </div>
                     <div>
                         <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span
@@ -1322,8 +1652,7 @@
                 <div
                     class="counter-card lg:p-8 md:p-6 p-4 rounded-3xl flex flex-col items-start md:gap-4 gap-3 bg-green5">
                     <div class="icon-box rounded-lg text-white">
-                        <img src="assets/images/counter4.svg" class="img-fluid lg:w-16 md:w-12.5 w-8"
-                            alt="counter">
+                        <img src="assets/images/counter4.svg" class="img-fluid lg:w-16 md:w-12.5 w-8" alt="counter">
                     </div>
                     <div>
                         <h2 class="lg:text-[64px] md:text-[42px] text-[32px] font-medium text-white"><span
@@ -1349,12 +1678,17 @@
                     <img src="assets/images/pixxenteampicture.webp" class="img-fluid" alt="team energy">
                 </div>
                 <div>
-                    <h2 class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-1.5 leading120"> We design with empathy & energy </h2>
-                    <p class="sm:text-start text-center text-[#A7BDB5] md:text-[18px] sm:text-base text-[14px] leading-[140%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
-                        Pixxen is built by expert designers, product thinkers, and creative technologists who believe every pixel has a purpose.</p>
+                    <h2
+                        class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-1.5 leading120">
+                        We design with empathy & energy </h2>
+                    <p
+                        class="sm:text-start text-center text-[#A7BDB5] md:text-[18px] sm:text-base text-[14px] leading-[140%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
+                        Pixxen is built by expert designers, product thinkers, and creative technologists who believe
+                        every pixel has a purpose.</p>
 
                     <div class="flex sm:justify-start justify-center w-full">
-                        <button class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
+                        <a href="/contact.html"
+                            class="mega-reveal-btn relative inline-block overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
                             <span class="bg-overlay absolute inset-0 z-1"></span>
                             <div class="btn-inner relative z-2 flex items-center gap-3">
                                 <div
@@ -1373,11 +1707,14 @@
                                     </div>
                                 </div>
                                 <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
-                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s Connect</span>
-                                    <span class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s Connect</span>
+                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
+                                        Connect</span>
+                                    <span
+                                        class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
+                                        Connect</span>
                                 </div>
                             </div>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1492,7 +1829,8 @@
     <section class="tools-technology section-padding relative bg-green5 overflow-hidden">
         <div class="container">
             <div class="toolswrap relative z-10">
-                <h2 class="lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white mb-6 leading120 text-center md:mb-12">
+                <h2
+                    class="lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white mb-6 leading120 text-center md:mb-12">
                     Tools & technology
                 </h2>
                 <div class="max-w-212 w-full mx-auto">
@@ -1539,7 +1877,8 @@
     <!-- client review section start -->
     <section class="section-padding client-review bg-green5">
         <div class="container">
-            <h2 class="lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white mb-6 leading120 text-center md:mb-12">
+            <h2
+                class="lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white mb-6 leading120 text-center md:mb-12">
                 Client reviews
             </h2>
 
@@ -1557,7 +1896,8 @@
                                         <img src="assets/images/reviewimg1.png" class="img-fluid shrink-0 rounded-xl"
                                             alt="">
                                         <div>
-                                            <p class="text-white sm:text-base text-sm font-medium mb-1.5 leading120">Mustafizur
+                                            <p class="text-white sm:text-base text-sm font-medium mb-1.5 leading120">
+                                                Mustafizur
                                                 Rahman</p>
                                             <p class="text-[#759187] md:text-sm text-[10px] leading150">Sarah Lin,
                                                 Product Manager at Lumina</p>
@@ -1589,7 +1929,8 @@
                                         <img src="assets/images/reviewimg1.png" class="img-fluid shrink-0 rounded-xl"
                                             alt="">
                                         <div>
-                                            <p class="text-white sm:text-base text-sm font-medium mb-1.5 leading120">Mustafizur
+                                            <p class="text-white sm:text-base text-sm font-medium mb-1.5 leading120">
+                                                Mustafizur
                                                 Rahman</p>
                                             <p class="text-[#759187] md:text-sm text-[10px] leading150">Sarah Lin,
                                                 Product Manager at Lumina</p>
@@ -1621,7 +1962,8 @@
                                         <img src="assets/images/reviewimg1.png" class="img-fluid shrink-0 rounded-xl"
                                             alt="">
                                         <div>
-                                            <p class="text-white sm:text-base text-sm font-medium mb-1.5 leading120">Mustafizur
+                                            <p class="text-white sm:text-base text-sm font-medium mb-1.5 leading120">
+                                                Mustafizur
                                                 Rahman</p>
                                             <p class="text-[#759187] md:text-sm text-[10px] leading150">Sarah Lin,
                                                 Product Manager at Lumina</p>
@@ -1653,7 +1995,8 @@
                                         <img src="assets/images/reviewimg1.png" class="img-fluid shrink-0 rounded-xl"
                                             alt="">
                                         <div>
-                                            <p class="text-white sm:text-base text-sm font-medium mb-1.5 leading120">Mustafizur
+                                            <p class="text-white sm:text-base text-sm font-medium mb-1.5 leading120">
+                                                Mustafizur
                                                 Rahman</p>
                                             <p class="text-[#759187] md:text-sm text-[10px] leading150">Sarah Lin,
                                                 Product Manager at Lumina</p>
@@ -1713,28 +2056,32 @@
     <section class="teamsection relative section-padding bg-green5 overflow-hidden">
         <div class="container">
             <div class="teamwrap relative z-10">
-                <h2 class="lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white mb-6 leading120 text-center md:mb-12">
+                <h2
+                    class="lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white mb-6 leading120 text-center md:mb-12">
                     Pixxen team
                 </h2>
                 <div class="teammembers flex flex-wrap team-wrap md:gap-5 gap-3 lg:gap-8 items-stretch justify-center">
                     <div class="team-member mb-6">
                         <img src="assets/images/team1.webp" class="img-fluid w-full" alt="">
                         <div class="md:mt-6 mt-3 md:pl-6 pl-3 border-l border-[#759187] flex flex-col justify-between">
-                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Mohammodullah Siddik</p>
+                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Mohammodullah
+                                Siddik</p>
                             <p class="text-[#759187] md:text-base sm:text-sm text-[12px]">Lead UI/UX Designer</p>
                         </div>
                     </div>
                     <div class="team-member mb-6">
                         <img src="assets/images/team5.webp" class="img-fluid w-full" alt="">
                         <div class="md:mt-6 mt-3 md:pl-6 pl-3 border-l border-[#759187] flex flex-col justify-between">
-                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Md. Abdullah Al Mamun</p>
+                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Md. Abdullah Al
+                                Mamun</p>
                             <p class="text-[#759187] md:text-base sm:text-sm text-[12px]">UI/UX Designer</p>
                         </div>
                     </div>
                     <div class="team-member mb-6">
                         <img src="assets/images/team2.webp" class="img-fluid w-full" alt="">
                         <div class="md:mt-6 mt-3 md:pl-6 pl-3 border-l border-[#759187] flex flex-col justify-between">
-                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Md. Nasimul Huda</p>
+                            <p class="mb-3 text-white text-[20px] sm:text-2xl font-medium leading120">Md. Nasimul Huda
+                            </p>
                             <p class="text-[#759187] md:text-base sm:text-sm text-[12px]">UI/UX Designer</p>
                         </div>
                     </div>
@@ -1863,7 +2210,8 @@
         <div class="container">
             <div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-6">
                 <div>
-                    <h2 class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-1.5 leading120">
+                    <h2
+                        class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-1.5 leading120">
                         Frequently asked questions
                     </h2>
                     <button
@@ -1905,7 +2253,8 @@
                                         class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">How long till I see a
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">How long
+                                        till I see a
                                         prototype?</h3>
                                 </div>
                                 <button
@@ -1937,7 +2286,8 @@
                                         class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Do you work with internal
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Do you
+                                        work with internal
                                         teams?</h3>
                                 </div>
                                 <button
@@ -1968,7 +2318,8 @@
                                         class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Who owns the IP?</h3>
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Who owns
+                                        the IP?</h3>
                                 </div>
                                 <button
                                     class="plus-icon text-white text-3xl font-light w-8 h-8 flex items-center justify-center shrink-0">
@@ -1998,7 +2349,8 @@
                                         class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
                                         <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
                                     </div>
-                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Can we scale the design
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Can we
+                                        scale the design
                                         system later?
                                     </h3>
                                 </div>
@@ -2046,7 +2398,8 @@
                                 <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
                                     <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">More
                                         faq’s</span>
-                                    <span class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">More
+                                    <span
+                                        class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">More
                                         faq’s</span>
                                 </div>
                             </div>
@@ -2069,7 +2422,7 @@
                     class="sm:text-start text-center w-full lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white mb-6 leading120">
                     Latest blogs
                 </h2>
-                <button
+                <a href="/blog.html"
                     class="mega-reveal-btn relative md:block hidden overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
                     <span class="bg-overlay absolute inset-0 z-1"></span>
                     <div class="btn-inner whitespace-nowrap justify-center relative z-2 flex items-center gap-3">
@@ -2089,18 +2442,20 @@
                             </div>
                         </div>
                         <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">View more</span>
-                            <span class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">View more</span>
+                            <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">View
+                                more</span>
+                            <span class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">View
+                                more</span>
                         </div>
                     </div>
-                </button>
+                </a>
             </div>
             <div class="blog-wrap grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-8 gap-6">
-                <a href="#" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem moredetails">
-                    <div> 
+                <a href="/blog-details.html" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem moredetails">
+                    <div>
                         <div class="overflow-hidden rounded-3xl">
-                                    <img src="assets/images/blog1.webp" class="img-fluid w-full" alt="blog">
-                                </div>
+                            <img src="assets/images/blog1.webp" class="img-fluid w-full" alt="blog">
+                        </div>
                         <div class="mt-5 pl-3 lg:pl-6 border-l border-dark-shade3 flex items-start gap-10">
                             <h2 class="lg:text-2xl text-xl font-medium leading120 text-white">2026 website design trends
                                 every
@@ -2111,20 +2466,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="inline-flex items-center sm:gap-2.5 gap-2 sm:pl-6 pl-4 readmore mega-reveal-btn relative overflow-hidden">
+                    <div
+                        class="inline-flex items-center sm:gap-2.5 gap-2 sm:pl-6 pl-4 readmore mega-reveal-btn relative overflow-hidden">
                         <img src="assets/images/readmore-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
-                       
-                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up md:text-[18px] text-base  font-medium text-white uppercase">Read more</span>
-                            <span class="t-down md:text-[18px] text-base  font-medium text-white uppercase">Read more</span>
+
+                        <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-white uppercase">Read
+                                more</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-white uppercase">Read
+                                more</span>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem moredetails">
+                <a href="/blog-details.html" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem moredetails">
                     <div>
                         <div class="overflow-hidden rounded-3xl">
-                                    <img src="assets/images/blog1.webp" class="img-fluid w-full" alt="blog">
-                                </div>
+                            <img src="assets/images/blog1.webp" class="img-fluid w-full" alt="blog">
+                        </div>
                         <div class="mt-5 pl-3 lg:pl-6 border-l border-dark-shade3 flex items-start gap-10">
                             <h2 class="lg:text-2xl text-xl font-medium leading120 text-white">2026 website design trends
                                 every
@@ -2135,20 +2493,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="inline-flex items-center sm:gap-2.5 gap-2 sm:pl-6 pl-4 readmore mega-reveal-btn relative overflow-hidden">
+                    <div
+                        class="inline-flex items-center sm:gap-2.5 gap-2 sm:pl-6 pl-4 readmore mega-reveal-btn relative overflow-hidden">
                         <img src="assets/images/readmore-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
-                       
-                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up md:text-[18px] text-base  font-medium text-white uppercase">Read more</span>
-                            <span class="t-down md:text-[18px] text-base  font-medium text-white uppercase">Read more</span>
+
+                        <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-white uppercase">Read
+                                more</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-white uppercase">Read
+                                more</span>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem moredetails">
+                <a href="/blog-details.html" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem moredetails">
                     <div>
                         <div class="overflow-hidden rounded-3xl">
-                                    <img src="assets/images/blog1.webp" class="img-fluid w-full" alt="blog">
-                                </div>
+                            <img src="assets/images/blog1.webp" class="img-fluid w-full" alt="blog">
+                        </div>
                         <div class="mt-5 pl-3 lg:pl-6 border-l border-dark-shade3 flex items-start gap-10">
                             <h2 class="lg:text-2xl text-xl font-medium leading120 text-white">2026 website design trends
                                 every
@@ -2159,12 +2520,15 @@
                             </div>
                         </div>
                     </div>
-                     <div class="inline-flex items-center sm:gap-2.5 gap-2 sm:pl-6 pl-4 readmore mega-reveal-btn relative overflow-hidden">
+                    <div
+                        class="inline-flex items-center sm:gap-2.5 gap-2 sm:pl-6 pl-4 readmore mega-reveal-btn relative overflow-hidden">
                         <img src="assets/images/readmore-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
-                       
-                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up md:text-[18px] text-base  font-medium text-white uppercase">Read more</span>
-                            <span class="t-down md:text-[18px] text-base  font-medium text-white uppercase">Read more</span>
+
+                        <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-white uppercase">Read
+                                more</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-white uppercase">Read
+                                more</span>
                         </div>
                     </div>
                 </a>
@@ -2231,8 +2595,8 @@
                         every pixel has a purpose.</p>
                     <div class="w-full flex justify-center">
 
-                        <button
-                            class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
+                        <a href="/contact.html"
+                            class="mega-reveal-btn relative inline-block overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
                             <span class="bg-overlay absolute inset-0 z-1"></span>
                             <div class="btn-inner relative z-2 flex items-center gap-3">
                                 <div
@@ -2258,7 +2622,7 @@
                                         Connect</span>
                                 </div>
                             </div>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 </button>
@@ -2272,7 +2636,7 @@
 
     <!-- footer section start -->
     <footer class="relative">
-         <div class="bg-gradient-to-b from-[#002417] to-[#001B11] text-white  border-t border-b border-dark-shade3 ">
+        <div class="bg-gradient-to-b from-[#002417] to-[#001B11] text-white  border-t border-b border-dark-shade3 ">
             <div class="container">
                 <!-- Desktop Grid Layout -->
                 <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
@@ -2284,22 +2648,22 @@
                             <div class="">
                                 <h3 class="text-green2 text-base sm:text-lg font-semibold mb-3 lg:mb-6">Services</h3>
                                 <ul class="space-y-2 lg:space-y-3">
-                                    <li><a href="#"
+                                    <li><a href="/mobile-app-design.html"
                                             class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">MOBILE
                                             APP DESIGN</a></li>
-                                    <li><a href="#"
+                                    <li><a href="/dashboard-design.html"
                                             class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">DASHBOARD
                                             DESIGN</a></li>
-                                    <li><a href="#"
+                                    <li><a href="/website-design.html"
                                             class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">WEBSITE
                                             DESIGN</a></li>
-                                    <li><a href="#"
+                                    <li><a href="/web-application-design.html"
                                             class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">WEB
                                             APP DESIGN</a></li>
-                                    <li><a href="#"
+                                    <li><a href="/saas-design.html"
                                             class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">SAAS
                                             DESIGN</a></li>
-                                    <li><a href="#"
+                                    <li><a href="/branding-design.html"
                                             class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">BRANDING</a>
                                     </li>
                                 </ul>
@@ -2309,16 +2673,16 @@
                             <div class="">
                                 <h3 class="text-green2 text-base sm:text-lg font-semibold mb-3 lg:mb-6">Pixxen</h3>
                                 <ul class="space-y-2 lg:space-y-3">
-                                    <li><a href="#"
+                                    <li><a href="/about.html"
                                             class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">ABOUT</a>
                                     </li>
-                                    <li><a href="#"
+                                    <li><a href="/contact.html"
                                             class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">CONTACT</a>
                                     </li>
-                                    <li><a href="#"
-                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">PRICING</a>
+                                    <li><a href="/career.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">CAREER</a>
                                     </li>
-                                    <li><a href="#"
+                                    <li><a href="/team.html"
                                             class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">TEAM</a>
                                     </li>
                                 </ul>
@@ -2330,10 +2694,10 @@
                             <div class="">
                                 <h3 class="text-green2 text-base sm:text-lg font-semibold mb-3 lg:mb-6">Resources</h3>
                                 <ul class="space-y-2 lg:space-y-3">
-                                    <li><a href="#"
-                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">WORKS</a>
+                                    <li><a href="/case-study.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">CASE STUDIES</a>
                                     </li>
-                                    <li><a href="#"
+                                    <li><a href="/blog.html"
                                             class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">BLOGS</a>
                                     </li>
                                 </ul>
@@ -2343,10 +2707,10 @@
                             <div class="">
                                 <h3 class="text-green2 text-base sm:text-lg font-semibold mb-3 lg:mb-6">Legal</h3>
                                 <ul class="space-y-2 lg:space-y-3">
-                                    <li><a href="#"
+                                    <li><a href="/terms.html"
                                             class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">TERMS</a>
                                     </li>
-                                    <li><a href="#"
+                                    <li><a href="/privacy.html"
                                             class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">PRIVACY</a>
                                     </li>
                                 </ul>
@@ -2387,7 +2751,8 @@
 
                         <!-- Social Icons -->
                         <div class="flex md:justify-start justify-center md:gap-2 gap-1 lg:gap-2">
-                            <a href="#" class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                            <a href="#"
+                                class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -2396,7 +2761,8 @@
                                 </svg>
 
                             </a>
-                            <a href="#" class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                            <a href="#"
+                                class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -2405,7 +2771,8 @@
                                 </svg>
 
                             </a>
-                            <a href="#" class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                            <a href="#"
+                                class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -2415,7 +2782,8 @@
 
 
                             </a>
-                            <a href="#" class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                            <a href="#"
+                                class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
