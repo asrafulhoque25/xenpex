@@ -458,6 +458,10 @@ text-transform: uppercase;
       visibility: visible;
     }
 
+     #mobile-menu-toggle{
+        padding: 9px 16px;
+    background-color: #065136;
+     }
     /* ─── TOP PANEL (menu content) ─── */
     .menu-top {
       flex: 1;

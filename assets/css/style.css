@@ -1237,9 +1237,6 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
-  .py-4\.25 {
-    padding-block: calc(var(--spacing) * 4.25);
-  }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
@@ -3729,6 +3726,10 @@ nav {
 #pixxen-menu.is-open {
   pointer-events: all;
   visibility: visible;
+}
+#mobile-menu-toggle {
+  padding: 9px 16px;
+  background-color: #065136;
 }
 .menu-top {
   flex: 1;
