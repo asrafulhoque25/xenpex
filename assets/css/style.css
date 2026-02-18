@@ -3730,6 +3730,7 @@ nav {
 #mobile-menu-toggle {
   padding: 9px 16px;
   background-color: #065136;
+  cursor: pointer;
 }
 .menu-top {
   flex: 1;

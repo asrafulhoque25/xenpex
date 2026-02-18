@@ -461,6 +461,7 @@ text-transform: uppercase;
      #mobile-menu-toggle{
         padding: 9px 16px;
     background-color: #065136;
+    cursor: pointer;
      }
     /* ─── TOP PANEL (menu content) ─── */
     .menu-top {
