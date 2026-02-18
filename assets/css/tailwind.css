@@ -2661,15 +2661,28 @@ border-radius: 12px;
 }
 
 /* Active item indicator (optional left border) */
-/* .toc-blog-item.active::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 3px;
-    height: 24px;
-    background-color: #10B981;
-    border-radius: 0 2px 2px 0;
-} */
-/* blog details end */
+
+
+
+
+/* smooth scrooll */
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
