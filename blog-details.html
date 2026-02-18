@@ -906,16 +906,26 @@
 
                             <form class="space-y-3">
                                 <input type="email" placeholder="Email address"
-                                    class="w-full bg-dark-shade2 rounded-2xl px-5 py-4 text-white placeholder:text-dark-shade4 focus:outline-none focus:border-green2 transition-colors">
-                                <button type="submit"
-                                    class="w-full bg-green3 hover:bg-green2 text-white font-medium py-4 rounded-2xl transition-colors uppercase">
-                                    Subscribe
-                                </button>
+                                    class="w-full bg-dark-shade2 rounded-xl px-5 py-4 text-white placeholder:text-dark-shade4 focus:outline-none focus:border-green2 transition-colors">
+                             
+                                  <button  type="submit"
+                                class="mega-reveal-btn w-full bg-green3 flex justify-center relative h-13 overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-transparen transition-all duration-200">
+                                <span class="bg-overlay absolute inset-0 z-1"></span>
+                                <div class="btn-inner relative z-2 flex items-center gap-3">
+
+                                    <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                                        <span
+                                            class="t-up md:text-[18px] text-sm font-medium text-white uppercase">Subscribe</span>
+                                        <span
+                                            class="t-down md:text-[18px] text-sm font-medium text-white uppercase">Subscribe</span>
+                                    </div>
+                                </div>
+                            </button>
                             </form>
 
                             <p class="text-dark-shade4 text-[12px] mt-4">
                                 By entering your email, you are agreeing to our
-                                <a href="#" class="underline hover:text-dark-shade5 transition-colors">privacy
+                                <a href="privacy.html" class="underline hover:text-dark-shade5 transition-colors">privacy
                                     policy</a>.
                             </p>
                         </div>
@@ -946,8 +956,8 @@
                             </p>
 
                             <div class="flex items-end justify-between">
-                                <button
-                                    class="w-16 h-16 bg-green1 rounded-full flex items-center justify-center hover:bg-green2 transition-colors group">
+                                <a href="contact.html"
+                                    class="w-13 h-13 cursor-pointer bg-green1 rounded-full flex items-center justify-center hover:bg-green2 transition-colors group">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -955,7 +965,7 @@
                                             fill="#065136" />
                                     </svg>
 
-                                </button>
+                                </a>
 
 
                             </div>
