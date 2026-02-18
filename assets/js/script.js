@@ -1488,7 +1488,32 @@ if (document.readyState === 'loading') {
 
 
 
+// play video on scroll
 
+const plySection = document.querySelector('section.plyvideo');
+
+if (plySection) {
+    const plyVideo = plySection.querySelector('video');
+
+    if (plyVideo) {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        plyVideo.currentTime = 0; // প্রতিবার শুরু থেকে play হবে
+                        plyVideo.play();
+                    } else {
+                        plyVideo.pause();
+                        plyVideo.currentTime = 0; // section ছাড়লে reset
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        observer.observe(plySection);
+    }
+}
 
 
 
