@@ -3976,6 +3976,9 @@ nav {
   transform: translateY(-100%);
 }
 @media (max-width:640px) {
+  .mobile-letconnect.mega-reveal-btn {
+    height: 48px !important;
+  }
   .mega-reveal-btn {
     height: 52px;
   }

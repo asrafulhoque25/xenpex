@@ -756,6 +756,9 @@ line-height: 120%; /* 24px */
 }
 
 @media (max-width:640px) {
+    .mobile-letconnect.mega-reveal-btn{
+        height: 48px !important;
+    }
     .mega-reveal-btn{
         height: 52px;
     }
