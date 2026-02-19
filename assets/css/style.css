@@ -5447,6 +5447,20 @@ nav {
 .toc-blog-item:hover .header-highlight {
   color: #D1D5DB;
 }
+.tools-bg-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background-image: url('../images/alltools.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(20px);
+  transform: scale(1.1);
+  transition: none;
+}
 html.lenis, html.lenis body {
   height: auto;
 }

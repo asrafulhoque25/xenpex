@@ -841,46 +841,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
 // ============================================
 // TOOLS BACKGROUND IMAGE TRANSITION
 // ============================================
-if (typeof gsap !== 'undefined' && gsap.registerPlugin) {
-    gsap.registerPlugin(ScrollTrigger);
-}
-
-function applyBackgroundImageTransition(sectionSelector, imageUrl) {
+function applyBackgroundImageTransition(sectionSelector) {
     const section = document.querySelector(sectionSelector);
-    
-    if (!section || typeof gsap === 'undefined') return;
-    
-    const imageOverlay = document.createElement('div');
-    imageOverlay.style.cssText = `
-        position: absolute;
-        inset: 0;
-        opacity: 0;
-        background-image: url(${imageUrl});
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
-        pointer-events: none;
-        z-index: 0;
-        filter: blur(20px);
-        transform: scale(1.1);
-    `;
-    
-    section.insertBefore(imageOverlay, section.firstChild);
-    
+    const imageOverlay = section ? section.querySelector('.tools-bg-overlay') : null;
+   
+    if (!section || !imageOverlay || typeof gsap === 'undefined') return;
+   
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: sectionSelector,
-            start: 'bottom 95%', 
+            start: 'bottom 95%',
             end: 'bottom 88%',  
             scrub: 2,
-            markers: false 
+            markers: false
         }
     });
-    
+   
     tl.to(imageOverlay, {
         opacity: 1,
         filter: 'blur(0px)',
@@ -888,7 +867,7 @@ function applyBackgroundImageTransition(sectionSelector, imageUrl) {
         duration: 1,
         ease: 'power2.inOut'
     });
-    
+   
     const contentWrapper = section.querySelector('.toolswrap');
     if (contentWrapper) {
         gsap.from(contentWrapper, {
@@ -905,9 +884,8 @@ function applyBackgroundImageTransition(sectionSelector, imageUrl) {
         });
     }
 }
-
-applyBackgroundImageTransition('.tools-technology', 'assets/images/alltools.webp');
-
+ 
+applyBackgroundImageTransition('.tools-technology');
 
 // video section in team page
 

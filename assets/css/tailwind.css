@@ -2671,8 +2671,22 @@ border-radius: 12px;
 /* Active item indicator (optional left border) */
 
 
+/* tools and technology */
 
-
+.tools-bg-overlay {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background-image: url('../images/alltools.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(20px);
+    transform: scale(1.1);
+    transition: none; 
+}
 
 
 /* smooth scrooll */
