@@ -1500,11 +1500,11 @@ if (plySection) {
             (entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        plyVideo.currentTime = 0; // প্রতিবার শুরু থেকে play হবে
+                        plyVideo.currentTime = 0; 
                         plyVideo.play();
                     } else {
                         plyVideo.pause();
-                        plyVideo.currentTime = 0; // section ছাড়লে reset
+                        plyVideo.currentTime = 0; 
                     }
                 });
             },
@@ -1514,6 +1514,11 @@ if (plySection) {
         observer.observe(plySection);
     }
 }
+
+
+
+
+
 
 
 
@@ -1538,3 +1543,6 @@ gsap.ticker.add((time) => {
 });
 
 gsap.ticker.lagSmoothing(0);
+
+
+
