@@ -1522,6 +1522,236 @@ if (plySection) {
 
 
 
+// banner main and h1 ,h2 and h3 animaiton reveal 
+
+(function () {
+  "use strict";
+
+  function wrapWords(el) {
+    function walk(node) {
+      if (node.nodeType === Node.TEXT_NODE) {
+        const parts = node.textContent.split(/(\s+)/);
+        const frag = document.createDocumentFragment();
+        parts.forEach((part) => {
+          if (/^\s+$/.test(part)) {
+            frag.appendChild(document.createTextNode(part));
+          } else if (part) {
+            const outer = document.createElement("span");
+            outer.className = "gr-word-outer";
+            outer.style.cssText = "display:inline-block;overflow:hidden;vertical-align:bottom;";
+            const inner = document.createElement("span");
+            inner.className = "gr-word-inner";
+            inner.style.cssText = "display:inline-block;";
+            inner.textContent = part;
+            outer.appendChild(inner);
+            frag.appendChild(outer);
+          }
+        });
+        node.parentNode.replaceChild(frag, node);
+      } else if (node.nodeType === Node.ELEMENT_NODE && node.nodeName !== "BR") {
+        Array.from(node.childNodes).forEach(walk);
+      }
+    }
+    Array.from(el.childNodes).forEach(walk);
+  }
+
+  /* ════════════════════════════════════════════════
+     Single heading animate — reusable
+     tl = existing timeline (for h1)
+     OR null = creates its own ScrollTrigger (for h2)
+  ════════════════════════════════════════════════ */
+  function animateHeading(heading, tl, delay) {
+    const hasSplit = typeof SplitText !== "undefined";
+
+    if (tl) {
+      // ── H1: plugged into master timeline ──────
+      if (hasSplit) {
+        const split = new SplitText(heading, { type: "words" });
+        split.words.forEach((w) => {
+          const outer = document.createElement("span");
+          outer.style.cssText = "display:inline-block;overflow:hidden;vertical-align:bottom;";
+          w.parentNode.insertBefore(outer, w);
+          outer.appendChild(w);
+          w.style.display = "inline-block";
+        });
+        gsap.set(split.words, { yPercent: 105, skewY: 3, opacity: 0 });
+        tl.to(split.words, {
+          yPercent: 0, skewY: 0, opacity: 1,
+          duration: 1.0,
+          stagger: { each: 0.07, ease: "power2.inOut" },
+          ease: "expo.out",
+          clearProps: "yPercent,skewY,opacity",
+        }, delay);
+      } else {
+        wrapWords(heading);
+        const inners = heading.querySelectorAll(".gr-word-inner");
+        gsap.set(inners, { yPercent: 108, skewY: 3, opacity: 0 });
+        tl.to(inners, {
+          yPercent: 0, skewY: 0, opacity: 1,
+          duration: 1.05,
+          stagger: { each: 0.065, ease: "power2.inOut" },
+          ease: "expo.out",
+          clearProps: "yPercent,skewY,opacity",
+        }, delay);
+      }
+    } else {
+      // ── H2: ScrollTrigger — fires when heading enters viewport ──
+      if (hasSplit) {
+        const split = new SplitText(heading, { type: "words" });
+        split.words.forEach((w) => {
+          const outer = document.createElement("span");
+          outer.style.cssText = "display:inline-block;overflow:hidden;vertical-align:bottom;";
+          w.parentNode.insertBefore(outer, w);
+          outer.appendChild(w);
+          w.style.display = "inline-block";
+        });
+        gsap.set(split.words, { yPercent: 105, skewY: 3, opacity: 0 });
+        gsap.to(split.words, {
+          yPercent: 0, skewY: 0, opacity: 1,
+          duration: 1.0,
+          stagger: { each: 0.07, ease: "power2.inOut" },
+          ease: "expo.out",
+          clearProps: "yPercent,skewY,opacity",
+          scrollTrigger: {
+            trigger: heading,
+            start: "top 85%",  
+            once: true,         
+          },
+        });
+      } else {
+        wrapWords(heading);
+        const inners = heading.querySelectorAll(".gr-word-inner");
+        gsap.set(inners, { yPercent: 108, skewY: 3, opacity: 0 });
+        gsap.to(inners, {
+          yPercent: 0, skewY: 0, opacity: 1,
+          duration: 1.05,
+          stagger: { each: 0.065, ease: "power2.inOut" },
+          ease: "expo.out",
+          clearProps: "yPercent,skewY,opacity",
+          scrollTrigger: {
+            trigger: heading,
+            start: "top 85%",
+            once: true,
+          },
+        });
+      }
+    }
+  }
+
+  /* ════════════════════════════════════════════════
+     Banner init — h1 only (page load)
+  ════════════════════════════════════════════════ */
+  function initBannerReveal(containerSelector) {
+    containerSelector = containerSelector || ".banner-content";
+    const container = document.querySelector(containerSelector);
+    if (!container || typeof gsap === "undefined") return;
+
+    const badge  = container.querySelector(".flex.items-center.justify-center");
+    const h1     = container.querySelector("h1");
+    const divMid = container.querySelector(".max-w-182\\.5");
+    const para   = container.querySelector("p:not(.text-green2)");
+    const btn    = container.querySelector(".mega-reveal-btn");
+
+    const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
+
+    // Top divider
+    if (badge) {
+      gsap.set(badge, { clipPath: "inset(0 100% 0 0)", opacity: 1 });
+      tl.to(badge, { clipPath: "inset(0 0% 0 0)", duration: 0.85, ease: "power3.inOut" }, 0);
+      const badgeChildren = badge.querySelectorAll("span, p");
+      gsap.set(badgeChildren, { opacity: 0, y: -10 });
+      tl.to(badgeChildren, { opacity: 1, y: 0, duration: 0.5, stagger: 0.08, ease: "power2.out" }, 0.6);
+    }
+
+    // H1
+    if (h1) animateHeading(h1, tl, 0.5);
+
+    // Mid divider
+    if (divMid) {
+      gsap.set(divMid, { width: "0%", opacity: 1, clearProps: "transform" });
+      tl.to(divMid, {
+        width: "100%",
+        duration: 1.0,
+        ease: "expo.inOut",
+        onComplete: () => {
+          gsap.set(divMid, { clearProps: "width,transformOrigin,transform,opacity" });
+          divMid.style.width = "";
+        },
+      }, 0.9);
+
+      tl.fromTo(divMid,
+        { boxShadow: "0 0 0px 0px rgba(80,200,130,0)" },
+        {
+          boxShadow: "0 0 16px 4px rgba(80,200,130,0.4)",
+          duration: 0.3,
+          ease: "power2.out",
+          yoyo: true,
+          repeat: 1,
+          onComplete: () => gsap.set(divMid, { clearProps: "boxShadow" }),
+        }, 1.85
+      );
+    }
+
+    // Paragraph
+    if (para) {
+      gsap.set(para, { opacity: 0, y: 28, filter: "blur(6px)" });
+      tl.to(para, {
+        opacity: 1, y: 0, filter: "blur(0px)",
+        duration: 0.95, ease: "power3.out",
+        clearProps: "filter,transform",
+      }, 1.2);
+    }
+
+    // Button
+    if (btn) {
+      gsap.set(btn, { opacity: 0, scale: 0.82, y: 16 });
+      tl.to(btn, {
+        opacity: 1, scale: 1, y: 0,
+        duration: 0.75, ease: "back.out(1.6)",
+        clearProps: "transform",
+      }, 1.5);
+    }
+
+    return tl;
+  }
+
+  /* ════════════════════════════════════════════════
+     H1 and H2 and h3 ScrollTrigger init 
+  ════════════════════════════════════════════════ */
+function initH2Scroll() {
+    if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
+    gsap.registerPlugin(ScrollTrigger);
+
+    const bannerContainer = document.querySelector(".banner-content");
+    document.querySelectorAll("h1, h2, h3").forEach((heading) => {
+      if (bannerContainer && bannerContainer.contains(heading)) return;
+
+      animateHeading(heading, null, 0);
+    });
+  }
+
+  /* ════════════════════════════════════════════════
+     Auto init
+  ════════════════════════════════════════════════ */
+  function ready(fn) {
+    if (document.readyState !== "loading") fn();
+    else document.addEventListener("DOMContentLoaded", fn);
+  }
+
+  ready(() => {
+    initBannerReveal(".banner-content");
+    initH2Scroll();
+  });
+
+  window.BannerReveal = {
+    init: initBannerReveal,
+    initH2: initH2Scroll,
+  };
+
+})();
+
+
+
 //smooth scroll
 
 // Initialize Lenis
