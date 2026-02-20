@@ -186,54 +186,54 @@
 // ============================================
 // BANNER LINE SHAPE ANIMATION
 // ============================================
-const checkAndAnimate = () => {
-    const svgElement = document.querySelector('.banner-line-shape');
+// const checkAndAnimate = () => {
+//     const svgElement = document.querySelector('.banner-line-shape');
     
-    if (!svgElement || typeof gsap === 'undefined') return;
+//     if (!svgElement || typeof gsap === 'undefined') return;
     
-    const horizontalLines = svgElement.querySelectorAll('rect:not([transform])');
-    const verticalLines = svgElement.querySelectorAll('rect[transform*="rotate"]');
+//     const horizontalLines = svgElement.querySelectorAll('rect:not([transform])');
+//     const verticalLines = svgElement.querySelectorAll('rect[transform*="rotate"]');
     
-    if (horizontalLines.length === 0 && verticalLines.length === 0) return;
+//     if (horizontalLines.length === 0 && verticalLines.length === 0) return;
     
-    const tl = gsap.timeline({
-        delay: 1,
-        defaults: {
-            ease: "power2.inOut"
-        }
-    });
+//     const tl = gsap.timeline({
+//         delay: 1,
+//         defaults: {
+//             ease: "power2.inOut"
+//         }
+//     });
     
-    if (horizontalLines.length > 0) {
-        tl.fromTo(horizontalLines, 
-            {
-                scaleX: 0,
-                transformOrigin: "left center"
-            },
-            {
-                scaleX: 1,
-                duration: 0.8,
-                stagger: 0.15
-            }
-        );
-    }
+//     if (horizontalLines.length > 0) {
+//         tl.fromTo(horizontalLines, 
+//             {
+//                 scaleX: 0,
+//                 transformOrigin: "left center"
+//             },
+//             {
+//                 scaleX: 1,
+//                 duration: 0.8,
+//                 stagger: 0.15
+//             }
+//         );
+//     }
     
-    if (verticalLines.length > 0) {
-        tl.fromTo(verticalLines,
-            {
-                scaleY: 0,
-                transformOrigin: "center top"
-            },
-            {
-                scaleY: 1,
-                duration: 0.8,
-                stagger: 0.15
-            },
-            "-=0.3"
-        );
-    }
-};
+//     if (verticalLines.length > 0) {
+//         tl.fromTo(verticalLines,
+//             {
+//                 scaleY: 0,
+//                 transformOrigin: "center top"
+//             },
+//             {
+//                 scaleY: 1,
+//                 duration: 0.8,
+//                 stagger: 0.15
+//             },
+//             "-=0.3"
+//         );
+//     }
+// };
 
-window.addEventListener('load', checkAndAnimate);
+// window.addEventListener('load', checkAndAnimate);
 
 
 // ============================================
@@ -1727,6 +1727,39 @@ function initH2Scroll() {
   };
 
 })();
+
+
+
+
+
+// lotti aniamtion
+
+const icons = document.querySelectorAll('.iconanimation');
+const icons2 = document.querySelectorAll('.iconanimation-banner');
+
+  icons.forEach(icon => {
+    const animationPath = icon.getAttribute('data-animation');
+
+    lottie.loadAnimation({
+      container: icon,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: animationPath
+    });
+  });
+  icons2.forEach(icon => {
+    const animationPath = icon.getAttribute('data-animation');
+
+    lottie.loadAnimation({
+      container: icon,
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      path: animationPath
+    });
+  });
+
 
 
 

@@ -29,9 +29,9 @@
                     <button id="mobile-menu-toggle" class="lg:hidden text-white hover:text-green1 p-2 transition-colors"
                         aria-label="Toggle mobile menu">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect y="12" width="32" height="2" fill="white"/>
-<rect y="18" width="32" height="2" fill="white"/>
-</svg>
+                            <rect y="12" width="32" height="2" fill="white" />
+                            <rect y="18" width="32" height="2" fill="white" />
+                        </svg>
                     </button>
                     <a href="index.html" class="flex items-center">
                         <!-- replace with your logo img -->
@@ -117,9 +117,9 @@
                             </ul>
 
                             <!-- right: items -->
-                             <div class="flex items-end">
+                            <div class="flex items-end">
                                 <img src="assets/images/dropdown-shape.svg" alt="">
-                             </div>
+                            </div>
 
                         </div>
                         <!-- end .desktop-dropdown-menu -->
@@ -128,10 +128,10 @@
 
                     <a href="case-study.html"
                         class="text-white hover:text-green1 transition-colors text-base font-medium">CASE STUDIES</a>
-                        <a href="about.html"
-                            class="text-white hover:text-green1 transition-colors text-base font-medium">ABOUT</a>
-                            <a href="blog.html"
-                                class="text-white hover:text-green1 transition-colors text-base font-medium">BLOG</a>
+                    <a href="about.html"
+                        class="text-white hover:text-green1 transition-colors text-base font-medium">ABOUT</a>
+                    <a href="blog.html"
+                        class="text-white hover:text-green1 transition-colors text-base font-medium">BLOG</a>
                     <a href="contact.html"
                         class="text-white hover:text-green1 transition-colors text-base font-medium">Contact</a>
                 </div>
@@ -337,108 +337,111 @@
     </nav>
 
     <!-- FULL PAGE MENU -->
-<div id="pixxen-menu" role="dialog" aria-modal="true" aria-label="Main navigation">
+    <div id="pixxen-menu" role="dialog" aria-modal="true" aria-label="Main navigation">
 
-  <!-- TOP PANEL: slides in from top -->
-  <div class="menu-top" id="menu-top">
+        <!-- TOP PANEL: slides in from top -->
+        <div class="menu-top" id="menu-top">
 
-    <!-- Grid decoration top-left -->
-    <div class="deco-cross" style="top:0px; left:0px;">
-      <img src="assets/images/large-menu-top.svg" class="img-fluid" alt="">
+            <!-- Grid decoration top-left -->
+            <div class="deco-cross" style="top:0px; left:0px;">
+                <img src="assets/images/large-menu-top.svg" class="img-fluid" alt="">
+            </div>
+
+            <!-- Grid decoration top-right area -->
+            <div class="deco-cross" style="bottom:0px; right:0px;">
+                <img src="assets/images/large-menu-bottom.svg" class="img-fluid" alt="">
+            </div>
+
+            <!-- LET'S CONNECT -->
+
+            <a href="contact.html"
+                class="xl:px-12 connect-btn md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-green1 text-green5 transition-colors font-bold">
+                <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                    <span class="t-up text-base  font-medium text-green4 uppercase">Let’s Connect</span>
+                    <span class="t-down text-base  font-medium text-green4 uppercase">Let’s Connect</span>
+                </div>
+            </a>
+
+            <!-- CLOSE BUTTON -->
+            <div class="close-wrap">
+                <button class="close-btn" id="menu-close" aria-label="Close menu">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- NAV LINKS -->
+            <nav class="nav-columns" id="nav-columns">
+
+                <div class="nav-col" id="col-services">
+                    <div class="nav-col-title">Services</div>
+                    <ul>
+                        <li><a href="mobile-app-design.html">Mobile App Design</a></li>
+                        <li><a href="dashboard-design.html">Dashboard Design</a></li>
+                        <li><a href="website-design.html">Website Design</a></li>
+                        <li><a href="web-application-design.html">Web App Design</a></li>
+                        <li><a href="saas-design.html">SaaS Design</a></li>
+                        <li><a href="branding-design.html">Branding</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-col" id="col-pixxen">
+                    <div class="nav-col-title">Pixxen</div>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="case-study.html">Case Studies</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-col" id="col-resources">
+                    <div class="nav-col-title">Resources</div>
+                    <ul>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-col" id="col-legal">
+                    <div class="nav-col-title">Legal</div>
+                    <ul>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </div><!-- /menu-top -->
+
+
+        <!-- BOTTOM PANEL: slides in from bottom (logo bar) -->
+        <div class="menu-bottom" id="menu-bottom">
+
+
+            <!-- LOGO -->
+            <div class="bottom-logo" id="bottom-logo">
+
+                <img src="assets/images/largemenu-pixxen-logo.svg" class="img-fluid" alt="largemenu">
+            </div>
+
+        </div><!-- /menu-bottom -->
+
     </div>
-
-    <!-- Grid decoration top-right area -->
-    <div class="deco-cross" style="bottom:0px; right:0px;">
-      <img src="assets/images/large-menu-bottom.svg" class="img-fluid" alt="">
-    </div>
-
-    <!-- LET'S CONNECT -->
-  
-      <a href="contact.html"
-                        class="xl:px-12 connect-btn md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-green1 text-green5 transition-colors font-bold">
-                        <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
-                            <span class="t-up text-base  font-medium text-green4 uppercase">Let’s Connect</span>
-                            <span class="t-down text-base  font-medium text-green4 uppercase">Let’s Connect</span>
-                        </div>
-                    </a>
-
-    <!-- CLOSE BUTTON -->
-    <div class="close-wrap">
-      <button class="close-btn" id="menu-close" aria-label="Close menu">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- NAV LINKS -->
-    <nav class="nav-columns" id="nav-columns">
-
-      <div class="nav-col" id="col-services">
-        <div class="nav-col-title">Services</div>
-        <ul>
-          <li><a href="mobile-app-design.html">Mobile App Design</a></li>
-          <li><a href="dashboard-design.html">Dashboard Design</a></li>
-          <li><a href="website-design.html">Website Design</a></li>
-          <li><a href="web-application-design.html">Web App Design</a></li>
-          <li><a href="saas-design.html">SaaS Design</a></li>
-          <li><a href="branding-design.html">Branding</a></li>
-        </ul>
-      </div>
-
-      <div class="nav-col" id="col-pixxen">
-        <div class="nav-col-title">Pixxen</div>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="case-study.html">Case Studies</a></li>
-          <li><a href="team.html">Team</a></li>
-        </ul>
-      </div>
-
-      <div class="nav-col" id="col-resources">
-        <div class="nav-col-title">Resources</div>
-        <ul>
-          <li><a href="career.html">Career</a></li>
-          <li><a href="blog.html">Blogs</a></li>
-        </ul>
-      </div>
-
-      <div class="nav-col" id="col-legal">
-        <div class="nav-col-title">Legal</div>
-        <ul>
-          <li><a href="terms.html">Terms</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-        </ul>
-      </div>
-
-    </nav>
-
-  </div><!-- /menu-top -->
-
-
-  <!-- BOTTOM PANEL: slides in from bottom (logo bar) -->
-  <div class="menu-bottom" id="menu-bottom">
-
-  
-    <!-- LOGO -->
-    <div class="bottom-logo" id="bottom-logo">
-     
-        <img src="assets/images/largemenu-pixxen-logo.svg" class="img-fluid" alt="largemenu">
-    </div>
-
-  </div><!-- /menu-bottom -->
-
-</div>
-<!-- / FULL PAGE MENU -->
+    <!-- / FULL PAGE MENU -->
 
 
     <!-- banner section start -->
     <section class="banner-wrapper bg-black min-h-screen font-farro relative pt-12">
+        <div class=" hidden md:block  absolute bottom-0 left-0 z-10">
+            <div class="iconanimation-banner " data-animation="assets/animated-logo/linebanner.json"></div>
+        </div>
         <!-- 3D Shape with mouse effect -->
         <img src="assets/images/3dshape.png"
             class="shape-3d img-fluid absolute bottom-0 left-1/2 z-40 -translate-x-1/2 " alt="">
-        <div class="banner-line-shape hidden md:block  absolute bottom-0 left-0 z-10">
+        <!-- <div class="banner-line-shape hidden md:block  absolute bottom-0 left-0 z-10">
             <svg width="500" height="484" viewBox="0 0 500 484" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="94" width="232" height="2" fill="white" />
                 <rect y="192" width="330" height="2" fill="white" />
@@ -449,7 +452,7 @@
                 <rect x="306" y="484" width="314" height="2" transform="rotate(-90 306 484)" fill="white" />
                 <rect x="404" y="484" width="194" height="2" transform="rotate(-90 404 484)" fill="white" />
             </svg>
-        </div>
+        </div> -->
 
 
         <div class="banner"></div>
@@ -460,7 +463,8 @@
                     <div class="banner-content max-w-295 w-full mx-auto ">
                         <div class="flex items-center justify-center gap-2 pb-6 border-b border-[#2D5040]">
                             <span class="sm:w-2.5 w-1.5 sm:h-2.5 h-1.5 sm:rounded-[3px] rounded-xs bg-green2"></span>
-                            <p class="text-green2 sm:text-base text-[12px] font-medium pt-0.5">Creative Design Agency</p>
+                            <p class="text-green2 sm:text-base text-[12px] font-medium pt-0.5">Creative Design Agency
+                            </p>
                         </div>
                         <h1
                             class="text-center text-white lg:text-8xl md:text-6xl text-5xl font-medium sm:py-3 py-1 leading120">
@@ -532,15 +536,18 @@
             </svg>
         </div>
         <div class="container">
-            <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-12 sm:mb-8 mb-6 font-medium">Pixxen Services
+            <h2
+                class="text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-12 sm:mb-8 mb-6 font-medium">
+                Pixxen Services
             </h2>
             <div class="flex flex-wrap service-wrap md:gap-5 gap-3 lg:gap-8 items-stretch justify-center">
                 <a href="mobile-app-design.html"
                     class="service-item lg:px-8 lg:pt-8 sm:px-5 sm:pb-4 sm:pt-5 px-4 pt-4 flex flex-col justify-between gap-6 sm:gap-10 overflow-hidden moredetails">
                     <div>
-                        <img src="assets/images/pixxenservice1.svg" class="img-fluid md:max-w-24 max-w-16"
-                            alt="dashboard">
+                        <!-- <img src="assets/images/pixxenservice1.svg" class="img-fluid md:max-w-24 max-w-16"
+                            alt="dashboard"> -->
 
+                             <div class="iconanimation md:max-w-24 max-w-16" data-animation="assets/animated-logo/Mobile-app-design.json"></div>
 
                         <h3
                             class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
@@ -565,9 +572,9 @@
                 <a href="dashboard-design.html"
                     class="service-item lg:px-8 lg:pt-8 sm:px-5 sm:pb-4 sm:pt-5 px-4 pt-4 flex flex-col justify-between gap-6 sm:gap-10 overflow-hidden moredetails">
                     <div>
-                        <img src="assets/images/dashboarddesign.svg" class="img-fluid md:max-w-24 max-w-16"
-                            alt="dashboard">
-
+                        <!-- <img src="assets/images/dashboarddesign.svg" class="img-fluid md:max-w-24 max-w-16"
+                            alt="dashboard"> -->
+ <div class="iconanimation md:max-w-24 max-w-16" data-animation="assets/animated-logo/Dashboard-design.json"></div>
 
                         <h3
                             class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
@@ -591,9 +598,9 @@
                 <a href="website-design.html"
                     class="service-item lg:px-8 lg:pt-8 sm:px-5 sm:pb-4 sm:pt-5 px-4 pt-4 flex flex-col justify-between gap-6 sm:gap-10 overflow-hidden moredetails">
                     <div>
-                        <img src="assets/images/pixxenservice3.svg" class="img-fluid md:max-w-24 max-w-16"
-                            alt="dashboard">
-
+                        <!-- <img src="assets/images/pixxenservice3.svg" class="img-fluid md:max-w-24 max-w-16"
+                            alt="dashboard"> -->
+ <div class="iconanimation md:max-w-24 max-w-16" data-animation="assets/animated-logo/Website-design.json"></div>
 
                         <h3
                             class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
@@ -617,10 +624,10 @@
                 <a href="web-application-design.html"
                     class="service-item lg:px-8 lg:pt-8 sm:px-5 sm:pb-4 sm:pt-5 px-4 pt-4 flex flex-col justify-between gap-6 sm:gap-10 overflow-hidden moredetails">
                     <div>
-                        <img src="assets/images/pixxenservice4.svg" class="img-fluid md:max-w-24 max-w-16"
-                            alt="dashboard">
+                        <!-- <img src="assets/images/pixxenservice4.svg" class="img-fluid md:max-w-24 max-w-16"
+                            alt="dashboard"> -->
 
-
+                         <div class="iconanimation md:max-w-24 max-w-16" data-animation="assets/animated-logo/Web-app-design.json"></div>
                         <h3
                             class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
                             Web app design</h3>
@@ -643,9 +650,9 @@
                 <a href="saas-design.html"
                     class="service-item lg:px-8 lg:pt-8 sm:px-5 sm:pb-4 sm:pt-5 px-4 pt-4 flex flex-col justify-between gap-6 sm:gap-10 overflow-hidden moredetails">
                     <div>
-                        <img src="assets/images/pixxenservice5.svg" class="img-fluid md:max-w-24 max-w-16"
-                            alt="dashboard">
-
+                        <!-- <img src="assets/images/pixxenservice5.svg" class="img-fluid md:max-w-24 max-w-16"
+                            alt="dashboard"> -->
+ <div class="iconanimation md:max-w-24 max-w-16" data-animation="assets/animated-logo/Saas-design.json"></div>
 
                         <h3
                             class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
@@ -669,9 +676,10 @@
                 <a href="branding-design.html"
                     class="service-item lg:px-8 lg:pt-8 sm:px-5 sm:pb-4 sm:pt-5 px-4 pt-4 flex flex-col justify-between gap-6 sm:gap-10 overflow-hidden moredetails">
                     <div>
-                        <img src="assets/images/pixxenservice6.svg" class="img-fluid md:max-w-24 max-w-16"
-                            alt="dashboard">
+                        <!-- <img src="assets/images/pixxenservice6.svg" class="img-fluid md:max-w-24 max-w-16"
+                            alt="dashboard"> -->
 
+                         <div class="iconanimation md:max-w-24 max-w-16" data-animation="assets/animated-logo/Branding.json"></div>
 
                         <h3
                             class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-6 md:pt-8 md:pb-6 pb-3">
@@ -704,7 +712,9 @@
     <!-- video testimonial section start -->
     <section class="video-testimonails bg-green5 py-12 sm:py-15 lg:py-24 relative">
         <div class="">
-            <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-12 sm:mb-8 mb-6 font-medium">Success stories
+            <h2
+                class="text-center lg:text-[64px] sm:text-[48px] text-[32px] text-white md:mb-12 sm:mb-8 mb-6 font-medium">
+                Success stories
             </h2>
 
             <div class="video-testimonial-wrapper">
@@ -1675,9 +1685,9 @@
             <div class="sm:grid grid-cols-2 flex flex-col-reverse items-center md:gap-8 gap-6">
                 <div>
                     <!-- <img src="assets/images/pixxenteampicture.gif" class="img-fluid" alt="team energy"> -->
-                       <video class="w-full h-full object-cover"  playsinline autoplay muted preload="metadata">
-            <source src="assets/video/Pixxen.mp4" type="video/mp4">
-        </video>
+                    <video class="w-full h-full object-cover" playsinline autoplay muted preload="metadata">
+                        <source src="assets/video/Pixxen.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div>
                     <h2
@@ -1830,7 +1840,7 @@
     <!-- tools and technology section start -->
     <section class="tools-technology section-padding relative bg-green5 overflow-hidden">
         <div class="tools-bg-overlay"></div>
- 
+
         <div class="container">
             <div class="toolswrap relative z-10">
                 <h2
@@ -2699,7 +2709,8 @@
                                 <h3 class="text-green2 text-base sm:text-lg font-semibold mb-3 lg:mb-6">Resources</h3>
                                 <ul class="space-y-2 lg:space-y-3">
                                     <li><a href="case-study.html"
-                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">CASE STUDIES</a>
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">CASE
+                                            STUDIES</a>
                                     </li>
                                     <li><a href="blog.html"
                                             class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">BLOGS</a>
@@ -2825,6 +2836,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
     <script
         src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script src="assets/js/script.js"></script>
