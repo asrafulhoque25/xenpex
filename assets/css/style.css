@@ -314,9 +314,6 @@
   .z-30 {
     z-index: 30;
   }
-  .z-40 {
-    z-index: 40;
-  }
   .z-80 {
     z-index: 80;
   }
@@ -3916,7 +3913,6 @@ nav {
   will-change: transform;
   max-width: 500px;
   width: 100%;
-  z-index: 40;
 }
 .shape-3d {
   transition: transform 0.1s ease-out;
