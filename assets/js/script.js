@@ -1361,25 +1361,25 @@ function generateTableOfContents() {
     
     if (!content || !tocList) return;
     
-    // Get all h2 headings from content
     const headings = content.querySelectorAll('h2');
     
-    // Clear existing TOC items
     tocList.innerHTML = '';
     
-    // Generate TOC items dynamically
     headings.forEach((heading, index) => {
-        // Create unique ID for each heading
         const headingId = `section-${index}`;
         heading.setAttribute('id', headingId);
         
-        // Create TOC list item
+        const innerSpans = heading.querySelectorAll('.gr-word-inner');
+        const headingText = innerSpans.length > 0
+            ? Array.from(innerSpans).map(s => s.textContent).join(' ')
+            : heading.textContent;
+        
         const li = document.createElement('li');
         li.className = 'toc-blog-item';
         
         const a = document.createElement('a');
         a.href = `#${headingId}`;
-        a.innerHTML = `<span class="header-highlight">${heading.textContent}</span>`;
+        a.innerHTML = `<span class="header-highlight">${headingText}</span>`;
         
         li.appendChild(a);
         tocList.appendChild(li);
@@ -1437,22 +1437,18 @@ function initSmoothScroll() {
 
 // Initialize all functions
 function initBlogDetails() {
-    // Calculate and display reading time
     calculateReadingTime();
     
-    // Generate TOC from h2 tags
-    generateTableOfContents();
+    setTimeout(() => {
+        generateTableOfContents();
+        initSmoothScroll();
+    }, 100);
     
-    // Initialize smooth scroll
-    initSmoothScroll();
-    
-    // Update on scroll
     window.addEventListener('scroll', () => {
         updateReadingProgress();
         highlightActiveSection();
     });
     
-    // Initial call
     updateReadingProgress();
     highlightActiveSection();
 }
@@ -1699,14 +1695,17 @@ if (plySection) {
 function initH2Scroll() {
     if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
     gsap.registerPlugin(ScrollTrigger);
-
+    
     const bannerContainer = document.querySelector(".banner-content");
+    const blogContent = document.querySelector(".blog-details-content");
+    
     document.querySelectorAll("h1, h2, h3").forEach((heading) => {
-      if (bannerContainer && bannerContainer.contains(heading)) return;
-
-      animateHeading(heading, null, 0);
+        if (bannerContainer && bannerContainer.contains(heading)) return;
+        if (blogContent && blogContent.contains(heading)) return;
+        
+        animateHeading(heading, null, 0);
     });
-  }
+}
 
   /* ════════════════════════════════════════════════
      Auto init
