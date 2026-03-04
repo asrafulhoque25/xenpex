@@ -4163,8 +4163,9 @@ nav {
 .card-footer {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: -5px;
+  right: -5px;
+  bottom: -2px;
   padding: 24px;
   z-index: 4;
   background: linear-gradient(180deg, rgba(0, 36, 23, 0.00) 0%, #002417 100%);

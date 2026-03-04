@@ -282,6 +282,7 @@ document.addEventListener('DOMContentLoaded', function() {
          gap: '12px',
         arrows: false,
         pagination: false,
+        // autoScroll:false,
         autoScroll: {
             speed: 1, 
             pauseOnHover: true,
