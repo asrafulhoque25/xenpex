@@ -4165,21 +4165,39 @@ nav {
 }
 .card-footer {
   position: absolute;
-  bottom: 0;
   left: -5px;
   right: -5px;
   bottom: -2px;
+  height: 404px;
   padding: 24px;
   z-index: 4;
-  background: linear-gradient(180deg, rgba(0, 36, 23, 0.00) 0%, #002417 100%);
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  transition: .0s all linear;
+  overflow: hidden;
+}
+.card-footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   -webkit-backdrop-filter: blur(48px);
   backdrop-filter: blur(48px);
-  -webkit-mask-image: linear-gradient(to top, black 0%, black 40%, transparent 100%);
-  mask-image: linear-gradient(to top, black 0%, black 40%, transparent 100%);
-  transition: .3s all linear;
-  height: 404px;
-  align-items: end;
-  align-content: end;
+  -webkit-mask-image: linear-gradient(to top, black 0%, black 50%, transparent 100%);
+  mask-image: linear-gradient(to top, black 0%, black 50%, transparent 100%);
+  z-index: 2;
+}
+.card-footer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 36, 23, 0.00) 0%, #002417 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+.card-footer .card-info {
+  position: relative;
+  z-index: 22;
 }
 .card-footer .card-info p {
   display: -webkit-box;
