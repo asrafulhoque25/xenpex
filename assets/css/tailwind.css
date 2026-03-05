@@ -38,6 +38,10 @@ html {
     font-family: "Farro", sans-serif !important;
 }
 
+p{
+    font-weight: 300 !important;
+}
+
 @layer base {
     .img-fluid {
         max-width: 100%;
