@@ -1464,34 +1464,34 @@ if (document.readyState === 'loading') {
 
 
 // play video on scroll
-
 const plySection = document.querySelector('section.plyvideo');
 
 if (plySection) {
     const plyVideo = plySection.querySelector('video');
 
     if (plyVideo) {
+        // Ensure video is ready to replay
+        plyVideo.loop = false;
+        plyVideo.muted = true; // required for autoplay in most browsers
+
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        plyVideo.currentTime = 0; 
-                        plyVideo.play();
+                        plyVideo.currentTime = 0;
+                        plyVideo.play().catch(() => {});
                     } else {
                         plyVideo.pause();
-                        plyVideo.currentTime = 0; 
+                        plyVideo.currentTime = 0;
                     }
                 });
             },
-            { threshold: 0.2 }
+            { threshold: 0 } // fires as soon as any pixel enters/leaves
         );
 
         observer.observe(plySection);
     }
 }
-
-
-
 
 
 
