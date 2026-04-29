@@ -1787,3 +1787,71 @@ gsap.ticker.lagSmoothing(0);
 
 
 
+
+
+
+//load more for industries
+
+// Industries Load More / Show Less
+const allIndustriesGrid = document.querySelector('.all-served-industries');
+
+if (allIndustriesGrid) {
+    const loadMoreBtn = document.querySelector('.load-more-btn');
+    const allItems = Array.from(allIndustriesGrid.querySelectorAll('.served-industries'));
+    const btnTextUp = loadMoreBtn.querySelector('.t-up');
+    const btnTextDown = loadMoreBtn.querySelector('.t-down');
+
+    const getItemsPerPage = () => window.innerWidth >= 768 ? 12 : 8;
+
+    let currentVisible = 0;
+    let isExpanded = false;
+
+    const updateButtonText = (text) => {
+        btnTextUp.textContent = text;
+        btnTextDown.textContent = text;
+    };
+
+    const showItems = () => {
+        const perPage = getItemsPerPage();
+        currentVisible = currentVisible + perPage;
+
+        allItems.forEach((item, index) => {
+            item.style.display = index < currentVisible ? '' : 'none';
+        });
+
+        if (currentVisible >= allItems.length) {
+            currentVisible = allItems.length;
+            isExpanded = true;
+            updateButtonText('SHOW LESS');
+        }
+    };
+
+    const hideItems = () => {
+        const perPage = getItemsPerPage();
+        currentVisible = perPage;
+        isExpanded = false;
+
+        allItems.forEach((item, index) => {
+            item.style.display = index < currentVisible ? '' : 'none';
+        });
+
+        updateButtonText('LOAD MORE');
+    };
+
+    // Initially hide all items
+    allItems.forEach(item => item.style.display = 'none');
+
+    // Show first batch on load
+    showItems();
+
+    // Toggle on click
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', () => {
+            if (isExpanded) {
+                hideItems();
+            } else {
+                showItems();
+            }
+        });
+    }
+}
