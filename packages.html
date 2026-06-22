@@ -1,0 +1,2562 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Splide CSS -->
+    <title>Packages</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="bg-[#012819] border-b border-green4">
+        <div class="mx-auto">
+            <div class="flex items-center justify-between h-12">
+                <div class="flex items-center sm:gap-4 gap-3">
+                    <!-- Desktop Sidebar Button -->
+                    <button id="desktop-sidebar" aria-label="Toggle menu"
+                        class="demo-trigger hidden lg:block text-green1 hover:text-green2 xl:px-19 md:px-6 py-5 bg-green4 hover:bg-green3 cursor-pointer transition-colors"
+                        aria-label="Toggle menu">
+                        <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="42" height="2" fill="white" />
+                            <rect y="6" width="42" height="2" fill="white" />
+                        </svg>
+                    </button>
+                    <!-- Mobile Hamburger -->
+                    <button id="mobile-menu-toggle" class="lg:hidden text-white hover:text-green1 p-2 transition-colors"
+                        aria-label="Toggle mobile menu">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="12" width="32" height="2" fill="white"/>
+<rect y="18" width="32" height="2" fill="white"/>
+</svg>
+                    </button>
+                    <a href="index.html" class="flex items-center">
+                        <!-- replace with your logo img -->
+                        <img src="assets/images/logo.svg" alt="Pixxen" class="img-fluid sm:w-auto w-[136px]">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+
+                    <!-- ====== SERVICES DROPDOWN ====== -->
+                    <div class="desktop-dropdown">
+                        <a href="#services"
+                            class="text-white hover:text-green1 transition-colors text-base font-medium desktop-dropdown-toggle">
+                            SERVICES <span class="desktop-dropdown-icon ml-1">+</span>
+                        </a>
+
+                        <!-- Mega panel: list LEFT + grid RIGHT -->
+                        <div class="desktop-dropdown-menu">
+
+                            <!-- LEFT: service items -->
+                            <ul class="dropdown-service-list">
+                                <li>
+                                    <a href="mobile-app-design.html">
+                                        <span class="service-icon">
+                                            <!-- Mobile icon -->
+                                            <img src="assets/images/dropdownicon1.svg" class="img-fluid"
+                                                alt="dropdown-icon">
+                                        </span>
+                                        MOBILE APP DESIGN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-design.html">
+                                        <span class="service-icon">
+                                            <!-- Dashboard/pie icon -->
+                                            <img src="assets/images/dropdownicon2.svg" class="img-fluid"
+                                                alt="dropdown-icon">
+                                        </span>
+                                        DASHBOARD DESIGN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="website-design.html">
+                                        <span class="service-icon">
+                                            <!-- Monitor icon -->
+                                            <img src="assets/images/dropdownicon3.svg" class="img-fluid"
+                                                alt="dropdown-icon">
+                                        </span>
+                                        WEBSITE DESIGN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="web-application-design.html">
+                                        <span class="service-icon">
+                                            <!-- Laptop icon -->
+                                            <img src="assets/images/dropdownicon4.svg" class="img-fluid"
+                                                alt="dropdown-icon">
+                                        </span>
+                                        WEB APP DESIGN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="saas-design.html">
+                                        <span class="service-icon">
+                                            <!-- Desktop/screen icon -->
+                                            <img src="assets/images/dropdownicon5.svg" class="img-fluid"
+                                                alt="dropdown-icon">
+                                        </span>
+                                        SAAS DESIGN
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="branding-design.html">
+                                        <span class="service-icon">
+                                            <!-- Brand/star icon -->
+                                            <img src="assets/images/dropdownicon6.svg" class="img-fluid"
+                                                alt="dropdown-icon">
+                                        </span>
+                                        BRANDING
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- right: items -->
+                             <div class="flex items-end">
+                                <img src="assets/images/dropdown-shape.svg" alt="">
+                             </div>
+
+                        </div>
+                        <!-- end .desktop-dropdown-menu -->
+                    </div>
+                    <!-- ====== end SERVICES ====== -->
+
+                    <a href="case-study.html"
+                        class="text-white hover:text-green1 transition-colors text-base font-medium">CASE STUDIES</a>
+                        <a href="about.html"
+                            class="text-white hover:text-green1 transition-colors text-base font-medium">ABOUT</a>
+                            <a href="blog.html"
+                                class="text-white hover:text-green1 transition-colors text-base font-medium">BLOG</a>
+                    <a href="contact.html"
+                        class="text-white hover:text-green1 transition-colors text-base font-medium">Contact</a>
+                </div>
+
+                <!-- Desktop Buttons -->
+                <div class="hidden lg:flex items-center">
+                    <a href="contact.html"
+                        class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block xl:px-12 md:px-5 py-3 text-white border border-green4  transition-all font-medium">
+                        <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up text-base  font-medium text-white uppercase">OUR Contact</span>
+                            <span class="t-down text-base  font-medium text-white uppercase">OUR Contact</span>
+                        </div>
+                    </a>
+                    <a href="contact.html"
+                        class="xl:px-12 md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-green1 text-green5 transition-colors font-bold">
+                        <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up text-base  font-medium text-green4 uppercase">Let’s Connect</span>
+                            <span class="t-down text-base  font-medium text-green4 uppercase">Let’s Connect</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Mobile LET'S CONNECT -->
+                <a href="contact.html"
+                    class="lg:hidden px-4 sm:px-5 mobile-letconnect mega-reveal-btn relative overflow-hidden cursor-pointer py-4 sm:py-4 bg-green1 text-green5 transition-colors font-bold">
+                    <div class="text-mask sm:h-5 h-4 overflow-hidden flex flex-col">
+                        <span class="t-up text-sm  font-medium text-green4 uppercase">OUR Let’s Connect</span>
+                        <span class="t-down text-sm  font-medium text-green4 uppercase">OUR Let’s Connect</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ====================== MOBILE MENU (2-panel) ====================== -->
+        <!-- Dark overlay -->
+        <div id="mobile-overlay" class="mobile-overlay"></div>
+
+        <!-- Wrapper holds both panels -->
+        <div id="mobile-menu-wrapper" class="mobile-menu-wrapper">
+
+            <!-- PANEL 1: Main Menu -->
+            <div id="mm-main" class="mm-panel mm-main">
+                <div class="mm-main-header">
+                    <span class="mm-title">Menu</span>
+                    <button id="mm-close" class="mm-close-btn" aria-label="Close menu">
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                                fill="white" />
+                        </svg>
+
+                    </button>
+                </div>
+
+                <ul class="mm-nav-list">
+                    <li>
+                        <!-- SERVICES: opens panel 2 -->
+                        <button id="mm-services-trigger" class="mm-nav-link w-full text-left"
+                            style="background:none;border:none;cursor:pointer;">
+                            SERVICES
+                            <span class="mm-plus">+</span>
+                        </button>
+                    </li>
+                    <li><a href="case-study.html" class="mm-nav-link">case studies</a></li>
+                    <li><a href="about.html" class="mm-nav-link">about</a></li>
+                    <li><a href="blog.html" class="mm-nav-link">blog</a></li>
+                    <li><a href="contact.html" class="mm-nav-link">contact</a></li>
+                    <li><a href="team.html" class="mm-nav-link">team</a></li>
+                    <li>
+                        <div class="flex justify-start  mt-8 mx-4">
+                            <a href="contact.html"
+                                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 transition-all duration-200">
+
+                                <div class="btn-inner relative z-2 flex items-center gap-3">
+                                    <div
+                                        class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                        <div class="icon-slider flex flex-row ">
+                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                    fill="var(--color-green1)" />
+                                            </svg>
+                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                    fill="var(--color-green1)" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                        <span
+                                            class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
+                                            Connect</span>
+                                        <span
+                                            class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
+                                            Connect</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- LET'S CONNECT -->
+                <div>
+                    <div>
+                        <div class="w-full flex justify-end">
+                            <img src="assets/images/menu-mobile-shape.svg" class="img-fluid sm:w-auto w-[190px]"
+                                alt="mobile menu">
+                        </div>
+                        <img src="assets/images/mobile-bottom-logo.svg" class="img-fluid w-full" alt="mobile menu">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- PANEL 2: Services -->
+            <div id="mm-services" class="mm-panel mm-services">
+                <div class="mm-services-header">
+                    <button id="mm-back" class="mm-back-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        BACK
+                    </button>
+                    <button id="mm-services-close" class="mm-close-btn" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                                fill="white" />
+                        </svg>
+
+                    </button>
+                </div>
+
+                <div>
+                    <div class="mm-services-title">Services</div>
+
+                    <!-- 2×3 grid -->
+                    <div class="mm-services-grid">
+                        <!-- Mobile App Design -->
+                        <a href="mobile-app-design.html" class="mm-service-card">
+                            <span class="card-icon">
+                                <img src="assets/images/dropdownicon1.svg" class="img-fluid" alt="dropdown-icon">
+                            </span>
+                            <span class="card-label">MOBILE APP DESIGN</span>
+                        </a>
+                        <!-- Dashboard Design -->
+                        <a href="dashboard-design.html" class="mm-service-card">
+                            <span class="card-icon">
+                                <img src="assets/images/dropdownicon2.svg" class="img-fluid" alt="dropdown-icon">
+                            </span>
+                            <span class="card-label">DASHBOARD DESIGN</span>
+                        </a>
+                        <!-- Website Design -->
+                        <a href="website-design.html" class="mm-service-card">
+                            <span class="card-icon">
+                                <img src="assets/images/dropdownicon3.svg" class="img-fluid" alt="dropdown-icon">
+                            </span>
+                            <span class="card-label">WEBSITE DESIGN</span>
+                        </a>
+                        <!-- Web App Design -->
+                        <a href="web-application-design.html" class="mm-service-card">
+                            <span class="card-icon">
+                                <img src="assets/images/dropdownicon4.svg" class="img-fluid" alt="dropdown-icon">
+                            </span>
+                            <span class="card-label">WEB APP DESIGN</span>
+                        </a>
+                        <!-- SaaS Design -->
+                        <a href="saas-design.html" class="mm-service-card">
+                            <span class="card-icon">
+                                <img src="assets/images/dropdownicon5.svg" class="img-fluid" alt="dropdown-icon">
+                            </span>
+                            <span class="card-label">SAAS DESIGN</span>
+                        </a>
+                        <!-- Branding -->
+                        <a href="branding-design.html" class="mm-service-card">
+                            <span class="card-icon">
+                                <img src="assets/images/dropdownicon6.svg" class="img-fluid" alt="dropdown-icon">
+                            </span>
+                            <span class="card-label">BRANDING</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- decorative bottom grid -->
+                <div>
+                    <div>
+                        <div class="w-full flex justify-end">
+                            <img src="assets/images/menu-mobile-shape.svg" class="img-fluid sm:w-auto w-[190px]"
+                                alt="mobile menu">
+                        </div>
+                        <img src="assets/images/mobile-bottom-logo.svg" class="img-fluid w-full" alt="mobile menu">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end mobile-menu-wrapper -->
+    </nav>
+
+    <!-- FULL PAGE MENU -->
+<div id="pixxen-menu" role="dialog" aria-modal="true" aria-label="Main navigation">
+
+  <!-- TOP PANEL: slides in from top -->
+  <div class="menu-top" id="menu-top">
+
+    <!-- Grid decoration top-left -->
+    <div class="deco-cross" style="top:0px; left:0px;">
+      <img src="assets/images/large-menu-top.svg" class="img-fluid" alt="">
+    </div>
+
+    <!-- Grid decoration top-right area -->
+    <div class="deco-cross" style="bottom:0px; right:0px;">
+      <img src="assets/images/large-menu-bottom.svg" class="img-fluid" alt="">
+    </div>
+
+    <!-- LET'S CONNECT -->
+  
+      <a href="contact.html"
+                        class="xl:px-12 connect-btn md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-green1 text-green5 transition-colors font-bold">
+                        <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up text-base  font-medium text-green4 uppercase">Let’s Connect</span>
+                            <span class="t-down text-base  font-medium text-green4 uppercase">Let’s Connect</span>
+                        </div>
+                    </a>
+
+    <!-- CLOSE BUTTON -->
+    <div class="close-wrap">
+      <button class="close-btn" id="menu-close" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- NAV LINKS -->
+    <nav class="nav-columns" id="nav-columns">
+
+      <div class="nav-col" id="col-services">
+        <div class="nav-col-title">Services</div>
+        <ul>
+          <li><a href="mobile-app-design.html">Mobile App Design</a></li>
+          <li><a href="dashboard-design.html">Dashboard Design</a></li>
+          <li><a href="website-design.html">Website Design</a></li>
+          <li><a href="web-application-design.html">Web App Design</a></li>
+          <li><a href="saas-design.html">SaaS Design</a></li>
+          <li><a href="branding-design.html">Branding</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-col" id="col-pixxen">
+        <div class="nav-col-title">Pixxen</div>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="case-study.html">Case Studies</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-col" id="col-resources">
+        <div class="nav-col-title">Resources</div>
+        <ul>
+          <li><a href="career.html">Career</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-col" id="col-legal">
+        <div class="nav-col-title">Legal</div>
+        <ul>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+
+    </nav>
+
+  </div><!-- /menu-top -->
+
+
+  <!-- BOTTOM PANEL: slides in from bottom (logo bar) -->
+  <div class="menu-bottom" id="menu-bottom">
+
+  
+    <!-- LOGO -->
+    <div class="bottom-logo" id="bottom-logo">
+     
+        <img src="assets/images/largemenu-pixxen-logo.svg" class="img-fluid" alt="largemenu">
+    </div>
+
+  </div><!-- /menu-bottom -->
+
+</div>
+<!-- / FULL PAGE MENU -->
+
+
+    <!-- banner section start --><!-- banner section start -->
+    <section class="subbanner-wrapper bg-black sm:min-h-screen font-farro relative">
+        <!-- Content layer (eta fixed thakbe) -->
+        <div class="banner-content-wrapper">
+            <div class="container relative z-10">
+                <div class="sm:grid grid-cols-2 flex flex-col items-center md:gap-8 gap-6">
+                    <div>
+                        <div class="flex items-center justify-start gap-2 pb-5">
+                            <span class="sm:w-2.5 w-1.5 sm:h-2.5 h-1.5 sm:rounded-[3px] rounded-xs bg-green2"></span>
+                            <p class="text-green2 sm:text-base text-[12px] font-medium">$999 · Delivered in 4 weeks</p>
+                        </div>
+                        <h1
+                            class="text-start font-medium lg:text-[72px] sm:text-[52px] text-[36px] text-white md:mb-6 mb-1.5 leading120">
+                           Complete website packages for small businesses
+                        </h1>
+                        <p
+                            class="text-start  text-white md:text-[18px] sm:text-base text-[14px] leading-[150%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
+                           Logo, branding, custom website, and a month of launch support — built in 4 weeks for one fixed price. No quotes. No scope creep. No surprises at checkout.</p>
+
+                        <div class="flex flex-wrap sm:justify-start justify-center w-full gap-3 md:gap-4">
+                            <button
+                                class="mega-reveal-btn sm:w-auto w-full flex justify-center relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
+                                <span class="bg-overlay absolute inset-0 z-1"></span>
+                                <div class="btn-inner relative z-2 flex items-center gap-3">
+                                    <div
+                                        class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                        <div class="icon-slider flex flex-row ">
+                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                    fill="var(--color-green1)" />
+                                            </svg>
+                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                    fill="var(--color-green1)" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                        <span
+                                            class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Get
+                                           Pick your industry</span>
+                                        <span
+                                            class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">Get
+                                            Pick your industry</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <button
+                                class="mega-reveal-btn sm:w-auto w-full flex justify-center relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-transparen border border-white  transition-all duration-200">
+                                <span class="bg-overlay absolute inset-0 z-1"></span>
+                                <div class="btn-inner relative z-2 flex items-center gap-3">
+
+                                    <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                        <span
+                                            class="t-up md:text-[20px] text-base  font-medium text-white uppercase">See what's included</span>
+                                        <span
+                                            class="t-down md:text-[20px] text-base  font-medium text-white uppercase">See what's included</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="flex sm:flex-col flex-col sm:items-start items-start sm:gap-6 gap-2 sm:mt-8 mt-5">
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center  shrink-0">
+                                    <img src="assets/images/white-check.svg" class="img-fluid shrink-0 sm:w-auto w-5" alt="">
+                                </div>
+                                <p class="sm:text-base text-sm leading150 text-white">47 small businesses launched</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center  shrink-0">
+                                    <img src="assets/images/white-check.svg" class="img-fluid shrink-0 sm:w-auto w-5" alt="">
+                                </div>
+                                <p class="sm:text-base text-sm leading150 text-white">12-country reach</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="ml-auto">
+                        <img src="assets/images/packages-banner.png" class="img-fluid" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner section end -->
+
+
+
+
+    <!-- fixed price start -->
+  <section class="core-pillar bg-green5 section-padding bgradial-bottom overflow-hidden relative anatomy">
+        <div class="container">
+            <div class="max-w-260 mx-auto w-full">
+                    <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-4 sm:mb-1.5 mb-3 leading120">
+                       Everything you need to launch — one fixed price
+                    </h2>
+                    <p class="text-[#A7BDB5] text-center md:text-[18px] sm:text-base text-[14px] leading-[140%] font-normal">
+                       No upsells, no add-ons. Every package includes the same four pillars, tailored to your industry.</p>
+                    <div class="w-full flex justify-center">
+                       
+                    </div>
+                </div>
+
+
+                <div class="relative z-55  core-pillar-wrap grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-3 lg:gap-8 items-center justify-center md:mt-12 mt-8">
+                    <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
+                    <div> <img src="assets/images/brnad-dentity.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">Logo & brand identity</h3>
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">A complete visual system, not just a logo file.</p>
+                        <ul class="sm:mt-8 mt-4 flex flex-col gap-1.5 sm:gap-3">
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">3 logo concepts in your direction</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">2 rounds of revisions</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">Color palette with hex codes</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">Typography pairing</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">All file formats delivered</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
+                    <div> <img src="assets/images/custom-website.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
+                          Custom website</h3>
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">Designed for your business, not a template.</p>
+                        <ul class="sm:mt-8 mt-4 flex flex-col gap-1.5 sm:gap-3">
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">Up to 7 fully designed pages</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">Mobile-responsive on every device</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">Fast hosting setup included</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">Contact and lead capture forms</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">Easy CMS for self-edits later</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
+                    <div> <img src="assets/images/seo-foundation.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
+                           SEO foundation</h3>
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">Built to be found from day one.</p>
+                        <ul class="sm:mt-8 mt-4 flex flex-col gap-1.5 sm:gap-3">
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">On-page SEO across all pages</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">Meta titles & descriptions written</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">Schema markup deployed</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">Google Search Console setup</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">XML sitemap + robots.txt</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="border h-full border-dark-shade3 rounded-3xl p-4 sm:p-5 lg:p-8 flex flex-col justify-between gap-12 sm:gap-14 overflow-hidden">
+                    <div> <img src="assets/images/launch-support.svg" class="img-fluid md:max-w-24 max-w-16" alt="dashboard">
+                        <h3 class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium sm:pt-6 pt-4 md:pt-8 md:pb-6 pb-3">
+                          30-day launch support</h3>
+                        <p class="md:text-base sm:text-[14px] text-[12px] text-[#A7BDB5]">We don't disappear after handover.</p>
+                        <ul class="sm:mt-8 mt-4 flex flex-col gap-1.5 sm:gap-3">
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">30 days of post-launch support</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">Content edits and bug fixes</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">Email reply within 24 hours</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">Training walkthrough video</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center gap-3">
+                                    <img src="assets/images/check.svg" class="img-fluid shrink-0 sm:w-auto w-4.5 " alt="check">
+                                    <p class="text-[#A7BDB5] md:text-base sm:text-[14px] text-[12px]">All source files delivered to you</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+        </div>
+     </section>
+    <!-- fixed price end -->
+
+        <!-- Industries we serve start -->
+     <section class="industries-we-serve py-12 sm:py-15 lg:py-24 bg-[linear-gradient(180deg,_#002417_0%,_#001B11_100%)]">
+        <div class="container">
+               <div class="max-w-260 mx-auto w-full md:mb-12 sm:mb-8 mb-6">
+                    <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-4 sm:mb-1.5 mb-3 leading120">
+                     Designed for your industry, not a generic template
+                    </h2>
+                    <p class="text-[#A7BDB5] text-center md:text-[18px] sm:text-base text-[14px] leading-[140%] font-normal">
+                      Each package is tailored to the features your industry actually needs — booking systems for medical, online ordering for restaurants, IDX integration for real estate, and so on.</p>
+                    <div class="w-full flex justify-center">
+                       
+                    </div>
+                </div>
+
+       <div class="all-served-industrie grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-4 sm:gap-2 gap-1.5">
+    <!-- 1 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-1.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Dental & medical</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">HIPAA-friendly websites with online booking, patient portals, and treatment pages.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 2 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-2.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Law firms</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Clean, trust-first sites with attorney bios, practice areas, and client intake forms.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 3 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-3.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Real estate</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">IDX-ready sites with property listings, lead capture, and neighborhood guides.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 4 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-4.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Home services</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Lead-focused websites for plumbers, electricians, HVAC, roofers, and other trades.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 5 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-5.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Restoration</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">24/7 emergency-ready sites for water, fire, mold, and disaster response.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 6 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-6.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Restaurants</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Menus, online ordering, reservations, and delivery integration.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 7 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-7.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Salons &amp; spas</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Service menus, appointment booking, and client management.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 8 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-8.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Accounting &amp; bookkeeping</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Professional sites with service listings and secure client intake.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 9 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-9.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Fitness studios &amp; gyms</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Class schedules, memberships, and online registrations.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 10 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-10.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Insurance agencies</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Policy listings, quote forms, and lead capture tailored to insurance services.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 11 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-11.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Roofing &amp; exterior</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Project galleries, service descriptions, and quote request forms.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 12 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-12.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Construction</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Portfolio showcase, service listings, and contact forms.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 13 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-13.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Med spas &amp; aesthetic clinics</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Treatment menus, online booking, and patient intake forms.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 14 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-14.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Auto repair &amp; detailing</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Service menus, appointments, and promotional sections.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 15 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-15.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Veterinary clinics</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Pet care services, online booking, and client portals.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 16 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-16.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Childcare &amp; preschools</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Enrollment forms, program descriptions, and parent resources.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 17 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-17.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Funeral homes &amp; mortuaries</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Service listings, memorial pages, and contact forms.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 18 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-18.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Solar installers</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Project showcase, lead capture forms, and service pages.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 19 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-19.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Financial advisors &amp; wealth managers</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Service descriptions, client intake, and resource pages.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 20 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-20.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Tutoring &amp; test prep</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Course listings, registration, and scheduling forms.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 21 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-21.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Pest control</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Service menus, emergency contact forms, and lead capture.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 22 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-22.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Coaching &amp; consulting</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Service overview, booking, and testimonial sections.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+    <!-- 23 -->
+    <a href="#" class="package-item erved-industries lg:p-6 md:p-4 p-3 border border-dark-shade3 sm:rounded-3xl rounded-2xl flex flex-col justify-between gap-5 sm:gap-6 overflow-hidden moredetails block wfull">
+       <div class="md:space-y-6 sm:space-y-5 space-y-4">
+         <div class="flex items-start justify-between">
+            <img src="assets/images/package-23.svg" class="img-fluid sm:w-auto md:w-11 w-8" alt="industries">
+        </div>
+        <div class="md:space-y-3 space-y-2">
+            <h3 class="lg:text-2xl md:text-xl sm:text-lg text-base font-medium text-white">Photography studios</h3>
+            <p class="md:text-base sm:text-sm text-xs text-dark-shade4">Portfolio galleries, client booking, and service info.</p>
+        </div>
+       </div>
+        <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn max-h-6 relative overflow-hidden">
+                        <img src="assets/images/arrow-right-package.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                        <div class="text-mask shrink-0  sm:h-5.5 h-4.5 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-sm text-xs font-medium text-dark-shade5 uppercase">View
+                                details</span>
+                            <span class="t-down md:text-sm text-xs font-medium text-green1 uppercase">View
+                                details</span>
+                        </div>
+                    </div>
+    </a>
+</div>
+            <!--  Request a custom package  -->
+ 
+                    <div class="flex sm:justify-center justify-center w-full mt-14">
+                         <button
+                            class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-3 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
+                            <span class="bg-overlay absolute inset-0 z-1"></span>
+                            <div class="btn-inner relative z-2 flex items-center gap-3">
+                                <div
+                                    class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                    <div class="icon-slider flex flex-row ">
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Request a custom package</span>
+                                    <span class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">Request a custom package</span>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+        </div>
+     </section>
+    <!-- Industries we serve end -->
+
+
+
+
+    
+    <!-- Work process section start -->
+    <section class="work-progress relative overflow-hidden section-padding bg-green5">
+        <div class="container">
+            
+            <div class="workprocess-wrap relative z-10">
+               
+     <div class="max-w-260 mx-auto w-full md:mb-12 sm:mb-8 mb-6">
+                    <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-4 sm:mb-1.5 mb-3 leading120">
+                     From signing to launch in 4 weeks
+                    </h2>
+                    <p class="text-[#A7BDB5] text-center md:text-[18px] sm:text-base text-[14px] leading-[140%] font-normal">
+                     A real timeline you can plan around — not a vague "couple of months."</p>
+                    <div class="w-full flex justify-center">
+                       
+                    </div>
+                </div>
+                <div
+                    class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-4 items-center relative ourwork-wrap mb-5">
+                    <div class="absolute left-0 w-full h-full top-6 pointer-events-none z-30 lg:block hidden">
+                        <svg id="process-svg" width="100%" viewBox="0 0 1506 416" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="overflow-visible">
+                            <path id="draw-path"
+                                d="M2 415V189C2 85.7228 85.7228 2 189 2C292.277 2 376 85.7228 376 189V227C376 331.382 460.618 416 565 416C669.382 416 754 331.382 754 227V189C754 85.7228 837.723 2 941 2C1044.28 2 1128 85.7228 1128 189V227C1128 331.382 1212.62 416 1317 416C1421.38 416 1506 331.382 1506 227V1"
+                                stroke="#19914A" stroke-width="1" />
+                        </svg>
+                    </div>
+                    <div class="process-item flex flex-col items-center text-center px-4 py-4">
+                        <img src="assets/images/workprocess1.svg" class="img-fluid" />
+                        <h3 class="text-white text-[24px] md:text-[28px] lg:text-[32px] font-medium md:py-4 py-3">
+                           Pick & onboard
+                        </h3>
+                        <p class="text-[#A7BDB5] text-[12px] md:text-sm lg:text-base">Choose your industry, pay 50% deposit, fill out a 10-min brand questionnaire. We schedule kickoff.</p>
+                    
+                        <span class="md:text-base text-sm text-green3 font-bold text-center mt-4">Day 1</span>
+                    </div>
+
+                    <div class="process-item flex flex-col items-center text-center px-4 py-4 ">
+                        <img src="assets/images/workprocess2.svg" class="img-fluid" />
+                        <h3 class="text-white text-[24px] md:text-[28px] lg:text-[32px] font-medium md:py-4 py-3">Brand design
+                        </h3>
+                        <p class="text-[#A7BDB5] text-[12px] md:text-sm lg:text-base">3 logo concepts and your visual identity within 72 hours. You pick a direction, we refine.</p>
+                        <span class="md:text-base text-sm text-green3 font-bold text-center mt-4">Day 2–4</span>
+                    </div>
+
+                    <div class="process-item flex flex-col items-center text-center px-4 py-4">
+                        <img src="assets/images/workprocess3.svg" class="img-fluid" />
+                        <h3 class="text-white text-[24px] md:text-[28px] lg:text-[32px] font-medium md:py-4 py-3">Design & build
+                        </h3>
+                        <p class="text-[#A7BDB5] text-[12px] md:text-sm lg:text-base">Custom design based on your brand, built and tested on real devices. You review and request changes.</p>
+                        <span class="md:text-base text-sm text-green3 font-bold text-center mt-4">Week 2–3</span>
+                    </div>
+
+                    <div class="process-item flex flex-col items-center text-center px-4 py-4">
+                        <img src="assets/images/launch-and-handover.svg" class="img-fluid" />
+                        <h3 class="text-white text-[24px] md:text-[28px] lg:text-[32px] font-medium md:py-4 py-3">
+                            Launch & handover
+                        </h3>
+                        <p class="text-[#A7BDB5] text-[12px] md:text-sm lg:text-base">Site goes live. Training delivered, source files handed over. 30-day support window begins.</p>
+                        <span class="md:text-base text-sm text-green3 font-bold text-center mt-4">Week 4</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Work process section end -->
+
+
+
+
+    <!-- marquee section start -->
+    <section class="marquee-section bg-green5 md:py-12 py-4 px-6 md:px-12">
+        <div class="marquee-stripe rotate-2 bg-green4 rounded-full">
+            <div class="marquee-container ltr">
+                <div class="marquee-content">
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
+                            your next pixel</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
+                            solutions</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
+                            design</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
+                            your vision</span>
+                    </div>
+
+                    <!-- Duplicate for seamless loop -->
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
+                            your next pixel</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
+                            solutions</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
+                            design</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
+                            your vision</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- marquee section end -->
+
+
+
+
+    <!-- how to choose package start -->
+     <section class="core-pillar bg-green5 section-padding bgradial-bottom overflow-hidden relative anatomy">
+       <div class="relative z-44">
+         <div class="container">
+              <div class="max-w-260 mx-auto w-full md:mb-12 sm:mb-8 mb-6">
+                    <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-4 sm:mb-1.5 mb-3 leading120">
+                    How to choose a website package for your small business
+                    </h2>
+               </div>
+
+
+                <!-- Tabs wrapper -->
+      <div data-tabs class="border border-dark-shade3 rounded-3xl p-2 sm:p-3 lg:p-0 overflow-visible">
+        <div class="lg:flex">
+ 
+          <!-- LEFT: tab navigation -->
+          <div class="relative lg:w-[340px] lg:shrink-0 lg:p-6 lg:border-r lg:border-dark-shade3">
+ 
+            <!-- Mobile dropdown trigger (hidden on desktop) -->
+            <button type="button"
+              class="tab-trigger lg:hidden w-full flex items-center justify-between gap-3 rounded-2xl bg-dark-shade2 text-dark-shade6 px-5 py-3.5 text-sm sm:text-base font-medium"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="trigger-label text-left">What a complete package includes</span>
+              <svg class="chevron w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+ 
+            <!-- Tab list (desktop column / mobile dropdown) -->
+            <div class="tab-nav lg:flex lg:flex-col lg:gap-2">
+              <button data-tab="t1" class="tab-btn is-active text-left w-full rounded-2xl px-5 py-3.5 text-sm sm:text-base font-medium text-dark-shade6 bg-dark-shade2 hover:bg-dark-shade3 transition-colors">What a complete package includes</button>
+              <button data-tab="t2" class="tab-btn text-left w-full rounded-2xl px-5 py-3.5 text-sm sm:text-base font-medium text-dark-shade6 bg-dark-shade2 hover:bg-dark-shade3 transition-colors">The four ways to buy</button>
+              <button data-tab="t3" class="tab-btn text-left w-full rounded-2xl px-5 py-3.5 text-sm sm:text-base font-medium text-dark-shade6 bg-dark-shade2 hover:bg-dark-shade3 transition-colors">Red flags to watch for</button>
+              <button data-tab="t4" class="tab-btn text-left w-full rounded-2xl px-5 py-3.5 text-sm sm:text-base font-medium text-dark-shade6 bg-dark-shade2 hover:bg-dark-shade3 transition-colors">How to compare honestly</button>
+              <button data-tab="t5" class="tab-btn text-left w-full rounded-2xl px-5 py-3.5 text-sm sm:text-base font-medium text-dark-shade6 bg-dark-shade2 hover:bg-dark-shade3 transition-colors">Realistic timelines</button>
+              <button data-tab="t6" class="tab-btn text-left w-full rounded-2xl px-5 py-3.5 text-sm sm:text-base font-medium text-dark-shade6 bg-dark-shade2 hover:bg-dark-shade3 transition-colors">What you should own</button>
+              <button data-tab="t7" class="tab-btn text-left w-full rounded-2xl px-5 py-3.5 text-sm sm:text-base font-medium text-dark-shade6 bg-dark-shade2 hover:bg-dark-shade3 transition-colors">Questions to ask</button>
+            </div>
+          </div>
+ 
+          <!-- RIGHT: tab content -->
+          <div class="lg:flex-1 lg:p-8 p-3 pt-6">
+ 
+            <!-- Panel 1 -->
+            <div data-panel="t1" class="tab-panel is-active space-y-6">
+              <h3 class="text-white font-medium text-xl sm:text-2xl">What a complete package includes</h3>
+              <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">Most small business owners don't shop for websites often. The last time you bought one was probably five or more years ago, and the market has changed completely since then. Before you pay anyone — a freelancer, an agency, or a productized service like ours — here's what to look for and what to walk away from.</p>
+              <div class="space-y-3">
+                <h4 class="text-white font-semibold text-base sm:text-lg">What a complete website package should actually include</h4>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">The phrase "website package" gets used loosely. Some packages are a Wix template with $200 of design slapped on top. Others are six-figure custom builds. To compare apples to apples, here are the eight components a complete small business website package should contain.</p>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">Logo and brand identity. Not just a logo file — a usable brand system. Color palette with specific hex codes. Typography choices for headings and body. Logo variations: horizontal, stacked, monochrome, favicon. If the package doesn't include this, you'll end up with a great website wrapped in inconsistent branding that weakens every page it touches.</p>
+              </div>
+            </div>
+ 
+            <!-- Panel 2 -->
+            <div data-panel="t2" class="tab-panel space-y-6">
+              <h3 class="text-white font-medium text-xl sm:text-2xl">The four ways to buy</h3>
+              <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">There are really only four ways to get a small business website built, and each trades cost against control. Knowing which one fits your situation saves you from paying agency prices for freelancer work, or freelancer prices for a template you could have bought yourself.</p>
+              <div class="space-y-3">
+                <h4 class="text-white font-semibold text-base sm:text-lg">DIY builders vs. freelancers vs. agencies vs. productized services</h4>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">DIY builders like Wix or Squarespace are the cheapest and fastest, but the result looks like everyone else's and you do all the work. A freelancer gives you a custom look at a fair price, though timelines and availability swing with their workload.</p>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">Agencies bring a full team and process, which you pay for in both budget and overhead. Productized services sit in the middle: a fixed scope, a fixed price, and a predictable timeline, with less flexibility than custom agency work.</p>
+              </div>
+            </div>
+ 
+            <!-- Panel 3 -->
+            <div data-panel="t3" class="tab-panel space-y-6">
+              <h3 class="text-white font-medium text-xl sm:text-2xl">Red flags to watch for</h3>
+              <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">Most bad website experiences are predictable from the first conversation. The warning signs show up in how a vendor talks about scope, ownership, and what happens after launch — long before any code is written.</p>
+              <div class="space-y-3">
+                <h4 class="text-white font-semibold text-base sm:text-lg">Signs to walk away from</h4>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">Vague scope is the biggest one. If a quote doesn't list deliverables, page count, and revision limits, the gaps become change orders later. Watch for vendors who won't transfer ownership of the domain, hosting, or source code, or who lock you into a proprietary platform you can't leave.</p>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">No post-launch support, no written timeline, and prices that seem far below the market are also red flags. Cheap up front usually means expensive later, paid in your own time fixing what was skipped.</p>
+              </div>
+            </div>
+ 
+            <!-- Panel 4 -->
+            <div data-panel="t4" class="tab-panel space-y-6">
+              <h3 class="text-white font-medium text-xl sm:text-2xl">How to compare honestly</h3>
+              <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">Comparing quotes by price alone is how people end up disappointed. A $1,500 site and a $9,000 site can both be "a website," but they rarely include the same things. Compare on deliverables, not on the number at the bottom.</p>
+              <div class="space-y-3">
+                <h4 class="text-white font-semibold text-base sm:text-lg">Line up the scope, not the totals</h4>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">Ask every vendor for an itemized scope: how many pages, what's custom versus template, who writes the copy, who provides images, how many revision rounds, and what's included for SEO and analytics. Put the answers side by side in a simple table.</p>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">Then check ownership and support terms, and ask to see two or three live examples in your industry. The cheapest quote with half the scope is not the cheapest quote.</p>
+              </div>
+            </div>
+ 
+            <!-- Panel 5 -->
+            <div data-panel="t5" class="tab-panel space-y-6">
+              <h3 class="text-white font-medium text-xl sm:text-2xl">Realistic timelines</h3>
+              <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">A simple small business site is rarely a weekend job, and rarely a six-month one either. Knowing the real phases helps you spot a vendor who's over-promising speed or padding the schedule.</p>
+              <div class="space-y-3">
+                <h4 class="text-white font-semibold text-base sm:text-lg">What each phase usually takes</h4>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">Discovery and content gathering takes one to two weeks, and it's where most projects actually stall — usually waiting on your copy and photos. Design runs another one to two weeks, with a round or two of revisions.</p>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">Build and development is typically two to four weeks for a standard site, followed by testing and launch. A realistic end-to-end timeline for a small business site is four to eight weeks, assuming you turn feedback around quickly.</p>
+              </div>
+            </div>
+ 
+            <!-- Panel 6 -->
+            <div data-panel="t6" class="tab-panel space-y-6">
+              <h3 class="text-white font-medium text-xl sm:text-2xl">What you should own</h3>
+              <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">When the project is done, the website should belong to you — not to the person who built it. Ownership is where a lot of small businesses get quietly trapped, and it only becomes obvious when they try to leave.</p>
+              <div class="space-y-3">
+                <h4 class="text-white font-semibold text-base sm:text-lg">The assets that should be in your name</h4>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">Your domain and hosting accounts should be registered under your email, with you as the admin. You should have the source code or full CMS access, your brand assets and original design files, and all the content and images on the site.</p>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">You should also own your analytics and any connected accounts. If switching vendors would mean rebuilding from scratch, you didn't actually own your website — you were renting it.</p>
+              </div>
+            </div>
+ 
+            <!-- Panel 7 -->
+            <div data-panel="t7" class="tab-panel space-y-6">
+              <h3 class="text-white font-medium text-xl sm:text-2xl">Questions to ask</h3>
+              <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">A short list of direct questions tells you more about a vendor than any portfolio. The good ones answer clearly and in writing. The ones to avoid get vague, defensive, or change the subject to price.</p>
+              <div class="space-y-3">
+                <h4 class="text-white font-semibold text-base sm:text-lg">Ask every vendor these before signing</h4>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">What exactly is included, and what costs extra? Who owns the domain, hosting, and code when we're done? How many revision rounds do I get? What happens if I want to make changes after launch, and what does support cost?</p>
+                <p class="text-dark-shade4 text-sm sm:text-base leading-relaxed">Can I see live sites you've built in my industry? What's the realistic timeline, and what do you need from me to hit it? If the answers come back specific and in writing, you're talking to the right vendor.</p>
+              </div>
+            </div>
+ 
+          </div>
+        </div>
+      </div>
+
+
+        </div>
+       </div>
+     </section>
+    <!-- how to choose package end -->
+
+
+
+    <!-- package rate start -->
+     <section class="core-pillar bg-green5 section-padding bgradial-bottom overflow-hidden relative anatomy">
+       <div class="relative z-44">
+         <div class="container">
+             <div class="max-w-250 mx-auto w-full md:mb-12 sm:mb-8 mb-6">
+                    <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-4 sm:mb-1.5 mb-3 leading120">
+                    How $999 compares to your other options
+                    </h2>
+                    <p class="text-[#A7BDB5] text-center md:text-[18px] sm:text-base text-[14px] leading-[140%] font-normal">
+                 No spin. Each option has a real best-use case.</p>
+                    <div class="w-full flex justify-center">
+                       
+                    </div>
+                </div>
+
+
+      <!-- package rate -->
+   <div class="compare-grid hidden md:block">
+        <!-- Pixxen column highlight overlay -->
+        <span class="compare-pixxen-highlight"></span>
+ 
+        <div class="grid grid-cols-5 relative">
+ 
+          <!-- Header row -->
+          <div class="bg-dark-shade2 rounded-t-3xl px-5 py-6 flex items-center">
+            <span class="text-white font-medium lg:text-2xl md:text-xl">Feature</span>
+          </div>
+          <div class="bg-green3 rounded-t-3xl px-5 py-6  flex items-center justify-center relative z-10">
+          <img src="assets/images/pixxen-logo-package.svg" alt="Pixxen"> 
+          </div>
+          <div class="bg-dark-shade2 rounded-t-3xl border-l border-dark-shade3 px-5 py-6 flex items-center justify-center">
+            <span class="text-white font-medium lg:text-2xl md:text-xl">Freelancer</span>
+          </div>
+          <div class="bg-dark-shade2 rounded-t-3xl border-l border-dark-shade3 px-5 py-6 flex items-center justify-center">
+            <span class="text-white font-medium lg:text-2xl md:text-xl">Agency</span>
+          </div>
+          <div class="bg-dark-shade2 rounded-t-3xl rounded-tr-3xl border-l border-dark-shade3 px-5 py-6 flex items-center justify-center">
+            <span class="text-white font-medium lg:text-2xl md:text-xl">DIY builder</span>
+          </div>
+ 
+          <!-- Row 1 -->
+          <div class="px-5 py-5 border-b border-dark-shade3 flex items-center"><span class="text-dark-shade5 md:text-base text-sm">Total cost, year 1</span></div>
+          <div class="px-5 py-5 border-b border-l border-dark-shade3 flex items-center justify-center relative z-10"><span class="text-white md:text-base text-sm">$999</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">$1.5–3k</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">$5–15k</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">$300+ /yr</span></div>
+ 
+          <!-- Row 2 -->
+          <div class="px-5 py-5 border-b border-dark-shade3 flex items-center"><span class="text-dark-shade5 md:text-base text-sm">Time to launch</span></div>
+          <div class="px-5 py-5 border-b border-l border-dark-shade3 flex items-center justify-center relative z-10"><span class="text-white md:text-base text-sm">4 weeks</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">4–8 wks</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">8–16 wks</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">Open-ended</span></div>
+ 
+          <!-- Row 3 -->
+          <div class="px-5 py-5 border-b border-dark-shade3 flex items-center"><span class="text-dark-shade5 md:text-base text-sm">Logo &amp; branding</span></div>
+          <div class="px-5 py-5 border-b border-l border-dark-shade3 flex items-center justify-center relative z-10"><span class="text-white md:text-base text-sm">Included</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">DIY</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">Extra</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">Extra</span></div>
+ 
+          <!-- Row 4 -->
+          <div class="px-5 py-5 border-b border-dark-shade3 flex items-center"><span class="text-dark-shade5 md:text-base text-sm">SEO foundation</span></div>
+          <div class="px-5 py-5 border-b border-l border-dark-shade3 flex items-center justify-center relative z-10"><span class="text-white md:text-base text-sm">Yes</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">No</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">No</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">No</span></div>
+ 
+          <!-- Row 5 -->
+          <div class="px-5 py-5 border-b border-dark-shade3 flex items-center"><span class="text-dark-shade5 md:text-base text-sm">Post-launch support</span></div>
+          <div class="px-5 py-5 border-b border-l border-dark-shade3 flex items-center justify-center relative z-10"><span class="text-white md:text-base text-sm">30 days</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">Varies</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">Add-on</span></div>
+          <div class="px-5 py-5 border-b border-dark-shade3 border-l flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">No</span></div>
+ 
+          <!-- Row 6 (last) -->
+          <div class="px-5 py-5 flex items-center"><span class="text-dark-shade5 md:text-base text-sm">Source files &amp; ownership</span></div>
+          <div class="px-5 py-5 flex border-l border-dark-shade3 items-center justify-center relative z-10"><span class="text-white md:text-base text-sm">Full</span></div>
+          <div class="px-5 py-5 border-l border-dark-shade3 flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">Varies</span></div>
+          <div class="px-5 py-5 border-l border-dark-shade3 flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">Sometimes</span></div>
+          <div class="px-5 py-5 border-l border-dark-shade3 flex items-center justify-center"><span class="text-dark-shade5 md:text-base text-sm">N/A</span></div>
+ 
+        </div>
+      </div>
+ 
+      <!-- ===================== MOBILE STACKED CARDS (below md) ===================== -->
+      <div class="md:hidden flex flex-col gap-4">
+ 
+        <!-- Pixxen (highlighted) -->
+        <div class="rounded-3xl border border-dark-shade2 bg-[#002417] overflow-hidden">
+          <div class="bg-green2 py-4 px-5 flex items-center justify-center">
+            <img src="assets/images/pixxen-logo-package.svg" class="md:w-auto w-[100px]" alt="">
+          </div>
+          <div class="divide-y divide-dark-shade3">
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Total cost, year 1</span><span class="text-white text-sm font-medium text-right">$999</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Time to launch</span><span class="text-white text-sm font-medium text-right">4 weeks</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Logo &amp; branding</span><span class="text-white text-sm font-medium text-right">Included</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">SEO foundation</span><span class="text-white text-sm font-medium text-right">Yes</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Post-launch support</span><span class="text-white text-sm font-medium text-right">30 days</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Source files &amp; ownership</span><span class="text-white text-sm font-medium text-right">Full</span></div>
+          </div>
+        </div>
+ 
+        <!-- Freelancer -->
+        <div class="rounded-2xl border border-dark-shade3 overflow-hidden">
+          <div class="bg-dark-shade2 py-4 px-5 flex items-center justify-center">
+            <span class="text-white font-medium text-lg">Freelancer</span>
+          </div>
+          <div class="divide-y divide-dark-shade3">
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Total cost, year 1</span><span class="text-dark-shade6 text-sm font-medium text-right">$1.5–3k</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Time to launch</span><span class="text-dark-shade6 text-sm font-medium text-right">4–8 wks</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Logo &amp; branding</span><span class="text-dark-shade6 text-sm font-medium text-right">DIY</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">SEO foundation</span><span class="text-dark-shade6 text-sm font-medium text-right">No</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Post-launch support</span><span class="text-dark-shade6 text-sm font-medium text-right">Varies</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Source files &amp; ownership</span><span class="text-dark-shade6 text-sm font-medium text-right">Varies</span></div>
+          </div>
+        </div>
+ 
+        <!-- Agency -->
+        <div class="rounded-2xl border border-dark-shade3 overflow-hidden">
+          <div class="bg-dark-shade2 py-4 px-5 flex items-center justify-center">
+            <span class="text-white font-medium text-lg">Agency</span>
+          </div>
+          <div class="divide-y divide-dark-shade3">
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Total cost, year 1</span><span class="text-dark-shade6 text-sm font-medium text-right">$5–15k</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Time to launch</span><span class="text-dark-shade6 text-sm font-medium text-right">8–16 wks</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Logo &amp; branding</span><span class="text-dark-shade6 text-sm font-medium text-right">Extra</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">SEO foundation</span><span class="text-dark-shade6 text-sm font-medium text-right">No</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Post-launch support</span><span class="text-dark-shade6 text-sm font-medium text-right">Add-on</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Source files &amp; ownership</span><span class="text-dark-shade6 text-sm font-medium text-right">Sometimes</span></div>
+          </div>
+        </div>
+ 
+        <!-- DIY builder -->
+        <div class="rounded-2xl border border-dark-shade3 overflow-hidden">
+          <div class="bg-dark-shade2 py-4 px-5 flex items-center justify-center">
+            <span class="text-white font-medium text-lg">DIY builder</span>
+          </div>
+          <div class="divide-y divide-dark-shade3">
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Total cost, year 1</span><span class="text-dark-shade6 text-sm font-medium text-right">$300+ /yr</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Time to launch</span><span class="text-dark-shade6 text-sm font-medium text-right">Open-ended</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Logo &amp; branding</span><span class="text-dark-shade6 text-sm font-medium text-right">Extra</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">SEO foundation</span><span class="text-dark-shade6 text-sm font-medium text-right">No</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Post-launch support</span><span class="text-dark-shade6 text-sm font-medium text-right">No</span></div>
+            <div class="flex items-center justify-between gap-4 px-5 py-3.5"><span class="text-dark-shade5 text-sm">Source files &amp; ownership</span><span class="text-dark-shade6 text-sm font-medium text-right">N/A</span></div>
+          </div>
+        </div>
+ 
+      </div>
+
+        </div>
+       </div>
+     </section>
+    <!-- package end end -->
+
+
+
+
+    <!-- case study start -->
+
+         <section class=" bg-gradient-to-b from-[#002417] to-[#001B11] section-padding overflow-hidden relative">
+         <div class="container">
+             <div class="max-w-250 mx-auto w-full md:mb-12 sm:mb-8 mb-6">
+                    <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-4 sm:mb-1.5 mb-3 leading120">
+                   Real launches, real small businesses
+                    </h2>
+                    <p class="text-[#A7BDB5] text-center md:text-[18px] sm:text-base text-[14px] leading-[140%] font-normal">
+               Six recent projects across the industries we serve. Click any to see the full case study.</p>
+                    <div class="w-full flex justify-center">
+                       
+                    </div>
+                </div>
+
+  <div class="blog-wrap grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-x-8 gap-x-6 md:gap-y-24 sm:gap-y-12 gap-y-6" >
+                        <!-- Initial 12 Blog Items -->
+                        <a href="case-study-details.html" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem">
+                            <div>
+                                <div class="overflow-hidden rounded-3xl">
+                                    <img src="assets/images/our-works.webp" class="img-fluid w-full" alt="blog">
+                                </div>
+                                <div class="mt-5 pl-3 lg:pl-6 border-l border-white/20 flex items-start flex-col ">
+                                    <div class="flex items-center justify-start gap-2">
+                                        <span
+                                            class="sm:w-2.5 w-1.5 sm:h-2.5 h-1.5 sm:rounded-[3px] rounded-xs bg-green2"></span>
+                                        <div class="flex items-center gap-2">
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">Website</span>
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">/</span>
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">Website</span>
+                                        </div>
+                                    </div>
+                                    <h3
+                                        class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-3 md:pt-6 md:pb-3 pb-2">
+                                        Brand Authority</h3>
+                                    <p class="sm:text-base text-[14px] text-[#A7BDB5]">Position yourself as an industry
+                                        leader with a website that commands respect and trust. First impressions matter,
+                                        and your digital presence should reflect your expertise.</p>
+                                </div>
+                            </div>
+                              <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
+                        <img src="assets/images/readmore-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                       
+                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-white uppercase">View details</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View details</span>
+                        </div>
+                    </div>
+                        </a>
+                        <a href="case-study-details.html" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem">
+                            <div>
+                                <div class="overflow-hidden rounded-3xl">
+                                    <img src="assets/images/our-works.webp" class="img-fluid w-full" alt="blog">
+                                </div>
+                                <div class="mt-5 pl-3 lg:pl-6 border-l border-white/20 flex items-start flex-col ">
+                                    <div class="flex items-center justify-start gap-2">
+                                        <span
+                                            class="sm:w-2.5 w-1.5 sm:h-2.5 h-1.5 sm:rounded-[3px] rounded-xs bg-green2"></span>
+                                        <div class="flex items-center gap-2">
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">Website</span>
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">/</span>
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">Website</span>
+                                        </div>
+                                    </div>
+                                    <h3
+                                        class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-3 md:pt-6 md:pb-3 pb-2">
+                                        Brand Authority</h3>
+                                    <p class="sm:text-base text-[14px] text-[#A7BDB5]">Position yourself as an industry
+                                        leader with a website that commands respect and trust. First impressions matter,
+                                        and your digital presence should reflect your expertise.</p>
+                                </div>
+                            </div>
+                              <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
+                        <img src="assets/images/readmore-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                       
+                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-white uppercase">View details</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View details</span>
+                        </div>
+                    </div>
+                        </a>
+                        <a href="case-study-details.html" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem">
+                            <div>
+                                <div class="overflow-hidden rounded-3xl">
+                                    <img src="assets/images/our-works.webp" class="img-fluid w-full" alt="blog">
+                                </div>
+                                <div class="mt-5 pl-3 lg:pl-6 border-l border-white/20 flex items-start flex-col ">
+                                    <div class="flex items-center justify-start gap-2">
+                                        <span
+                                            class="sm:w-2.5 w-1.5 sm:h-2.5 h-1.5 sm:rounded-[3px] rounded-xs bg-green2"></span>
+                                        <div class="flex items-center gap-2">
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">Website</span>
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">/</span>
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">Website</span>
+                                        </div>
+                                    </div>
+                                    <h3
+                                        class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-3 md:pt-6 md:pb-3 pb-2">
+                                        Brand Authority</h3>
+                                    <p class="sm:text-base text-[14px] text-[#A7BDB5]">Position yourself as an industry
+                                        leader with a website that commands respect and trust. First impressions matter,
+                                        and your digital presence should reflect your expertise.</p>
+                                </div>
+                            </div>
+                              <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
+                        <img src="assets/images/readmore-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                       
+                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-white uppercase">View details</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View details</span>
+                        </div>
+                    </div>
+                        </a>
+                        <a href="case-study-details.html" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem">
+                            <div>
+                                <div class="overflow-hidden rounded-3xl">
+                                    <img src="assets/images/our-works.webp" class="img-fluid w-full" alt="blog">
+                                </div>
+                                <div class="mt-5 pl-3 lg:pl-6 border-l border-white/20 flex items-start flex-col ">
+                                    <div class="flex items-center justify-start gap-2">
+                                        <span
+                                            class="sm:w-2.5 w-1.5 sm:h-2.5 h-1.5 sm:rounded-[3px] rounded-xs bg-green2"></span>
+                                        <div class="flex items-center gap-2">
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">Website</span>
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">/</span>
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">Website</span>
+                                        </div>
+                                    </div>
+                                    <h3
+                                        class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-3 md:pt-6 md:pb-3 pb-2">
+                                        Brand Authority</h3>
+                                    <p class="sm:text-base text-[14px] text-[#A7BDB5]">Position yourself as an industry
+                                        leader with a website that commands respect and trust. First impressions matter,
+                                        and your digital presence should reflect your expertise.</p>
+                                </div>
+                            </div>
+                              <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
+                        <img src="assets/images/readmore-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                       
+                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-white uppercase">View details</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View details</span>
+                        </div>
+                    </div>
+                        </a>
+                        <a href="case-study-details.html" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem">
+                            <div>
+                                <div class="overflow-hidden rounded-3xl">
+                                    <img src="assets/images/our-works.webp" class="img-fluid w-full" alt="blog">
+                                </div>
+                                <div class="mt-5 pl-3 lg:pl-6 border-l border-white/20 flex items-start flex-col ">
+                                    <div class="flex items-center justify-start gap-2">
+                                        <span
+                                            class="sm:w-2.5 w-1.5 sm:h-2.5 h-1.5 sm:rounded-[3px] rounded-xs bg-green2"></span>
+                                        <div class="flex items-center gap-2">
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">Website</span>
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">/</span>
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">Website</span>
+                                        </div>
+                                    </div>
+                                    <h3
+                                        class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-3 md:pt-6 md:pb-3 pb-2">
+                                        Brand Authority</h3>
+                                    <p class="sm:text-base text-[14px] text-[#A7BDB5]">Position yourself as an industry
+                                        leader with a website that commands respect and trust. First impressions matter,
+                                        and your digital presence should reflect your expertise.</p>
+                                </div>
+                            </div>
+                              <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
+                        <img src="assets/images/readmore-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                       
+                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-white uppercase">View details</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View details</span>
+                        </div>
+                    </div>
+                        </a>
+                        <a href="case-study-details.html" class="flex flex-col justify-between gap-8 sm:gap-12 blogitem">
+                            <div>
+                                <div class="overflow-hidden rounded-3xl">
+                                    <img src="assets/images/our-works.webp" class="img-fluid w-full" alt="blog">
+                                </div>
+                                <div class="mt-5 pl-3 lg:pl-6 border-l border-white/20 flex items-start flex-col ">
+                                    <div class="flex items-center justify-start gap-2">
+                                        <span
+                                            class="sm:w-2.5 w-1.5 sm:h-2.5 h-1.5 sm:rounded-[3px] rounded-xs bg-green2"></span>
+                                        <div class="flex items-center gap-2">
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">Website</span>
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">/</span>
+                                            <span
+                                                class="text-green2 sm:text-base text-[12px] block font-medium">Website</span>
+                                        </div>
+                                    </div>
+                                    <h3
+                                        class="text-white leading120 text-2xl md:text-[28px] lg:text-[32px] font-medium pt-3 md:pt-6 md:pb-3 pb-2">
+                                        Brand Authority</h3>
+                                    <p class="sm:text-base text-[14px] text-[#A7BDB5]">Position yourself as an industry
+                                        leader with a website that commands respect and trust. First impressions matter,
+                                        and your digital presence should reflect your expertise.</p>
+                                </div>
+                            </div>
+                              <div class="inline-flex items-center sm:gap-2.5 gap-2  readmore mega-reveal-btn relative overflow-hidden">
+                        <img src="assets/images/readmore-arrow.svg" class="img-fluid pb-1" alt="readmore-arrow">
+                       
+                            <div class="text-mask shrink-0 md:h-7.5 h-6 overflow-hidden flex flex-col">
+                            <span class="t-up md:text-[18px] text-base  font-medium text-white uppercase">View details</span>
+                            <span class="t-down md:text-[18px] text-base  font-medium text-green1 uppercase">View details</span>
+                        </div>
+                    </div>
+                        </a>
+                      
+
+
+                    </div>
+
+        </div>
+     </section>
+
+    <!-- case study end -->
+
+
+
+
+       <!-- team energy section start -->
+    <section class="section-padding bg-green5 plyvideo">
+        <div class="container">
+            <div class="sm:grid grid-cols-2 flex flex-col-reverse items-center md:gap-8 gap-6">
+                <div>
+                    <!-- <img src="assets/images/pixxenteampicture.gif" class="img-fluid" alt="team energy"> -->
+                    <video class="w-full h-full object-cover" playsinline autoplay muted preload="metadata">
+                        <source src="assets/video/Pixxen.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <h2
+                        class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 mb-1.5 leading120">
+                       Pay only after you approve the design </h2>
+                    <p
+                        class="sm:text-start text-center text-[#A7BDB5] md:text-[18px] sm:text-base text-[14px] leading-[140%] mx-auto sm:mt-6 mt-3 font-normal mb-5 sm:mb-6 md:mb-8">
+                        50% to start, 50% only after you sign off on the design direction. If the initial concepts aren't what you wanted, your deposit is refunded — no questions asked.</p>
+
+                    <div class="flex sm:justify-start justify-center w-full">
+                        <a href="contact.html"
+                            class="mega-reveal-btn relative inline-block overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
+                            <span class="bg-overlay absolute inset-0 z-1"></span>
+                            <div class="btn-inner relative z-2 flex items-center gap-3">
+                                <div
+                                    class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                    <div class="icon-slider flex flex-row ">
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Pick your industry</span>
+                                    <span
+                                        class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">Pick your industry</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team energy section end -->
+
+
+
+
+    <!-- marquee section start -->
+    <section class="marquee-section bg-[#002417] md:py-12 py-4 px-6 md:px-12">
+        <div class="marquee-stripe rotate-2 bg-green4 rounded-full">
+            <div class="marquee-container ltr">
+                <div class="marquee-content">
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
+                            your next pixel</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
+                            solutions</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
+                            design</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
+                            your vision</span>
+                    </div>
+
+                    <!-- Duplicate for seamless loop -->
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
+                            your next pixel</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Best
+                            solutions</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Creative
+                            design</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-green lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-green1  font-medium">Pixxen
+                            Studio</span>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-dot"></div>
+                        <span
+                            class="marquee-text-white lg:text-[32px] md:text-[28px] sm:text-[24px] text-base text-white  font-medium">Shape
+                            your vision</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- marquee section end -->
+
+
+
+
+
+
+  <!-- faq  start -->
+
+    <section class="section-padding faq bg-[linear-gradient(180deg,#002417_0%,#001B11_100%)]">
+        <div class="container">
+            <div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-6">
+                <div>
+                    <h2 class="sm:text-start text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-1.5 leading120">
+                        Frequently asked questions
+                    </h2>
+                    <button
+                        class="mega-reveal-btn relative md:block hidden overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
+                        <span class="bg-overlay absolute inset-0 z-1"></span>
+                        <div class="btn-inner relative z-2 flex items-center gap-3">
+                            <div
+                                class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                <div class="icon-slider flex flex-row ">
+                                    <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                            fill="var(--color-green1)" />
+                                    </svg>
+                                    <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                            fill="var(--color-green1)" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">More
+                                    faq’s</span>
+                                <span class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">More
+                                    faq’s</span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div class="faq-right">
+                    <div class="faq-container">
+
+                        <!-- FAQ Item 1 -->
+                        <div class="faq-item active" data-faq="1">
+                            <div class="faq-question flex items-start justify-between md:py-8 sm:py-6 py-4 gap-6">
+                                <div class="flex items-start sm:gap-4 gap-3 flex-1">
+                                    <div
+                                        class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
+                                        <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
+                                    </div>
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">How long till I see a
+                                        prototype?</h3>
+                                </div>
+                                <button
+                                    class="plus-icon text-white text-3xl font-light w-8 h-8 flex items-center justify-center shrink-0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="answer-content pl-9 sm:pl-11 sm:pb-8 pb-6 sm:pr-12 pr-6">
+                                    <!-- <div class="green-border"></div> -->
+                                    <p class="text-gray-300 sm:text-lg text-sm sm:text-base">
+                                        With our ultra-fast charging stations, you can charge up to 80% in about 20
+                                        minutes perfect for a quick stop. Charging overnight at home with a Level 2
+                                        charger gives you a full battery by morning, ready for the day.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="faq-item" data-faq="2">
+                            <div class="faq-question flex items-start justify-between md:py-8 sm:py-6 py-4 gap-6">
+                                <div class="flex items-start sm:gap-4 gap-3 flex-1">
+                                    <div
+                                        class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
+                                        <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
+                                    </div>
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Do you work with internal
+                                        teams?</h3>
+                                </div>
+                                <button
+                                    class="plus-icon text-white text-3xl font-light w-8 h-8 flex items-center justify-center shrink-0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="answer-content pl-9 sm:pl-11 sm:pb-8 pb-6 sm:pr-12 pr-6">
+                                    <!-- <div class="green-border"></div> -->
+                                    <p class="text-gray-300 sm:text-lg text-sm sm:text-base">
+                                        Yes, we collaborate closely with internal teams to ensure seamless integration
+                                        and alignment with your company's goals and processes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="faq-item" data-faq="3">
+                            <div class="faq-question flex items-start justify-between md:py-8 sm:py-6 py-4 gap-6">
+                                <div class="flex items-start sm:gap-4 gap-3 flex-1">
+                                    <div
+                                        class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
+                                        <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
+                                    </div>
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Who owns the IP?</h3>
+                                </div>
+                                <button
+                                    class="plus-icon text-white text-3xl font-light w-8 h-8 flex items-center justify-center shrink-0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="answer-content pl-9 sm:pl-11 sm:pb-8 pb-6 sm:pr-12 pr-6">
+                                    <!-- <div class="green-border"></div> -->
+                                    <p class="text-gray-300 sm:text-lg text-sm sm:text-base">
+                                        All intellectual property rights are transferred to you upon project completion,
+                                        ensuring you have full ownership of the deliverables.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="faq-item" data-faq="4">
+                            <div class="faq-question flex items-start justify-between md:py-8 sm:py-6 py-4 gap-6">
+                                <div class="flex items-start sm:gap-4 gap-3 flex-1">
+                                    <div
+                                        class="sm:w-8 w-6 sm:h-8 h-6 bg-green2 rounded-lg flex items-center justify-center shrink-0">
+                                        <span class="text-green4 font-medium text-xl sm:text-2xl">Q</span>
+                                    </div>
+                                    <h3 class="text-white text-base sm:text-xl md:text-2xl font-medium  pt-0.5">Can we scale the design
+                                        system later?
+                                    </h3>
+                                </div>
+                                <button
+                                    class="plus-icon text-white text-3xl font-light w-8 h-8 flex items-center justify-center shrink-0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="answer-content pl-9 sm:pl-11 sm:pb-8 pb-6 sm:pr-12 pr-6">
+                                    <!-- <div class="green-border"></div> -->
+                                    <p class="text-gray-300 sm:text-lg text-sm sm:text-base">
+                                        Absolutely! Our design systems are built with scalability in mind, allowing for
+                                        easy expansion and adaptation as your needs grow.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex justify-center md:hidden mt-6">
+                        <button
+                            class="mega-reveal-btn relative  overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1  transition-all duration-200">
+                            <span class="bg-overlay absolute inset-0 z-1"></span>
+                            <div class="btn-inner relative z-2 flex items-center gap-3">
+                                <div
+                                    class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                    <div class="icon-slider flex flex-row ">
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                        <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                fill="var(--color-green1)" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">More
+                                        faq’s</span>
+                                    <span class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">More
+                                        faq’s</span>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq  end -->
+
+
+
+    <!-- cta section start -->
+    <section class="cta-section relative section-padding bg-green5 overflow-hidden">
+        <img src="assets/images/shape-top.png"
+            class="img-fluid absolute top-0 left-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+            alt="">
+        <img src="assets/images/shape-right.png"
+            class="img-fluid absolute bottom-0 right-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+            alt="">
+
+        <div class="container">
+            <div class="cta-wrap z-80 relative">
+                <div class="max-w-260 mx-auto w-full">
+                    <h2 class="text-center lg:text-[64px] sm:text-[48px] text-[32px] font-medium text-white md:mb-6 sm:mb-1.5 mb-3 leading120">
+                       Ready to launch a website that earns its keep?
+                    </h2>
+                    <p class="text-white max-w-195 mx-auto w-full text-center md:text-[18px] sm:text-base text-[14px] leading-[140%] sm:mt-6 font-normal mb-6 md:mb-8">
+                       50% to start, 50% only after you sign off on the design direction. If the initial concepts aren't what you wanted, your deposit is refunded — no questions asked.</p>
+                     <div class="flex flex-wrap sm:justify-center justify-center w-full gap-3 md:gap-4">
+                            <button
+                                class="mega-reveal-btn sm:inline-block flex justify-center w-full sm:w-auto relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 hover:bg-green1 transition-all duration-200">
+                                <span class="bg-overlay absolute inset-0 z-1"></span>
+                                <div class="btn-inner relative z-2 flex items-center gap-3">
+                                    <div
+                                        class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                                        <div class="icon-slider flex flex-row ">
+                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                    fill="var(--color-green1)" />
+                                            </svg>
+                                            <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                                                    fill="var(--color-green1)" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                        <span
+                                            class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Start your $999 package</span>
+                                        <span
+                                            class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">Start your $999 package</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <button
+                                class="mega-reveal-btn sm:inline-block flex justify-center w-full sm:w-auto relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-transparen border border-white  transition-all duration-200">
+                                <span class="bg-overlay absolute inset-0 z-1"></span>
+                                <div class="btn-inner relative z-2 flex items-center gap-3">
+
+                                    <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                                        <span
+                                            class="t-up md:text-[20px] text-base  font-medium text-white uppercase">Book a 15-minute call</span>
+                                        <span
+                                            class="t-down md:text-[20px] text-base  font-medium text-white uppercase">Book a 15-minute call</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                </div>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- cta section end -->
+
+
+
+
+    <!-- footer section start -->
+    <footer class="relative">
+        <div class="bg-gradient-to-b from-[#002417] to-[#001B11] text-white  border-t border-b border-dark-shade3 ">
+            <div class="container">
+                <!-- Desktop Grid Layout -->
+                <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
+
+                    <div
+                        class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b border-dark-shade3">
+                        <div class="grid md:grid-cols-4 grid-cols-2 xl:gap-8 gap-4">
+                            <!-- Services Column -->
+                            <div class="">
+                                <h3 class="text-green2 text-base sm:text-lg font-semibold mb-3 lg:mb-6">Services</h3>
+                                <ul class="space-y-2 lg:space-y-3">
+                                    <li><a href="mobile-app-design.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">MOBILE
+                                            APP DESIGN</a></li>
+                                    <li><a href="dashboard-design.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">DASHBOARD
+                                            DESIGN</a></li>
+                                    <li><a href="website-design.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">WEBSITE
+                                            DESIGN</a></li>
+                                    <li><a href="web-application-design.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">WEB
+                                            APP DESIGN</a></li>
+                                    <li><a href="saas-design.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">SAAS
+                                            DESIGN</a></li>
+                                    <li><a href="branding-design.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">BRANDING</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Pixxen Column -->
+                            <div class="">
+                                <h3 class="text-green2 text-base sm:text-lg font-semibold mb-3 lg:mb-6">Pixxen</h3>
+                                <ul class="space-y-2 lg:space-y-3">
+                                    <li><a href="about.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">ABOUT</a>
+                                    </li>
+                                    <li><a href="contact.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">CONTACT</a>
+                                    </li>
+                                    <li><a href="career.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">CAREER</a>
+                                    </li>
+                                    <li><a href="team.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">TEAM</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+                            <!-- Resources Column -->
+                            <div class="">
+                                <h3 class="text-green2 text-base sm:text-lg font-semibold mb-3 lg:mb-6">Resources</h3>
+                                <ul class="space-y-2 lg:space-y-3">
+                                    <li><a href="case-study.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">CASE STUDIES</a>
+                                    </li>
+                                    <li><a href="blog.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">BLOGS</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Legal Column -->
+                            <div class="">
+                                <h3 class="text-green2 text-base sm:text-lg font-semibold mb-3 lg:mb-6">Legal</h3>
+                                <ul class="space-y-2 lg:space-y-3">
+                                    <li><a href="terms.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">TERMS</a>
+                                    </li>
+                                    <li><a href="privacy.html"
+                                            class="text-white hover:text-green1 transition-colors text-[12px] sm:text-sm lg:text-base">PRIVACY</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Copyright -->
+                        <div class="mt-8 lg:mt-0 pt-6 lg:pt-0 border-t border-green4 lg:border-0 md:block hidden">
+                            <p class="text-[#759187] text-sm text-center lg:text-left">© 2026 PIXXEN</p>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Column -->
+                    <div
+                        class="md:pl-10 lg:pl-14 md:border-l  border-dark-shade3 lg:col-span-4 md:col-span-5 md:py-12 sm:py-8 py-6 flex flex-col justify-between gap-5">
+                        <div>
+                            <h3 class="text-green2 md:text-lg text-base font-semibold md:mb-3 mb-2 lg:mb-4">Join 5,000+
+                                design lovers.</h3>
+                            <p class="text-[#759187] sm:text-sm text-[12px] mb-4 lg:mb-6">Monthly design insights, case
+                                studies, and
+                                inspiration straight to your inbox.</p>
+
+                            <!-- Email Input -->
+                            <div class="relative mb-3 md:mb-8 lg:mb-12">
+                                <input type="email" placeholder="Email address"
+                                    class="w-full bg-transparent border border-dark-shade3 rounded-2xl px-4 py-5 lg:py-3.5 h-16 text-white placeholder-[#759187] focus:outline-none focus:border-green3 transition-colors text-sm lg:text-base pr-14" />
+                                <button
+                                    class="absolute group cursor-pointer right-px top-1/2 -translate-y-1/2 bg-dark-shade3 hover:bg-green3 p-3.75 rounded-r-2xl transition-colors">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.5628 14.6665L14.4108 7.51452L16.2964 5.62891L26.6673 15.9999L16.2964 26.3707L14.4108 24.4851L21.5628 17.3332H5.33398V14.6665H21.5628Z"
+                                            fill="#759187" class="group-hover:fill-white transition-colors" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="flex md:justify-start justify-center md:gap-2 gap-1 lg:gap-2">
+                            <a href="#"
+                                class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                            <a href="#"
+                                class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5 11C8.60457 11 9.5 10.1046 9.5 9C9.5 7.89543 8.60457 7 7.5 7H3V11H7.5ZM8.5 13H3V17H8.5C9.60457 17 10.5 16.1046 10.5 15C10.5 13.8954 9.60457 13 8.5 13ZM10.5632 11.5725C11.7239 12.2726 12.5 13.5457 12.5 15C12.5 17.2091 10.7091 19 8.5 19H1V5H7.5C9.70914 5 11.5 6.79086 11.5 9C11.5 9.97964 11.1478 10.877 10.5632 11.5725ZM15.5 6H21V7.5H15.5V6ZM23 14.5H15.5V14.75C15.5 16.2688 16.7312 17.5 18.25 17.5C19.3187 17.5 20.245 16.8904 20.7001 16H22.8338C22.2851 18.0169 20.4407 19.5 18.25 19.5C15.6266 19.5 13.5 17.3734 13.5 14.75V13.25C13.5 10.6266 15.6266 8.5 18.25 8.5C20.8734 8.5 23 10.6266 23 13.25V14.5ZM20.8965 12.5C20.57 11.3457 19.5088 10.5 18.25 10.5C16.9912 10.5 15.93 11.3457 15.6035 12.5H20.8965Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                            <a href="#"
+                                class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z"
+                                        fill="white" />
+                                </svg>
+
+
+                            </a>
+                            <a href="#"
+                                class="bg-[#1F382F] hover:bg-green3 p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 9.55005C12.9171 8.61327 14.1111 8 15.5 8C18.5375 8 21 10.4624 21 13.5V21H19V13.5C19 11.567 17.433 10 15.5 10C13.567 10 12 11.567 12 13.5V21H10V8.5H12V9.55005ZM5 6.5C4.17157 6.5 3.5 5.82843 3.5 5C3.5 4.17157 4.17157 3.5 5 3.5C5.82842 3.5 6.5 4.17157 6.5 5C6.5 5.82843 5.82842 6.5 5 6.5ZM4 8.5H6V21H4V8.5Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                        </div>
+                        <!-- Copyright -->
+                        <div class="mt-1 flex justify-center md:hidden ">
+                            <p class="text-[#759187] text-sm text-center lg:text-left">© 2026 PIXXEN</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div
+            class="bg-linear-to-b from-[#001B11] to-green4 sticky -z-10 bottom-0 left-0 w-full  flex justify-center items-end">
+            <div class="flex justify-center text-center">
+                <img src="assets/images/pixxen-footerlogo.png" class="img-fluid w-full object-contain" alt="footerlogo">
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

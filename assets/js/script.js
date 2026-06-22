@@ -1855,3 +1855,63 @@ if (allIndustriesGrid) {
         });
     }
 }
+
+
+
+
+
+
+//package tab 
+
+
+ // Tab + mobile dropdown logic
+    (function () {
+      const root = document.querySelector('[data-tabs]');
+      if (!root) return;
+ 
+      const buttons = root.querySelectorAll('.tab-btn');
+      const panels = root.querySelectorAll('.tab-panel');
+      const nav = root.querySelector('.tab-nav');
+      const trigger = root.querySelector('.tab-trigger');
+      const triggerLabel = root.querySelector('.trigger-label');
+ 
+      function openDropdown() {
+        nav.classList.add('is-open');
+        trigger.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+ 
+      function closeDropdown() {
+        nav.classList.remove('is-open');
+        trigger.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+ 
+      function activate(id, label) {
+        buttons.forEach(b => b.classList.toggle('is-active', b.dataset.tab === id));
+        panels.forEach(p => p.classList.toggle('is-active', p.dataset.panel === id));
+        if (label) triggerLabel.textContent = label;
+        closeDropdown();
+      }
+ 
+      // Tab click
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => activate(btn.dataset.tab, btn.textContent.trim()));
+      });
+ 
+      // Mobile dropdown toggle
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        nav.classList.contains('is-open') ? closeDropdown() : openDropdown();
+      });
+ 
+      // Close dropdown when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!nav.contains(e.target) && !trigger.contains(e.target)) closeDropdown();
+      });
+ 
+      // Close dropdown on Escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeDropdown();
+      });
+    })();

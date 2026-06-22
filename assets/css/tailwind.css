@@ -1502,7 +1502,7 @@ left: 22px;
         .marquee-dot {
             width: 10px;
             height: 10px;
-            background-color: var(--color-green1);
+            background-color: var(--color-green);
             border-radius: 50%;
             flex-shrink: 0;
         }
@@ -2729,3 +2729,123 @@ html.lenis, html.lenis body {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* package css */
+
+
+.package-item{
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(0px);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+
+
+.package-item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    /* border: 1px solid rgba(255, 255, 255, 0.16); */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.00) 100%);
+    clip-path: circle(0% at 100% 0%);
+    transition: clip-path 0.7s cubic-bezier(0.65, 0, 0.35, 1);
+    z-index: -1;
+}
+
+
+
+@media (max-width:767px) {
+.package-item::before{
+    border-radius: 16px;
+}
+}
+
+.package-item:hover::before{
+    clip-path: circle(150% at 100% 0%);
+}
+
+.package-item:hover::after{
+    transform: rotate(180deg) ;
+    opacity: 1;
+    /* filter: brightness(1.2) drop-shadow(0 0 15px rgba(255, 255, 255, 0.2)); */
+}
+
+.package-item:hover{
+    /* border: 1px solid rgba(255, 255, 255, 0.35); */
+    transform: translateY(-6px) ;
+}
+
+
+
+/* Service item link hover effect */
+.package-item {
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+/* package tab slider  */
+
+  /* Active tab button */
+  .tab-btn.is-active {
+    background-color: var(--color-green1);
+    color: var(--color-green5);
+  }
+ 
+  /* Tab panels: only the active one is visible */
+  .tab-panel { display: none; }
+  .tab-panel.is-active { display: block; }
+ 
+  /* Chevron rotation when mobile dropdown is open */
+  .tab-trigger .chevron { transition: transform .25s ease; }
+  .tab-trigger.is-open .chevron { transform: rotate(180deg); }
+ 
+  /* Mobile (< lg): the tab list behaves like a dropdown panel */
+  @media (max-width: 1023px) {
+    .tab-nav {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      right: 0;
+      z-index: 30;
+      display: none;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      border: 1px solid var(--color-dark-shade5);
+      background-color: var(--color-green5);
+      max-height: 320px;
+      overflow-y: auto;
+    }
+    .tab-nav.is-open { display: flex; }
+  }
